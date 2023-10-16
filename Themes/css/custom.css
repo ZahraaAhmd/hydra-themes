@@ -1,0 +1,28 @@
+.service_form form button.next_btn {
+    width: 149px;
+    height: 56px;
+    background-color: #4675ef;
+    color: #fff;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service_form form button {
+    font-weight: 500;
+    font-size: 20px;
+    color: #181818;
+}
+
+.news .right_side .img_container span.red {
+    background-color: #f34a3f
+}
+
+.news .right_side .img_container span.green {
+    background-color: #55c574
+}
+
+.news .right_side .img_container span.blue {
+    background-color: #4675ef
+}

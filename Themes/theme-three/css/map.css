@@ -1,0 +1,411 @@
+:root {
+  --primaryColor: #0d3770;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #1e549d;
+  --headerBottomBgColor: #0d3770;
+  --headerTopContentColor: #fff;
+  --headingsColor: #0d3770;
+  --paragraphColor: #181818;
+  --lightContentColor: #181818b2;
+  --linksColor: #0d3770;
+  --linksHoverColor: #0d3770;
+  --menuLinksColor: #c0c0c0 !important;
+  --menuLinksHoverColor: #fff !important;
+  --footerBackgroundColor: #0d3770;
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #fff !important;
+  --firstGradientColor: #153e9b;
+  --secondGradientColor: #0d3770;
+  --theme-three-main-color: var(--primaryColor);
+  --white: #fff;
+  --black: #000;
+  --gray: #ccc;
+  --green: green;
+  --firstHeaderBgColor: var(--headerTopBgColor);
+  --mainHeaderBg: var(--headerBottomBgColor);
+  --mainBgColor: var(--primaryColor);
+  --lightGrayBg: #f5f6f7;
+  --borderColor: var(--primaryColor);
+  --headerColor: var(--primaryColor);
+  --primaryColorLight: var(--primaryColor);
+  --headerBtnColor: var(--primaryColor);
+  --externalLinksColor: var(--linksColor);
+  --testimonialContentColor: var(--lightContentColor);
+  --testimonialAutherColor: var(--paragraphColor);
+  --testimonialAutherTitleColor: var(--lightContentColor);
+  --hamubergerBgColor: var(--secondaryColor);
+  --sign-in-header: var(--primaryColor);
+  --sign-in-desc: var(--lightContentColor);
+  --sign-in-desc2: var(--lightContentColor);
+  --input-border: var(--secondaryColor);
+  --input-placeholder: #afafaf;
+  --input-background: #f8f8f8;
+  --button-bg-primary: var(--secondaryColor);
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #424442;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+  --whiteTextColor: var(--white);
+  --notificationNav: linear-gradient(
+    89.33deg,
+    #d5a419 6.67%,
+    #ae8100 93.79%
+  );
+  --gallerySubHeaderTitle: var(--primaryColor);
+  --mediaMainHeaderColor: var(--black);
+  --mediaMainNewContentColor: var(--paragraphColor);
+  --mediaSeeMoreMainBtnColor: var(--secondaryColor);
+  --mediaDateColor: var(--paragraphColor);
+  --seeMoreBtnBg: #e1e1e1;
+  --sub-single-new-header-color: var(--primaryColor);
+  --single-new-desc-color: var(--lightContentColor);
+  --new-desc-sub-header: var(--primaryColor);
+  --new-content-color: var(--paragraphColor);
+  --content-item-color: var(--primaryColor);
+  --single-new-external-news-color: var(--primaryColor);
+  --data-table-header-bg-color: #0081c41a;
+  --data-table-header-color: var(--primaryColor);
+  --data-table-header-item-color: var(--paragraphColor);
+  --table-even-row-bg-color: #f6f6f6;
+}
+
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+.borderTop {
+  border-top: 4px solid var(--borderColor);
+}
+
+.main-color {
+  color: var(--primaryColor);
+}
+
+.section-header {
+  font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif !important;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primaryColor);
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.section-sub-header-bold {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  font-size: 2.2rem;
+  color: var(--primaryColor);
+  margin-bottom: 0.7rem;
+}
+
+.section-header-bold {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  font-size: 3rem;
+  color: var(--primaryColor);
+  margin-bottom: 0.7rem;
+}
+
+.section-sub-header {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--primaryColorLight);
+  margin-bottom: 1rem;
+}
+
+.theme-three .gov-projects {
+  max-height: 50rem;
+  padding: 1.2rem 2.4rem;
+  overflow-y: scroll;
+  border-radius: 14px;
+}
+.theme-three .gov-projects .gov-projects::-webkit-scrollbar-track {
+  background-color: var(--primaryColor);
+}
+.theme-three .gov-projects .gov-projects::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.theme-three .mapWrapper {
+  width: 100%;
+  margin-top: 5rem !important;
+  overflow: hidden;
+}
+.theme-three .map-image-container {
+  position: relative;
+}
+.theme-three .map-image-container .search-container {
+  position: absolute;
+  top: 5rem;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  margin: 0 auto;
+}
+.theme-three .map-image-container .search-container .search-input-container {
+  position: relative;
+}
+.theme-three .map-image-container .search-container .search-input {
+  width: 100%;
+  padding: 0.8rem 6rem;
+  border-radius: 13px;
+  font-size: 20px;
+  color: #c8c8c8;
+  z-index: 999;
+}
+.theme-three .map-image-container .search-container .search-input::-webkit-input-placeholder {
+  color: #bababa;
+}
+.theme-three .map-image-container .search-container .search-input::-moz-placeholder {
+  color: #bababa;
+}
+.theme-three .map-image-container .search-container .search-input:-ms-input-placeholder {
+  color: #bababa;
+}
+.theme-three .map-image-container .search-container .search-input::-ms-input-placeholder {
+  color: #bababa;
+}
+.theme-three .map-image-container .search-container .search-input::placeholder {
+  color: #bababa;
+}
+.theme-three .map-image-container .search-container .search-icon {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 21px;
+  color: #c8c8c8;
+}
+.theme-three .map-left {
+  background: linear-gradient(252.73deg, var(--firstGradientColor) 6%, var(--secondGradientColor) 118.61%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 12px;
+}
+.theme-three .locations-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+.theme-three .locations-container .locations-header {
+  padding: 3rem;
+  background-color: var(--primaryColor);
+  border-radius: 12px;
+}
+.theme-three .locations-container .locations-header .location-border-top {
+  border-top: 4px solid #fff;
+}
+.theme-three .locations-container .locations-header .locations-header-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--white) !important;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.theme-three .locations-list-container {
+  padding: 3rem;
+}
+.theme-three .locations-list-container .location-item {
+  margin-bottom: 2rem;
+}
+.theme-three .locations-list-container .location-item .location-item-title {
+  font-weight: 700;
+  line-height: 26px;
+  color: #fff;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.theme-three .locations-list-container .location-item .location-item-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #fff;
+}
+.theme-three .locations-list-container .location-item .location-item-footer {
+  margin-top: 2rem;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 15rem;
+}
+.theme-three .locations-list-container .location-item .location-item-footer .location-item-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+  text-decoration: none;
+}
+@media (max-width: 87.5em) {
+  .theme-three .map-image-container {
+    left: 0;
+    bottom: -5rem;
+  }
+  .theme-three .map-image-container .map-image {
+    width: 100%;
+  }
+}
+@media (max-width: 77em) {
+  .theme-three .locations-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 12px;
+    margin-top: -40px;
+    z-index: 5;
+  }
+}
+@media (max-width: 40em) {
+  .theme-three .locations-list-container {
+    margin-top: 1rem;
+    padding: 3rem 3rem 3rem 1.5rem;
+  }
+  .theme-three .locations-list-container .location-item {
+    margin-bottom: 2rem;
+  }
+  .theme-three .locations-list-container .location-item .location-item-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .theme-three .locations-list-container .location-item .location-item-desc {
+    font-size: 12px;
+  }
+  .theme-three .locations-list-container .location-item .location-item-footer {
+    margin-top: 2rem;
+    height: 4rem;
+    width: 15rem;
+  }
+  .theme-three .locations-list-container .location-item .location-item-footer .location-item-link {
+    font-size: 13px;
+  }
+}
+@media (max-width: 36rem) {
+  .theme-three .mapWrapper {
+    margin-top: 0 !important;
+  }
+  .theme-three .gov-main {
+    padding-bottom: 1rem !important;
+  }
+}
+
+@media (max-width: 950px) {
+  .section-header {
+    font-size: 3.5rem;
+  }
+  .section-header-bold {
+    font-size: 2.7rem;
+  }
+  .section-sub-header-bold {
+    font-size: 2.3rem;
+  }
+  .section-sub-header {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 650px) {
+  .section-header {
+    font-size: 3rem;
+  }
+  .section-header-bold {
+    font-size: 2.5rem;
+  }
+  .section-sub-header {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 550px) {
+  .section-header {
+    font-size: 2.5rem;
+  }
+  .section-header-bold {
+    font-size: 2.2rem;
+  }
+  .section-sub-header-bold {
+    font-size: 2rem;
+  }
+  .section-sub-header {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 650px) {
+  .servicesDesc {
+    font-size: 1.2rem;
+  }
+}
+.margin-bottom-half {
+  margin-bottom: 0.5rem;
+}
+
+.margin-bottom-1 {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom-2 {
+  margin-bottom: 2rem;
+}
+
+.margin-bottom-3 {
+  margin-bottom: 3rem;
+}
+
+.margin-bottom-4 {
+  margin-bottom: 4rem;
+}
+
+.margin-bottom-5 {
+  margin-bottom: 5rem;
+}
+
+.margin-top-half {
+  margin-top: 0.5rem;
+}
+
+.margin-top-1 {
+  margin-top: 1rem;
+}
+
+.margin-top-2 {
+  margin-top: 2rem;
+}
+
+.margin-top-3 {
+  margin-top: 3rem;
+}
+
+.margin-top-4 {
+  margin-top: 4rem;
+}
+
+.margin-top-5 {
+  margin-top: 5rem;
+}

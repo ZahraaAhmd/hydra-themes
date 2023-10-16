@@ -1,0 +1,119 @@
+@import "variables";
+@import "fonts";
+.section-title-header {
+  font-family: "Tajawal-Bold";
+  font-size: 32px;
+  color: var(--headingsColor);
+}
+.section-title-desc {
+  font-family: "Tajawal-Regular";
+  font-size: 18px;
+  color: var(--lightContentColor);
+  opacity: 0.8;
+  width: 30%;
+  margin-top: 15px;
+}
+.theme-one {
+  .testimonials {
+    // background-color: hsl(0, 0%, 96%);
+    padding: 69px 0 120px 0;
+    // margin-bottom: 55px;
+    background: var(--lightBgColor);
+  }
+
+  .testimonial-row {
+    margin-top: 3rem;
+    position: relative;
+    background: linear-gradient(
+      270deg,
+      rgba(70, 117, 239, 0.07) 0%,
+      rgba(255, 255, 255, 0) 118.8%
+    );
+    border-radius: 10px;
+    // box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.13);
+    box-shadow: 0 1.2rem 3.5rem rgb(0, 0, 0, 0.12);
+  }
+
+  .testimonial-title {
+    font-family: "Tajawal-Bold";
+    font-size: 38px;
+    line-height: 4.5rem;
+    letter-spacing: -0.04em;
+    color: var(--black) !important;
+  }
+  .testimonial-desc {
+    font-family: "Tajawal-Regular";
+    font-size: 20px;
+    line-height: 132.4%;
+    letter-spacing: -0.04em;
+    color: var(--bg_color) !important;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (max-width: 992px) {
+    .testimonial-row {
+      padding-top: 3.5rem;
+    }
+    .left-test-side {
+      width: 75%;
+      margin: 0 auto;
+      // background-color: red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .testimonial-title {
+      font-size: 35px;
+    }
+    .testimonial-desc {
+      font-size: 24px;
+    }
+    .right-test-side {
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (max-width: 768px) {
+    .testimonial-row {
+      margin-top: 3rem;
+      padding-top: 3rem;
+    }
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @media (max-width: 576px) {
+    .left-test-side {
+      width: 90%;
+    }
+    .testimonial-title {
+      font-size: 24px;
+      // font-weight: 700;
+      line-height: 2.2rem;
+    }
+    .testimonial-desc {
+      font-size: 14px;
+    }
+    .testimonial-img {
+      width: 100%;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+  .section-title-desc {
+    width: 100%;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+  .section-title-desc {
+    width: 75%;
+  }
+}

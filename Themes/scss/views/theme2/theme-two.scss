@@ -1,0 +1,58 @@
+@import "variables";
+// import fonts
+@font-face {
+  font-family: "Tajawal-Bold";
+  src: url(../fonts/Helvetica-bold.ttf);
+}
+@font-face {
+  font-family: "Tajawal-Regular";
+  src: url(../fonts/Helvetica-normal.ttf);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Tajawal-Regular";
+  &.bg_gray {
+    background: #f5f6f9;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--headingsColor) !important;
+}
+
+p {
+  color: var(--paragraphColor);
+}
+
+a {
+  color: var(--linksColor);
+  text-decoration: none;
+  &:hover {
+    color: var(--linksHoverColor);
+    text-decoration: none;
+  }
+}
+
+::selection {
+  background-color: var(--primaryColor);
+  color: var(--white);
+}
+
+.page_content {
+  // padding-top: 205px;
+}
+// tablet
+@media (max-width: 992px) {
+  .page_content {
+    // padding-top: 150px;
+  }
+}

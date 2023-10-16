@@ -1,0 +1,76 @@
+@import "variables";
+@import "fonts";
+
+body {
+  font-family: "Tajawal-Regular";
+}
+.theme-one {
+  .gallary_desc {
+    h3 {
+      font-family: "Tajawal-Bold";
+      font-size: 32px;
+      color: var(--headingsColor);
+    }
+    p {
+      font-size: 18px;
+      color: var(--gray_text) ;
+    }
+  }
+  .single_gallary {
+    .img_container {
+      position: relative;
+      margin-bottom: 24px;
+      height: 208px;
+      border-radius: 16px;
+      overflow: hidden;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      span {
+        display: none;
+        position: absolute;
+        top: calc(162px / 2);
+        left: 50%;
+        transform: translatex(-50%);
+        width: 54px;
+        height: 54px;
+        border-radius: 100%;
+        background-color: var(--bg_color);
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+      }
+      &:hover {
+        span {
+          display: flex;
+          z-index: 9;
+        }
+        &:after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          );
+          left: 0;
+          top: 0;
+          position: absolute;
+          z-index: 1;
+        }
+      }
+    }
+
+    h5,
+    p {
+      font-size: 20px;
+      color: var(--gray_text);
+    }
+    p {
+      opacity: 0.6;
+    }
+  }
+}

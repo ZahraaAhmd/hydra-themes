@@ -1,0 +1,83 @@
+@import "variables";
+@import "fonts";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $normal_font;
+}
+
+// in popup case add this div to body and make it block when popup open
+.page-mask {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(24, 24, 24, 0.3);
+  z-index: 9;
+}
+
+.section-title-header {
+  font-family: $bold_font;
+  font-size: 32px;
+  color: $bg_color;
+}
+.section-title-desc {
+  font-family: $normal_font;
+  font-size: 18px;
+  color: #757575;
+  width: 30%;
+  margin-top: 15px;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+  .section-title-desc {
+    width: 100%;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+  .section-title-desc {
+    width: 75%;
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (max-width: 1400px) {
+}
+
+
+
+
+// // XX-Large devices (larger desktops, 1400px and up)
+// @media (max-width: 1400px) {
+// }
+
+// // X-Large devices (large desktops, 1200px and up)
+// @media (max-width: 1200px) {
+// }
+// // Large devices (desktops, 992px and up)
+// @media (max-width: 992px) {
+// }
+// // Medium devices (tablets, 768px and up)
+// @media (max-width: 768px) {
+// }
+
+// // Small devices (landscape phones, 576px and up)
+// @media (max-width: 576px) {
+// }

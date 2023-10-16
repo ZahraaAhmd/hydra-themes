@@ -1,0 +1,65 @@
+.footer {
+    background-color: $bg_color;
+    color: $white;
+    padding: 126px 0 64px 0;
+
+    .links {
+        margin-bottom: 50px;
+
+        h3 {
+            font-size: 20px;
+            font-family: $bold_font;
+        }
+
+        ul {
+            a {
+                color: $white;
+                font-size: 14px;
+                line-height: 30px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .copyright {
+        .logo {
+            position: relative;
+            margin-bottom: 27px;
+
+            a {
+                display: inline-block;
+                background-color: $bg_color;
+                position: relative;
+                z-index: 1;
+                padding: 0 20px;
+
+                img {
+                    width: 119px;
+                    height: 57px;
+                }
+            }
+
+            &:before {
+                content: "";
+                height: 1px;
+                background-color: $white;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                opacity: 0.2;
+            }
+        }
+
+        h5 {
+            font-size: 14px;
+        }
+    }
+}
+
+// tablet
+@media (max-width: 992px) {
+    .footer {
+        padding: 50px 0 35px 0;
+    }
+}

@@ -1,0 +1,112 @@
+@import "variables";
+
+.theme-four {
+  .about-minister-container {
+    margin: 10rem 0;
+    .about-minister-img-container {
+      width: 90%;
+      height: 35rem;
+      margin: 0;
+      overflow: hidden;
+      cursor: pointer;
+      padding: 0 0;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .about-minister-content-container {
+      // margin-right: 1rem;
+      margin-top: 0;
+      // background-color: aqua;
+      .current-minister-section-content {
+        h3 {
+          font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+          font-size: 2.8rem;
+          margin-bottom: 2.5rem;
+        }
+        p {
+          width: 80%;
+          font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+          font-size: 18px;
+          line-height: 40px;
+          color: var(--black);
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  // `lg` applies to medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) {
+    .about-minister-container {
+      margin: 10rem 0;
+      .about-minister-img-container {
+        width: 100%;
+        height: 30rem;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+      }
+      .about-minister-content-container {
+        // margin-right: 1rem;
+        margin-top: 0;
+        // background-color: aqua;
+        .current-minister-section-content {
+          padding-right: 5px;
+          h3 {
+            font-size: 2.8rem;
+            margin-bottom: 2.5rem;
+          }
+          p {
+            width: 95%;
+            font-size: 18px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  // `sm` applies to x-small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    .page_content {
+      padding-bottom: 6rem;
+    }
+    .about-minister-container {
+      margin: 6rem 0 5rem 0;
+      .about-minister-img-container {
+        width: 100%;
+        height: 25rem;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+        border-radius: 6px;
+        img {
+          border-radius: 6px;
+        }
+      }
+      .about-minister-content-container {
+        // margin-right: 1rem;
+        margin-top: 0;
+        // background-color: aqua;
+        .current-minister-section-content {
+          padding-right: 5px;
+          h3 {
+            font-size: 2.4rem;
+            margin-bottom: 2.5rem;
+          }
+          p {
+            width: 95%;
+            font-size: 16px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+}

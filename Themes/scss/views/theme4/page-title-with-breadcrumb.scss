@@ -1,0 +1,72 @@
+@import "variables";
+
+.page-title-with-breadcrumb-container {
+  margin: 5rem auto;
+  width: 100%;
+  .page-title {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    margin: 4rem auto 4rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2rem;
+    color: var(--primaryBgColor);
+  }
+  .page-breadcrumb {
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 1rem;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    .page-breadcrumb-item-active {
+      font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+      color: var(--primaryBgColor);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .page-title-with-breadcrumb-container {
+    margin: 5rem auto;
+    width: 100%;
+    .page-title {
+      margin: 4rem auto 3rem auto;
+
+      font-size: 2.8rem;
+    }
+    .page-breadcrumb {
+      font-size: 1.7rem;
+      gap: 1rem;
+      a {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+  .page-title-with-breadcrumb-container {
+    margin: 5rem auto;
+    width: 100%;
+    .page-title {
+      margin: 4rem auto 3rem auto;
+
+      font-size: 2.4rem;
+    }
+    .page-breadcrumb {
+      font-size: 1.6rem;
+      gap: 1rem;
+      a {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

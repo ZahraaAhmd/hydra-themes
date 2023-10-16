@@ -1,0 +1,61 @@
+@import "variables";
+
+// services
+.theme-two {
+  .services {
+    margin-bottom: 78px;
+    h3 {
+      font-family: "Tajawal-Bold";
+      font-size: 28px;
+      color: var(--gray_text);
+    }
+    p {
+      font-size: 18px;
+      color: var(--lightContentColor);
+      max-width: 426px;
+      margin-bottom: 40px;
+    }
+    .single_service {
+      padding: 32px;
+      background: var(--white);
+      border: 1px solid #d7d7d7;
+      border-radius: 8px;
+      margin-bottom: 24px;
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 59px;
+        height: 59px;
+        background-color: rgba(24, 24, 24, 0.05);
+        border-radius: 8px;
+        margin-bottom: 40px;
+      }
+      h5 {
+        font-family: "Tajawal-Bold";
+        font-size: 18px;
+        color: var(--gray_text);
+      }
+      p {
+        font-size: 16px;
+        color: var(--lightContentColor);
+      }
+      &:hover {
+        cursor: pointer;
+        background: var(--bg_color);
+        h5,
+        p {
+          color: var(--white) !important;
+        }
+        .icon {
+          background-color: rgba(24, 24, 24, 0.05);
+          svg {
+            path {
+              fill: var(--white);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,370 @@
+:root {
+  --primaryColor: #1d73bf;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #fff;
+  --headerBottomBgColor: #1d73bf;
+  --headerTopContentColor: #fff;
+  --headingsColor: #1d73bf;
+  --paragraphColor: #181818;
+  --lightContentColor: #181818b2;
+  --lightBgColor: #e8f1f9;
+  --linksColor: #1d73bf;
+  --linksHoverColor: #1d73bf;
+  --menuLinksColor: #fff !important;
+  --menuLinksHoverColor: #dcdcdc !important;
+  --footerBackgroundColor: #092239;
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #1e549d !important;
+  --firstGradientColor: #153e9b;
+  --secondGradientColor: #1d73bf;
+  --theme-four-main-color: var(--primaryColor);
+  --font-normal: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  --font-bold: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  --white: #fff;
+  --black: #000;
+  --gray-50: #f9f9f9;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --gray-1000: #000;
+  --primaryBgColor: var(--primaryColor);
+  --tertiaryBgColor: var(--lightBgColor);
+  --sub-header-color: var(--lightContentColor);
+  --bg-transparent: transparent;
+  --loginBtnBgColor: var(--primaryColor);
+  --loginBtnBgOnHover: var(--secondaryColor);
+  --languageBtnBgColor: var(--lightBgColor);
+  --HeroMainTextColor: var(--headingsColor);
+  --heroTextColor: var(--lightContentColor);
+  --test-sub-color: var(--secondaryColor);
+  --strategyDescColor: var(--lightContentColor);
+  --bg-color-mobile: var(--lightBgColor);
+  --bg-title-color: var(--primaryColor);
+  --related-website-item-bg-color: --white;
+  --related-website-item-title-color: var(--lightContentColor);
+  --related-website-item-visit-text-color: var(--secondaryColor);
+  --contactBgColor: var(--secondaryColor);
+  --inputFieldBgColor: transparent;
+  --contactUsDescText: var(--lightContentColor);
+  --footerBgColor: var(--footerBackgroundColor);
+  --servicesBgColor: var(--tertiaryBgColor);
+  --servicesMainTextColor: var(--primaryColor);
+  --servicessecondaryTextColor: var(--lightContentColor);
+  --ministerBgColor: var(--lightBgColor);
+  --ministerMainTextColor: var(--primaryColor);
+  --ministerDescTextColor: var(--paragraphColor);
+  --tapsWrapperBgColor: var(--primaryBgColor);
+  --sign-in-header: var(--primaryColor);
+  --sign-in-desc: #757575;
+  --sign-in-desc2: #757575b2;
+  --input-border: var(--primaryColor);
+  --input-placeholder: #afafaf;
+  --input-background: #f8f8f8;
+  --button-bg-primary: var(--primaryColor);
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+  --ministeryMainColor: var(--primaryColor);
+  --ministerySecondaryColor: var(--lightContentColor);
+  --gov-project-date-color: var(--primaryColor);
+  --searchMainColor: var(--primaryColor);
+  --searchResultColor: var(--primaryColor);
+  --searchResultHoverColor: var(--primaryColor);
+  --faqMainColor: var(--primaryColor);
+}
+
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+.page-title {
+  width: 50%;
+}
+
+.new-details-wrapper .new-details-img-container {
+  width: 80%;
+  margin: 3rem auto;
+  height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.new-details-wrapper .new-details-img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.new-details-wrapper .new-details-img-container img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.new-details-wrapper .new-details-content-container {
+  width: 75%;
+  margin: 4.2rem auto;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.new-details-wrapper .new-details-content-container img {
+  width: 100%;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin: 3rem 0 0.5rem 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+.new-details-wrapper .new-details-content-container img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.new-details-wrapper .new-details-content-container p {
+  padding: 1.2rem 2.4rem;
+  font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  font-size: 1.8rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 2rem;
+  color: var(--HeroMainTextColor);
+  opacity: 0.8;
+}
+
+.suggested-news-wrapper {
+  width: 70%;
+  margin: 4rem auto;
+  border-top: 1px solid black;
+}
+.suggested-news-wrapper .suggested-news-header {
+  margin-top: 2rem;
+}
+.suggested-news-wrapper .suggested-news-header .suggested-news-header-title {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  font-size: 20px;
+  line-height: 168.4%;
+  letter-spacing: -0.04em;
+  color: var(--HeroMainTextColor);
+}
+.suggested-news-wrapper .suggested-news-header .suggested-news-btns-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+}
+.suggested-news-wrapper .suggested-news-header .suggested-news-btns-actions .btn-right-sugg-news,
+.suggested-news-wrapper .suggested-news-header .suggested-news-btns-actions .btn-left-sugg-news {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.sugg-news-list {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+.suggested-news-item {
+  width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  margin: 0 1rem;
+}
+.suggested-news-item .suggested-new-img-container {
+  width: 280px;
+  height: 180px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.suggested-news-item .suggested-new-img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.suggested-news-item .suggested-new-img-container img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.suggested-news-item a {
+  display: inline-block;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  padding: 0;
+  text-align: start;
+  font-size: 1.6rem;
+  line-height: 175%;
+  margin-bottom: 2rem;
+  color: var(--ministeryMainColor);
+  text-decoration: none;
+}
+.suggested-news-item p {
+  font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  text-align: start;
+  font-size: 1.6rem;
+  color: #0c2e4c;
+}
+
+@media (max-width: 991.98px) {
+  .page-title {
+    width: 80%;
+  }
+  .new-details-wrapper .new-details-img-container {
+    width: 95%;
+    margin: 3rem auto;
+    height: 30rem;
+  }
+  .new-details-wrapper .new-details-content-container {
+    width: 92%;
+    margin: 4.2rem auto;
+    padding: 1.2rem 1.4rem;
+  }
+  .new-details-wrapper .new-details-content-container p {
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+  }
+  .suggested-news-wrapper {
+    width: 90%;
+  }
+  .suggested-news-wrapper .suggested-news-header .suggested-news-header-title {
+    font-size: 20px;
+    line-height: 168.4%;
+  }
+  .suggested-news-wrapper .suggested-news-header .suggested-news-btns-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .page-title {
+    width: 95%;
+  }
+  .new-details-wrapper .new-details-img-container {
+    width: 100%;
+    margin: 3rem auto;
+    height: 25rem;
+  }
+  .new-details-wrapper .new-details-content-container {
+    width: 100%;
+    margin: 4.2rem auto;
+    padding: 1.2rem 1.4rem;
+  }
+  .new-details-wrapper .new-details-content-container p {
+    font-size: 1.7rem;
+    line-height: 3.5rem;
+    margin-bottom: 3rem;
+  }
+  .suggested-news-wrapper {
+    width: 100%;
+  }
+  .suggested-news-wrapper .suggested-news-header .suggested-news-header-title {
+    font-size: 20px;
+    line-height: 168.4%;
+  }
+  .suggested-news-wrapper .suggested-news-header .suggested-news-btns-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .suggested-news-wrapper {
+    width: 95%;
+  }
+  .suggested-news-wrapper .suggested-news-header .suggested-news-header-title {
+    font-size: 20px;
+    line-height: 168.4%;
+  }
+  .suggested-news-wrapper .suggested-news-header .suggested-news-btns-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+  }
+  .new-details-wrapper .new-details-img-container {
+    width: 98%;
+    height: 20rem;
+  }
+  .new-details-wrapper .new-details-content-container {
+    width: 95%;
+    margin: 2.5rem auto;
+    padding: 1.2rem 1.6rem;
+  }
+  .new-details-wrapper .new-details-content-container img {
+    width: 100%;
+    height: 25rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 16px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin: 3rem 0 0.5rem 0;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .new-details-wrapper .new-details-content-container img:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .new-details-wrapper .new-details-content-container p {
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  .page-title {
+    width: 85%;
+    font-size: 2rem !important;
+  }
+}

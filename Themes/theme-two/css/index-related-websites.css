@@ -1,0 +1,78 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --gray_text: #181818;
+  --red: #f34a3f;
+  --green: #55c574;
+  --blue: #4675ef;
+  --bg_color: linear-gradient(92.4deg, #0070c4 -38.21%, #00b8c4 145.4%);
+  --main_color: #0070c4;
+}
+
+.theme-two .related_sites {
+  background: var(--bg_color);
+  padding: 85px 0 120px 0;
+}
+.theme-two .related_sites h3 {
+  font-family: "Tajawal-Bold";
+  font-size: 28px;
+  color: var(--white) !important;
+  margin-bottom: 20px;
+}
+.theme-two .related_sites p {
+  font-size: 18px;
+  color: var(--white);
+  max-width: 426px;
+  margin-bottom: 65px;
+}
+.theme-two .related_sites .sites {
+  padding-right: 95px;
+  margin-bottom: -262px;
+}
+.theme-two .related_sites .sites .slick-slide {
+  margin: 0 10px;
+}
+.theme-two .related_sites .sites .single_site {
+  background: var(--white);
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 17px 27px;
+  min-height: 197px;
+  position: relative;
+}
+.theme-two .related_sites .sites .single_site h4 {
+  font-family: "Tajawal-Bold";
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.theme-two .related_sites .sites .single_site h6 {
+  font-size: 18px;
+  color: #a5a5a5;
+  font-weight: 400;
+  line-height: 32px;
+}
+.theme-two .related_sites .sites .single_site a {
+  font-size: 18px;
+  color: var(--main_color);
+  text-decoration: none;
+  position: absolute;
+  bottom: 17px;
+}
+@media (max-width: 992px) {
+  .theme-two .related_sites {
+    padding: 36px 0 120px 0;
+  }
+  .theme-two .related_sites .sites {
+    padding-right: 5px;
+    margin-bottom: -200px;
+  }
+}
+@media (max-width: 768px) {
+  .theme-two .related_sites .sites {
+    padding-right: 0;
+    margin-bottom: initial;
+  }
+  .theme-two .related_sites .sites .slick-slide {
+    margin: 12px 5px;
+  }
+}

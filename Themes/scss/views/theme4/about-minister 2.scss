@@ -1,0 +1,271 @@
+@import "variables";
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+
+.section {
+  margin: 4rem 0;
+  padding: 4rem 0;
+}
+.section-title {
+  width: fit-content;
+  padding: 1rem 2rem;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  // font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  // font-family: "Helvetica Neue LT Arabic", sans-serif;
+  // font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 168.4%;
+  letter-spacing: -0.04em;
+  color: var(--black);
+}
+
+.primary-section-title {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  font-size: 3rem !important;
+  line-height: 168.4%;
+  color: var(--primaryBgColor) !important;
+}
+
+.theme-four {
+  .minister-container-content {
+    background-color: var(--ministerBgColor);
+    // padding: 6rem 6rem;
+  }
+  .minister-container {
+    background-color: var(--ministerBgColor);
+    //   margin-top: 7rem;
+    margin-bottom: 15rem;
+  }
+  .minister-options {
+    max-width: 80%;
+  }
+
+  .minister-container-right {
+    max-width: 50%;
+    h1 {
+      // font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+      // font-size: 3.2rem;
+      // // font-weight: 700;
+      // color: var(--ministerMainTextColor;
+    }
+    h3 {
+      // color: var(--ministerMainTextColor;
+      // font-weight: 700;
+    }
+    .minister-desc,
+    .minister-desc2 {
+      font-family: "Helvetica Neue LT Arabic";
+      font-size: 1.8rem;
+      color: var(--ministerDescTextColor);
+      line-height: 3.5rem;
+    }
+    .minister-desc {
+      margin-bottom: 2rem;
+    }
+    .minister-desc2 {
+      margin-bottom: 5rem;
+    }
+    .minister-sub-title {
+      font-family: "Helvetica Neue LT Arabic";
+      font-size: 1.6rem;
+      color: var(--primaryBgColor);
+      line-height: 3.5rem;
+      margin-bottom: 1rem;
+      font-weight: bolder;
+    }
+  }
+
+  .minister-container-left {
+    position: relative;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .minister-circle {
+    position: absolute;
+    bottom: 10%;
+  }
+  .minister-img {
+    position: absolute;
+    bottom: -6.1%;
+  }
+
+  .minister-img-container-small {
+    width: 12rem;
+    height: 12rem;
+    background-color: #cbd7e2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .minister-img-small {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10%;
+  }
+
+  @media screen and (max-width: 1220px) {
+    .minister-container-content {
+      background-color: var(--ministerBgColor);
+      padding: 4rem 2rem;
+      // padding: 6rem 6rem;
+    }
+    .minister-container {
+      background-color: var(--ministerBgColor);
+    }
+    .minister-options {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      span {
+        font-size: 1.7rem;
+      }
+      span:nth-child(1) {
+        // padding: 4px 2px;
+      }
+    }
+
+    .minister-container-right {
+      max-width: 85%;
+      // h1 {
+      //   font-size: 2rem;
+      // }
+      // h3 {
+      //   color: var(--ministerMainTextColor;
+      // }
+      // p {
+      //   font-size: 1.5rem;
+      // }
+      .minister-desc,
+      .minister-desc2 {
+        font-family: "Helvetica Neue LT Arabic";
+        font-size: 1.8rem;
+        color: var(--ministerDescTextColor);
+        line-height: 3.5rem;
+      }
+      .minister-desc {
+        margin-bottom: 2rem;
+      }
+      .minister-desc2 {
+        margin-bottom: 5rem;
+      }
+      .minister-sub-title {
+        font-family: "Helvetica Neue LT Arabic";
+        font-size: 2rem;
+        color: var(--primaryBgColor);
+        line-height: 3.5rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .minister-container-left {
+      position: relative;
+      width: 100%;
+      height: 50rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .minister-circle {
+      position: absolute;
+      bottom: 10%;
+    }
+    .minister-img {
+      position: absolute;
+      bottom: -6.1%;
+    }
+  }
+
+  // `sm` applies to x-small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    .minister-container {
+      margin-bottom: 8rem;
+    }
+    .minister-container-right {
+      max-width: 90%;
+      // h1 {
+      //   font-size: 2rem;
+      // }
+      // h3 {
+      //   color: var(--ministerMainTextColor;
+      // }
+      // p {
+      //   font-size: 1.5rem;
+      // }
+      .minister-desc,
+      .minister-desc2 {
+        font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+        font-size: 1.6rem;
+        color: var(--ministerDescTextColor);
+        line-height: 3.5rem;
+      }
+      .minister-desc {
+        margin-bottom: 1.8rem;
+      }
+      .minister-desc2 {
+        margin-bottom: 5rem;
+      }
+      .minister-sub-title {
+        font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+        font-size: 1.7rem;
+        color: var(--primaryBgColor);
+        line-height: 3.5rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+
+// media from theme-4
+@media (max-width: 767.98px) {
+  .section-title {
+    font-size: 2.5rem;
+    color: var(--black);
+    letter-spacing: -0.04em;
+  }
+  .section {
+    margin: 3rem 0;
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .section {
+    margin: 2rem 0;
+    padding: 2rem 0;
+  }
+  .primary-section-title {
+    font-size: 2.4rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .social-link {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  }
+
+  .social-item {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .link-item-1 {
+    font-size: 13px;
+    line-height: 22px;
+  }
+}

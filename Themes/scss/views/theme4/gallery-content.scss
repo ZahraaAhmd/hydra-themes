@@ -1,0 +1,187 @@
+@import "variables";
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+.section {
+  // margin: 4rem 0;
+  padding: 6rem 0;
+}
+.section-title {
+  width: fit-content;
+  padding: 1rem 2rem;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  // font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  // font-family: "Helvetica Neue LT Arabic", sans-serif;
+  // font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 168.4%;
+  letter-spacing: -0.04em;
+  color: var(--black);
+}
+
+.primary-section-title {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  font-size: 3rem !important;
+  line-height: 168.4%;
+}
+
+.arrow-left,
+.arrow-right {
+  width: 10rem;
+  height: 10rem;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.bg-light-color {
+  background-color: var(--bg-color-mobile);
+}
+.theme-four {
+  .gallery-wrapper {
+    position: relative;
+    overflow-x: hidden !important;
+    .gallery-container {
+      height: 60rem;
+      padding: 5rem 2.4rem;
+      .gallery-header {
+        h1 {
+          // // font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+          // font-family: "Helvetica Neue LT Arabic",
+          //   "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+          // font-size: 3.2rem;
+          // line-height: 168.4%;
+          // color: var(--primaryBgColor;
+          // font-weight: bolder;
+        }
+      }
+    }
+    .gallery-list {
+      position: absolute;
+      margin-top: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      top: 27%;
+      // left: 50%;
+      // transform: translate(-50%);
+      .gallery-item {
+        position: relative;
+        width: 280px;
+        height: 300px;
+        overflow: hidden;
+        margin: 0 1.5rem;
+        p {
+          position: absolute;
+          bottom: 2rem;
+          right: 2rem;
+          font-size: 1.5rem;
+          color: var(--white);
+        }
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  // `xxl` applies to x-large devices (large desktops, less than 1400px)
+  @media (max-width: 1399.98px) {
+  }
+
+  // `xl` applies to large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) {
+  }
+  // `lg` applies to medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) {
+  }
+  // `md` applies to small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) {
+  }
+  // `sm` applies to x-small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    .gallery-wrapper {
+      .gallery-container {
+        height: 50rem;
+        padding: 5rem 2.4rem;
+        .gallery-header {
+          h1 {
+            // font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+
+            // font-size: 2.5rem;
+            // line-height: 168.4%;
+          }
+        }
+      }
+      .gallery-list {
+        gap: 3rem;
+        top: 20%;
+        // left: 50%;
+        // transform: translate(-50%);
+        .gallery-item {
+          width: 350px;
+          height: 300px;
+          margin: 0 1rem;
+          img {
+            width: 95%;
+            height: 100%;
+          }
+          p {
+            bottom: 2rem;
+            right: 2rem;
+            font-size: 1.5rem;
+          }
+          iframe {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-title {
+    font-size: 2.5rem;
+    color: var(--black);
+    letter-spacing: -0.04em;
+  }
+  .section {
+    margin: 3rem 0;
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .section {
+    margin: 2rem 0;
+    padding: 2rem 0;
+  }
+  .primary-section-title {
+    font-size: 2.4rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .arrow-left,
+  .arrow-right {
+    width: 5rem;
+    height: 5rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    .prevIcon,
+    .nextIcon {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}

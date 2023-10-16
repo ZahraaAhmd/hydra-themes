@@ -1,0 +1,117 @@
+.theme-two .img-gallery {
+  margin: 4rem 0;
+  padding: 0 8rem;
+}
+.theme-two .img-gallery h3 {
+  font-family: "Tajawal-Bold";
+  font-size: 28px;
+  color: var(--gray_text);
+  line-height: 36px;
+  margin-bottom: 1rem;
+}
+.theme-two .img-gallery p {
+  color: var(--lightContentColor);
+  font-size: 18px;
+  max-width: 426px;
+  margin-bottom: 40px;
+}
+.theme-two .gallery-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  border-radius: 12px;
+  padding: 0 0em;
+}
+.theme-two .gallery-content .gallery-img-container {
+  position: relative;
+}
+.theme-two .gallery-content .gallery-img-container img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 12px;
+}
+@media (max-width: 768px) {
+  .theme-two .gallery-content .gallery-img-container img {
+    border-radius: 8px;
+  }
+}
+.theme-two .gallery-content .gallery-img-container .middle {
+  opacity: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+}
+.theme-two .gallery-content .gallery-img-container .middle .gallery-img-text {
+  font-size: 18px;
+  color: var(--white) !important;
+}
+.theme-two .gallery-content .active img {
+  opacity: 0.3;
+}
+.theme-two .gallery-content .active .middle {
+  opacity: 1;
+  color: var(--white);
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.74);
+}
+@media (max-width: 1199.98px) {
+  .theme-two .img-gallery {
+    padding: 0 2rem;
+  }
+  .theme-two .img-gallery h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 991px) {
+  .theme-two .img-gallery {
+    padding: 0 1rem;
+  }
+  .theme-two .img-gallery h1 {
+    width: 100%;
+    margin-right: 0;
+    font-weight: 600;
+    text-align: center;
+  }
+  .theme-two .gallery-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0 1em;
+  }
+}
+@media (max-width: 768px) {
+  .theme-two .gallery-img-container {
+    margin-bottom: 2rem;
+  }
+  .theme-two .img-gallery {
+    padding: 0 1rem;
+  }
+  .theme-two .img-gallery h1 {
+    width: 100%;
+    margin-right: 0;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .theme-two .gallery-content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 0 1em;
+  }
+}

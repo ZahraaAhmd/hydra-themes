@@ -1,0 +1,41 @@
+@import "variables";
+@import "fonts";
+.contact_us {
+  h3 {
+    font-family: "Tajawal-Bold";
+    font-size: 32px;
+    color: var(--headingsColor);
+  }
+  p {
+    font-size: 18px;
+    color: var(--paragraphColor);
+  }
+  .contact_info {
+    span {
+      width: 40px;
+      height: 40px;
+      background: rgba(70, 117, 239, 0.1);
+      border-radius: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 12px;
+    }
+    p {
+      font-size: 20px;
+      color: var(--black);
+      margin-bottom: 0;
+      max-width: 190px;
+    }
+  }
+}
+
+// tablet
+@media (max-width: 992px) {
+  .contact_info {
+    flex-direction: column;
+    p {
+      max-width: 100%;
+    }
+  }
+}

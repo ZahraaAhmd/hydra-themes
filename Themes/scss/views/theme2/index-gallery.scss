@@ -1,0 +1,116 @@
+.theme-two {
+  .img-gallery {
+    margin: 4rem 0;
+    padding: 0 8rem;
+    h3 {
+      font-family: "Tajawal-Bold";
+      font-size: 28px;
+      color: var(--gray_text);
+      line-height: 36px;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: var(--lightContentColor);
+      font-size: 18px;
+      max-width: 426px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .gallery-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    border-radius: 12px;
+    padding: 0 0em;
+    .gallery-img-container {
+      position: relative;
+      img {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: 0.1s ease-in-out;
+        backface-visibility: hidden;
+        border-radius: 12px;
+        @media (max-width: 768px) {
+          border-radius: 8px;
+        }
+      }
+      .middle {
+        // transition: 0.5s ease;
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        border-radius: 12px;
+        .gallery-img-text {
+          font-size: 18px;
+          color: var(--white) !important;
+        }
+      }
+    }
+    .active {
+      img {
+        opacity: 0.3;
+      }
+      .middle {
+        opacity: 1;
+        color: var(--white);
+        width: 100%;
+        height: 100%;
+        background: rgb(0 0 0 / 74%);
+      }
+    }
+  }
+  @media (max-width: 1199.98px) {
+    .img-gallery {
+      padding: 0 2rem;
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .img-gallery {
+      padding: 0 1rem;
+      h1 {
+        width: 100%;
+        margin-right: 0;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+    .gallery-content {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      padding: 0 1em;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .gallery-img-container {
+      margin-bottom: 2rem;
+    }
+    .img-gallery {
+      padding: 0 1rem;
+      h1 {
+        width: 100%;
+        margin-right: 0;
+        font-weight: 600;
+        font-size: 1.8rem;
+
+        text-align: center;
+      }
+    }
+    .gallery-content {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+      padding: 0 1em;
+    }
+  }
+}

@@ -1,0 +1,244 @@
+@import "variables";
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+
+.theme-four {
+  .section {
+    // margin: 4rem 0;
+    padding: 6rem 0;
+  }
+  .section-title {
+    width: fit-content;
+    padding: 1rem 2rem;
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    // font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+    // font-family: "Helvetica Neue LT Arabic", sans-serif;
+    // font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 168.4%;
+    letter-spacing: -0.04em;
+    color: var(--black);
+  }
+
+  .primary-section-title {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+    font-size: 3rem !important;
+    line-height: 168.4%;
+    color: var(--primaryBgColor) !important;
+  }
+
+  .social-icon {
+    width: 5rem;
+    height: 5rem;
+  }
+  .social-link {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  }
+
+  .social-item {
+    color: var(--white);
+    font-size: 16px;
+    line-height: 30px;
+    text-decoration: none;
+  }
+
+  .link-item-1 {
+    color: var(--white);
+    font-size: 16px;
+    line-height: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: var(--primaryBgColor);
+    }
+  }
+  .contact-us-overlay {
+    position: relative;
+    height: 50rem;
+    margin-top: 15rem;
+    // background-color: red;
+  }
+  .contact-us-wrapper {
+    // width: 110rem;
+    height: auto;
+    // padding: 5rem 0 !important;
+    position: absolute;
+    z-index: 1;
+    // top: -72%;
+    // left: 50%;
+    // transform: translateX(-50%);
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .contact-us-container {
+      // margin: 0 auto !important;
+      padding: 5rem 0 2rem 0 !important;
+      background-color: var(--contactBgColor);
+
+      .contact-us-row {
+        padding: 0 2.4rem;
+        .contact-us-header {
+          // padding: 2rem 0;
+          .contact-us-header-title {
+            font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+            margin-bottom: 10px;
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: var(--white);
+          }
+        }
+      }
+
+      .contact-us-form {
+        margin-top: 1.5rem;
+        .form-group {
+          margin-bottom: 3rem;
+          // background-color: red;
+          .form-input {
+            width: 100%;
+            padding: 1.2rem 0 1.2rem 2.4rem;
+            background-color: var(--inputFieldBgColor);
+            font-size: 1.8rem;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid var(--white);
+            color: var(--white);
+            &::placeholder {
+              font-size: 1.8rem;
+              color: rgba(255, 255, 255, 0.51);
+            }
+          }
+          .text-area-input {
+            resize: none;
+          }
+        }
+
+        .submit-btn {
+          text-align: end;
+          margin-top: 5.5rem;
+          border: none;
+          background-color: var(--white);
+          padding: 1.2rem 5rem;
+          color: var(--black);
+          font-size: 2rem;
+          transition: all 0.3s ease-in-out;
+          border-radius: 3px;
+
+          &:hover {
+            background-color: var(--gray-300);
+            color: var(--black);
+          }
+        }
+      }
+    }
+
+    // .submit-btn-container {
+    //   bottom: 16px;
+    //   left: 0;
+    // }
+  }
+
+  // `sm` applies to x-small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    .contact-us-overlay {
+      position: relative;
+      height: 100rem;
+      // background-color: red;
+    }
+    .submit-btn-container {
+      width: 85%;
+      margin: 0 auto;
+
+      text-align: center;
+      .submit-btn {
+        width: 100%;
+        text-align: center !important;
+      }
+    }
+    .contact-us-wrapper {
+      width: 35rem;
+      top: -17% !important  ;
+    }
+
+    .form-input {
+      font-size: 1.6rem !important;
+      &::placeholder {
+        font-size: 1.6rem !important;
+      }
+    }
+    .contact-us-svgicon {
+      width: 6rem !important;
+      height: 6rem !important;
+    }
+    .contact-us-header-title {
+      font-size: 2.8rem !important;
+    }
+  }
+
+  // `md` applies to small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) {
+  }
+
+  // `lg` applies to medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) {
+    .contact-us-wrapper {
+      top: -20%;
+    }
+    .contact-us-svgicon {
+      width: 7rem !important;
+      height: 7rem !important;
+    }
+    .contact-us-header-title {
+      font-size: 3rem !important;
+    }
+  }
+
+  // `xl` applies to large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) {
+  }
+
+  @media (max-width: 767.98px) {
+    .section-title {
+      font-size: 2.5rem;
+      color: var(--black);
+      letter-spacing: -0.04em;
+    }
+    .section {
+      // margin: 3rem 0;
+      padding: 5rem 0;
+    }
+  }
+  @media (max-width: 575.98px) {
+    .section {
+      // margin: 2rem 0;
+      padding: 4rem 0;
+    }
+    .primary-section-title {
+      font-size: 2.4rem !important;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .social-link {
+      font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    }
+
+    .social-item {
+      font-size: 13px;
+      line-height: 22px;
+    }
+
+    .link-item-1 {
+      font-size: 13px;
+      line-height: 22px;
+    }
+  }
+}

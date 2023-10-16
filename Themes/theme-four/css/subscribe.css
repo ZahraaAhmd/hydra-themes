@@ -1,0 +1,252 @@
+:root {
+  --primaryColor: #1d73bf;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #fff;
+  --headerBottomBgColor: #1d73bf;
+  --headerTopContentColor: #fff;
+  --headingsColor: #1d73bf;
+  --paragraphColor: #181818;
+  --lightContentColor: #181818b2;
+  --lightBgColor: #e8f1f9;
+  --linksColor: #1d73bf;
+  --linksHoverColor: #1d73bf;
+  --menuLinksColor: #fff !important;
+  --menuLinksHoverColor: #dcdcdc !important;
+  --footerBackgroundColor: #092239;
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #1e549d !important;
+  --firstGradientColor: #153e9b;
+  --secondGradientColor: #1d73bf;
+  --theme-four-main-color: var(--primaryColor);
+  --font-normal: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  --font-bold: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  --white: #fff;
+  --black: #000;
+  --gray-50: #f9f9f9;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --gray-1000: #000;
+  --primaryBgColor: var(--primaryColor);
+  --tertiaryBgColor: var(--lightBgColor);
+  --sub-header-color: var(--lightContentColor);
+  --bg-transparent: transparent;
+  --loginBtnBgColor: var(--primaryColor);
+  --loginBtnBgOnHover: var(--secondaryColor);
+  --languageBtnBgColor: var(--lightBgColor);
+  --HeroMainTextColor: var(--headingsColor);
+  --heroTextColor: var(--lightContentColor);
+  --test-sub-color: var(--secondaryColor);
+  --strategyDescColor: var(--lightContentColor);
+  --bg-color-mobile: var(--lightBgColor);
+  --bg-title-color: var(--primaryColor);
+  --related-website-item-bg-color: --white;
+  --related-website-item-title-color: var(--lightContentColor);
+  --related-website-item-visit-text-color: var(--secondaryColor);
+  --contactBgColor: var(--secondaryColor);
+  --inputFieldBgColor: transparent;
+  --contactUsDescText: var(--lightContentColor);
+  --footerBgColor: var(--footerBackgroundColor);
+  --servicesBgColor: var(--tertiaryBgColor);
+  --servicesMainTextColor: var(--primaryColor);
+  --servicessecondaryTextColor: var(--lightContentColor);
+  --ministerBgColor: var(--lightBgColor);
+  --ministerMainTextColor: var(--primaryColor);
+  --ministerDescTextColor: var(--paragraphColor);
+  --tapsWrapperBgColor: var(--primaryBgColor);
+  --sign-in-header: var(--primaryColor);
+  --sign-in-desc: #757575;
+  --sign-in-desc2: #757575b2;
+  --input-border: var(--primaryColor);
+  --input-placeholder: #afafaf;
+  --input-background: #f8f8f8;
+  --button-bg-primary: var(--primaryColor);
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+  --ministeryMainColor: var(--primaryColor);
+  --ministerySecondaryColor: var(--lightContentColor);
+  --gov-project-date-color: var(--primaryColor);
+  --searchMainColor: var(--primaryColor);
+  --searchResultColor: var(--primaryColor);
+  --searchResultHoverColor: var(--primaryColor);
+  --faqMainColor: var(--primaryColor);
+}
+
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+.section {
+  padding: 6rem 0;
+}
+
+.section-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 168.4%;
+  letter-spacing: -0.04em;
+  color: var(--black);
+}
+
+.primary-section-title {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  font-size: 3rem !important;
+  line-height: 168.4%;
+}
+
+.theme-four .subscribe-to-newsletter {
+  border-top: 10px solid #f5f6f7;
+  margin: 5rem 0 0 0;
+}
+.theme-four .subscribe-to-newsletter .subscribe-to-newsletter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 6rem;
+  padding: 5rem 1.2rem;
+}
+.theme-four .subscribe-to-newsletter .subscribe-to-newsletter-container .subscribe-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+.theme-four .subscribe-to-newsletter .subscribe-to-newsletter-container .subscribe-right .email-btn {
+  width: 40rem;
+  padding: 2rem 4rem;
+  border-radius: 4rem;
+  background-color: var(--bg-transparent);
+  border: 1px solid var(--black);
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.4392156863);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+.theme-four .subscribe-to-newsletter .subscribe-to-newsletter-container .subscribe-right .email-btn:hover {
+  background-color: var(--gray-200);
+  color: rgba(0, 0, 0, 0.4392156863);
+}
+.theme-four .subscribe-to-newsletter .subscribe-to-newsletter-container .subscribe-right .email-btn:focus {
+  outline: 1px solid var(--primaryBgColor);
+}
+.theme-four .subscribe-to-newsletter .subscribe-to-newsletter-container .subscribe-right .subscribe-btn {
+  width: 40rem;
+  padding: 2rem 4rem;
+  border-radius: 4rem;
+  background-color: var(--contactBgColor);
+  border: none;
+  font-size: 1.8rem;
+  color: var(--white);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.theme-four .subscribe-to-newsletter .subscribe-to-newsletter-container .subscribe-right .subscribe-btn:hover {
+  background-color: var(--primaryBgColor);
+}
+@media (max-width: 576px) {
+  .theme-four .subscribe-to-newsletter {
+    border-top: 10px solid #f5f6f7;
+    margin: 1rem 0 5rem 0;
+  }
+  .theme-four .subscribe-to-newsletter .subscribe-to-newsletter-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 6rem;
+    padding: 5rem 1.2rem;
+  }
+  .theme-four .subscribe-to-newsletter .subscribe-to-newsletter-container .subscribe-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3rem;
+  }
+  .theme-four .subscribe-to-newsletter .subscribe-to-newsletter-container .subscribe-right .email-btn {
+    width: 30rem;
+    padding: 2rem 4rem;
+    font-size: 1.8rem;
+  }
+  .theme-four .subscribe-to-newsletter .subscribe-to-newsletter-container .subscribe-right .subscribe-btn {
+    width: 30rem;
+    padding: 2rem 4rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-title {
+    font-size: 2.5rem;
+    color: var(--black);
+    letter-spacing: -0.04em;
+  }
+  .section {
+    padding: 5rem 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .section {
+    padding: 4rem 0;
+  }
+  .primary-section-title {
+    font-size: 2.4rem !important;
+  }
+}

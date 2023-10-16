@@ -1,0 +1,304 @@
+@import "variables";
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+.section-title--main {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  font-size: 5rem;
+  line-height: 109.4%;
+  color: var(--primaryColor);
+}
+.section-title--container {
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+.section-title--sub {
+  font-size: 2.3rem;
+  font-weight: 200;
+  color: #0d3770;
+  letter-spacing: 0.02em;
+}
+
+.section-title-main {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  font-size: 5rem;
+  line-height: 109.4%;
+  color: var(--primaryColor);
+}
+.section-title-sub {
+  font-size: 2.3rem;
+  font-weight: 200;
+  color: #0d3770;
+  letter-spacing: 0.02em;
+}
+.section-title-pad {
+  margin-top: 5rem;
+  // padding-right: 2rem !important;
+}
+.section-title-container {
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+.body-bg {
+  background-color: #0f203714 !important;
+}
+.text-color-main {
+  color: var(--primaryColor) !important;
+}
+
+.ministry-header {
+  font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif !important;
+  font-weight: bolder !important;
+}
+.ministry-desc {
+  line-height: 33px !important;
+  color: #0000009d !important;
+}
+.footer-pad-reset {
+  padding-top: 10rem !important;
+}
+
+.desc-width {
+  width: 55%;
+}
+.tabs-wrapper {
+  margin-top: 5rem;
+  // position: relative;
+}
+.tabs-list-wrapper {
+  //   margin-right: 5rem;
+  // top: 3.5rem;
+  // position: absolute;
+}
+.nav-tab-item {
+  //   font-size: 2.2rem !important;
+  color: var(--primaryColor) !important;
+  border: none !important;
+}
+.tab-link-item-link {
+  padding: 1.5rem 3rem !important;
+  font-size: 2rem !important;
+  color: #0d3770 !important;
+  margin-bottom: 1rem;
+  border: none !important;
+}
+.nav-tabs {
+  .nav-link.active {
+    background-color: transparent !important;
+
+    border-bottom: 4px solid var(--primaryColor) !important;
+  }
+}
+.about-minister-tab {
+  //   padding: 0 5rem !important;
+}
+.tab-wrapper {
+  background-color: var(--white);
+  padding: 6rem 0 3rem 0;
+  margin-top: 0.3rem;
+  height: auto;
+}
+
+.intro-wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.color-primary {
+  color: var(--primaryColor) !important;
+}
+.pad-right-reset {
+  padding-right: 0 !important;
+}
+.margin-top-10 {
+  margin-top: 10rem !important;
+}
+.margin-top-5 {
+  margin-top: 5rem !important;
+}
+.pad-bottom-4 {
+  padding-bottom: 4rem !important;
+}
+.margin-b-1 {
+  margin-bottom: 1rem !important;
+}
+.margin-b-2 {
+  margin-bottom: 2rem !important;
+}
+.margin-b-5 {
+  margin-bottom: 5rem !important;
+}
+.margin-b-7 {
+  margin-bottom: 7rem !important;
+}
+.marging-b-10 {
+  margin-bottom: 10rem !important;
+}
+
+.main-new-content-wrapper {
+  padding-bottom: 15rem !important;
+}
+
+@media (max-width: 66em) {
+  .main-new-content-wrapper {
+    padding-bottom: 13rem !important;
+  }
+  .desc-width {
+    width: 90%;
+  }
+}
+
+@media (max-width: 55em) {
+  .desc-width {
+    width: 95%;
+  }
+}
+
+@media (max-width: 35em) {
+  .margin-b-5 {
+    margin-bottom: 0.5rem !important;
+  }
+  .text-color-main {
+    font-size: 2.2rem !important;
+    color: #0d3770 !important;
+  }
+  .main-new-content-wrapper {
+    padding-bottom: 12rem !important;
+  }
+  .desc-width {
+    width: 100%;
+  }
+  .footer-pad-reset {
+    padding-top: 5rem !important;
+  }
+  .marging-b-10 {
+    margin-bottom: 6rem !important;
+  }
+
+  .margin-top-10 {
+    margin-top: 6rem !important;
+  }
+  .margin-top-5 {
+    margin-top: 6rem !important;
+  }
+  .tab-wrapper {
+    padding: 6rem 1rem 3rem 1rem;
+  }
+  .tab-link-item-link {
+    padding: 1rem 2rem !important;
+    font-size: 1.6rem !important;
+  }
+  .about-ministry-content-sub-head {
+    font-size: 2rem !important;
+    margin-bottom: 3rem !important;
+  }
+}
+
+// Media from theme-3
+
+@media (max-width: 1000px) {
+  .section-title-main {
+    font-size: 4.3rem;
+  }
+}
+@media (max-width: 35em) {
+  .section-title-main {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-title-svgicon {
+    width: 50px;
+    height: 49px;
+  }
+
+  .section-title-sub {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .section-title-svgicon {
+    width: 45px;
+    height: 43px;
+  }
+  .section-title-sub {
+    font-size: 1.6rem;
+  }
+}
+.margin-bottom-half {
+  margin-bottom: 0.5rem;
+}
+.margin-bottom-1 {
+  margin-bottom: 1rem;
+}
+.margin-bottom-2 {
+  margin-bottom: 2rem;
+}
+.margin-bottom-3 {
+  margin-bottom: 3rem;
+}
+.margin-bottom-4 {
+  margin-bottom: 4rem;
+}
+.margin-bottom-5 {
+  margin-bottom: 5rem;
+}
+
+.margin-top-half {
+  margin-top: 0.5rem;
+}
+.margin-top-1 {
+  margin-top: 1rem;
+}
+.margin-top-2 {
+  margin-top: 2rem;
+}
+.margin-top-3 {
+  margin-top: 3rem;
+}
+.margin-top-4 {
+  margin-top: 4rem;
+}
+.margin-top-5 {
+  margin-top: 5rem;
+}
+
+@media (max-width: 1000px) {
+  .section-title--main {
+    font-size: 4.3rem;
+  }
+}
+@media (max-width: 35em) {
+  .section-title--main {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .section-title-svgicon {
+    width: 45px;
+    height: 43px;
+  }
+  .section-title--sub {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 1000px) {
+  .section-title--svgicon {
+    width: 50px;
+    height: 49px;
+  }
+}
+@media (max-width: 35em) {
+  .section-title--svgicon {
+    width: 45px;
+    height: 43px;
+  }
+}

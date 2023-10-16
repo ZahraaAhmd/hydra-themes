@@ -1,0 +1,126 @@
+@import "variables";
+
+@font-face {
+  font-family: "Tajawal-Bold";
+  // src: url(../../src/fonts/Tajawal/Helvetica-bold.ttf);
+  src: url(../fonts/Helvetica-bold.ttf);
+}
+@font-face {
+  font-family: "Tajawal-Regular";
+  // src: url(../../src/fonts/Tajawal/Helvetica-normal.ttf);
+  src: url(../fonts/Helvetica-normal.ttf);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  // overflow-x: hidden !important;
+  font-family: "Tajawal-Regular";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--headingsColor) !important;
+}
+
+p {
+  color: var(--paragraphColor) !important;
+}
+
+a {
+  color: var(--linksColor);
+  text-decoration: none;
+  &:hover {
+    color: var(--linksHoverColor);
+    text-decoration: none;
+  }
+}
+
+::selection {
+  background-color: var(--primaryColor);
+  color: var(--white);
+}
+
+//END THEME 1 STRUCUTRE
+
+// in popup case add this div to body and make it block when popup open
+// .page-mask {
+//   display: none;
+//   position: fixed;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   top: 0;
+//   background-color: rgba(24, 24, 24, 0.3);
+//   z-index: 9;
+// }
+
+.section-title-header {
+  font-family: "Tajawal-Bold";
+  font-size: 32px;
+  color: var(--bg_color);
+}
+.section-title-desc {
+  font-family: "Tajawal-Regular";
+  font-size: 18px;
+  color: var(--lightContentColor);
+  opacity: 0.8;
+  width: 30%;
+  margin-top: 15px;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+  .section-title-desc {
+    width: 100%;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+  .section-title-desc {
+    width: 75%;
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (max-width: 1400px) {
+}
+
+// // XX-Large devices (larger desktops, 1400px and up)
+// @media (max-width: 1400px) {
+// }
+
+// // X-Large devices (large desktops, 1200px and up)
+// @media (max-width: 1200px) {
+// }
+// // Large devices (desktops, 992px and up)
+// @media (max-width: 992px) {
+// }
+// // Medium devices (tablets, 768px and up)
+// @media (max-width: 768px) {
+// }
+
+// // Small devices (landscape phones, 576px and up)
+// @media (max-width: 576px) {
+// }

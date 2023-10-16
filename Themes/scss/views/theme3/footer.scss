@@ -1,0 +1,430 @@
+@import "variables";
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+.tab.active {
+  display: block;
+}
+.fadeInAnimation {
+  animation: fadeIn 1.5s ease-in-out;
+}
+.radioBtnsPadding {
+  padding: 1rem 2rem !important;
+}
+
+.borderTop {
+  border-top: 4px solid var(--borderColor);
+}
+.main-color {
+  color: var(--primaryColor);
+}
+.section-header {
+  font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif !important;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primaryColor);
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.section-header-bold {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  // font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif !important;
+  font-size: 3rem;
+  // font-weight: 800;
+  color: var(--primaryColor);
+  // margin-top: 2rem;
+  margin-bottom: 0.7rem;
+  // letter-spacing: 2px;
+}
+
+// .survery-parent {
+//   position: relative;
+//   /* padding: 5rem 0 12rem 0 !important; */
+//   border-top-right-radius: 10px;
+//   border-top-left-radius: 10px;
+//   color: #fff;
+//   z-index: 10;
+//   top: -25rem;
+// }
+// .survey-wrapper {
+//   position: absolute;
+//   width: 60%;
+//   height: auto;
+//   background-color: var(--secondaryColor);
+//   padding: 2rem 1.5rem;
+//   border-top: 3px solid #fff;
+//   border-radius: 12px;
+//   margin: 5rem auto;
+//   color: #fff;
+//   top: -25%;
+//   left: 50%;
+//   transform: translateX(-50%);
+
+//   h1,
+//   h2,
+//   h3,
+//   h4,
+//   h5,
+//   h6 {
+//     color: var(--footerContentColor) !important;
+//   }
+//   .bg-main-nav {
+//     background-color: var(--secondaryColor);
+//   }
+// }
+// .survey-container {
+//   margin-top: 2rem;
+//   padding: 2rem 0 0.5rem 0;
+//   width: 85%;
+//   height: 85%;
+//   border-top: 5px solid #fff;
+// }
+// .survey-title {
+//   margin: 1rem 0 3rem 0;
+//   // font-weight: 700;
+//   font-size: 25px;
+//   line-height: 122.4%;
+//   color: var(--footerContentColor);
+// }
+// .survey-sub-title {
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 24px;
+//   color: var(--footerContentColor);
+// }
+// .survey-desc {
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 20px;
+//   margin: 1rem 0;
+//   color: var(--footerContentColor);
+// }
+
+// .survey-btn-yes {
+//   border-radius: 3rem;
+//   background-color: #fff;
+//   color: var(--primaryColor);
+//   padding: 0.8rem 4rem;
+//   text-align: center;
+//   font-size: 14px;
+//   border: none;
+//   outline: none;
+//   transition: all 0.3s ease;
+
+//   &:hover {
+//     background-color: var(--secondaryColor);
+//     color: #fff;
+//     outline: 1px solid var(--white);
+//   }
+// }
+// .survey-btn-no {
+//   border-radius: 3rem;
+//   background-color: transparent;
+//   color: var(--footerContentColor);
+//   padding: 0.8rem 4rem;
+//   border: 1px solid #fff;
+//   text-align: center;
+//   font-size: 14px;
+
+//   transition: all 0.3s ease;
+
+//   &:hover {
+//     background-color: #f4f4f4;
+//     color: var(--primaryColor);
+//   }
+// }
+
+// .survey-form {
+//   margin: 2rem 0;
+//   .survey-text-area {
+//     background: #ffffff0d;
+//     width: 100%;
+//     height: 10rem;
+//     resize: none;
+//     border: none;
+//     outline: none;
+//     border-radius: 10px;
+//     color: #ffffff8c;
+//     padding: 1rem 2rem;
+//     font-size: 18px;
+//   }
+//   .survey-text-area::placeholder {
+//     color: #ffffff8c;
+//     font-size: 18px;
+//   }
+//   .survey-submit {
+//     background-color: #fff;
+//     color: var(--primaryColor);
+//     padding: 0.8rem 4rem;
+//     text-align: center;
+//     font-size: 14px;
+//     border: none;
+//     outline: none;
+//     transition: all 0.3s ease;
+//     border-radius: 3rem;
+//     margin-top: 2rem;
+//     &:hover {
+//       background-color: #2765bc;
+//       color: #fff;
+//     }
+//   }
+// }
+
+.footer {
+  position: relative;
+  // margin-top: 30rem;
+  padding: 41rem 0 15rem 0 !important;
+  background: var(--footerBackgroundColor);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: #fff;
+  margin-top: -5rem;
+  //   padding: 126px 0 64px 0;
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--footerContentColor) !important;
+  }
+  .links {
+    margin-bottom: 50px;
+    h3 {
+      font-size: 25px;
+      font-family: 600;
+      margin-bottom: 20px;
+    }
+    ul {
+      a {
+        color: var(--footerContentColor);
+        font-size: 14px;
+        line-height: 30px;
+        text-decoration: none;
+      }
+      a:hover {
+        color: var(--footerContentHoverColor);
+      }
+    }
+  }
+  .copyright {
+    .logo {
+      position: relative;
+      margin-bottom: 27px;
+      a {
+        display: inline-block;
+        background-color: transparent;
+        position: relative;
+        z-index: 1;
+        // padding: 0 20px;
+        img {
+          width: 90px;
+          height: 90px;
+        }
+      }
+      &:before {
+        content: "";
+        height: 1px;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        opacity: 0.2;
+      }
+    }
+
+    h5 {
+      font-size: 14px;
+    }
+  }
+}
+.imageFooter {
+  width: 50;
+  height: 50;
+}
+
+// // tablet
+// @media (max-width: 1050px) {
+//   .survey-wrapper {
+//     width: 70%;
+//   }
+// }
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 50px 0 35px 0;
+  }
+  .survey-title {
+    font-size: 25.81px;
+  }
+  .survey-sub-title {
+    font-size: 16px;
+  }
+  .survey-desc {
+    font-size: 14px;
+  }
+  .survey-submit {
+    // background-color: red;
+    padding: 1rem 3rem;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 770px) {
+  .footer {
+    // margin-top: 30rem;
+  }
+}
+
+@media (max-width: 570px) {
+  // .survey-wrapper {
+  //   width: 85%;
+  //   padding: 1rem 2.5rem;
+  // }
+  .footer {
+    // margin-top: 40rem;
+  }
+  // .survey-container {
+  //   width: 100%;
+  //   height: 100%;
+  // }
+  // .survey-title {
+  //   font-size: 18px;
+  // }
+  // .survey-sub-title {
+  //   font-size: 14px;
+  // }
+  // .survey-desc {
+  //   font-size: 12px;
+  // }
+  .links {
+    margin-bottom: 50px;
+    h3 {
+      font-size: 20px;
+      font-family: 600;
+      margin-bottom: 20px;
+    }
+    ul {
+      a {
+        color: #fff;
+        font-size: 12px;
+        line-height: 30px;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #90b7eb;
+      }
+    }
+  }
+  // .survey-actions {
+  //   // margin-top: 4rem !important;
+  //   .survey-btn-yes {
+  //     margin: 0 auto;
+  //     width: 90% !important;
+  //   }
+  //   .survey-btn-no {
+  //     margin: 0 auto;
+  //     width: 90% !important;
+  //   }
+  // }
+  // .btn-submit-container {
+  //   margin: 1rem auto;
+  //   width: 90% !important;
+  //   .survey-submit {
+  //     width: 100% !important;
+  //   }
+  // }
+}
+
+@media (max-width: 750px) {
+  .footer {
+    padding: 45rem 0 13rem 0 !important;
+  }
+}
+
+@media (max-width: 35em) {
+  .footer {
+    padding: 35rem 0 15rem 0 !important;
+  }
+  // .survery-parent {
+  //   top: -33rem;
+  // }
+}
+
+// media from theme-3
+@media (max-width: 950px) {
+  .section-header {
+    font-size: 3.5rem;
+  }
+  .section-header-bold {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .section-header {
+    font-size: 3rem;
+  }
+  .section-header-bold {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 550px) {
+  .section-header {
+    font-size: 2.5rem;
+  }
+  .section-header-bold {
+    font-size: 2.2rem;
+  }
+}
+
+.margin-bottom-half {
+  margin-bottom: 0.5rem;
+}
+.margin-bottom-1 {
+  margin-bottom: 1rem;
+}
+.margin-bottom-2 {
+  margin-bottom: 2rem;
+}
+.margin-bottom-3 {
+  margin-bottom: 3rem;
+}
+.margin-bottom-4 {
+  margin-bottom: 4rem;
+}
+.margin-bottom-5 {
+  margin-bottom: 5rem;
+}
+
+.margin-top-half {
+  margin-top: 0.5rem;
+}
+.margin-top-1 {
+  margin-top: 1rem;
+}
+.margin-top-2 {
+  margin-top: 2rem;
+}
+.margin-top-3 {
+  margin-top: 3rem;
+}
+.margin-top-4 {
+  margin-top: 4rem;
+}
+.margin-top-5 {
+  margin-top: 5rem;
+}

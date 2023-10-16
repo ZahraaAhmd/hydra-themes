@@ -1,0 +1,134 @@
+:root {
+  --primaryColor: #0d3770;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #1e549d;
+  --headerBottomBgColor: #0d3770;
+  --headerTopContentColor: #fff;
+  --headingsColor: #0d3770;
+  --paragraphColor: #181818;
+  --lightContentColor: #181818b2;
+  --linksColor: #0d3770;
+  --linksHoverColor: #0d3770;
+  --menuLinksColor: #c0c0c0 !important;
+  --menuLinksHoverColor: #fff !important;
+  --footerBackgroundColor: #0d3770;
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #fff !important;
+  --firstGradientColor: #153e9b;
+  --secondGradientColor: #0d3770;
+  --theme-three-main-color: var(--primaryColor);
+  --white: #fff;
+  --black: #000;
+  --gray: #ccc;
+  --green: green;
+  --firstHeaderBgColor: var(--headerTopBgColor);
+  --mainHeaderBg: var(--headerBottomBgColor);
+  --mainBgColor: var(--primaryColor);
+  --lightGrayBg: #f5f6f7;
+  --borderColor: var(--primaryColor);
+  --headerColor: var(--primaryColor);
+  --primaryColorLight: var(--primaryColor);
+  --headerBtnColor: var(--primaryColor);
+  --externalLinksColor: var(--linksColor);
+  --testimonialContentColor: var(--lightContentColor);
+  --testimonialAutherColor: var(--paragraphColor);
+  --testimonialAutherTitleColor: var(--lightContentColor);
+  --hamubergerBgColor: var(--secondaryColor);
+  --sign-in-header: var(--primaryColor);
+  --sign-in-desc: var(--lightContentColor);
+  --sign-in-desc2: var(--lightContentColor);
+  --input-border: var(--secondaryColor);
+  --input-placeholder: #afafaf;
+  --input-background: #f8f8f8;
+  --button-bg-primary: var(--secondaryColor);
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #424442;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+  --whiteTextColor: var(--white);
+  --notificationNav: linear-gradient(
+    89.33deg,
+    #d5a419 6.67%,
+    #ae8100 93.79%
+  );
+  --gallerySubHeaderTitle: var(--primaryColor);
+  --mediaMainHeaderColor: var(--black);
+  --mediaMainNewContentColor: var(--paragraphColor);
+  --mediaSeeMoreMainBtnColor: var(--secondaryColor);
+  --mediaDateColor: var(--paragraphColor);
+  --seeMoreBtnBg: #e1e1e1;
+  --sub-single-new-header-color: var(--primaryColor);
+  --single-new-desc-color: var(--lightContentColor);
+  --new-desc-sub-header: var(--primaryColor);
+  --new-content-color: var(--paragraphColor);
+  --content-item-color: var(--primaryColor);
+  --single-new-external-news-color: var(--primaryColor);
+  --data-table-header-bg-color: #0081c41a;
+  --data-table-header-color: var(--primaryColor);
+  --data-table-header-item-color: var(--paragraphColor);
+  --table-even-row-bg-color: #f6f6f6;
+}
+
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+.theme-three .section-title--container {
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+}
+.theme-three .section-title--container .section-title--sub {
+  font-size: 2.3rem;
+  font-weight: 200;
+  color: var(--primaryColor);
+  letter-spacing: 0.02em;
+}
+.theme-three .section-title--container .section-title--main {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  font-size: 5rem;
+  line-height: 109.4%;
+  color: var(--primaryColor);
+}
+
+@media (max-width: 65em) {
+  .theme-three .section-title--container {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+  }
+  .theme-three .section-title--container .section-title--main {
+    font-size: 4.2rem;
+  }
+}
+@media (max-width: 35em) {
+  .theme-three .section-title--container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .theme-three .section-title--container .section-title--sub {
+    font-size: 2.3rem;
+    font-weight: 200;
+    color: var(--primaryColor);
+    letter-spacing: 0.02em;
+  }
+  .theme-three .section-title--container .section-title--main {
+    font-size: 3rem;
+  }
+  .theme-three .section-title--container .section-title-svgicon {
+    width: 45px;
+    height: 43px;
+  }
+  .theme-three .section-title--container .section-title--sub {
+    font-size: 1.6rem;
+  }
+}

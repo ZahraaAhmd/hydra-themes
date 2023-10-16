@@ -1,0 +1,275 @@
+@import "variables";
+@import "fonts";
+.section-title-header {
+  font-family: "Tajawal-Bold";
+  font-size: 32px;
+  color: var(--bg_color);
+}
+.section-title-desc {
+  font-family: "Tajawal-Regular";
+  font-size: 18px;
+  color: var(--lightContentColor);
+  opacity: 0.8;
+  width: 30%;
+  margin-top: 15px;
+}
+.theme-one {
+  .dowbload-app {
+    height: 44rem;
+    //   background-color: var(--bg_color;
+  }
+
+  .download-app-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    .left-side {
+      .img-contain {
+        //   position: relative;
+        img {
+          padding-right: 3rem;
+          padding-top: 2rem;
+          width: 45%;
+          // position: absolute;
+          filter: drop-shadow(0px 31px 16px rgba(0, 0, 0, 0.2));
+          // fade to left
+
+          animation: loading 1s ease-in-out forwards;
+          @keyframes loading {
+            0% {
+              opacity: 0;
+              transform: translateX(100%);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+        }
+      }
+    }
+    .right-side {
+      width: 85%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      .download-title {
+        font-family: "Tajawal-Bold";
+        font-size: 40px;
+        line-height: 132.4%;
+        letter-spacing: -0.04em;
+        margin-bottom: 0.7rem;
+        color: var(--black) !important;
+      }
+      .stores-wrapper {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1rem;
+        img {
+          width: 15rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .left-side-mobile {
+    display: none;
+  }
+  @media (max-width: 1400px) {
+    .download-app-wrapper {
+      gap: 4rem;
+      .left-side {
+        .img-contain {
+          //   position: relative;
+          img {
+            padding-right: 1rem;
+            padding-top: 2.5rem;
+            width: 73%;
+          }
+        }
+      }
+    }
+  }
+  // X-Large devices (large desktops, 1200px and up)
+  @media (max-width: 1200px) {
+    .download-app-wrapper {
+      gap: 4rem;
+      .left-side {
+        .img-contain {
+          //   position: relative;
+          img {
+            padding-right: 0.2rem;
+            padding-top: 2rem;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  // Large devices (desktops, 992px and up)
+  @media (max-width: 992px) {
+    // on small ipads and tablets the image will be below the text and the text will be centered.
+    .dowbload-app {
+      height: 65rem;
+      overflow: hidden;
+      padding: 2.5rem 0;
+    }
+
+    .download-app-wrapper {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      .left-side {
+        display: none;
+      }
+      .left-side-mobile {
+        display: block;
+        .img-contain {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            padding-right: 0.2rem;
+            padding-top: 2rem;
+            width: 50%;
+          }
+        }
+      }
+      .right-side {
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .download-title {
+          font-family: "Tajawal-Bold";
+          font-size: 50px;
+          line-height: 132.4%;
+          letter-spacing: -0.04em;
+          margin-bottom: 0.7rem;
+          text-align: center;
+        }
+        .stores-wrapper {
+          margin-top: 2rem;
+          display: flex;
+          gap: 1rem;
+          img {
+            width: 15rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  // // Medium devices (tablets, 768px and up)
+  @media (max-width: 768px) {
+    .download-app-wrapper {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      .left-side {
+        display: none;
+      }
+      .left-side-mobile {
+        display: block;
+        .img-contain {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            padding-right: 0.2rem;
+            padding-top: 2rem;
+            width: 60%;
+          }
+        }
+      }
+      .right-side {
+        width: 85%;
+        .download-title {
+          font-family: "Tajawal-Bold";
+          font-size: 40px;
+          line-height: 132.4%;
+          letter-spacing: -0.04em;
+          margin-bottom: 0.7rem;
+          text-align: center;
+        }
+        .section-title-desc {
+          width: 100% !important;
+          margin-top: 1rem;
+          text-align: center;
+        }
+        .stores-wrapper {
+          margin-top: 2rem;
+          display: flex;
+          gap: 1rem;
+          img {
+            width: 13rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  // // Small devices (landscape phones, 576px and up)
+  @media (max-width: 576px) {
+    .dowbload-app {
+      height: 45rem;
+      overflow: hidden;
+      padding: 2.5rem 0;
+    }
+
+    .download-app-wrapper {
+      .left-side-mobile {
+        .img-contain {
+          img {
+            padding-right: 0.2rem;
+            padding-top: 2rem;
+            width: 70%;
+          }
+        }
+      }
+      .right-side {
+        width: 85%;
+        .download-title {
+          font-family: "Tajawal-Bold";
+          font-size: 30px;
+          line-height: 132.4%;
+          letter-spacing: -0.04em;
+          margin-bottom: 0.7rem;
+          text-align: center;
+        }
+        .section-title-desc {
+          width: 100% !important;
+          margin-top: 1rem;
+          text-align: center;
+          font-size: 16px;
+        }
+        .stores-wrapper {
+          margin-top: 2rem;
+          display: flex;
+          gap: 1rem;
+          img {
+            width: 9rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+  .section-title-desc {
+    width: 100%;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+  .section-title-desc {
+    width: 75%;
+  }
+}

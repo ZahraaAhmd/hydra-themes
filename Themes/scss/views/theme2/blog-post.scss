@@ -1,0 +1,195 @@
+@import "variables";
+
+.page_content {
+  padding-top: 205px;
+}
+
+.blog-post-wrapper {
+  .blog-post-image-container {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 6px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s ease-in-out;
+      border-radius: 6px;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .blog-post-content-wrapper {
+    margin: 50px 0;
+    .blog-post-content-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      h3 {
+        width: 70%;
+        font-family: "Tajawal-Bold";
+        font-size: 32px;
+        line-height: 71px;
+        color: var(--black);
+      }
+      .social-links-container {
+        p {
+          font-family: "Tajawal-Regular";
+          font-size: 18px;
+          line-height: 32px;
+          color: var(--gray_text);
+        }
+        .social-links {
+          display: flex;
+          gap: 1rem;
+          .social-icon-svg {
+            width: 22.5px;
+            height: 22.5px;
+          }
+        }
+      }
+    }
+  }
+  .blog-post-content-description {
+    margin-top: 25px;
+    p {
+      font-family: "Tajawal-Regular";
+      font-size: 16px;
+      line-height: 32px;
+      color: var(--gray_text);
+      opacity: 0.8;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .blog-post-wrapper {
+    .blog-post-image-container {
+      width: 97%;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 7px;
+      margin: 0 auto;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .blog-post-content-wrapper {
+      margin: 50px 0;
+      .blog-post-content-header {
+        padding-right: 5px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        h3 {
+          width: 75%;
+          font-family: "Tajawal-Bold";
+          font-size: 28px;
+          line-height: 41px;
+          color: var(--black);
+        }
+        .social-links-container {
+          padding-left: 20px;
+          p {
+            font-family: "Tajawal-Regular";
+            font-size: 18px;
+            line-height: 32px;
+            color: var(--gray_text);
+          }
+          .social-links {
+            display: flex;
+            gap: 1rem;
+            .social-icon-svg {
+              width: 22.5px;
+              height: 22.5px;
+            }
+          }
+        }
+      }
+    }
+    .blog-post-content-description {
+      margin-top: 25px;
+      p {
+        width: 98%;
+        padding-right: 5px;
+        font-family: "Tajawal-Regular";
+        font-size: 16px;
+        line-height: 32px;
+        color: var(--gray_text);
+        opacity: 0.8;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .blog-post-wrapper {
+    .blog-post-image-container {
+      width: 97%;
+      height: 350px;
+
+      img {
+      }
+    }
+    .blog-post-content-wrapper {
+      margin: 60px 0;
+      .blog-post-content-header {
+        padding-right: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        h3 {
+          width: 95%;
+          font-family: "Tajawal-Bold";
+          font-size: 24px;
+          line-height: 41px;
+          color: var(--black);
+        }
+        .social-links-container {
+          padding-right: 5px;
+          display: flex;
+          flex-direction: row !important;
+          align-items: center !important;
+          gap: 3rem !important;
+          padding-left: 5px;
+          p {
+            font-family: "Tajawal-Regular";
+            font-size: 18px;
+            line-height: 32px;
+            color: var(--gray_text);
+          }
+          .social-links {
+            display: flex;
+            gap: 1.5rem;
+            .social-icon-svg {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+    .blog-post-content-description {
+      margin-top: 25px;
+      p {
+        width: 98%;
+        padding-right: 5px;
+        font-family: "Tajawal-Regular";
+        font-size: 16px;
+        line-height: 32px;
+        color: var(--gray_text);
+        opacity: 0.8;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

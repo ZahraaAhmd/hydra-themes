@@ -1,0 +1,566 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+:root {
+  --primaryColor: #4675ef;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #1e549d;
+  --headerBottomBgColor: #fff;
+  --headerTopContentColor: #18191f;
+  --headingsColor: #4675ef;
+  --paragraphColor: #181818;
+  --lightContentColor: #181818;
+  --lightBgColor: #f5f5f5;
+  --linksColor: #0d3770;
+  --linksHoverColor: #0d3770;
+  --menuLinksColor: #18191f !important;
+  --menuLinksHoverColor: #4675ef !important;
+  --footerBackgroundColor: #4675ef;
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #1e549d !important;
+  --firstGradientColor: #153e9b;
+  --secondGradientColor: #0d3770;
+  --theme-one-main-color: #4675ef;
+  --white: #fff;
+  --black: #000;
+  --gray_text: var(--lightContentColor);
+  --gray_text2: var(--lightContentColor);
+  --red: #f34a3f;
+  --green: #55c574;
+  --blue: #4675ef;
+  --bg_color: var(--primaryColor);
+  --sign-in-desc: #606060;
+  --sign-in-desc2: #757575b2;
+  --input-border: #4675ef;
+  --input-placeholder: #868e96;
+  --input-background: #f8f8f8;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+}
+
+@font-face {
+  font-family: "Tajawal-Bold";
+  src: url(../../fonts/Tajawal/Helvetica-bold.ttf);
+}
+@font-face {
+  font-family: "Tajawal-Regular";
+  src: url(../../fonts/Tajawal/Helvetica-normal.ttf);
+}
+.section-title-header {
+  font-family: "Tajawal-Bold";
+  font-size: 32px;
+  color: var(--headingsColor);
+}
+
+.section-title-desc {
+  font-family: "Tajawal-Regular";
+  font-size: 18px;
+  color: var(--lightContentColor);
+  opacity: 0.8;
+  width: 30%;
+  margin-top: 15px;
+}
+
+.theme-one .survey_form {
+  /* Hide all steps by default: */
+  background: var(--white);
+  border: 2px solid #e8e8e8;
+  border-radius: 16px;
+  padding: 30px 20px;
+  margin-bottom: 142px;
+}
+.theme-one .survey_form .tab {
+  display: none;
+}
+.theme-one .survey_form .tab.active {
+  display: block;
+}
+.theme-one .survey_form .fadeInAnimation {
+  -webkit-animation: fadeIn 1.5s ease-in-out;
+          animation: fadeIn 1.5s ease-in-out;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.theme-one .survey_form .form-title {
+  font-family: "Tajawal", "Tajawal-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+}
+.theme-one .survey_form .form-title strong {
+  font-weight: 700;
+  color: var(--black);
+}
+.theme-one .survey_form .ratings-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.theme-one .survey_form .ratings-wrapper .rating-item-label {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  padding: 2.5rem !important;
+  border-radius: 50% !important;
+  background-color: var(--white) !important;
+  border: 1px solid #d7d7d7 !important;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: var(--black) !important;
+}
+.theme-one .survey_form .ratings-wrapper .rating-item-label:hover {
+  color: var(--white) !important;
+  background-color: var(--primaryColor) !important;
+}
+.theme-one .survey_form .ratings-wrapper label:checked {
+  border: 2px solid var(--primaryColor);
+}
+.theme-one .survey_form .option-survey-item {
+  font-family: "Tajawal", "Tajawal-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--lightContentColor);
+  margin-top: 1.4rem;
+}
+.theme-one .survey_form .option-survey-item span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.55);
+}
+.theme-one .survey_wrapper {
+  margin: 5rem auto;
+}
+.theme-one .survey_wrapper h3 {
+  font-family: "Tajawal-Bold";
+  font-size: 32px;
+  color: var(--headingsColor);
+}
+.theme-one .survey_wrapper p {
+  font-size: 18px;
+  color: var(--lightContentColor);
+  margin-top: 15px;
+}
+.theme-one .survey_wrapper .contact_info span {
+  width: 40px;
+  height: 40px;
+  background: rgba(70, 117, 239, 0.1);
+  border-radius: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 12px;
+}
+.theme-one .survey_wrapper .contact_info p {
+  font-family: "Tajawal", "Tajawal-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--lightContentColor);
+  margin-bottom: 0;
+  max-width: 190px;
+}
+.theme-one .survey_form_wrapper {
+  position: relative;
+}
+.theme-one .survey_form_wrapper .form-input {
+  width: 100%;
+}
+.theme-one .survey_form_wrapper .form-input .text-area-input-survey {
+  font-family: "Tajawal", "Tajawal-Regular", sans-serif;
+  width: 100%;
+  height: 15rem;
+  background: var(--input-background);
+  border-radius: 10px;
+  font-size: 18px;
+  color: var(--lightContentColor);
+  resize: none;
+  border: none;
+  padding: 15px 15px;
+}
+.theme-one .survey_form_wrapper .form-input .text-area-input-survey::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.55);
+}
+.theme-one .survey_form_wrapper .form-input .text-area-input-survey::-moz-placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.55);
+}
+.theme-one .survey_form_wrapper .form-input .text-area-input-survey:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.55);
+}
+.theme-one .survey_form_wrapper .form-input .text-area-input-survey::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.55);
+}
+.theme-one .survey_form_wrapper .form-input .text-area-input-survey::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.55);
+}
+.theme-one .survey_form_wrapper .form-input .text-area-input-survey:focus {
+  outline: 1px solid #bdbdbd;
+}
+.theme-one .survey_form_wrapper .btn-action-wrapper {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+.theme-one .survey_form_wrapper .btn-action-wrapper .btn-submit {
+  padding: 0.6rem 2rem;
+  font-size: 18px;
+  background-color: var(--primaryColor);
+  color: var(--white);
+  text-align: center;
+  border-radius: 10px;
+  border-radius: 4rem;
+  z-index: 999;
+  outline: none;
+  border: none;
+}
+@media (max-width: 1200px) {
+  .theme-one .survey_form {
+    padding: 38px 10px;
+    margin-bottom: 30px;
+  }
+  .theme-one .survey_form .form-title {
+    font-size: 18px;
+  }
+  .theme-one .survey_form .form-title strong {
+    font-weight: 700;
+  }
+  .theme-one .survey_form .ratings-wrapper {
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .theme-one .survey_form .ratings-wrapper .rating-item {
+    padding: 0.5rem;
+  }
+  .theme-one .survey_form .ratings-wrapper .rating-item p {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .theme-one .survey_form .option-survey-item {
+    font-size: 18px;
+  }
+  .theme-one .survey_form .option-survey-item span {
+    font-size: 16px;
+  }
+  .theme-one .survey_wrapper {
+    margin: 5rem auto;
+  }
+  .theme-one .survey_wrapper h3 {
+    font-family: "Tajawal-Bold";
+    font-size: 30px;
+    color: var(--headingsColor);
+    margin-bottom: 1rem;
+  }
+  .theme-one .survey_wrapper p {
+    font-size: 16px;
+    color: var(--lightContentColor);
+  }
+  .theme-one .survey_wrapper .contact_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 1rem;
+  }
+  .theme-one .survey_wrapper .contact_info span {
+    width: 40px;
+    height: 40px;
+    background: rgba(70, 117, 239, 0.1);
+    border-radius: 26px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 12px;
+  }
+  .theme-one .survey_wrapper .contact_info p {
+    font-family: "Tajawal", "Tajawal-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--black);
+    margin-bottom: 0;
+    max-width: 190px;
+  }
+}
+@media (max-width: 992px) {
+  .theme-one .address-desc {
+    max-width: 100% !important;
+  }
+  .theme-one .survey_form {
+    margin-bottom: 30px;
+  }
+  .theme-one .contact_info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .theme-one .contact_info p {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .theme-one .survey_form {
+    margin-bottom: 25px;
+  }
+  .theme-one .survey_form .form-title {
+    font-size: 18px;
+  }
+  .theme-one .survey_form .ratings-wrapper {
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+  }
+  .theme-one .survey_form .ratings-wrapper .rating-item {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    margin-left: 4rem;
+  }
+  .theme-one .survey_form .ratings-wrapper .rating-item p {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--lightContentColor);
+    margin-bottom: 0;
+  }
+  .theme-one .survey_form .ratings-wrapper .rating-item:hover {
+    background: var(--bg_color);
+  }
+  .theme-one .survey_form .ratings-wrapper .rating-item:hover p {
+    color: var(--lightContentColor);
+  }
+  .theme-one .survey_form .option-survey-item {
+    font-size: 18px;
+    margin-top: 1.4rem;
+  }
+  .theme-one .survey_form .option-survey-item span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.55);
+  }
+  .theme-one .survey_wrapper {
+    margin: 5rem auto;
+  }
+  .theme-one .survey_wrapper h3 {
+    font-family: "Tajawal-Bold";
+    font-size: 32px;
+    color: var(--headingsColor);
+  }
+  .theme-one .survey_wrapper p {
+    font-size: 18px;
+    color: var(--lightContentColor);
+  }
+  .theme-one .survey_wrapper .contact_info {
+    margin-top: 1rem;
+    gap: 0.7rem;
+  }
+  .theme-one .survey_wrapper .contact_info span {
+    margin-left: 12px;
+  }
+  .theme-one .survey_wrapper .contact_info p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .theme-one .address-desc {
+    max-width: 100% !important;
+  }
+  .theme-one .survey_form {
+    margin-bottom: 25px;
+    padding: 30px 10px;
+  }
+  .theme-one .survey_form .form-title {
+    font-size: 16px;
+  }
+  .theme-one .survey_form .ratings-wrapper {
+    gap: 0.5rem;
+    margin-top: 5px;
+    margin-bottom: 6rem;
+  }
+  .theme-one .survey_form .ratings-wrapper .rating-item {
+    padding: 0.5rem;
+    margin-left: 4rem;
+  }
+  .theme-one .survey_form .ratings-wrapper .rating-item p {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--lightContentColor);
+    margin-bottom: 0;
+  }
+  .theme-one .survey_form .ratings-wrapper .rating-item:hover {
+    background: var(--bg_color);
+  }
+  .theme-one .survey_form .ratings-wrapper .rating-item:hover p {
+    color: var(--lightContentColor);
+  }
+  .theme-one .survey_form .option-survey-item {
+    font-size: 16px;
+    margin-top: 1.4rem;
+  }
+  .theme-one .survey_form .option-survey-item span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.55);
+  }
+  .theme-one .survey_wrapper {
+    margin: 5rem auto;
+  }
+  .theme-one .survey_wrapper h3 {
+    font-family: "Tajawal-Bold";
+    font-size: 28px;
+    color: var(--headingsColor);
+    margin-bottom: 1rem;
+  }
+  .theme-one .survey_wrapper p {
+    font-size: 16px;
+    color: var(--lightContentColor);
+  }
+  .theme-one .survey_wrapper .contact_info {
+    margin-top: 1rem;
+    gap: 0.7rem;
+  }
+  .theme-one .survey_wrapper .contact_info span {
+    margin-left: 12px;
+  }
+  .theme-one .survey_wrapper .contact_info p {
+    height: 1rem;
+    font-size: 16px;
+  }
+  .theme-one .survey_form_wrapper {
+    position: relative;
+  }
+  .theme-one .survey_form_wrapper .form-input {
+    width: 100%;
+  }
+  .theme-one .survey_form_wrapper .form-input .text-area-input-survey {
+    font-family: "Tajawal", "Tajawal-Regular", sans-serif;
+    width: 100%;
+    height: 15rem;
+    background: var(--input-background);
+    border-radius: 10px;
+    font-size: 18px;
+    color: var(--lightContentColor);
+    resize: none;
+    border: none;
+    padding: 15px 15px;
+  }
+  .theme-one .survey_form_wrapper .form-input .text-area-input-survey::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.55);
+  }
+  .theme-one .survey_form_wrapper .form-input .text-area-input-survey::-moz-placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.55);
+  }
+  .theme-one .survey_form_wrapper .form-input .text-area-input-survey:-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.55);
+  }
+  .theme-one .survey_form_wrapper .form-input .text-area-input-survey::-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.55);
+  }
+  .theme-one .survey_form_wrapper .form-input .text-area-input-survey::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.55);
+  }
+  .theme-one .survey_form_wrapper .form-input .text-area-input-survey:focus {
+    outline: 1px solid #bdbdbd;
+  }
+  .theme-one .survey_form_wrapper .btn-action-wrapper .btn-submit {
+    padding: 0.6rem 1.7rem;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-title-desc {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .section-title-desc {
+    width: 75%;
+  }
+}

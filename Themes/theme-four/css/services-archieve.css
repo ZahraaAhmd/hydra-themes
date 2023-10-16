@@ -1,0 +1,300 @@
+:root {
+  --primaryColor: #1d73bf;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #050404;
+  --headerBottomBgColor: #1d73bf;
+  --headerTopContentColor: #fff;
+  --headingsColor: #1d73bf;
+  --paragraphColor: #181818;
+  --lightContentColor: #181818b2;
+  --lightBgColor: #e8f1f9;
+  --linksColor: #1d73bf;
+  --linksHoverColor: #1d73bf;
+  --menuLinksColor: #fff !important;
+  --menuLinksHoverColor: #dcdcdc !important;
+  --footerBackgroundColor: #092239;
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #1e549d !important;
+  --firstGradientColor: #153e9b;
+  --secondGradientColor: #1d73bf;
+  --theme-four-main-color: var(--primaryColor);
+  --font-normal: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  --font-bold: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  --white: #fff;
+  --black: #000;
+  --gray-50: #f9f9f9;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --gray-1000: #000;
+  --primaryBgColor: var(--primaryColor);
+  --tertiaryBgColor: var(--lightBgColor);
+  --sub-header-color: var(--lightContentColor);
+  --bg-transparent: transparent;
+  --loginBtnBgColor: var(--primaryColor);
+  --loginBtnBgOnHover: var(--secondaryColor);
+  --languageBtnBgColor: var(--lightBgColor);
+  --HeroMainTextColor: var(--headingsColor);
+  --heroTextColor: var(--lightContentColor);
+  --test-sub-color: var(--secondaryColor);
+  --strategyDescColor: var(--lightContentColor);
+  --bg-color-mobile: var(--lightBgColor);
+  --bg-title-color: var(--primaryColor);
+  --related-website-item-bg-color: --white;
+  --related-website-item-title-color: var(--lightContentColor);
+  --related-website-item-visit-text-color: var(--secondaryColor);
+  --contactBgColor: var(--secondaryColor);
+  --inputFieldBgColor: transparent;
+  --contactUsDescText: var(--lightContentColor);
+  --footerBgColor: var(--footerBackgroundColor);
+  --servicesBgColor: var(--tertiaryBgColor);
+  --servicesMainTextColor: var(--primaryColor);
+  --servicessecondaryTextColor: var(--lightContentColor);
+  --ministerBgColor: var(--lightBgColor);
+  --ministerMainTextColor: var(--primaryColor);
+  --ministerDescTextColor: var(--paragraphColor);
+  --tapsWrapperBgColor: var(--primaryBgColor);
+  --sign-in-header: var(--primaryColor);
+  --sign-in-desc: #757575;
+  --sign-in-desc2: #757575b2;
+  --input-border: var(--primaryColor);
+  --input-placeholder: #afafaf;
+  --input-background: #f8f8f8;
+  --button-bg-primary: var(--primaryColor);
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+  --ministeryMainColor: var(--primaryColor);
+  --ministerySecondaryColor: var(--lightContentColor);
+  --gov-project-date-color: var(--primaryColor);
+  --searchMainColor: var(--primaryColor);
+  --searchResultColor: var(--primaryColor);
+  --searchResultHoverColor: var(--primaryColor);
+  --faqMainColor: var(--primaryColor);
+}
+
+.theme-four .services-archieve-wrapper .services-archieve-header {
+  margin: 5rem 0 2rem 0;
+}
+.theme-four
+  .services-archieve-wrapper
+  .services-archieve-header
+  .services-archieve-title {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  font-size: 26px;
+  line-height: 168.4%;
+  color: var(--primaryBgColor);
+  margin-bottom: 1rem;
+}
+.theme-four .services-archieve-wrapper .services-archieve-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-column-gap: 1rem;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  row-gap: 3rem;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.theme-four .services-archieve-wrapper .services-archieve-list .services-item {
+  width: 23rem;
+  height: 17rem;
+  margin: 0 0 0 2rem;
+  border-radius: 2.4rem;
+  background-color: #f3f8fc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.theme-four
+  .services-archieve-wrapper
+  .services-archieve-list
+  .services-item:hover {
+  background-color: #e4f3ff;
+}
+.theme-four
+  .services-archieve-wrapper
+  .services-archieve-list
+  .services-item
+  .services-title {
+  font-family: var(--font-bold);
+  font-size: 1.6rem;
+  line-height: 168.4%;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: var(--primaryBgColor);
+  text-decoration: none;
+}
+@media (max-width: 1050px) {
+  .theme-four .services-archieve-wrapper .services-archieve-header {
+    margin: 5rem 0 2rem 0;
+  }
+  .theme-four
+    .services-archieve-wrapper
+    .services-archieve-header
+    .services-archieve-title {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    font-size: 24px;
+    line-height: 168.4%;
+    color: var(--primaryBgColor);
+  }
+  .theme-four .services-archieve-wrapper .services-archieve-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+    row-gap: 3rem;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .theme-four
+    .services-archieve-wrapper
+    .services-archieve-list
+    .services-item {
+    width: 20rem;
+    height: 15rem;
+    margin: 0 0 0 2rem;
+    border-radius: 2.4rem;
+    background-color: #f3f8fc;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .theme-four
+    .services-archieve-wrapper
+    .services-archieve-list
+    .services-item:hover {
+    background-color: #e4f3ff;
+  }
+  .theme-four
+    .services-archieve-wrapper
+    .services-archieve-list
+    .services-item
+    .services-title {
+    font-family: var(--font-bold);
+    font-size: 1.6rem;
+    line-height: 168.4%;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: var(--primaryBgColor);
+    text-decoration: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .theme-four .services-archieve-wrapper .services-archieve-header {
+    margin: 5rem 0 2rem 0;
+  }
+  .theme-four
+    .services-archieve-wrapper
+    .services-archieve-header
+    .services-archieve-title {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    font-size: 24px;
+    line-height: 168.4%;
+    color: var(--primaryBgColor);
+  }
+  .theme-four
+    .services-archieve-wrapper
+    .services-archieve-list
+    .services-item {
+    width: 20rem;
+    height: 15rem;
+  }
+  .theme-four
+    .services-archieve-wrapper
+    .services-archieve-list
+    .services-item
+    .services-svg-icon {
+    height: 4.7rem;
+    width: 4.7rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .theme-four .services-archieve-wrapper .services-archieve-header {
+    margin: 5rem 0 2rem 0;
+  }
+  .theme-four
+    .services-archieve-wrapper
+    .services-archieve-header
+    .services-archieve-title {
+    font-size: 32px;
+    line-height: 168.4%;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .theme-four
+    .services-archieve-wrapper
+    .services-archieve-list
+    .services-item {
+    width: 90%;
+    height: 15rem;
+    margin: 0 auto;
+  }
+  .theme-four
+    .services-archieve-wrapper
+    .services-archieve-list
+    .services-item
+    .services-svg-icon {
+    height: 4.7rem;
+    width: 4.7rem;
+  }
+}

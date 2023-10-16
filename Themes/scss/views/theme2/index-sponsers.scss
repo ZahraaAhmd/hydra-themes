@@ -1,0 +1,46 @@
+@import "variables";
+
+// sponsers
+.theme-two {
+  .sponsers {
+    padding: 280px 0 25px 0;
+    h3 {
+      font-family: "Tajawal-Bold";
+      font-size: 48px;
+      color: var(--gray_text);
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      color: var(--paragraphColor);
+      max-width: 366px;
+    }
+    a {
+      flex: 0 0 25%;
+      margin-bottom: 42px;
+      text-align: center;
+    }
+  }
+
+  // tablet
+  @media (max-width: 992px) {
+    .sponsers {
+      padding: 140px 0 25px 0;
+      p {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  // mobile
+  @media (max-width: 768px) {
+    .sponsers {
+      h3 {
+        font-size: 43px;
+      }
+      a {
+        flex: 0 0 50%;
+      }
+    }
+  }
+}

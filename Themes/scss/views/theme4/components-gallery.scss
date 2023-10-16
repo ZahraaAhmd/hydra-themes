@@ -1,0 +1,168 @@
+@import "variables";
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+.theme-four {
+  .section {
+    // margin: 4rem 0;
+    padding: 6rem 0;
+  }
+  .section-title {
+    width: fit-content;
+    padding: 1rem 2rem;
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    // font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+    // font-family: "Helvetica Neue LT Arabic", sans-serif;
+    // font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 168.4%;
+    letter-spacing: -0.04em;
+    color: var(--black);
+  }
+
+  .primary-section-title {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+    font-size: 3rem !important;
+    line-height: 168.4%;
+  }
+
+  .gallery-seperate-parent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    .gallery-item {
+      img {
+        width: 40rem;
+        height: 25rem;
+      }
+      h5 {
+        font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+        font-size: 18px;
+        line-height: 26px;
+        color: var(--black);
+        margin-top: 1rem;
+      }
+      p {
+        font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+        font-size: 14px;
+        line-height: 26px;
+        color: var(--primaryBgColor);
+      }
+    }
+  }
+
+  // `xl` applies to large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) {
+    .gallery-seperate-parent {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      .gallery-item {
+        img {
+          width: 30rem;
+          height: 20rem;
+        }
+        h5 {
+          font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+          font-size: 18px;
+          line-height: 26px;
+          color: var(--black);
+          margin-top: 1rem;
+        }
+        p {
+          font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+          font-size: 14px;
+          line-height: 26px;
+          color: var(--primaryBgColor);
+        }
+      }
+    }
+  }
+  // `lg` applies to medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) {
+    .gallery-seperate-parent {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+      .gallery-item {
+        img {
+          width: 35rem;
+          height: 25rem;
+        }
+        h5 {
+          font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+          font-size: 18px;
+          line-height: 26px;
+          color: var(--black);
+          margin-top: 1rem;
+        }
+        p {
+          font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+          font-size: 14px;
+          line-height: 26px;
+          color: var(--primaryBgColor);
+        }
+      }
+    }
+  }
+  // `sm` applies to x-small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    .gallery-seperate-parent {
+      width: 95%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+
+      .gallery-item {
+        img {
+          width: 100%;
+          height: 25rem;
+        }
+        h5 {
+          font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+          font-size: 18px;
+          line-height: 26px;
+          color: var(--black);
+          margin-top: 3rem;
+        }
+        p {
+          font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+          font-size: 14px;
+          line-height: 26px;
+          color: var(--primaryBgColor);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .section-title {
+      font-size: 2.5rem;
+      color: var(--black);
+      letter-spacing: -0.04em;
+    }
+    .section {
+      // margin: 3rem 0;
+      padding: 5rem 0;
+    }
+  }
+  @media (max-width: 575.98px) {
+    .section {
+      // margin: 2rem 0;
+      padding: 4rem 0;
+    }
+    .primary-section-title {
+      font-size: 2.4rem !important;
+    }
+  }
+}

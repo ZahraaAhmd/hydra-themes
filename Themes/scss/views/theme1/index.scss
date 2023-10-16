@@ -1,0 +1,762 @@
+@import "variables";
+@import "fonts";
+
+@media (max-width: 992px) {
+  .page_content {
+    padding-top: 90px;
+  }
+}
+
+// // sponsers
+// .sponsers {
+//   padding-bottom: 50px;
+//   p {
+//     color: var(--gray_text;
+//     font-size: 18px;
+//     opacity: 0.6;
+//     max-width: 409px;
+//     padding: 60px 0;
+//   }
+//   a {
+//     padding: 0 24px;
+//     text-align: center;
+//     img {
+//       width: 48px;
+//       height: 48px;
+//     }
+//   }
+// }
+// // tablet
+// @media (max-width: 992px) {
+//   .sponsers {
+//     a {
+//       padding: 0 18px;
+//     }
+//   }
+// }
+// // mobile
+// @media (max-width: 767px) {
+//   .sponsers {
+//     a {
+//       flex: 1 0 33.33%;
+//       padding: 12px 0;
+//     }
+//     p {
+//       font-size: 15px;
+//       padding: 30px 0;
+//     }
+//   }
+// }
+
+// // related websites
+// .related_sites {
+//   background-image: url("../../src/images/theme1/relatedSites_bg.png");
+//   padding: 139px 0;
+//   background-size: cover;
+//   h2 {
+//     color: var(--bg_color;
+//     font-size: 32px;
+//     font-family: "Tajawal-Bold";
+//   }
+//   p {
+//     font-size: 18px;
+//     color: var(--gray_text;
+//     opacity: 0.6;
+//     margin-bottom: 48px;
+//   }
+//   .website {
+//     background-color: var(--white;
+//     box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.05);
+//     border-radius: 16px;
+//     height: 181px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     padding: 24px;
+//     h3 {
+//       color: var(--gray_text;
+//       opacity: 0.8;
+//       font-size: 18px;
+//       font-family: "Tajawal-Bold";
+//     }
+//     a {
+//       font-size: 16px;
+//       color: var(--bg_color;
+//       font-family: "Tajawal-Bold";
+//       text-decoration: none;
+//       span {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         width: 26px;
+//         height: 26px;
+//         background: var(--bg_color;
+//         border-radius: 100%;
+//         text-align: center;
+//         float: left;
+//       }
+//     }
+//   }
+// }
+// // tablet
+// @media (max-width: 992px) {
+//   .related_sites {
+//     padding: 44px 0;
+//     p {
+//       margin-bottom: 35px;
+//     }
+//     a {
+//       display: flex;
+//       direction: row-reverse;
+//       justify-content: space-between;
+//     }
+//     .website {
+//       display: flex !important;
+//     }
+//     .slick-slide {
+//       margin: 0 10px;
+//     }
+//   }
+// }
+// // mobile
+// @media (max-width: 767px) {
+//   .related_sites {
+//     .website {
+//       margin-bottom: 16px;
+//     }
+//     .row {
+//       & > .col {
+//         flex: 1 0 100%;
+//       }
+//     }
+//   }
+// }
+
+// // search
+// .search {
+//   background: var(--white url(../../src/images/theme1/search_bg.png);
+//   background-position: center left;
+//   background-repeat: no-repeat;
+//   box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.06);
+//   border-radius: 16px;
+//   min-height: 252px;
+//   padding-right: 24px;
+//   display: flex;
+//   align-items: center;
+//   position: relative;
+//   z-index: 9;
+//   margin-bottom: -70px;
+//   &.no-bg {
+//     background: var(--white;
+//   }
+//   &:before {
+//     content: "";
+//     position: absolute;
+//     height: 100%;
+//     width: 6px;
+//     background: var(--bg_color;
+//     box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.12);
+//     border-radius: 24px;
+//     top: 0;
+//     right: -32px;
+//   }
+//   h3 {
+//     font-size: 30px;
+//     font-family: "Tajawal-Bold";
+//     color: var(--gray_text;
+//     margin-bottom: 45px;
+//   }
+//   .input-group {
+//     max-width: 445px;
+//     .input-group-text {
+//       background: #f1f1f1;
+//       border-top-right-radius: 12px !important;
+//       border-bottom-right-radius: 12px !important;
+//     }
+//     input {
+//       height: 68px;
+//       background: #f1f1f1;
+//       font-size: 20px;
+//       border-right: 0;
+//       border-top-left-radius: 12px !important;
+//       border-bottom-left-radius: 12px !important;
+//       &:focus {
+//         box-shadow: none;
+//         border-color: #ced4da;
+//       }
+//     }
+//   }
+//   .search_form {
+//     background: var(--white;
+//     box-shadow: none;
+//     border-radius: 0;
+//     min-height: auto;
+//     padding: 0;
+//   }
+// }
+
+// @media (max-width: 992px) {
+//   .search {
+//     background: var(--white;
+//     margin-bottom: 0;
+//     margin-top: -60px;
+//     margin-bottom: 70px;
+//     .input-group {
+//       max-width: 268px;
+//       input {
+//         height: 53px;
+//       }
+//     }
+//     h3 {
+//       margin-bottom: 20px;
+//     }
+//   }
+// }
+// // mobile
+// @media (max-width: 767px) {
+//   .search {
+//     &:before {
+//       right: -15px;
+//     }
+//     h3 {
+//       font-size: 22px;
+//     }
+//     img {
+//       margin-bottom: 30px;
+//     }
+//     .input-group {
+//       max-width: 100%;
+//       margin-bottom: 12px;
+//       input {
+//         font-size: 16px;
+//       }
+//     }
+//   }
+// }
+
+// // slider
+// .slider {
+//   margin-bottom: 175px;
+//   .item {
+//     position: relative;
+//     .img-container {
+//       height: 524px;
+//       img {
+//         margin: 0 auto;
+//         height: 100%;
+//         width: 100%;
+//       }
+//     }
+//     .desc {
+//       position: absolute;
+//       bottom: 55px;
+//       right: 123px;
+//       p {
+//         font-family: "Tajawal-Bold";
+//         font-size: 24px;
+//         color: var(--white;
+//         margin-bottom: 30px;
+//         max-width: 738px;
+//       }
+//       .category {
+//         width: 93px;
+//         height: 35px;
+//         background: var(--red;
+//         border-radius: 8px;
+//         font-weight: 500;
+//         font-size: 18px;
+//         color: var(--white;
+//         display: flex;
+//         align-items: baseline;
+//         justify-content: center;
+//         margin-bottom: 20px;
+//       }
+//       a {
+//         font-family: "Tajawal-Bold";
+//         font-size: 18px;
+//         color: var(--white;
+//         text-decoration: none;
+//         cursor: pointer;
+//         &:hover {
+//           color: var(--white;
+//         }
+//       }
+//     }
+//   }
+
+//   .slick-arrow {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     width: 40px;
+//     height: 40px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border: none;
+//     background: rgba(0, 0, 0, 0.35);
+//     border-radius: 63px;
+//     z-index: 1;
+//     i {
+//       color: var(--white;
+//     }
+//     &.prev-arrow {
+//       right: 52px;
+//     }
+//     &.next-arrow {
+//       left: 52px;
+//     }
+//   }
+//   .slick-dots {
+//     position: absolute;
+//     bottom: 30px;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     li {
+//       width: 14.4px;
+//       height: 3.2px;
+//       background: var(--white;
+//       opacity: 0.3;
+//       border-radius: 22px;
+//       margin: 0 5px;
+//       transition: width 2s ease;
+//       &.slick-active {
+//         opacity: 1;
+//         width: 29px;
+//       }
+//     }
+//   }
+// }
+// // tablet
+// @media (max-width: 992px) {
+//   .slider {
+//     margin-bottom: 0;
+//     .item {
+//       .img-container {
+//         height: 268px;
+//       }
+//       .desc {
+//         bottom: auto;
+//         top: 48px;
+//         right: 24px;
+//         .category {
+//           width: 71px;
+//           height: 27px;
+//         }
+//         p {
+//           max-width: 310px;
+//           padding-right: 30px;
+//           margin-bottom: 10px;
+//         }
+//         a {
+//           padding-right: 30px;
+//         }
+//         .category,
+//         p {
+//           font-size: 16px;
+//         }
+//         a {
+//           font-size: 14px;
+//         }
+//       }
+//     }
+//     .slick-arrow {
+//       width: 24px;
+//       height: 24px;
+//       i {
+//         font-size: 12px;
+//       }
+//       &.prev-arrow {
+//         right: 24px;
+//       }
+//       &.next-arrow {
+//         left: 24px;
+//       }
+//     }
+//     .slick-dots {
+//       bottom: 50px;
+//     }
+//   }
+// }
+
+// // mobile
+// @media (max-width: 767px) {
+//   .slider {
+//     .desc {
+//       top: 24px;
+//     }
+//   }
+// }
+
+// // news
+// .news {
+//   background-color: #f5f5f5;
+//   padding: 69px 0 120px 0;
+//   margin-bottom: 55px;
+//   h3 {
+//     color: var(--bg_color;
+//     font-family: "Tajawal-Bold";
+//     font-size: 32px;
+//     margin-bottom: 15px;
+//   }
+//   p {
+//     font-size: 18px;
+//     color: var(--gray_text;
+//     opacity: 0.6;
+//     margin-bottom: 40px;
+//   }
+//   .img-container {
+//     position: relative;
+//     border-radius: 16px;
+//     overflow: hidden;
+//     img {
+//       min-width: 100%;
+//     }
+//     .desc {
+//       background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+//       position: absolute;
+//       height: 100%;
+//       width: 100%;
+//       z-index: 9;
+//       top: 0;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-between;
+//       padding: 24px;
+//       span {
+//         display: flex;
+//         align-items: baseline;
+//         justify-content: center;
+//         width: 84.36px;
+//         height: 32px;
+//         border-radius: 6px;
+//         font-size: 16px;
+//         color: var(--white;
+//         &.red {
+//           background-color: var(--red;
+//         }
+//         &.green {
+//           background-color: var(--green;
+//         }
+//         &.blue {
+//           background-color: var(--blue;
+//         }
+//       }
+//       h6 {
+//         font-size: 12px;
+//         color: var(--white;
+//         margin-bottom: 15px;
+//       }
+//       h5 {
+//         font-weight: 500;
+//         font-size: 20px;
+//         line-height: 24px;
+//         color: var(--white;
+//       }
+//     }
+//   }
+//   .right-side {
+//     .img-container {
+//       height: 278px;
+//       width: 100%;
+//       margin-bottom: 15px;
+//     }
+//   }
+//   .left-side {
+//     .img-container {
+//       height: 570px;
+//       width: 100%;
+//     }
+//   }
+// }
+// // tablet
+// @media (max-width: 992px) {
+//   .news {
+//     padding: 48px 0 68px 0;
+//   }
+// }
+// // mobile
+// @media (max-width: 767px) {
+//   .news {
+//     padding: 34px 0;
+//     margin-bottom: 24px;
+//     h3 {
+//       font-size: 26px;
+//     }
+//     p {
+//       font-size: 16px;
+//     }
+//     .right-side,
+//     .left-side {
+//       .img-container {
+//         height: 217px;
+//       }
+//     }
+//   }
+// }
+
+// // service
+// .service {
+//   padding-bottom: 64px;
+//   h3 {
+//     color: var(--bg_color;
+//     font-family: "Tajawal-Bold";
+//     font-size: 32px;
+//     margin-bottom: 15px;
+//   }
+//   p {
+//     font-size: 18px;
+//     color: var(--gray_text;
+//     opacity: 0.6;
+//     margin-bottom: 40px;
+//   }
+//   .services_list {
+//     padding-right: 81px;
+//     position: relative;
+//     .slick-slide {
+//       margin: 0 10px;
+//     }
+//     .single_service {
+//       border: 1px solid #d9d9d9;
+//       border-radius: 16px;
+//       height: 288px;
+//       padding: 45px 20px 35px;
+//       h3 {
+//         font-family: "Tajawal-Bold";
+//         font-size: 24px;
+//         color: var(--gray_text;
+//       }
+//       p {
+//         color: var(--gray_text;
+//         opacity: 0.6;
+//         font-size: 18px;
+//       }
+//       a {
+//         font-weight: 500;
+//         font-size: 20px;
+//         color: var(--gray_text;
+//         text-decoration: none;
+//         i {
+//           margin-right: 10px;
+//           margin-top: 10px;
+//         }
+//       }
+//       &:hover {
+//         background-color: var(--bg_color;
+//         h3,
+//         p,
+//         a {
+//           color: var(--white;
+//         }
+//       }
+//     }
+//   }
+//   .more {
+//     position: absolute;
+//     top: 50%;
+//     left: 20px;
+//     width: 135px;
+//     height: 68px;
+//     background-color: var(--bg_color;
+//     font-weight: 500;
+//     font-size: 20px;
+//     color: var(--white;
+//     border-radius: 0px 50px 50px 0px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     text-decoration: none;
+//     i {
+//       width: 30px;
+//       height: 30px;
+//       border: 2px solid var(--white;
+//       border-radius: 100px;
+//       display: inline-flex;
+//       align-items: center;
+//       justify-content: center;
+//       margin-right: 20px;
+//     }
+//   }
+// }
+
+// // tablet
+// @media (max-width: 992px) {
+//   .service {
+//     .services_list {
+//       padding-right: 10px;
+//     }
+//   }
+// }
+
+// // mobile
+// @media (max-width: 767px) {
+//   .service {
+//     h3 {
+//       font-size: 26px;
+//     }
+//     p {
+//       font-size: 16px;
+//     }
+//     .more {
+//       position: relative;
+//       border-radius: 32px;
+//       height: 44px;
+//       width: 148px;
+//       margin: 0 auto;
+//       i {
+//         width: 22px;
+//         height: 22px;
+//         font-size: 12px;
+//       }
+//     }
+//   }
+
+//   .service {
+//     .services_list {
+//       padding: 0 17px;
+//       .single_service {
+//         margin-bottom: 16px;
+//         height: 207px;
+//         padding: 24px;
+//       }
+//     }
+//   }
+// }
+
+// // history
+// .history {
+//   padding-bottom: 53px;
+//   .history-list {
+//     position: relative;
+//   }
+//   h3 {
+//     color: var(--bg_color;
+//     font-family: "Tajawal-Bold";
+//     font-size: 32px;
+//     margin-bottom: 15px;
+//   }
+//   p {
+//     font-size: 18px;
+//     color: var(--gray_text;
+//     opacity: 0.6;
+//     margin-bottom: 40px;
+//   }
+//   .history_links {
+//     width: 50%;
+//     left: 0;
+//     position: absolute;
+//     z-index: 1;
+//     span {
+//       text-decoration: none;
+//       padding-top: 50px;
+//       cursor: pointer;
+//       h4 {
+//         font-family: "Tajawal-Bold";
+//         font-size: 20px;
+//         color: #201f1e;
+//         opacity: 0.3;
+//       }
+//       p {
+//         font-size: 16px;
+//         color: #201f1e;
+//       }
+//       &:before {
+//         content: "";
+//         position: absolute;
+//         width: 16px;
+//         height: 16px;
+//         background: #eeeeee;
+//         border-radius: 100%;
+//         top: 20px;
+//       }
+//       &:after {
+//         content: "";
+//         position: absolute;
+//         width: 100%;
+//         height: 5px;
+//         background: #eeeeee;
+//         top: 25px;
+//       }
+//     }
+
+//     div.slick-current {
+//       span {
+//         h4 {
+//           opacity: 1;
+//         }
+//         &:before,
+//         &:after {
+//           background-color: var(--bg_color;
+//         }
+//       }
+//     }
+//   }
+//   .history_content {
+//     p {
+//       padding-top: 150px;
+//       max-width: 581px;
+//       color: #201f1e;
+//       font-size: 18px;
+//       opacity: 1;
+//     }
+//   }
+// }
+
+// // tablet
+// @media (max-width: 992px) {
+//   .history {
+//     .history_links {
+//       display: flex;
+//       justify-content: center;
+//       left: 50%;
+//       transform: translateX(-50%);
+//       margin: 0 auto;
+//       bottom: 300px;
+//     }
+//     .history_content {
+//       p {
+//         padding-right: 29px;
+//       }
+//       .item {
+//         flex-direction: column;
+//       }
+//     }
+//   }
+//   .history-list {
+//     position: relative;
+//   }
+// }
+
+// // mobile
+// @media (max-width: 767px) {
+//   .history {
+//     .history_content {
+//       p {
+//         font-size: 16px;
+//       }
+//       & > div {
+//         img {
+//           height: 379px;
+//           width: 402px;
+//           margin: 0 auto;
+//         }
+//       }
+//     }
+//     .history_links {
+//       display: flex;
+//       justify-content: center;
+//       left: 50%;
+//       transform: translateX(-50%);
+//       margin: initial;
+//     }
+//   }
+// }
+
+// // mobile
+// @media (max-width: 450px) {
+//   .history {
+//     .history_links {
+//       bottom: 400px;
+//     }
+//   }
+// }

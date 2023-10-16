@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <title>gallary</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="../../assets/favIcon.png" type="image/x-icon">
+    <!-- google fonts -->
+    <link rel="stylesheet" href="../../fonts/Helvetica-normal.ttf">
+    <link rel="stylesheet" href="../../fonts/Helvetica-bold.ttf">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../../plugins/fontawesome/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../plugins/bootstrap/css/bootstrap.rtl.min.css">
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="../css/theme-two.css">
+
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/gallary.css">
+    <link rel="stylesheet" href="../css/gallary_details.css">
+    <link rel="stylesheet" href="../css/index-related-websites.css">
+    <link rel="stylesheet" href="../css/index-services.css">
+    <link rel="stylesheet" href="../css/index-sponsers.css">
+    <!-- slick css -->
+    <link rel="stylesheet" href="../../plugins/slick/css/new-slick.css">
+    <link rel="stylesheet" href="../../plugins/slick/css/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <!-- JS -->
+    <script defer src="../js/index-related-websites.js"></script>
+
+    <style>
+        .slider-container {
+            display: block;
+            height: 270px;
+            width: auto;
+            margin: 0 auto;
+            position: relative;
+            max-width: 1300px;
+            margin-top: 20px;
+        }
+
+        .slider-container .arrow-left {
+            position: absolute;
+            left: 32%;
+            top: 93%;
+            transform: translate3d(0, -50%, 0);
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            z-index: 9;
+            border-top: 15px solid transparent;
+            /*border-right: 30px solid #ffffff;*/
+            border-bottom: 15px solid transparent;
+        }
+
+        @media (max-width: 768px) {
+            .slider-container .arrow-left {
+                display: none;
+            }
+        }
+
+        .slider-container .arrow-right {
+            position: absolute;
+            right: 33%;
+            top: 93%;
+            transform: translate3d(0, -50%, 0);
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            z-index: 9;
+            border-top: 15px solid transparent;
+            /*border-left: 30px solid #ffffff;*/
+            border-bottom: 15px solid transparent;
+        }
+
+        @media (max-width: 768px) {
+            .slider-container .arrow-right {
+                display: none;
+            }
+        }
+
+        .slider-container .dots {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin: 30px 0;
+            user-select: none;
+            position: absolute;
+            top: 214px;
+            z-index: 3;
+        }
+
+        .slider-container .dots span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 2px;
+            cursor: pointer;
+            user-select: none;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .slider-container .dots span:before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: #cdcdcd;
+            opacity: 0.6;
+        }
+
+        @media (max-width: 768px) {
+            .slider-container .dots span {
+                width: 23px;
+                margin-bottom: 15px;
+            }
+        }
+
+        .slider-container .dots span.active:before {
+            background-color: #ffffff;
+            opacity: 1;
+        }
+
+        .slider-container .slider {
+            display: block;
+            width: 650px;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+            line-height: 270px;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .slider-container .slider {
+                height: 450px;
+                width: 31rem;
+            }
+        }
+
+        .slider-container .slider .slide {
+            display: inline-block;
+            width: 80%;
+            height: 270px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate3d(-50%, -50%, 0) scale3d(0.4, 0.4, 1);
+            transition: transform 0.3s ease-in-out 0s, z-index 0.2s ease-in-out 0.1s;
+        }
+
+        @media (max-width: 768px) {
+            .slider-container .slider .slide {
+                width: 100%;
+                height: 450px;
+            }
+        }
+
+        .slider-container .slider .slide.prev-2 {
+            transform: translate3d(-105%, -50%, 0) scale3d(0.4, 0.4, 1);
+            z-index: 1;
+            opacity: 0.5;
+        }
+
+        .slider-container .slider .slide.prev-1 {
+            transform: translate3d(-85%, -50%, 0) scale3d(0.6, 0.6, 1);
+            z-index: 2;
+        }
+
+        .slider-container .slider .slide.next-1 {
+            z-index: 2;
+            transform: translate3d(-15%, -50%, 0) scale3d(0.6, 0.6, 1);
+        }
+
+        .slider-container .slider .slide.next-2 {
+            z-index: 1;
+            transform: translate3d(5%, -50%, 0) scale3d(0.4, 0.4, 1);
+            opacity: 0.5;
+        }
+
+        .slider-container .slider .slide.active {
+            z-index: 3;
+            transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+            box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.3);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .slider .slide {
+            border-radius: 40px;
+        }
+        .title-style{
+            color: #0085C4;
+            font-weight: bold;
+        }
+        .font-bold{
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body dir="rtl">
+<!-- header -->
+<div class="header page_header">
+    <div class="container-lg">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"><img src="../../images/theme2/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end me-lg-3" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">الرئيسيه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">خدمات وزارة الصحه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">التأمين الصحى</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallary.html">عن الوزارة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">الأخبار</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            قطاعات الوزارة
+                            <i class="fas fa-chevron-down mx-1"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="government_structure.html">قطاع 1</a></li>
+                            <li><a class="dropdown-item" href="government_structure.html">قطاع 2</a></li>
+                            <li><a class="dropdown-item" href="government_structure.html">قطاع 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+</div>
+
+<div class="page_content">
+    <div class="container-lg">
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="page_desc">
+                    <h3 class="font-bold">معرض الصور</h3>
+                </div>
+            </div>
+        </div>
+        <div class="gallary_list">
+            <div class="row mb-4">
+                <div class="col-lg-6 col-12 order-lg-0 order-1">
+                    <div class="img_details">
+                        <h3 class="title-style">زيارة الرئيس لمستشفى دار الطب</h3>
+                        <p>هناك حقيقه مثبته منذ زمن بعيد وهى أن المحتوى المقروء لصفحه توضح الفقرات فى الصفحه التى
+                            يقراها</p>
+                        <a class="click_gall" href="../../images/theme2/blog-img.png" data-fancybox="gallery">
+                            <div>مشاهدة الصور</div>
+                            <img src="../../images/theme2/nextArrow.png"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="img_container mb-lg-0 mb-2">
+                        <!--                        <a href="../../images/theme2/blog-img.png" data-fancybox="gallery">-->
+                        <img class="click_gall" data-fancybox="gallery" src="../../images/theme2/blog-img.png">
+                        <!--                        </a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-lg-6 col-12 order-lg-0 order-1">
+                    <div class="img_details">
+                        <h3>زيارة الرئيس لمستشفى دار الطب</h3>
+                        <p>هناك حقيقه مثبته منذ زمن بعيد وهى أن المحتوى المقروء لصفحه توضح الفقرات فى الصفحه التى
+                            يقراها</p>
+                        <!--                        <a href="#">-->
+                        <a class="click_gall" href="../../images/theme2/gallary2.png" data-fancybox="gallery">
+                            <div>مشاهدة الصور</div>
+                            <img src="../../images/theme2/nextArrow.png"></a>
+                        <!--                        </a>-->
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="img_container mb-lg-0 mb-2">
+                        <!--                        <a href="../../images/theme2/gallary2.png" data-fancybox="gallery">-->
+                        <img class="click_gall" data-fancybox="gallery" src="../../images/theme2/gallary2.png">
+                        <!--                        </a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-lg-6 col-12 order-lg-0 order-1">
+                    <div class="img_details">
+                        <h3>زيارة الرئيس لمستشفى دار الطب</h3>
+                        <p>هناك حقيقه مثبته منذ زمن بعيد وهى أن المحتوى المقروء لصفحه توضح الفقرات فى الصفحه التى
+                            يقراها</p>
+                        <!--                        <a href="#">-->
+                        <a class="click_gall" href="../../images/theme2/gallary3.png" data-fancybox="gallery">
+                            <div>مشاهدة الصور</div>
+                            <img src="../../images/theme2/nextArrow.png"></a><!--                        </a>-->
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="img_container mb-lg-0 mb-2">
+                        <!--                        <a href="../../images/theme2/gallary3.png" data-fancybox="gallery">-->
+                        <img class="click_gall" data-fancybox="gallery" src="../../images/theme2/gallary3.png">
+                        <!--                        </a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- related websites-->
+    <div class="theme-two">
+        <div class="related_sites">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-12">
+                        <h3>مواقع تابعه للوزارة</h3>
+                        <p>تقدم الوزارة عدد من الخدمات للمواطنين يمكنك الآن التقدم لها إلكترونيا</p>
+                    </div>
+                </div>
+            </div>
+            <!-- related websites slider -->
+            <div class="sites">
+                <div class="slider">
+                    <div class="single_site">
+                        <h4>التأمين الصحى</h4>
+                        <h6>من الخدمات للمواطنين يمكنك الآن التقدم إليها إلكترونيا</h6>
+                        <a href="#">الذهاب للموقع</a>
+                    </div>
+                    <div class="single_site">
+                        <h4>التأمين الصحى</h4>
+                        <h6>من الخدمات للمواطنين يمكنك الآن التقدم إليها إلكترونيا</h6>
+                        <a href="#">الذهاب للموقع</a>
+                    </div>
+                    <div class="single_site">
+                        <h4>التأمين الصحى</h4>
+                        <h6>من الخدمات للمواطنين يمكنك الآن التقدم إليها إلكترونيا</h6>
+                        <a href="#">الذهاب للموقع</a>
+                    </div>
+                    <div class="single_site">
+                        <h4>التأمين الصحى</h4>
+                        <h6>من الخدمات للمواطنين يمكنك الآن التقدم إليها إلكترونيا</h6>
+                        <a href="#">الذهاب للموقع</a>
+                    </div>
+                    <div class="single_site">
+                        <h4>التأمين الصحى</h4>
+                        <h6>من الخدمات للمواطنين يمكنك الآن التقدم إليها إلكترونيا</h6>
+                        <a href="#">الذهاب للموقع</a>
+                    </div>
+                    <div class="single_site">
+                        <h4>التأمين الصحى</h4>
+                        <h6>من الخدمات للمواطنين يمكنك الآن التقدم إليها إلكترونيا</h6>
+                        <a href="#">الذهاب للموقع</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sponsers -->
+    <div class="theme-two">
+        <div class="sponsers">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <h3>40 مليون مصرى </h3>
+                        <p>يستفيد بخدمات التأمين الصحى عن طريق وزارة الصحه والمؤسسات التابعه لها</p>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div class="d-flex align-items-center justify-content-center flex-wrap">
+                            <a href="#"><img src="../../images/theme2/sponser1.png"></a>
+                            <a href="#"><img src="../../images/theme2/sponser2.png"></a>
+                            <a href="#"><img src="../../images/theme2/sponser3.png"></a>
+                            <a href="#"><img src="../../images/theme2/sponser4.png"></a>
+                            <a href="#"><img src="../../images/theme2/sponser5.png"></a>
+                            <a href="#"><img src="../../images/theme2/sponser6.png"></a>
+                            <a href="#"><img src="../../images/theme2/sponser7.png"></a>
+                            <a href="#"><img src="../../images/theme2/sponser9.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <div class="container-lg">
+        <div class="row align-items-center border-down">
+            <!-- logo -->
+            <div class="col-lg-6 col-md-4 col-12 order-md-0 order-1">
+                <div class="brand">
+                    <img src="../../images/theme2/logo.png"/>
+                </div>
+            </div>
+            <!-- links -->
+            <div class="col-lg-6 col-md-8 col-12">
+                <ul class="list-unstyled links">
+                    <li><a href="contactus.html">تواصل معنا</a></li>
+                    <li><a href="news_video.html">المناقصات</a></li>
+                    <li><a href="blog-post.html">المساعده</a></li>
+                    <li><a href="sign-up.html">الوظائف</a></li>
+                    <li><a href="service.html">الخدمات</a></li>
+                    <li><a href="gallary.html">عن الوزارة</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <!-- social links -->
+            <div class="col-md-6 col-12 order-md-0 order-1">
+                <ul class="list-unstyled social">
+                    <li><a href="#"><img src="../../images/theme2/youtube.png"></a></li>
+                    <li><a href="#"><img src="../../images/theme2/twitter.png"></a></li>
+                    <li><a href="#"><img src="../../images/theme2/linkedin.png"></a></li>
+                    <li><a href="#"><img src="../../images/theme2/instagram.png"></a></li>
+                </ul>
+            </div>
+            <!-- copyright -->
+            <div class="col-md-6 col-12">
+                <p class="copyright">جميع الحقوق محفوظه للحكومه المصريه © 2021</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="gallary_popup">
+    <span class="close_btn"><img src="../../images/theme1/close.png"></span>
+
+    <div class="container-lg">
+
+        <div class="slider-container">
+            <span class="arrow-left"><svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M6.12155 7.5H19.0002V10.5H6.12155L11.0609 15.4393L8.93957 17.5607L0.378906 9L8.93957 0.439339L11.0609 2.56066L6.12155 7.5Z"
+      fill="white" fill-opacity="0.6"/>
+</svg>
+</span>
+            <span class="arrow-right">
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M13.478 10.557H0.924316V7.443H13.478L8.66331 2.31595L10.7311 0.11401L19.0757 9L10.7311 17.886L8.66331 15.6841L13.478 10.557Z"
+      fill="white" fill-opacity="0.6"/>
+</svg>
+
+            </span>
+            <div class="slider" id="slider">
+                <div style="background-image: url('../../images/theme2/slide3.png');background-size: cover"
+                     class="slide prev-2">
+                    1
+                </div>
+                <div style="background-image: url('../../images/theme2/slide2.png');background-size: cover"
+                     class="slide prev-1">
+                    <!--                    2-->
+                </div>
+                <div style="background-image: url('../../images/theme2/slide1.png');background-size: cover"
+                     class="slide active">
+                </div>
+                <div style="background-image: url('../../images/theme2/slide4.png');background-size: cover"
+                     class="slide next-1">
+                    4
+                </div>
+                <div style="background-image: url('../../images/theme2/slide5.png');background-size: cover"
+                     class="slide next-2">
+                    5
+                </div>
+            </div>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="page-mask"></div>
+
+
+<script src="../../plugins/jquery/jquery-1.12.3.min.js"></script>
+<script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../plugins/slick/js/slick.min.js"></script>
+<script src="../../src/js/theme2_scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+<script>
+
+
+    $(".click_gall").on("click", function () {
+        var w = window.innerWidth;
+        if (w>809){
+            $(".gallary_popup").show();
+            $(".page-mask").show();
+
+            var Slider = (function () {
+                var initSlider = function () {
+                    var dir = $("html").attr("dir");
+                    var swipeHandler = new Hammer(document.getElementById("slider"));
+                    swipeHandler.on('swipeleft', function (e) {
+                        if (dir == "rtl")
+                            $(".arrow-left").trigger("click");
+                        else
+                            $(".arrow-right").trigger("click");
+                    });
+
+                    swipeHandler.on('swiperight', function (e) {
+                        if (dir == "rtl")
+                            $(".arrow-right").trigger("click");
+                        else
+                            $(".arrow-left").trigger("click");
+                    });
+
+                    $(".arrow-right , .arrow-left").click(function (event) {
+                        var nextActiveSlide = $(".slide.active").next();
+
+                        if ($(this).hasClass("arrow-left"))
+                            nextActiveSlide = $(".slide.active").prev();
+
+                        if (nextActiveSlide.length > 0) {
+                            var nextActiveIndex = nextActiveSlide.index();
+                            $(".dots span").removeClass("active");
+                            $($(".dots").children()[nextActiveIndex]).addClass("active");
+
+                            updateSlides(nextActiveSlide);
+                        }
+                    });
+
+                    $(".dots span").click(function (event) {
+                        var slideIndex = $(this).index();
+                        var nextActiveSlide = $($(".slider").children()[slideIndex]);
+                        $(".dots span").removeClass("active");
+                        $(this).addClass("active");
+
+                        updateSlides(nextActiveSlide);
+                    });
+
+                    var updateSlides = function (nextActiveSlide) {
+                        var nextActiveSlideIndex = $(nextActiveSlide).index();
+
+                        $(".slide").removeClass("prev-1");
+                        $(".slide").removeClass("next-1");
+                        $(".slide").removeClass("active");
+                        $(".slide").removeClass("prev-2");
+                        $(".slide").removeClass("next-2");
+
+                        nextActiveSlide.addClass("active");
+
+                        nextActiveSlide.prev().addClass("prev-1");
+                        nextActiveSlide.prev().prev().addClass("prev-2");
+                        nextActiveSlide.addClass("active");
+                        nextActiveSlide.next().addClass("next-1");
+                        nextActiveSlide.next().next().addClass("next-2");
+                    }
+
+                    var updateToNextSlide = function (nextActiveSlide) {
+
+                    }
+                }
+                return {
+                    init: function () {
+                        initSlider();
+                    }
+                }
+            })();
+
+            $(function () {
+                Slider.init();
+            });
+        }else{
+            Fancybox.bind("[data-fancybox]", {
+                // Your custom options
+            });
+        }
+
+    });
+
+    $(".gallary_popup .close_btn").on("click", function () {
+        $(this).closest(".gallary_popup").hide();
+        $(".page-mask").hide();
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+// import base scss files
+@import "variables";
+
+// // import layout scss files
+// @import "./layout/theme2/footer.scss";
+// @import "./layout/theme2/header.scss";
+// // import views
+// @import "./views/theme2/index.scss";
+// @import "./views/theme2/government_structure.scss";
+// @import "./views/theme2/gallary.scss";
+// @import "./views/theme2/contactus.scss";
+// @import "./views/theme2/resources.scss";
+// @import "./views/theme2/service.scss";
+// @import "./views/theme2/news.scss";
+
+body {
+  font-family: "Tajawal-Regular";
+  &.bg_gray {
+    background: #f5f6f9;
+  }
+}
+.page_content {
+  // padding-top: 205px;
+}
+// tablet
+@media (max-width: 992px) {
+  .page_content {
+    // padding-top: 150px;
+  }
+}

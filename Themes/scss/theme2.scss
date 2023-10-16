@@ -1,0 +1,34 @@
+// import base scss files
+@import "base/theme2/colors";
+@import "base/fonts";
+@import "base/colors";
+// import layout scss files
+@import "layout/theme2/footer";
+@import "layout/theme2/header";
+// import views
+@import "views/theme2/index";
+@import "views/theme2/government_structure";
+@import "views/theme2/gallary";
+@import "views/theme2/contactus";
+@import "views/theme2/resources";
+@import "views/theme2/service";
+@import "views/theme2/news";
+
+body {
+    font-family: $normal_font;
+
+    &.bg_gray {
+        background: #F5F6F9;
+    }
+}
+
+.page_content {
+    padding-top: 205px;
+}
+
+// tablet
+@media (max-width: 992px) {
+    .page_content {
+        padding-top: 150px;
+    }
+}

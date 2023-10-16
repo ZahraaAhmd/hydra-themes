@@ -1,0 +1,131 @@
+@import "variables";
+
+// related websites
+.theme-two {
+  .related_sites {
+    background: var(--bg_color);
+    padding: 85px 0 120px 0;
+    h3 {
+      font-family: "Tajawal-Bold";
+      font-size: 28px;
+      color: var(--white) !important;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      color: var(--white);
+      max-width: 426px;
+      margin-bottom: 65px;
+    }
+    .sites {
+      padding-right: 95px;
+      margin-bottom: -262px;
+      .slick-slide {
+        margin: 0 10px;
+      }
+      .single_site {
+        background: var(--white);
+        border: 1px solid var(--input-border);
+        border-radius: 6px;
+        padding: 17px 27px;
+        min-height: 197px;
+        position: relative;
+        box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+
+        h4 {
+          font-family: "Tajawal-Bold";
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+        h6 {
+          font-size: 18px;
+          color: var(--paragraphColor) !important;
+          font-weight: 400;
+          line-height: 32px;
+        }
+        a {
+          font-size: 18px;
+          color: var(--main_color);
+          text-decoration: none;
+          position: absolute;
+          bottom: 17px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .related_sites {
+      background: var(--bg_color);
+      padding: 85px 0 120px 0;
+      h3 {
+        font-family: "Tajawal-Bold";
+        font-size: 26px;
+        color: var(--white);
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 16px;
+        color: var(--white);
+        max-width: 426px;
+        margin-bottom: 65px;
+      }
+      .sites {
+        padding-right: 80px;
+        margin-bottom: -262px;
+        .slick-slide {
+          margin: 0 10px;
+        }
+        .single_site {
+          background: var(--white);
+          border: 1px solid var(--input-border);
+          border-radius: 6px;
+          padding: 17px 17px;
+          min-height: 197px;
+          position: relative;
+
+          h4 {
+            font-family: "Tajawal-Bold";
+            font-size: 22px;
+            margin-bottom: 20px;
+          }
+          h6 {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 35px;
+          }
+          a {
+            font-size: 16px;
+            color: var(--main_color);
+            text-decoration: none;
+            position: absolute;
+            bottom: 17px;
+          }
+        }
+      }
+    }
+  }
+  // tablet
+  @media (max-width: 992px) {
+    .related_sites {
+      padding: 36px 0 120px 0;
+      .sites {
+        padding-right: 5px;
+        margin-bottom: -200px;
+      }
+    }
+  }
+  // mobile
+  @media (max-width: 768px) {
+    .related_sites {
+      .sites {
+        padding-right: 0;
+        margin-bottom: initial;
+        .slick-slide {
+          margin: 12px 5px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,220 @@
+@import "variables";
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+
+.section {
+  // margin: 4rem 0;
+  padding: 6rem 0;
+}
+.section-title {
+  width: fit-content;
+  padding: 1rem 2rem;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  // font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  // font-family: "Helvetica Neue LT Arabic", sans-serif;
+  // font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 168.4%;
+  letter-spacing: -0.04em;
+  color: var(--black);
+}
+
+.primary-section-title {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  font-size: 3rem !important;
+  line-height: 168.4%;
+}
+
+.section-title-sub {
+  font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  // font-weight: 400;
+  font-size: 2rem;
+  line-height: 168.4%;
+  // letter-spacing: -0.04em;
+  color: var(--sub-header-color);
+}
+
+.theme-four {
+  .strategies-list {
+    margin-top: 8rem;
+    .strategy-item {
+      border-right: 1px solid #cbcbcb;
+      .strategy-number {
+        color: var(--headingsColor);
+        font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+      }
+      .strategy-title {
+        color: var(--headingsColor);
+        font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+        font-style: normal;
+        font-size: 3rem;
+        line-height: 170%;
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+      }
+      .strategy-content {
+        font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+        font-style: normal;
+        font-size: 2rem;
+        line-height: 120%;
+        color: var(--strategyDescColor);
+      }
+    }
+  }
+
+  // `xl` applies to large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) {
+    .strategies-list {
+      margin-top: 8rem;
+      .strategy-item {
+        border-right: 1px solid #cbcbcb;
+        .strategy-number {
+          font-size: 2.3rem;
+        }
+        .strategy-title {
+          font-size: 3rem;
+          line-height: 150%;
+        }
+        .strategy-content {
+          font-size: 1.8rem;
+          line-height: 110%;
+        }
+      }
+    }
+  }
+  // `lg` applies to medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) {
+    .strategies-list {
+      margin-top: 8rem;
+      .strategy-item {
+        margin-bottom: 5rem !important;
+        border-right: 1px solid #cbcbcb;
+        .strategy-number {
+          color: var(--headingsColor);
+          font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 2.5rem;
+          line-height: 120%;
+          letter-spacing: -0.04em;
+        }
+        .strategy-title {
+          color: var(--headingsColor);
+          font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+          font-style: normal;
+          font-size: 2.5rem;
+          line-height: 170%;
+          margin-top: 1.5rem;
+          margin-bottom: 3rem;
+        }
+        .strategy-content {
+          font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+          font-style: normal;
+          font-size: 2rem;
+          line-height: 120%;
+          color: var(--strategyDescColor);
+        }
+      }
+    }
+  }
+
+  // `md` applies to small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) {
+    .strategies-list {
+      margin-top: 8rem;
+      .strategy-item {
+        margin-bottom: 5rem !important;
+        border-right: 1px solid #cbcbcb;
+        .strategy-number {
+          color: var(--headingsColor);
+          font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 2.5rem;
+          line-height: 120%;
+          letter-spacing: -0.04em;
+        }
+        .strategy-title {
+          color: var(--headingsColor);
+          font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+          font-style: normal;
+          font-size: 3rem;
+          line-height: 170%;
+          margin-top: 1.5rem;
+          margin-bottom: 3rem;
+        }
+        .strategy-content {
+          font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+          font-style: normal;
+          font-size: 2rem;
+          line-height: 120%;
+          color: var(--strategyDescColor);
+        }
+      }
+    }
+  }
+
+  .margin-right-reset {
+  }
+  // `sm` applies to x-small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    .strategies-list {
+      margin-top: 5rem;
+      .strategy-item {
+        width: fit-content;
+        margin-right: 2rem;
+        border-right: 1px solid #cbcbcb;
+        margin-bottom: 6rem;
+        .strategy-number {
+          font-size: 2rem;
+          line-height: 120%;
+          letter-spacing: -0.04em;
+        }
+        .strategy-title {
+          font-size: 2.3rem;
+          line-height: 170%;
+        }
+        .strategy-content {
+          font-size: 1.6rem;
+          line-height: 120%;
+        }
+      }
+    }
+    .margin-right-reset {
+      margin-right: 0 !important;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-title {
+    font-size: 2.5rem;
+    color: var(--black);
+    letter-spacing: -0.04em;
+  }
+  .section {
+    // margin: 3rem 0;
+    padding: 5rem 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .section {
+    // margin: 2rem 0;
+    padding: 4rem 0;
+  }
+  .primary-section-title {
+    font-size: 2.4rem !important;
+  }
+}

@@ -1,0 +1,223 @@
+:root {
+  --font-normal: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  --font-bold: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  --white: #fff;
+  --black: #000;
+  --gray-50: #f9f9f9;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --gray-1000: #000;
+  --primaryBgColor: #1d73bf;
+  --secondaryBgColor: #d2e3f2;
+  --tertiaryBgColor: #e8f1f9;
+  --sub-header-color: #7b7b7b;
+  --bg-transparent: transparent;
+  --headerBtnColor: #307189;
+  --borderColor: #0d3770;
+  --loginBtnBgColor: #1d73bf;
+  --loginBtnBgOnHover: #3488d2;
+  --languageBtnBgColor: #0000000f;
+  --HeroMainTextColor: #0c2e4c;
+  --galleryBgColor: #f8f8f8;
+  --heroTextColor: #0c2e4c;
+  --test-sub-color: #175c99;
+  --strategyDescColor: #21201d;
+  --menuItemColor: #114573;
+  --dateColor: #4c7eab;
+  --itemColor: #15558c;
+  --itemBgColor: #f8f8f8;
+  --bg-color-mobile: #f5f5f5;
+  --bg-title-color: #15558c;
+  --related-website-item-bg-color: --white;
+  --related-website-item-title-color: #181818;
+  --related-website-item-visit-text-color: #145186;
+  --contactBgColor: #145186;
+  --inputFieldBgColor: transparent;
+  --contactUsDescText: #3e4f5f;
+  --footerBgColor: #092239;
+  --servicesBgColor: #e8f1f9;
+  --servicesMainTextColor: #1d73bf;
+  --servicessecondaryTextColor: #a1a1a1;
+  --ministerBgColor: #f8f8f8;
+  --ministerMainTextColor: #1d73bf;
+  --ministerDescTextColor: #0c2e4c;
+  --tapsWrapperBgColor: #15558c;
+  --sign-in-header: #1d73bf;
+  --sign-in-desc: #757575;
+  --sign-in-desc2: #757575b2;
+  --input-border: #1d73bf;
+  --input-placeholder: #afafaf;
+  --input-background: #f8f8f8;
+  --button-bg-primary: #1d73bf;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+  --ministeryMainColor: #1d73bf;
+  --ministerySecondaryColor: #5c5c5c;
+  --searchMainColor: #1d73bf;
+  --faqMainColor: #1d73bf;
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+.theme-four .section {
+  margin: 4rem 0;
+  padding: 4rem 0;
+}
+.theme-four .section-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 168.4%;
+  letter-spacing: -0.04em;
+  color: var(--black);
+}
+.theme-four .primary-section-title {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  font-size: 3rem !important;
+  line-height: 168.4%;
+  color: var(--primaryBgColor) !important;
+}
+.theme-four .gallery-seperate-parent {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.theme-four .gallery-seperate-parent .gallery-item img {
+  width: 40rem;
+  height: 25rem;
+}
+.theme-four .gallery-seperate-parent .gallery-item h5 {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--black);
+  margin-top: 1rem;
+}
+.theme-four .gallery-seperate-parent .gallery-item p {
+  font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--primaryBgColor);
+}
+@media (max-width: 1199.98px) {
+  .theme-four .gallery-seperate-parent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .theme-four .gallery-seperate-parent .gallery-item img {
+    width: 30rem;
+    height: 20rem;
+  }
+  .theme-four .gallery-seperate-parent .gallery-item h5 {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--black);
+    margin-top: 1rem;
+  }
+  .theme-four .gallery-seperate-parent .gallery-item p {
+    font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--primaryBgColor);
+  }
+}
+@media (max-width: 991.98px) {
+  .theme-four .gallery-seperate-parent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .theme-four .gallery-seperate-parent .gallery-item img {
+    width: 35rem;
+    height: 25rem;
+  }
+  .theme-four .gallery-seperate-parent .gallery-item h5 {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--black);
+    margin-top: 1rem;
+  }
+  .theme-four .gallery-seperate-parent .gallery-item p {
+    font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--primaryBgColor);
+  }
+}
+@media (max-width: 575.98px) {
+  .theme-four .gallery-seperate-parent {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .theme-four .gallery-seperate-parent .gallery-item img {
+    width: 100%;
+    height: 25rem;
+  }
+  .theme-four .gallery-seperate-parent .gallery-item h5 {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--black);
+    margin-top: 3rem;
+  }
+  .theme-four .gallery-seperate-parent .gallery-item p {
+    font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--primaryBgColor);
+  }
+}
+@media (max-width: 767.98px) {
+  .theme-four .section-title {
+    font-size: 2.5rem;
+    color: var(--black);
+    letter-spacing: -0.04em;
+  }
+  .theme-four .section {
+    margin: 3rem 0;
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .theme-four .section {
+    margin: 2rem 0;
+    padding: 2rem 0;
+  }
+  .theme-four .primary-section-title {
+    font-size: 2.4rem !important;
+  }
+}

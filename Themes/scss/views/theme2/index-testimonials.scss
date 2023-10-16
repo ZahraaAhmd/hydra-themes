@@ -1,0 +1,189 @@
+@import "variables";
+
+.theme-two {
+  .testimonials-wrapper {
+    margin: 4rem 0;
+    padding: 5rem 2.4rem 8rem 2.4rem;
+    background-color: var(--bg_light);
+    .testimonials-container {
+      h3 {
+        font-family: "Tajawal-Bold";
+        font-size: 28px;
+        color: var(--gray_text);
+        line-height: 36px;
+        margin-bottom: 1rem;
+      }
+      p {
+        color: var(--lightContentColor);
+        font-size: 18px;
+        max-width: 426px;
+        margin-bottom: 40px;
+      }
+
+      .testimonials-list {
+        margin-top: 3rem;
+        .testimonial-item {
+          margin-left: 2rem;
+          margin-bottom: 1rem;
+          padding: 3rem;
+          background: var(--white);
+          box-shadow: 0px 4px 4px rgba(0, 112, 196, 0.1),
+            inset 0px 0px 4px rgba(0, 0, 0, 0.1);
+          border-radius: 16px;
+          cursor: pointer;
+          .avatarWrapper {
+            position: relative;
+            width: 13rem;
+            height: 13rem;
+
+            .img-container {
+              width: 100%;
+              height: 100%;
+              overflow: hidden !important;
+              background: linear-gradient(white, white) padding-box,
+                var(--bg_color) border-box;
+              border-radius: 50em;
+              border: 4px solid transparent;
+              transition: all 0.3s ease-in-out;
+              cursor: pointer;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                  transform: scale(1.1);
+                }
+              }
+            }
+
+            .quotation-wrap {
+              position: absolute;
+              top: 50%;
+              right: -7%;
+              width: 45px;
+              height: 45px;
+              background: var(--bg_color);
+              border-radius: 50%;
+              color: var(--white);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              svg {
+                width: 2.4rem;
+                height: 2.4rem;
+              }
+            }
+          }
+          .testimonial-content {
+            .testimonial-desc {
+              font-family: "Tajawal-Regular", sans-serif;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 161.52%;
+              letter-spacing: -0.03em;
+              color: var(--paragraphColor);
+              margin-bottom: 2rem;
+              // make a border bottom with 30% width
+              &::after {
+                content: "";
+                display: block;
+                width: 20%;
+                height: 2px;
+                background: linear-gradient(white, white) padding-box,
+                  var(--bg_color) border-box;
+                border-radius: 50em;
+                border: 2px solid transparent;
+                margin: 1rem 0;
+              }
+            }
+
+            .testimonial-job-title {
+              font-family: "Tajawal-Regular", sans-serif;
+              font-weight: 400;
+              font-size: 17px;
+              line-height: 161.52%;
+              letter-spacing: -0.03em;
+              color: var(--paragraphColor);
+              margin-bottom: 0.7rem;
+            }
+            .testimonial-author {
+              font-family: "Tajawal-Bold", sans-serif;
+
+              font-size: 14px;
+              line-height: 161.52%;
+              /* identical to box height, or 23px */
+
+              text-align: right;
+              letter-spacing: -0.03em;
+
+              color: var(--paragraphColor) !important;
+            }
+          }
+          &:hover {
+            background: var(--bg_color);
+            .avatarWrapper {
+              .img-container {
+                border: 4px solid var(--white);
+              }
+              .quotation-wrap {
+                border: 0.5px solid var(--white);
+              }
+            }
+            .testimonial-content {
+              .testimonial-desc {
+                color: var(--white);
+                opacity: 0.9;
+                &::after {
+                  content: "";
+
+                  background: linear-gradient(white, white) padding-box,
+                    var(--white) border-box;
+                }
+              }
+              .testimonial-job-title {
+                color: var(--white);
+                opacity: 0.9;
+              }
+              .testimonial-author {
+                color: var(--white) !important;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+    .slick-dots {
+      // background-color: burlywood;
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+      padding: 1rem 0;
+      bottom: -7.5rem;
+      list-style-type: none;
+
+      li {
+        margin: 0 0.6rem;
+      }
+
+      button {
+        overflow: hidden;
+        display: block;
+        width: 1.2rem;
+        height: 1.2rem;
+        padding: 0;
+        border: none;
+        border-radius: 100%;
+        background-color: #d9d9d9;
+
+        text-indent: -9999px;
+      }
+
+      li.slick-active button {
+        background: var(--bg_color);
+      }
+    }
+  }
+}

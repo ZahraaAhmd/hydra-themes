@@ -1,0 +1,459 @@
+@import "variables";
+@import "fonts";
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+.section-title-header {
+  font-family: "Tajawal-Bold";
+  font-size: 32px;
+  color: var(--headingsColor);
+}
+.section-title-desc {
+  font-family: "Tajawal-Regular";
+  font-size: 18px;
+  color: var(--lightContentColor);
+  opacity: 0.8;
+  width: 30%;
+  margin-top: 15px;
+}
+.theme-one {
+  .survey_form {
+    /* Hide all steps by default: */
+    .tab {
+      display: none;
+    }
+    .tab.active {
+      display: block;
+    }
+    .fadeInAnimation {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 100%;
+      }
+    }
+    background: var(--white);
+    border: 2px solid #e8e8e8;
+    border-radius: 16px;
+    padding: 30px 20px;
+    margin-bottom: 142px;
+    .form-title {
+      font-family: "Tajawal", "Tajawal-Regular", sans-serif;
+      font-size: 20px;
+      line-height: 32px;
+      strong {
+        font-weight: 700;
+        color: var(--black);
+      }
+    }
+    .ratings-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+      // background-color: red;
+      .rating-item-label {
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 2.5rem !important;
+        border-radius: 50% !important;
+        background-color: var(--white) !important;
+        border: 1px solid #d7d7d7 !important;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        color: var(--black) !important;
+
+        &:hover {
+          color: var(--white) !important;
+          background-color: var(--primaryColor) !important;
+        }
+      }
+      label:checked {
+        border: 2px solid var(--primaryColor);
+      }
+    }
+    .option-survey-item {
+      font-family: "Tajawal", "Tajawal-Regular", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      color: var(--lightContentColor);
+      margin-top: 1.4rem;
+      span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+
+        color: rgba(0, 0, 0, 0.55);
+      }
+    }
+  }
+  .survey_wrapper {
+    margin: 5rem auto;
+    h3 {
+      font-family: "Tajawal-Bold";
+      font-size: 32px;
+      color: var(--headingsColor);
+    }
+    p {
+      font-size: 18px;
+      color: var(--lightContentColor);
+      margin-top: 15px;
+    }
+    .contact_info {
+      span {
+        width: 40px;
+        height: 40px;
+        background: rgba(70, 117, 239, 0.1);
+        border-radius: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 12px;
+      }
+      p {
+        font-family: "Tajawal", "Tajawal-Regular", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: var(--lightContentColor);
+        margin-bottom: 0;
+        max-width: 190px;
+      }
+    }
+  }
+
+  .survey_form_wrapper {
+    position: relative;
+    //   background-color: aqua;
+    .form-input {
+      // background-color: red;
+      width: 100%;
+      .text-area-input-survey {
+        font-family: "Tajawal", "Tajawal-Regular", sans-serif;
+        width: 100%;
+        height: 15rem;
+        background: var(--input-background);
+        border-radius: 10px;
+        font-size: 18px;
+        color: var(--lightContentColor);
+        resize: none;
+        border: none;
+        padding: 15px 15px;
+        &::placeholder {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 26px;
+          color: rgba(0, 0, 0, 0.55);
+        }
+
+        &:focus {
+          outline: 1px solid #bdbdbd;
+        }
+      }
+    }
+    .btn-action-wrapper {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      .btn-submit {
+        padding: 0.6rem 2rem;
+        font-size: 18px;
+        background-color: var(--primaryColor);
+        color: var(--white);
+        text-align: center;
+        border-radius: 10px;
+        border-radius: 4rem;
+        z-index: 999;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+
+  // // X-Large devices (large desktops, 1200px and up)
+  @media (max-width: 1200px) {
+    .survey_form {
+      padding: 38px 10px;
+      margin-bottom: 30px;
+      .form-title {
+        font-size: 18px;
+        strong {
+          font-weight: 700;
+        }
+      }
+      .ratings-wrapper {
+        gap: 1rem;
+        margin-top: 2rem;
+        // background-color: red;
+        .rating-item {
+          padding: 0.5rem;
+          p {
+            font-size: 18px;
+
+            margin-bottom: 0;
+          }
+        }
+      }
+      .option-survey-item {
+        font-size: 18px;
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+    .survey_wrapper {
+      margin: 5rem auto;
+      h3 {
+        font-family: "Tajawal-Bold";
+        font-size: 30px;
+        color: var(--headingsColor);
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 16px;
+        color: var(--lightContentColor);
+      }
+      .contact_info {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        span {
+          width: 40px;
+          height: 40px;
+          background: rgba(70, 117, 239, 0.1);
+          border-radius: 26px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 12px;
+        }
+        p {
+          font-family: "Tajawal", "Tajawal-Regular", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          color: var(--black);
+          margin-bottom: 0;
+          max-width: 190px;
+        }
+      }
+    }
+  }
+  // // Large devices (desktops, 992px and up)
+  @media (max-width: 992px) {
+    .address-desc {
+      max-width: 100% !important;
+    }
+    .survey_form {
+      margin-bottom: 30px;
+    }
+    .contact_info {
+      flex-direction: column;
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+  // // Medium devices (tablets, 768px and up)
+  @media (max-width: 768px) {
+    .survey_form {
+      margin-bottom: 25px;
+      .form-title {
+        font-size: 18px;
+      }
+      .ratings-wrapper {
+        gap: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+        // background-color: red;
+        .rating-item {
+          width: 2rem;
+          height: 2rem;
+          // padding: 1.5rem;
+          padding: 0.5rem;
+          margin-left: 4rem;
+
+          p {
+            font-size: 18px;
+            line-height: 28px;
+            color: var(--lightContentColor);
+            margin-bottom: 0;
+          }
+          &:hover {
+            background: var(--bg_color);
+
+            p {
+              color: var(--lightContentColor);
+            }
+          }
+        }
+      }
+      .option-survey-item {
+        font-size: 18px;
+        margin-top: 1.4rem;
+        span {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 32px;
+          color: rgba(0, 0, 0, 0.55);
+        }
+      }
+    }
+
+    .survey_wrapper {
+      margin: 5rem auto;
+      h3 {
+        font-family: "Tajawal-Bold";
+        font-size: 32px;
+        color: var(--headingsColor);
+      }
+      p {
+        font-size: 18px;
+        color: var(--lightContentColor);
+      }
+      .contact_info {
+        margin-top: 1rem;
+        gap: 0.7rem;
+        span {
+          margin-left: 12px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  // // Small devices (landscape phones, 576px and up)
+  @media (max-width: 576px) {
+    .address-desc {
+      max-width: 100% !important;
+    }
+    .survey_form {
+      margin-bottom: 25px;
+      padding: 30px 10px;
+
+      .form-title {
+        font-size: 16px;
+      }
+      .ratings-wrapper {
+        gap: 0.5rem;
+        margin-top: 5px;
+        // background-color: red;
+        margin-bottom: 6rem;
+        .rating-item {
+          padding: 0.5rem;
+          margin-left: 4rem;
+
+          p {
+            font-size: 16px;
+            line-height: 28px;
+            color: var(--lightContentColor);
+            margin-bottom: 0;
+          }
+          &:hover {
+            background: var(--bg_color);
+
+            p {
+              color: var(--lightContentColor);
+            }
+          }
+        }
+      }
+      .option-survey-item {
+        font-size: 16px;
+        margin-top: 1.4rem;
+        span {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 32px;
+
+          color: rgba(0, 0, 0, 0.55);
+        }
+      }
+    }
+
+    .survey_wrapper {
+      margin: 5rem auto;
+      h3 {
+        font-family: "Tajawal-Bold";
+        font-size: 28px;
+        color: var(--headingsColor);
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 16px;
+        color: var(--lightContentColor);
+      }
+      .contact_info {
+        margin-top: 1rem;
+        gap: 0.7rem;
+        span {
+          margin-left: 12px;
+        }
+        p {
+          height: 1rem;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .survey_form_wrapper {
+      position: relative;
+      //   background-color: aqua;
+      .form-input {
+        // background-color: red;
+        width: 100%;
+        .text-area-input-survey {
+          font-family: "Tajawal", "Tajawal-Regular", sans-serif;
+          width: 100%;
+          height: 15rem;
+          background: var(--input-background);
+          border-radius: 10px;
+          font-size: 18px;
+          color: var(--lightContentColor);
+          resize: none;
+          border: none;
+          padding: 15px 15px;
+          &::placeholder {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: rgba(0, 0, 0, 0.55);
+          }
+
+          &:focus {
+            outline: 1px solid #bdbdbd;
+          }
+        }
+      }
+      .btn-action-wrapper {
+        .btn-submit {
+          padding: 0.6rem 1.7rem;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+  .section-title-desc {
+    width: 100%;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+  .section-title-desc {
+    width: 75%;
+  }
+}

@@ -1,0 +1,174 @@
+:root {
+  --primaryColor: #4675ef;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #1e549d;
+  --headerBottomBgColor: #fff;
+  --headerTopContentColor: #18191f;
+  --headingsColor: #4675ef;
+  --paragraphColor: #181818;
+  --lightContentColor: #181818;
+  --lightBgColor: #f5f5f5;
+  --linksColor: #0d3770;
+  --linksHoverColor: #0d3770;
+  --menuLinksColor: #18191f !important;
+  --menuLinksHoverColor: #4675ef !important;
+  --footerBackgroundColor: #4675ef;
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #1e549d !important;
+  --firstGradientColor: #153e9b;
+  --secondGradientColor: #0d3770;
+  --theme-one-main-color: #4675ef;
+  --white: #fff;
+  --black: #000;
+  --gray_text: var(--lightContentColor);
+  --gray_text2: var(--lightContentColor);
+  --red: #f34a3f;
+  --green: #55c574;
+  --blue: #4675ef;
+  --bg_color: var(--primaryColor);
+  --sign-in-desc: #606060;
+  --sign-in-desc2: #757575b2;
+  --input-border: #4675ef;
+  --input-placeholder: #868e96;
+  --input-background: #f8f8f8;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+}
+
+@font-face {
+  font-family: "Tajawal-Bold";
+  src: url(../../fonts/Tajawal/Helvetica-bold.ttf);
+}
+@font-face {
+  font-family: "Tajawal-Regular";
+  src: url(../../fonts/Tajawal/Helvetica-normal.ttf);
+}
+.video_cover {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.video_cover .video-container-control {
+  width: 100%;
+  height: 600px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 16;
+  /* margin-bottom: 3rem; */
+}
+.video_cover .video-container-control img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.video_cover .video-container-control img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.video_cover:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  position: absolute;
+}
+.video_cover .desc {
+  position: absolute;
+  top: 48px;
+  right: 48px;
+  z-index: 9;
+}
+.video_cover .desc .blue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 84.36px;
+  height: 32px;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #fff;
+  background-color: var(--bg_color);
+}
+.red{
+  background-color: var(--red) !important;
+}
+.video_cover .play {
+  font-size: 70px;
+  color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 9;
+  cursor: pointer;
+}
+
+.news_title h3 {
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--gray_text) !important;
+  line-height: 150%;
+}
+.news_title .info li {
+  font-size: 20px;
+  color: var(--gray_text);
+  margin-bottom: 12px;
+}
+.news_title .info li img {
+  margin-left: 12px;
+}
+.news_title .social h4 {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--bg_color);
+  margin-bottom: 17px;
+}
+.news_title .social ul li {
+  margin-left: 16px;
+}
+
+.news_details h5 {
+  font-family: "Tajawal-Bold";
+  font-size: 16px;
+  color: var(--gray_text);
+}
+.news_details p,
+.news_details li {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray_text);
+}
+
+@media (max-width: 767px) {
+  .video_cover .play {
+    font-size: 50px;
+  }
+  .video_cover .desc {
+    top: 20px;
+    right: 20px;
+  }
+}

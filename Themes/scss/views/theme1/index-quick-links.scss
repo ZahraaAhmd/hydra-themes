@@ -1,0 +1,104 @@
+@import "variables";
+@import "fonts";
+.section-title-header {
+  font-family: "Tajawal-Bold";
+  font-size: 32px;
+  color: var(--bg_color);
+}
+.section-title-desc {
+  font-family: "Tajawal-Regular";
+  font-size: 18px;
+  color: var(--lightContentColor);
+  opacity: 0.8;
+  width: 30%;
+  margin-top: 15px;
+}
+.theme-one {
+  .quick-links-wrapper {
+    padding: 0 0 50px 0;
+    margin-bottom: 55px;
+  }
+
+  .quick-link-font-size-control {
+    font-size: 26px !important;
+  }
+  .links-list {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    .link-item {
+      border: 1px solid #e7e7e7;
+      padding: 1.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      .link-item-content-box {
+        .link-item-svg-icon {
+          align-self: center;
+        }
+        .link-item-title {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 168.4%;
+          color: var(--gray_text) !important;
+          margin-bottom: 0;
+          margin-bottom: 5px;
+        }
+      }
+      &:hover {
+        background: var(--primaryColor);
+        color: var(--white) !important;
+        .svg-link {
+          fill: var(--white);
+          path {
+            fill: var(--white);
+          }
+        }
+        .link-item-title {
+          color: var(--white) !important;
+        }
+        .link-item-svg-icon {
+          fill: var(--white);
+          filter: brightness(100);
+          path {
+            fill: var(--white);
+          }
+        }
+      }
+    }
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @media (max-width: 576px) {
+    .quick-link-font-size-control {
+      font-size: 20px !important;
+    }
+    .links-list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 17px;
+    }
+    .link-item-svg-icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+  .section-title-desc {
+    width: 100%;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+  .section-title-desc {
+    width: 75%;
+  }
+}

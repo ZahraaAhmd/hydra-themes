@@ -1,0 +1,168 @@
+:root {
+  --primaryColor: #0070c4;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #fff;
+  --headerBottomBgColor: #26262680;
+  --headerTopContentColor: #fff;
+  --headingsColor: #181818;
+  --paragraphColor: #181818;
+  --lightContentColor: #18181899;
+  --lightBgColor: #f8f8f8;
+  --linksColor: #0070c4;
+  --linksHoverColor: #1d73bf;
+  --menuLinksColor: #ffffffb3;
+  --menuLinksHoverColor: #fff !important;
+  --footerBackgroundColor: linear-gradient(
+    92.4deg,
+    var(--firstGradientColor) -38.21%,
+    var(--secondGradientColor) 145.4%
+  );
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #ffffffb3 !important;
+  --firstGradientColor: #0070c4;
+  --secondGradientColor: #00b8c4;
+  --theme-two-main-color: var(--primaryColor);
+  --white: #fff;
+  --black: #000;
+  --red: #f34a3f;
+  --bg_color: linear-gradient(
+    92.4deg,
+    var(--firstGradientColor) -38.21%,
+    var(--secondGradientColor) 145.4%
+  );
+  --gray_text: var(--paragraphColor);
+  --bg_light: var(--lightBgColor);
+  --main_color: var(--primaryColor);
+  --sign-in-desc: #606060;
+  --sign-in-desc2: #757575b2;
+  --input-border: #ffffff66;
+  --input-placeholder: #868e96;
+  --input-background: #f8f8f8;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+}
+
+.page_content {
+  padding-top: 205px;
+}
+
+.search-results-wrapper .search-result-header .page_title {
+  font-family: "Tajawal-Bold";
+  font-size: 24px;
+  margin-bottom: 30px;
+  padding-right: 30px;
+}
+.search-results-wrapper .search-results-content {
+  width: 90%;
+  margin: 30px 70px 100px 70px;
+}
+.search-results-wrapper .search-results-content .search-result-item {
+  padding: 20px 15px;
+  border-bottom: 1px solid #c0c0c0;
+}
+.search-results-wrapper .search-results-content .search-result-item .search-result-date {
+  font-family: "Tajawal-Regular";
+  font-size: 16px;
+  line-height: 100.9%;
+  color: var(--gray_text);
+  margin-bottom: 10px;
+}
+.search-results-wrapper .search-results-content .search-result-item .search-result-title {
+  font-family: "Tajawal-Bold";
+  font-size: 20px;
+  line-height: 26px;
+  background: linear-gradient(92.4deg, var(--firstGradientColor) -38.21%, var(--secondGradientColor) 145.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 25px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.search-results-wrapper .search-results-content .search-result-item .search-result-title:hover {
+  background: linear-gradient(92.4deg, var(--firstGradientColor) -38.21%, var(--secondGradientColor) 145.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.search-results-wrapper .search-results-content .search-result-item .search-results-desc {
+  font-family: "Tajawal-Regular";
+  font-size: 16px;
+  line-height: 218.1%;
+  color: var(--gray_text);
+  margin-top: 15px;
+}
+
+@media (max-width: 770px) {
+  .search-results-wrapper .search-result-header .page_title {
+    font-family: "Tajawal-Bold";
+    font-size: 22px;
+    margin-bottom: 30px;
+    padding-right: 30px;
+  }
+  .search-results-wrapper .search-results-content {
+    width: 85%;
+    margin: 40px 70px 170px 70px;
+  }
+  .search-results-wrapper .search-results-content .search-result-item {
+    padding: 20px 15px;
+  }
+  .search-results-wrapper .search-results-content .search-result-item .search-result-date {
+    font-size: 14px;
+    line-height: 100.9%;
+    margin-bottom: 10px;
+  }
+  .search-results-wrapper .search-results-content .search-result-item .search-result-title {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .search-results-wrapper .search-results-content .search-result-item .search-results-desc {
+    font-family: "Tajawal-Regular";
+    font-size: 14px;
+    line-height: 218.1%;
+    color: var(--gray_text);
+    margin-top: 15px;
+  }
+}
+@media (max-width: 550px) {
+  .search-results-wrapper .search-result-header .page_title {
+    font-family: "Tajawal-Bold";
+    font-size: 22px;
+    margin-bottom: 30px;
+    padding-right: 30px;
+  }
+  .search-results-wrapper .search-results-content {
+    width: 95%;
+    margin: 40px 70px 170px 70px;
+    margin: 30px auto 80px auto;
+  }
+  .search-results-wrapper .search-results-content .search-result-item {
+    padding: 20px 15px;
+  }
+  .search-results-wrapper .search-results-content .search-result-item .search-result-date {
+    font-size: 14px;
+    line-height: 100.9%;
+    margin-bottom: 10px;
+  }
+  .search-results-wrapper .search-results-content .search-result-item .search-result-title {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .search-results-wrapper .search-results-content .search-result-item .search-results-desc {
+    font-family: "Tajawal-Regular";
+    font-size: 14px;
+    line-height: 218.1%;
+    color: var(--gray_text);
+    margin-top: 15px;
+  }
+}

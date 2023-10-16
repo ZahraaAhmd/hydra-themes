@@ -1,0 +1,243 @@
+@import "variables";
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+.theme-four {
+  .section {
+    // margin: 4rem 0;
+    padding: 6rem 0;
+  }
+  .section-title {
+    width: fit-content;
+    padding: 1rem 2rem;
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    // font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+    // font-family: "Helvetica Neue LT Arabic", sans-serif;
+    // font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 168.4%;
+    letter-spacing: -0.04em;
+    color: var(--black);
+  }
+
+  .primary-section-title {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+    font-size: 3rem !important;
+    line-height: 168.4%;
+  }
+
+  .social-icon {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .social-link {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  }
+
+  .social-item {
+    color: var(--white);
+    font-size: 16px;
+    line-height: 30px;
+    text-decoration: none;
+  }
+
+  .link-item-1 {
+    color: var(--white);
+    font-size: 16px;
+    line-height: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: var(--primaryBgColor);
+    }
+  }
+
+  .page_content {
+    padding-bottom: 2rem;
+  }
+
+  .ministery-news-container {
+    width: 75%;
+    margin: 0 auto;
+    // max-width: 1024px;
+    //   gap: rem;
+    margin-bottom: 4rem;
+    .ministry-header {
+      margin-bottom: 5rem;
+      .ministery-title {
+        margin: 7rem auto 2rem auto;
+        font-size: 3.5rem;
+        color: var(--ministeryMainColor);
+        font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+        text-align: center;
+      }
+      .ministery-news-title {
+        color: var(--ministerySecondaryColor);
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+      }
+    }
+  }
+  .ministery-news-item {
+    // background-color: aqua;
+    margin-top: 3rem;
+    display: grid;
+    padding: 0 !important;
+    grid-template-columns: 1fr 4fr;
+    //   row-gap: 1rem;
+    margin-bottom: 4rem;
+    padding: 4rem 0 !important;
+    border-bottom: 1px solid #efefef;
+    .img-container {
+      width: 20rem;
+      height: 16rem;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+      overflow: hidden;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .ministery-news-item-content {
+    display: flex;
+    flex-direction: column;
+    //   justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 !important;
+    margin-right: 4rem;
+
+    a {
+      font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+      padding: 0;
+      text-align: start;
+      font-size: 2.6rem;
+      line-height: 175%;
+      margin-bottom: 4rem;
+      // font-weight: 700;
+      color: var(--ministeryMainColor);
+    }
+    p {
+      font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+
+      text-align: start;
+      font-size: 1.8rem;
+      // font-weight: 500;
+      color: #0c2e4c;
+    }
+  }
+
+  // responsive ------------------------
+
+  // `xl` applies to large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) {
+    .ministery-news-container {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .ministery-news-container {
+      .ministery-title {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        padding-right: 1rem;
+      }
+      .ministery-news-title {
+        font-size: 1.5rem;
+      }
+    }
+    .ministery-news-item {
+      grid-template-columns: 1fr 4fr;
+      margin-bottom: 2rem;
+      padding: 2rem 0 !important;
+      gap: 2rem;
+      img {
+        width: 12rem;
+        height: 100%;
+      }
+      .ministery-news-item-content {
+        margin-right: 0;
+        a {
+          font-size: 1.6rem;
+          font-weight: 400;
+          // padding-bottom: 1rem;
+          margin-bottom: 2rem;
+        }
+        p {
+          font-size: 1.4rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  // `sm` applies to x-small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    .ministery-news-container {
+      width: 98%;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .section-title {
+      font-size: 2.5rem;
+      color: var(--black);
+      letter-spacing: -0.04em;
+    }
+    .section {
+      margin: 3rem 0;
+      padding: 3rem 0;
+    }
+  }
+  @media (max-width: 575.98px) {
+    .ministery-news-item {
+      grid-template-columns: 1fr;
+      .img-container {
+        width: 100%;
+        height: 17rem;
+      }
+    }
+    .section {
+      margin: 2rem 0;
+      padding: 2rem 0;
+    }
+    .primary-section-title {
+      font-size: 2.4rem !important;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .social-link {
+      font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    }
+
+    .social-item {
+      font-size: 13px;
+      line-height: 22px;
+    }
+
+    .link-item-1 {
+      font-size: 13px;
+      line-height: 22px;
+    }
+  }
+}

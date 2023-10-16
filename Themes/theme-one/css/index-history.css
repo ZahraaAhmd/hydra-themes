@@ -1,0 +1,243 @@
+:root {
+  --primaryColor: #4675ef;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #1e549d;
+  --headerBottomBgColor: #fff;
+  --headerTopContentColor: #18191f;
+  --headingsColor: #4675ef;
+  --paragraphColor: #181818;
+  --lightContentColor: #181818;
+  --lightBgColor: #f5f5f5;
+  --linksColor: #0d3770;
+  --linksHoverColor: #0d3770;
+  --menuLinksColor: #18191f !important;
+  --menuLinksHoverColor: #4675ef !important;
+  --footerBackgroundColor: #4675ef;
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #1e549d !important;
+  --firstGradientColor: #153e9b;
+  --secondGradientColor: #0d3770;
+  --theme-one-main-color: #4675ef;
+  --white: #fff;
+  --black: #000;
+  --gray_text: var(--lightContentColor);
+  --gray_text2: var(--lightContentColor);
+  --red: #f34a3f;
+  --green: #55c574;
+  --blue: #4675ef;
+  --bg_color: var(--primaryColor);
+  --sign-in-desc: #606060;
+  --sign-in-desc2: #757575b2;
+  --input-border: #4675ef;
+  --input-placeholder: #868e96;
+  --input-background: #f8f8f8;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+}
+
+@font-face {
+  font-family: "Tajawal-Bold";
+  src: url(../../fonts/Tajawal/Helvetica-bold.ttf);
+}
+@font-face {
+  font-family: "Tajawal-Regular";
+  src: url(../../fonts/Tajawal/Helvetica-normal.ttf);
+}
+.section-title-header {
+  font-family: "Tajawal-Bold";
+  font-size: 32px;
+  color: var(--bg_color);
+}
+
+.section-title-desc {
+  font-family: "Tajawal-Regular";
+  font-size: 18px;
+  color: var(--lightContentColor);
+  opacity: 0.8;
+  width: 30%;
+  margin-top: 15px;
+}
+
+.theme-one .history {
+  padding-bottom: 53px;
+}
+.theme-one .history .history-list {
+  position: relative;
+}
+.theme-one .history h3 {
+  font-family: "Tajawal-Bold";
+  font-size: 32px;
+  color: var(--bg_color);
+  margin-bottom: 15px;
+}
+.theme-one .history p {
+  font-family: "Tajawal-Regular";
+  font-size: 18px;
+  color: var(--lightContentColor);
+  opacity: 0.8;
+  width: 50%;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.theme-one .history .history_links {
+  width: 50%;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+}
+.theme-one .history .history_links span {
+  text-decoration: none;
+  padding-top: 50px;
+  cursor: pointer;
+}
+.theme-one .history .history_links span h4 {
+  font-family: "Tajawal-Bold";
+  font-size: 20px;
+  color: var(--gray_text) !important;
+  opacity: 0.4;
+}
+.theme-one .history .history_links span p {
+  font-size: 16px;
+  color: var(--gray_text);
+}
+.theme-one .history .history_links span:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #eeeeee;
+  border-radius: 100%;
+  top: 20px;
+}
+.theme-one .history .history_links span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #eeeeee;
+  top: 25px;
+}
+.theme-one .history .history_links div.slick-current span h4 {
+  opacity: 1;
+}
+.theme-one .history .history_links div.slick-current span:before, .theme-one .history .history_links div.slick-current span:after {
+  background-color: var(--bg_color);
+}
+.m-right-20{
+  margin-right: 20%;
+}
+.history_content img{
+  width: 400px;
+  height: 400px;
+}
+.theme-one .history .history_content p {
+  padding-top: 120px;
+  height: 380px !important;
+  color: var(--gray_text);
+  font-size: 18px;
+  opacity: 1;
+}
+.theme-one .history .history_links span.slick-current::after,
+.theme-one .history .history_links span.slick-current::before {
+  background: var(--primaryColor) !important;
+}
+@media (max-width: 992px) {
+  .theme-one .history .history_links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 0 auto;
+    bottom: 300px;
+  }
+  .theme-one .history .history_content p {
+    padding-right: 29px;
+    width: 90%;
+  }
+  .theme-one .history .history_content .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .theme-one .history-list {
+    position: relative;
+  }
+}
+@media (max-width: 767px) {
+  .theme-one .history .history_content p {
+    font-size: 16px;
+    width: 90%;
+  }
+  .theme-one .history .history_content > div img {
+    height: 379px;
+    width: 402px;
+    margin: 0 auto;
+  }
+  .theme-one .history .history_links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: initial;
+  }
+}
+@media (max-width: 450px) {
+  .theme-one .history .history_links {
+    top: 39%;
+  }
+  .theme-one .history .history_content p{
+    height: 100% !important;
+  }
+  .theme-one .history .history_content p{
+    padding-top: 31%;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-title-desc {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .section-title-desc {
+    width: 75%;
+  }
+}
+.theme-one .news h3{
+    font-family: "Tajawal-Bold";
+    font-size: 32px;
+    color: var(--bg_color);
+    margin-bottom: 15px;
+}
+.theme-one .news p{
+  font-family: "Tajawal-Regular";
+  font-size: 18px;
+  color: var(--lightContentColor);
+  opacity: 0.8;
+  width: 30%;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.theme-one .history .history_content p{
+  height: 434px;
+}

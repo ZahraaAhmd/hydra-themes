@@ -1,0 +1,432 @@
+@import "variables";
+
+html {
+  font-size: 62.5%;
+}
+.page_content {
+  padding-top: 150px;
+}
+.sign-in-wrapper {
+  width: 40%;
+  height: auto;
+  margin: 7rem auto 10rem auto;
+  padding: 2rem 4rem;
+  //   background-color: dodgerblue;
+  //   box-shadow: 1px 9px 16px 8px rgba(0, 0, 0, 0.07);
+  box-shadow: 1px 9px 16px -6px rgba(0, 0, 0, 0.04);
+  border: 2px solid #e8e8e8;
+  border-radius: 4px;
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.sign-in-container {
+  padding: 2rem 4rem !important;
+}
+.sign-in-header {
+  //   font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  font-family: "Tajawal-Bold", "Tajawal", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--bg_color);
+  //   margin-bottom: 1rem;
+  line-height: 30px;
+  /* theme 2 linear */
+  background: var(--bg_color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding-bottom: 1rem;
+}
+.sign-in-desc {
+  font-family: "Tajawal-Regular", "Tajawal", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 20px;
+  color: var(--sign-in-desc2);
+  border-radius: 2px;
+}
+.sign-in-label {
+  font-family: "Tajawal-Regular", "Tajawal", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: var(--black);
+}
+.form-input {
+  width: 100%;
+  padding: 1.2rem 2.8rem;
+  font-size: 1.6rem;
+  outline: none;
+  border: 1px solid transparent;
+  background-color: var(--input-background);
+  border-radius: 4px;
+  direction: rtl;
+}
+.form-input::placeholder {
+  color: var(--input-placeholder);
+  font-size: 1.6rem;
+}
+.password-input {
+  position: relative;
+  .showPassIcon {
+    position: absolute;
+    top: 47%;
+    left: 2.1rem;
+    transform: translateY(50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+  }
+
+  .hidePass {
+    display: none;
+    position: absolute;
+    top: 47%;
+    left: 2.1rem;
+    transform: translateY(50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+  }
+}
+
+.form-input:focus {
+  border: 1.5px solid var(--bg_color) !important;
+}
+.login-btn {
+  text-align: center;
+  width: 100%;
+  background: var(--bg_color);
+  padding: 2rem 4rem;
+  margin: 3rem 0 2rem 0;
+  font-size: 1.8rem;
+  color: var(--white);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sign-up-cta {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--sign-in-desc);
+  .sign-up-link {
+    font-family: "Tajawal-Bold", "Tajawal", sans-serif;
+    text-decoration: none;
+    background: var(--bg_color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    &::before {
+      background-image: linear-gradient(
+        to right,
+        var(--firstGradientColor),
+        var(--secondGradientColor) 100%
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &:hover {
+      background-position: 0;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+  }
+}
+.user-feedback-container {
+  width: 100%;
+  //   background-color: rgb(237, 188, 188);
+  // padding: 2rem 1.2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  //   margin-bottom: 2rem;
+  max-height: 5rem;
+  margin: 3rem 0 1rem 0;
+}
+.user-feedback-container.success {
+  padding: 2rem 1.2rem;
+  border: 1px solid var(--success-color);
+  background-color: var(--background-success);
+}
+.user-feedback-container.error {
+  padding: 2rem 1.2rem;
+
+  border: 1px solid var(--error-color);
+  background-color: var(--background-error);
+}
+.success-msg {
+  color: var(--success-color) !important;
+}
+
+// error message
+
+.error-msg {
+  color: var(--error-color) !important;
+}
+.user-feedback {
+  display: inline-block;
+  font-family: "Tajawal-Regular", "Tajawal", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.forget-container {
+  margin-top: 2rem;
+
+  .forget-pass-text {
+    font-family: "Tajawal", "Tajawal-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 122.9%;
+    text-decoration: none;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    .forget-svg {
+      margin-bottom: 5px;
+    }
+  }
+}
+/* Below 1344px (smaller desktops) */
+@media (max-width: 84em) {
+}
+
+/* Below 1200px (Landscape tablets) */
+@media (max-width: 75em) {
+  .sign-in-wrapper {
+    width: 50%;
+    margin: 7rem auto 10rem auto;
+  }
+  .sign-in-header {
+    //   font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+    font-size: 2rem;
+  }
+  .sign-in-desc {
+    font-size: 1.6rem;
+  }
+  .sign-in-label {
+    font-size: 1.6rem;
+  }
+  .form-input {
+    padding: 1.5rem 2.6rem;
+    font-size: 1.4rem;
+  }
+  .form-input::placeholder {
+    font-size: 1.4rem;
+  }
+  .login-btn {
+    font-size: 1.6rem;
+  }
+  .sign-up-cta {
+    font-size: 1.6rem;
+  }
+  .password-input {
+    .showPassIcon {
+      top: 49%;
+      left: 2.1rem;
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+    .hidePass {
+      top: 49%;
+      left: 2.1rem;
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+  }
+}
+
+/* Below 944px ( tablets) */
+@media (max-width: 60em) and (min-width: 50em) {
+  .sign-in-wrapper {
+    width: 55%;
+  }
+  .sign-in-container {
+    padding: 1.5rem 2rem !important;
+  }
+  .sign-in-header {
+    //   font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+    font-size: 2rem;
+  }
+  .sign-in-desc {
+    font-size: 1.6rem;
+  }
+  .sign-in-label {
+    font-size: 1.6rem;
+  }
+  .form-input {
+    padding: 1.5rem 2.6rem;
+    font-size: 1.4rem;
+  }
+  .form-input::placeholder {
+    font-size: 1.4rem;
+  }
+  .login-btn {
+    font-size: 1.6rem;
+  }
+  .sign-up-cta {
+    font-size: 1.6rem;
+  }
+  .password-input {
+    .showPassIcon {
+      top: 51%;
+      left: 2.1rem;
+      width: 2rem;
+      height: 2rem;
+    }
+    .hidePass {
+      top: 51%;
+      left: 2.1rem;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+/* Below 704px (smaller tablets) */
+@media (max-width: 50em) and (min-width: 40em) {
+  .sign-in-wrapper {
+    width: 60%;
+    margin-bottom: 10rem !important;
+  }
+  .sign-in-container {
+    padding: 1.2rem !important;
+  }
+  .sign-in-header {
+    //   font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+    font-size: 1.8rem;
+  }
+  .sign-in-desc {
+    font-size: 1.4rem;
+  }
+  .sign-in-label {
+    font-size: 1.4rem;
+  }
+  .form-input {
+    padding: 1.2rem 2rem;
+    font-size: 1.4rem;
+  }
+  .form-input::placeholder {
+    font-size: 1.4rem;
+  }
+  .login-btn {
+    font-size: 1.4rem;
+  }
+  .sign-up-cta {
+    font-size: 1.4rem;
+  }
+  .password-input {
+    .showPassIcon {
+      top: 49%;
+      left: 2.1rem;
+      width: 2rem;
+      height: 2rem;
+    }
+    .hidePass {
+      top: 49%;
+      left: 2.1rem;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+/* Below 550px (Phones) */
+@media (max-width: 39em) {
+  .forget-container {
+    margin-top: 2rem;
+    padding-right: 5px;
+
+    .forget-pass-text {
+      font-size: 15px;
+      line-height: 122.9%;
+
+      gap: 1rem;
+      .forget-svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .sign-in-wrapper {
+    width: 75%;
+    margin: 3rem auto;
+
+    // margin-bottom: 5rem !important;
+    padding: 2rem 2rem !important;
+    // background-color: dodgerblue;
+  }
+  .sign-in-container {
+    padding: 1.2rem !important;
+  }
+  .sign-in-container {
+    // background-color: red;
+  }
+  .sign-in-header {
+    //   font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+    font-size: 2rem;
+  }
+  .sign-in-desc {
+    font-size: 1.4rem;
+  }
+  .sign-in-label {
+    font-size: 1.4rem;
+  }
+  .form-input {
+    padding: 1.1rem 2.4rem;
+    font-size: 1.6rem;
+  }
+  .form-input::placeholder {
+    font-size: 1.4rem;
+  }
+  .login-btn {
+    font-size: 1.6rem;
+    padding: 1.3rem 1.2rem;
+  }
+  .sign-up-cta {
+    font-size: 1.4rem;
+  }
+  .password-input {
+    .showPassIcon {
+      top: 49%;
+      left: 2.1rem;
+      width: 2rem;
+      height: 2rem;
+    }
+    .hidePass {
+      top: 49%;
+      left: 2.1rem;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .sign-in-wrapper {
+    width: 85%;
+    margin: 3rem auto;
+  }
+}

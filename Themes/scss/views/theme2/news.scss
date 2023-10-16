@@ -1,0 +1,194 @@
+@import "variables";
+
+.news-sec {
+  margin-bottom: 195px;
+  .news_details {
+    .img-news-container-cont {
+      width: 100%;
+      height: 335px;
+      border-radius: 4px;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      margin-bottom: 3rem;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    h3 {
+      font-family: "Tajawal-Bold";
+      font-size: 24px;
+      color: var(--gray_text);
+      max-width: 75%;
+      line-height: 36px;
+    }
+    h4 {
+      font-size: 18px;
+      color: var(--gray_text);
+      margin-bottom: 15px;
+    }
+    ul {
+      li {
+        a {
+          margin-left: 14px;
+          img {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    img {
+      margin-bottom: 30px;
+    }
+    .desc {
+      .paragraph {
+        margin-bottom: 35px;
+        h5 {
+          font-family: "Tajawal-Bold";
+          font-size: 20px;
+          color: var(--gray_text);
+          position: relative;
+          padding-right: 14px;
+          &:before {
+            content: "";
+            width: 6px;
+            height: 19px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #e0e0e0;
+            border-radius: 16px;
+          }
+        }
+        p {
+          font-size: 16px;
+          line-height: 22px;
+          color: var(--gray_text);
+          opacity: 0.8;
+          padding-right: 14px;
+        }
+      }
+    }
+    .news_gallary {
+      display: flex;
+      flex-wrap: wrap;
+      .img_container {
+        width: 100%;
+        height: 263px;
+        flex: 0 50%;
+        padding: 12px;
+        overflow: hidden;
+        border-radius: 0;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 0;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+  .related_news {
+    background: #fafafa;
+    border-radius: 8px;
+    padding: 14px 24px;
+    .single_news {
+      display: flex;
+      align-items: center;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+      &:not(:last-of-type) {
+        border-bottom: 1px solid #dcdcdc;
+      }
+      .img-news-container-control {
+        width: 145px;
+        height: 108px;
+        margin-left: 15px;
+        overflow: hidden;
+        border-radius: 4px;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 4px;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+      img {
+      }
+      h3 {
+        font-family: "Tajawal-Bold";
+        font-size: 16px;
+        color: var(--gray_text);
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 13px;
+        color: var(--gray_text);
+        opacity: 0.5;
+        margin-bottom: 10px;
+      }
+      a {
+        font-size: 15px;
+        color: #0081c4;
+        text-decoration: none;
+        img {
+          width: initial;
+          height: initial;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .video_container {
+    position: relative;
+    &:after {
+      content: "";
+      width: 100%;
+      height: 335px;
+      left: 0;
+      top: 0;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+      position: absolute;
+    }
+    a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9;
+      cursor: pointer;
+    }
+  }
+}
+
+// tablet
+@media (max-width: 992px) {
+  .news-sec {
+    .news_details {
+      h3 {
+        max-width: initial;
+      }
+    }
+  }
+}

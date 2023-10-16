@@ -1,0 +1,105 @@
+:root {
+  --primaryColor: #0d3770;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #1e549d;
+  --headerBottomBgColor: #0d3770;
+  --headerTopContentColor: #fff;
+
+  --headingsColor: #0d3770;
+  --paragraphColor: #181818;
+  --lightContentColor: #181818b2;
+
+  --linksColor: #0d3770;
+  --linksHoverColor: #0d3770;
+
+  --menuLinksColor: #c0c0c0 !important;
+  --menuLinksHoverColor: #fff !important;
+
+  --footerBackgroundColor: #0d3770;
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #fff !important;
+
+  --firstGradientColor: #153e9b;
+  --secondGradientColor: #0d3770;
+
+  --theme-three-main-color: var(--primaryColor);
+
+  --white: #fff;
+  --black: #000;
+  --gray: #ccc;
+  --green: green;
+
+  --firstHeaderBgColor: var(--headerTopBgColor);
+  --mainHeaderBg: var(--headerBottomBgColor);
+  --mainBgColor: var(--primaryColor);
+  --lightGrayBg: #f5f6f7; //LEAVE AS IT IS
+  --borderColor: var(--primaryColor);
+  --headerColor: var(--primaryColor);
+
+  --primaryColorLight: var(--primaryColor);
+
+  --headerBtnColor: var(--primaryColor);
+  --externalLinksColor: var(--linksColor);
+
+  --testimonialContentColor: var(--lightContentColor);
+  --testimonialAutherColor: var(--paragraphColor);
+  --testimonialAutherTitleColor: var(--lightContentColor);
+
+  --hamubergerBgColor: var(--secondaryColor);
+
+  --sign-in-header: var(--primaryColor);
+  --sign-in-desc: var(--lightContentColor);
+  --sign-in-desc2: var(--lightContentColor);
+  --input-border: var(--secondaryColor);
+
+  --input-placeholder: #afafaf; //Leave As it is
+  --input-background: #f8f8f8; //Leave as it is
+
+  --button-bg-primary: var(--secondaryColor);
+
+  //Leave as it is
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+
+  --background-success: #424442;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+
+  --whiteTextColor: var(--white);
+  --notificationNav: linear-gradient(
+    89.33deg,
+    #d5a419 6.67%,
+    #ae8100 93.79%
+  ); //Leave as it is
+
+  // Gallery page sub header title
+  --gallerySubHeaderTitle: var(--primaryColor);
+  // media-page-variables
+  --mediaMainHeaderColor: var(--black);
+  --mediaMainNewContentColor: var(--paragraphColor);
+  --mediaSeeMoreMainBtnColor: var(--secondaryColor);
+  --mediaDateColor: var(--paragraphColor);
+  --seeMoreBtnBg: #e1e1e1; //leave as it is
+
+  // Single new page
+  --sub-single-new-header-color: var(--primaryColor);
+  --single-new-desc-color: var(--lightContentColor);
+  --new-desc-sub-header: var(--primaryColor);
+  --new-content-color: var(--paragraphColor);
+  --content-item-color: var(--primaryColor);
+  --single-new-external-news-color: var(--primaryColor);
+
+  // data-tables
+  // --data-table-header-bg-color: var(--primaryColor);
+  --data-table-header-bg-color: #0081c41a;
+  --data-table-header-color: var(--primaryColor);
+  --data-table-header-item-color: var(--paragraphColor);
+  --table-even-row-bg-color: #f6f6f6;
+}

@@ -1,0 +1,309 @@
+:root {
+  --font-normal: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  --font-bold: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  --white: #fff;
+  --black: #000;
+  --gray-50: #f9f9f9;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --gray-1000: #000;
+  --primaryBgColor: #1d73bf;
+  --secondaryBgColor: #d2e3f2;
+  --tertiaryBgColor: #e8f1f9;
+  --sub-header-color: #7b7b7b;
+  --bg-transparent: transparent;
+  --headerBtnColor: #307189;
+  --borderColor: #0d3770;
+  --loginBtnBgColor: #1d73bf;
+  --loginBtnBgOnHover: #3488d2;
+  --languageBtnBgColor: #0000000f;
+  --HeroMainTextColor: #0c2e4c;
+  --galleryBgColor: #f8f8f8;
+  --heroTextColor: #0c2e4c;
+  --test-sub-color: #175c99;
+  --strategyDescColor: #21201d;
+  --menuItemColor: #114573;
+  --dateColor: #4c7eab;
+  --itemColor: #15558c;
+  --itemBgColor: #f8f8f8;
+  --bg-color-mobile: #f5f5f5;
+  --bg-title-color: #15558c;
+  --related-website-item-bg-color: --white;
+  --related-website-item-title-color: #181818;
+  --related-website-item-visit-text-color: #145186;
+  --contactBgColor: #145186;
+  --inputFieldBgColor: transparent;
+  --contactUsDescText: #3e4f5f;
+  --footerBgColor: #092239;
+  --servicesBgColor: #e8f1f9;
+  --servicesMainTextColor: #1d73bf;
+  --servicessecondaryTextColor: #a1a1a1;
+  --ministerBgColor: #f8f8f8;
+  --ministerMainTextColor: #1d73bf;
+  --ministerDescTextColor: #0c2e4c;
+  --tapsWrapperBgColor: #15558c;
+  --sign-in-header: #1d73bf;
+  --sign-in-desc: #757575;
+  --sign-in-desc2: #757575b2;
+  --input-border: #1d73bf;
+  --input-placeholder: #afafaf;
+  --input-background: #f8f8f8;
+  --button-bg-primary: #1d73bf;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+  --ministeryMainColor: #1d73bf;
+  --ministerySecondaryColor: #5c5c5c;
+  --searchMainColor: #1d73bf;
+  --faqMainColor: #1d73bf;
+}
+
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+.section {
+  padding: 6rem 0;
+}
+
+.section-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 168.4%;
+  letter-spacing: -0.04em;
+  color: var(--black);
+}
+
+.primary-section-title {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  font-size: 3rem !important;
+  line-height: 168.4%;
+  color: var(--primaryBgColor) !important;
+}
+
+.social-icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.social-link {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+}
+
+.social-item {
+  color: var(--white);
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.link-item-1 {
+  color: var(--white);
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.link-item-1:hover {
+  color: var(--primaryBgColor);
+}
+
+.ministery-services-title {
+  margin: 4rem auto 4rem auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  font-size: 4rem;
+  color: var(--faqMainColor);
+}
+
+.ministery-breadcrumb {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  gap: 1rem;
+}
+.ministery-breadcrumb a {
+  text-decoration: none;
+  color: black;
+}
+.ministery-breadcrumb .ministery-breadcrumb-item-active {
+  color: var(--faqMainColor);
+}
+
+.ministery-services-page-container {
+  padding: 0 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 4rem;
+}
+
+.page-service-header {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.page-service-content {
+  color: #0c2e4c;
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 4rem;
+}
+
+@media (max-width: 1024px) {
+  .page-service-header {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .page-service-content {
+    color: #0c2e4c;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 4rem;
+  }
+  .ministery-services-page-container {
+    padding: 0 9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 4rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .ministey-service-container-width-reset {
+    width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .page-service-header {
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+  .page-service-content {
+    color: #0c2e4c;
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+  .ministery-breadcrumb {
+    font-size: 1.9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    gap: 0.5rem;
+  }
+  .ministery-services-page-container {
+    padding: 0 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 4rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-title {
+    font-size: 2.5rem;
+    color: var(--black);
+    letter-spacing: -0.04em;
+  }
+  .section {
+    margin: 3rem 0;
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .section {
+    margin: 2rem 0;
+    padding: 2rem 0;
+  }
+  .primary-section-title {
+    font-size: 2.4rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .social-link {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  }
+  .social-item {
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .link-item-1 {
+    font-size: 13px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,704 @@
+:root {
+  --primaryColor: #1d73bf;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #fff;
+  --headerBottomBgColor: #1d73bf;
+  --headerTopContentColor: #fff;
+  --headingsColor: #1d73bf;
+  --paragraphColor: #181818;
+  --lightContentColor: #181818b2;
+  --lightBgColor: #e8f1f9;
+  --linksColor: #1d73bf;
+  --linksHoverColor: #1d73bf;
+  --menuLinksColor: #fff !important;
+  --menuLinksHoverColor: #dcdcdc !important;
+  --footerBackgroundColor: #092239;
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #1e549d !important;
+  --firstGradientColor: #153e9b;
+  --secondGradientColor: #1d73bf;
+  --theme-four-main-color: var(--primaryColor);
+  --font-normal: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  --font-bold: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  --white: #fff;
+  --black: #000;
+  --gray-50: #f9f9f9;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --gray-1000: #000;
+  --primaryBgColor: var(--primaryColor);
+  --tertiaryBgColor: var(--lightBgColor);
+  --sub-header-color: var(--lightContentColor);
+  --bg-transparent: transparent;
+  --loginBtnBgColor: var(--primaryColor);
+  --loginBtnBgOnHover: var(--secondaryColor);
+  --languageBtnBgColor: var(--lightBgColor);
+  --HeroMainTextColor: var(--headingsColor);
+  --heroTextColor: var(--lightContentColor);
+  --test-sub-color: var(--secondaryColor);
+  --strategyDescColor: var(--lightContentColor);
+  --bg-color-mobile: var(--lightBgColor);
+  --bg-title-color: var(--primaryColor);
+  --related-website-item-bg-color: --white;
+  --related-website-item-title-color: var(--lightContentColor);
+  --related-website-item-visit-text-color: var(--secondaryColor);
+  --contactBgColor: var(--secondaryColor);
+  --inputFieldBgColor: transparent;
+  --contactUsDescText: var(--lightContentColor);
+  --footerBgColor: var(--footerBackgroundColor);
+  --servicesBgColor: var(--tertiaryBgColor);
+  --servicesMainTextColor: var(--primaryColor);
+  --servicessecondaryTextColor: var(--lightContentColor);
+  --ministerBgColor: var(--lightBgColor);
+  --ministerMainTextColor: var(--primaryColor);
+  --ministerDescTextColor: var(--paragraphColor);
+  --tapsWrapperBgColor: var(--primaryBgColor);
+  --sign-in-header: var(--primaryColor);
+  --sign-in-desc: #757575;
+  --sign-in-desc2: #757575b2;
+  --input-border: var(--primaryColor);
+  --input-placeholder: #afafaf;
+  --input-background: #f8f8f8;
+  --button-bg-primary: var(--primaryColor);
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+  --ministeryMainColor: var(--primaryColor);
+  --ministerySecondaryColor: var(--lightContentColor);
+  --gov-project-date-color: var(--primaryColor);
+  --searchMainColor: var(--primaryColor);
+  --searchResultColor: var(--primaryColor);
+  --searchResultHoverColor: var(--primaryColor);
+  --faqMainColor: var(--primaryColor);
+}
+
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+.section {
+  margin: 4rem 0;
+  padding: 4rem 0;
+}
+
+.section-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 168.4%;
+  letter-spacing: -0.04em;
+  color: var(--black);
+}
+
+.primary-section-title {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  font-size: 3rem !important;
+  line-height: 168.4%;
+}
+
+.arrow-left,
+.arrow-right {
+  width: 10rem;
+  height: 10rem;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.theme-four .gov-projects-wrapper {
+  background-color: var(--tertiaryBgColor);
+  overflow-x: hidden !important;
+}
+.theme-four .gov-projects-wrapper .gov-projects-container {
+  height: 70rem;
+  position: relative;
+}
+.theme-four .gov-projects-wrapper .gov-projects-container .ministry-projects-header h1 {
+  color: var(--primaryBgColor);
+  font-size: 3.2rem;
+  font-weight: bolder;
+  line-height: 168.4%;
+}
+.theme-four .gov-projects-wrapper .projects-list {
+  margin-top: 5rem;
+}
+.theme-four .gov-projects-wrapper .projects-list .project-item {
+  height: 55rem;
+  position: relative;
+  overflow: visible;
+}
+.theme-four .gov-projects-wrapper .projects-list .project-item .project-item-photo-container {
+  width: 100%;
+}
+.theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container {
+  width: 530px;
+  height: 450px;
+  position: absolute;
+  background-color: var(--primaryBgColor);
+  z-index: 1;
+  left: -4rem;
+  top: 13%;
+  padding: 2rem 3rem;
+  margin-left: 5rem;
+}
+.theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+.theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-date {
+  font-weight: 400;
+  font-size: 1.8rem;
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 0.5098039216);
+}
+.theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-title {
+  font-weight: bolder;
+  font-size: 2.5rem;
+  line-height: 168.4%;
+  letter-spacing: -0.04em;
+  color: var(--white);
+}
+.theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-desc {
+  font-size: 1.6rem;
+  line-height: 168.4%;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+.theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-link {
+  margin-top: 3rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.8rem;
+  color: var(--white);
+}
+.theme-four .gov-projects-wrapper .projects-list-arrows-actions {
+  position: absolute;
+  left: 0;
+  bottom: -2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 35rem;
+}
+.theme-four .gov-projects-wrapper .projects-list-arrows-actions button {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  font-size: 1.8rem;
+  color: var(--primaryBgColor);
+}
+@media (max-width: 1199.98px) {
+  .theme-four .gov-projects-wrapper {
+    background-color: var(--tertiaryBgColor);
+    overflow-x: hidden !important;
+  }
+  .theme-four .gov-projects-wrapper .gov-projects-container {
+    height: 90rem;
+    position: relative;
+  }
+  .theme-four .gov-projects-wrapper .gov-projects-container .ministry-projects-header h1 {
+    color: var(--primaryBgColor);
+    font-size: 3.2rem;
+    font-weight: bolder;
+    line-height: 168.4%;
+  }
+  .theme-four .gov-projects-wrapper .projects-list {
+    margin-top: 5rem;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item {
+    height: 85rem;
+    position: relative;
+    overflow: visible;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-photo-container {
+    width: 100%;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-photo-container img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container {
+    width: 90%;
+    height: 37rem !important;
+    position: absolute;
+    background-color: var(--primaryBgColor);
+    z-index: 1;
+    left: 50%;
+    top: 37%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding: 2rem 3rem;
+    margin-left: 0;
+    border-radius: 8px;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-date {
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: -0.04em;
+    color: rgba(255, 255, 255, 0.5098039216);
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-title {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    line-height: 168.4%;
+    letter-spacing: -0.04em;
+    color: var(--white);
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-desc {
+    font-size: 1.6rem;
+    line-height: 168.4%;
+    letter-spacing: -0.02em;
+    color: var(--white);
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-link {
+    margin-top: 3rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+    color: var(--white);
+  }
+  .theme-four .gov-projects-wrapper .projects-list-arrows-actions {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: -2rem;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 0;
+  }
+  .theme-four .gov-projects-wrapper .projects-list-arrows-actions button {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    font-size: 1.8rem;
+    color: var(--primaryBgColor);
+  }
+}
+@media (max-width: 991.98px) {
+  .theme-four .gov-projects-wrapper {
+    background-color: var(--tertiaryBgColor);
+    overflow-x: hidden !important;
+  }
+  .theme-four .gov-projects-wrapper .gov-projects-container {
+    height: 80rem;
+    position: relative;
+  }
+  .theme-four .gov-projects-wrapper .gov-projects-container .ministry-projects-header h1 {
+    color: var(--primaryBgColor);
+    font-size: 3.2rem;
+    font-weight: bolder;
+    line-height: 168.4%;
+  }
+  .theme-four .gov-projects-wrapper .projects-list {
+    margin-top: 5rem;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item {
+    height: 75rem;
+    position: relative;
+    overflow: visible;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-photo-container {
+    width: 100%;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-photo-container img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container {
+    width: 90%;
+    height: 37rem !important;
+    position: absolute;
+    background-color: var(--primaryBgColor);
+    z-index: 1;
+    left: 50%;
+    top: 28%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding: 2rem 3rem;
+    margin-left: 0;
+    border-radius: 8px;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-date {
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: -0.04em;
+    color: rgba(255, 255, 255, 0.5098039216);
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-title {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    line-height: 168.4%;
+    letter-spacing: -0.04em;
+    color: var(--white);
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-desc {
+    font-size: 1.6rem;
+    line-height: 168.4%;
+    letter-spacing: -0.02em;
+    color: var(--white);
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-link {
+    margin-top: 3rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+    color: var(--white);
+  }
+  .theme-four .gov-projects-wrapper .projects-list-arrows-actions {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: -2rem;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 0;
+  }
+  .theme-four .gov-projects-wrapper .projects-list-arrows-actions button {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    font-size: 1.8rem;
+    color: var(--primaryBgColor);
+  }
+}
+@media (max-width: 767.98px) {
+  .theme-four .gov-projects-wrapper {
+    background-color: var(--tertiaryBgColor);
+    overflow-x: hidden !important;
+  }
+  .theme-four .gov-projects-wrapper .gov-projects-container {
+    height: 75rem;
+    position: relative;
+  }
+  .theme-four .gov-projects-wrapper .gov-projects-container .ministry-projects-header h1 {
+    color: var(--primaryBgColor);
+    font-size: 3.2rem;
+    font-weight: bolder;
+    line-height: 168.4%;
+  }
+  .theme-four .gov-projects-wrapper .projects-list {
+    margin-top: 5rem;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item {
+    height: 85rem;
+    position: relative;
+    overflow: visible;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-photo-container {
+    width: 100%;
+    height: 35%;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-photo-container img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 85%;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container {
+    width: 90%;
+    height: 35rem !important;
+    position: absolute;
+    background-color: var(--primaryBgColor);
+    z-index: 1;
+    left: 50%;
+    top: 25%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding: 2rem 3rem;
+    margin-left: 0;
+    border-radius: 8px;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-date {
+    font-weight: 400;
+    font-size: 1.6rem;
+    letter-spacing: -0.04em;
+    color: rgba(255, 255, 255, 0.5098039216);
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-title {
+    font-weight: bolder;
+    font-size: 2rem;
+    line-height: 168.4%;
+    letter-spacing: -0.04em;
+    color: var(--white);
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-desc {
+    font-size: 1.4rem;
+    line-height: 168.4%;
+    letter-spacing: -0.02em;
+    color: var(--white);
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-link {
+    margin-top: 3rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+    color: var(--white);
+  }
+  .theme-four .gov-projects-wrapper .projects-list-arrows-actions {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: -2rem;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 0;
+  }
+  .theme-four .gov-projects-wrapper .projects-list-arrows-actions button {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    font-size: 1.8rem;
+    color: var(--primaryBgColor);
+  }
+}
+@media (max-width: 575.98px) {
+  .theme-four .gov-projects-wrapper {
+    background-color: var(--tertiaryBgColor);
+    padding: 4rem 0 1rem 0;
+  }
+  .theme-four .gov-projects-wrapper .gov-projects-container {
+    height: auto;
+    position: relative;
+  }
+  .theme-four .gov-projects-wrapper .gov-projects-container .ministry-projects-header {
+    padding-right: 1rem;
+  }
+  .theme-four .gov-projects-wrapper .projects-list {
+    margin-top: 5rem;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item {
+    height: 75rem;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-photo-container {
+    width: 100%;
+    height: 100%;
+    padding: 0 !important;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-photo-container img {
+    width: 100%;
+    height: 35%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container {
+    width: 90%;
+    height: 43rem !important;
+    position: absolute;
+    background-color: var(--primaryBgColor);
+    z-index: 1;
+    left: 50%;
+    top: 30%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding: 2rem 1.5rem;
+    margin-left: 0;
+    border-radius: 8px;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-date {
+    font-weight: 400;
+    font-size: 1.6rem;
+    letter-spacing: -0.04em;
+    color: rgba(255, 255, 255, 0.5098039216);
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-title {
+    font-weight: bolder;
+    font-size: 2.2rem;
+    line-height: 168.4%;
+    letter-spacing: -0.04em;
+    color: var(--white);
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-desc {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    letter-spacing: -0.02em;
+    color: var(--white);
+  }
+  .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container .project-item-main-content .project-item-link {
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+    color: var(--white);
+  }
+  .theme-four .gov-projects-wrapper .projects-list-arrows-actions {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 0;
+  }
+  .theme-four .gov-projects-wrapper .projects-list-arrows-actions button {
+    width: 12rem;
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    font-size: 1.6rem;
+    color: var(--primaryBgColor);
+  }
+  .theme-four .gov-projects-wrapper .projects-list-arrows-actions button .arrow-desc {
+    height: 3rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-title {
+    font-size: 2.5rem;
+    color: var(--black);
+    letter-spacing: -0.04em;
+  }
+  .section {
+    margin: 3rem 0;
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .section {
+    margin: 2rem 0;
+    padding: 2rem 0;
+  }
+  .primary-section-title {
+    font-size: 2.4rem !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-title {
+    font-size: 2.5rem;
+    color: var(--black);
+    letter-spacing: -0.04em;
+  }
+  .section {
+    margin: 3rem 0;
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .section {
+    margin: 2rem 0;
+    padding: 2rem 0;
+  }
+  .primary-section-title {
+    font-size: 2.4rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .arrow-left,
+  .arrow-right {
+    width: 5rem;
+    height: 5rem;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  .arrow-left .prevIcon,
+  .arrow-left .nextIcon,
+  .arrow-right .prevIcon,
+  .arrow-right .nextIcon {
+    width: 3rem;
+    height: 3rem;
+  }
+}

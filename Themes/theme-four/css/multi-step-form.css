@@ -1,0 +1,416 @@
+:root {
+  --primaryColor: #1d73bf;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #050404;
+  --headerBottomBgColor: #1d73bf;
+  --headerTopContentColor: #fff;
+  --headingsColor: #1d73bf;
+  --paragraphColor: #181818;
+  --lightContentColor: #181818b2;
+  --lightBgColor: #e8f1f9;
+  --linksColor: #1d73bf;
+  --linksHoverColor: #1d73bf;
+  --menuLinksColor: #fff !important;
+  --menuLinksHoverColor: #dcdcdc !important;
+  --footerBackgroundColor: #092239;
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #1e549d !important;
+  --firstGradientColor: #153e9b;
+  --secondGradientColor: #1d73bf;
+  --theme-four-main-color: var(--primaryColor);
+  --font-normal: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  --font-bold: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  --white: #fff;
+  --black: #000;
+  --gray-50: #f9f9f9;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --gray-1000: #000;
+  --primaryBgColor: var(--primaryColor);
+  --tertiaryBgColor: var(--lightBgColor);
+  --sub-header-color: var(--lightContentColor);
+  --bg-transparent: transparent;
+  --loginBtnBgColor: var(--primaryColor);
+  --loginBtnBgOnHover: var(--secondaryColor);
+  --languageBtnBgColor: var(--lightBgColor);
+  --HeroMainTextColor: var(--headingsColor);
+  --heroTextColor: var(--lightContentColor);
+  --test-sub-color: var(--secondaryColor);
+  --strategyDescColor: var(--lightContentColor);
+  --bg-color-mobile: var(--lightBgColor);
+  --bg-title-color: var(--primaryColor);
+  --related-website-item-bg-color: --white;
+  --related-website-item-title-color: var(--lightContentColor);
+  --related-website-item-visit-text-color: var(--secondaryColor);
+  --contactBgColor: var(--secondaryColor);
+  --inputFieldBgColor: transparent;
+  --contactUsDescText: var(--lightContentColor);
+  --footerBgColor: var(--footerBackgroundColor);
+  --servicesBgColor: var(--tertiaryBgColor);
+  --servicesMainTextColor: var(--primaryColor);
+  --servicessecondaryTextColor: var(--lightContentColor);
+  --ministerBgColor: var(--lightBgColor);
+  --ministerMainTextColor: var(--primaryColor);
+  --ministerDescTextColor: var(--paragraphColor);
+  --tapsWrapperBgColor: var(--primaryBgColor);
+  --sign-in-header: var(--primaryColor);
+  --sign-in-desc: #757575;
+  --sign-in-desc2: #757575b2;
+  --input-border: var(--primaryColor);
+  --input-placeholder: #afafaf;
+  --input-background: #f8f8f8;
+  --button-bg-primary: var(--primaryColor);
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+  --ministeryMainColor: var(--primaryColor);
+  --ministerySecondaryColor: var(--lightContentColor);
+  --gov-project-date-color: var(--primaryColor);
+  --searchMainColor: var(--primaryColor);
+  --searchResultColor: var(--primaryColor);
+  --searchResultHoverColor: var(--primaryColor);
+  --faqMainColor: var(--primaryColor);
+}
+
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.fade-in {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.multi-step-form-wrapper {
+  width: 55%;
+  height: auto;
+  margin: 8rem auto;
+  background-color: aqua;
+  border-radius: 16px;
+  background: var(--white);
+  border: 1px solid #e8e8e8;
+  -webkit-box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.02);
+          box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.02);
+  padding: 3.6rem 6.2rem;
+}
+.multi-step-form-wrapper .form-header h3 {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  font-size: 32px;
+  line-height: 168.4%;
+  letter-spacing: -0.04em;
+  color: var(--paragraphColor) !important;
+  margin-bottom: 1rem;
+}
+.multi-step-form-wrapper .form-header p {
+  font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 24px;
+  -webkit-font-feature-settings: "salt" on, "liga" off;
+          font-feature-settings: "salt" on, "liga" off;
+  color: var(--lightContentColor);
+  opacity: 0.7;
+}
+.multi-step-form-wrapper .progress {
+  margin-top: 5rem;
+  height: 12px;
+  border-radius: 8px;
+}
+.multi-step-form-wrapper .progress .progress-bar {
+  background-color: var(--primaryColor);
+}
+.multi-step-form-wrapper .formWrapper {
+  margin-top: 5rem;
+}
+.multi-step-form-wrapper .formWrapper .sign-in-label {
+  font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--paragraphColor);
+}
+.multi-step-form-wrapper .formWrapper .form-input,
+.multi-step-form-wrapper .formWrapper .select-input {
+  width: 100%;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+  outline: none;
+  border: 1px solid transparent;
+  background-color: var(--input-background);
+  border-radius: 10px;
+  text-align: right;
+}
+.multi-step-form-wrapper .formWrapper .text-area-input {
+  width: 100%;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+  outline: none;
+  border: 1px solid transparent;
+  background-color: var(--input-background);
+  border-radius: 10px;
+  text-align: right;
+  height: 10rem;
+  resize: none;
+}
+.multi-step-form-wrapper .formWrapper .form-input::-webkit-input-placeholder {
+  color: var(--input-placeholder);
+  font-size: 1.6rem;
+}
+.multi-step-form-wrapper .formWrapper .form-input::-moz-placeholder {
+  color: var(--input-placeholder);
+  font-size: 1.6rem;
+}
+.multi-step-form-wrapper .formWrapper .form-input:-ms-input-placeholder {
+  color: var(--input-placeholder);
+  font-size: 1.6rem;
+}
+.multi-step-form-wrapper .formWrapper .form-input::-ms-input-placeholder {
+  color: var(--input-placeholder);
+  font-size: 1.6rem;
+}
+.multi-step-form-wrapper .formWrapper .form-input::placeholder {
+  color: var(--input-placeholder);
+  font-size: 1.6rem;
+}
+.multi-step-form-wrapper .formWrapper .btn-first-submit-wrapper {
+  width: 85%;
+  margin: 3rem auto;
+}
+.multi-step-form-wrapper .formWrapper .btn-first-submit-wrapper .btn-first-submit {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  width: 100%;
+  font-size: 18px;
+  padding: 1.2rem 2.4rem;
+  background-color: var(--primaryColor);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: var(--white);
+}
+.multi-step-form-wrapper .formWrapper .image-upload-wrapper {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5rem;
+}
+.multi-step-form-wrapper .formWrapper .image-upload-wrapper .image-upload {
+  width: 8rem;
+  height: 8rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--lightBgColor);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+.multi-step-form-wrapper .formWrapper .image-upload-wrapper .image-upload label {
+  cursor: pointer;
+}
+.multi-step-form-wrapper .formWrapper .image-upload-wrapper .image-upload > input {
+  display: none;
+}
+.multi-step-form-wrapper .formWrapper .image-upload-wrapper .upload-left {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: var(--white);
+  border: 1px dashed #e4e7ec;
+  border-radius: 12px;
+}
+.multi-step-form-wrapper .formWrapper .image-upload-wrapper .upload-left .left-content {
+  padding: 1.2rem 2.4rem;
+}
+.multi-step-form-wrapper .formWrapper .image-upload-wrapper .upload-left .left-content p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--lightContentColor);
+}
+.multi-step-form-wrapper .formWrapper .image-upload-wrapper .upload-left .left-content p strong {
+  cursor: pointer;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  color: var(--primaryColor);
+}
+
+@media (max-width: 1024px) {
+  .multi-step-form-wrapper {
+    width: 75%;
+  }
+}
+@media (max-width: 767.98px) {
+  .page-title-with-breadcrumb-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .page-title-with-breadcrumb-container .page-breadcrumb a {
+    font-size: 14px;
+  }
+  .page-title-with-breadcrumb-container .page-breadcrumb .ministery-breadcrumb-speprator {
+    font-size: 14px;
+  }
+  .multi-step-form-wrapper {
+    width: 100%;
+    padding: 3.6rem 4.2rem;
+    margin-top: 2rem;
+  }
+  .multi-step-form-wrapper .form-header h3 {
+    font-size: 28px;
+    line-height: 168.4%;
+    margin-bottom: 1rem;
+  }
+  .multi-step-form-wrapper .form-header p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .multi-step-form-wrapper .formWrapper .image-upload-wrapper {
+    margin-top: 1.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 2rem;
+  }
+  .multi-step-form-wrapper .formWrapper .image-upload-wrapper .image-upload {
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--lightBgColor);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+  }
+  .multi-step-form-wrapper .formWrapper .image-upload-wrapper .image-upload label {
+    cursor: pointer;
+  }
+  .multi-step-form-wrapper .formWrapper .image-upload-wrapper .image-upload > input {
+    display: none;
+  }
+  .multi-step-form-wrapper .formWrapper .image-upload-wrapper .upload-left {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: var(--white);
+    border: 1px dashed #e4e7ec;
+    border-radius: 12px;
+  }
+  .multi-step-form-wrapper .formWrapper .image-upload-wrapper .upload-left .left-content {
+    padding: 1.2rem 2.4rem;
+    text-align: center;
+  }
+  .multi-step-form-wrapper .formWrapper .image-upload-wrapper .upload-left .left-content p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--lightContentColor);
+  }
+  .multi-step-form-wrapper .formWrapper .image-upload-wrapper .upload-left .left-content p strong {
+    cursor: pointer;
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    color: var(--primaryColor);
+  }
+}

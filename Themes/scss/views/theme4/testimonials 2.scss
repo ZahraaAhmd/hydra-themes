@@ -1,0 +1,208 @@
+@import "variables";
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+
+.section {
+  margin: 4rem 0;
+  padding: 4rem 0;
+}
+.section-title {
+  width: fit-content;
+  padding: 1rem 2rem;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  // font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  // font-family: "Helvetica Neue LT Arabic", sans-serif;
+  // font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 168.4%;
+  letter-spacing: -0.04em;
+  color: var(--black);
+}
+
+.primary-section-title {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  font-size: 3rem !important;
+  line-height: 168.4%;
+  color: var(--primaryBgColor) !important;
+}
+
+
+.theme-four {
+  .eight h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    font-weight: 300;
+    //   text-align: center;
+    //   text-transform: uppercase;
+    font-size: 2.8rem;
+    color: var(--black);
+    letter-spacing: -0.04em;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-gap: 22px;
+    align-items: center;
+    transition: all 0.4s ease 0s;
+  }
+
+  .eight h1:after,
+  .eight h1:before {
+    content: " ";
+    padding-top: 10px;
+    display: block;
+    border-bottom: 1px solid #e0e0e0;
+    //   background-color: #f8f8f8;
+  }
+
+  .testmonial-content-container {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    background-color: var(--tertiaryBgColor);
+
+    .test-content-row {
+      padding: 4rem;
+      .test-img-contain {
+        overflow: hidden;
+        border-radius: 8px;
+      }
+
+      .img-test {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.4s ease 0s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .test-left-content {
+        margin: 5rem 0;
+      }
+      .test-auth {
+        color: var(--test-sub-color);
+        font-family: "Helvetica Neue LT Arabic";
+        font-size: 24px;
+        line-height: 125%;
+      }
+      .test-desc {
+        color: var(--primaryBgColor);
+        font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+        font-style: normal;
+        font-size: 3.1rem;
+        line-height: 125%;
+        text-align: justify;
+      }
+      .test-date {
+        font-family: "Helvetica Neue LT Arabic";
+        font-size: 16px;
+        color: var(--test-sub-color);
+      }
+    }
+  }
+
+  // `xl` applies to large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) {
+    .test-content-row {
+      padding: 3rem !important;
+    }
+    .test-auth {
+      font-size: 18px !important;
+      line-height: 135%;
+    }
+    .test-date {
+      font-size: 16px !important;
+    }
+    .test-desc {
+      font-size: 2rem !important;
+      line-height: 160%;
+      text-align: center !important;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  // `lg` applies to medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) {
+    .test-content-row {
+      padding: 2.5rem !important;
+    }
+    .test-auth {
+      font-size: 18px !important;
+      line-height: 125%;
+    }
+    .test-date {
+      font-size: 14px !important;
+    }
+    .test-desc {
+      font-size: 2.3rem !important;
+      line-height: 150%;
+      text-align: center !important;
+    }
+  }
+  // `md` applies to small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) {
+    .eight h1 {
+      font-size: 2.5rem;
+      color: var(--black);
+      letter-spacing: -0.04em;
+    }
+    .test-content-row {
+      padding: 4rem 1rem 1rem 1rem !important;
+    }
+    .test-auth {
+      font-size: 20px !important;
+      line-height: 125%;
+    }
+    .test-date {
+      font-size: 14px !important;
+    }
+    .test-desc {
+      font-size: 2.6rem !important;
+      line-height: 150%;
+      text-align: center !important;
+    }
+
+    .testmonial-content-container {
+      .test-content-row {
+        .img-test {
+          height: 22rem;
+        }
+      }
+    }
+
+    .test-left-content {
+      margin: 2.5rem 0;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-title {
+    font-size: 2.5rem;
+    color: var(--black);
+    letter-spacing: -0.04em;
+  }
+  .section {
+    margin: 3rem 0;
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .section {
+    margin: 2rem 0;
+    padding: 2rem 0;
+  }
+  .primary-section-title {
+    font-size: 2.4rem !important;
+  }
+}

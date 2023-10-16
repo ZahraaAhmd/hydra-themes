@@ -1,0 +1,156 @@
+:root {
+  --primaryColor: #4675ef;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #1e549d;
+  --headerBottomBgColor: #fff;
+  --headerTopContentColor: #18191f;
+  --headingsColor: #4675ef;
+  --paragraphColor: #181818;
+  --lightContentColor: #181818;
+  --lightBgColor: #f5f5f5;
+  --linksColor: #0d3770;
+  --linksHoverColor: #0d3770;
+  --menuLinksColor: #18191f !important;
+  --menuLinksHoverColor: #4675ef !important;
+  --footerBackgroundColor: #4675ef;
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #1e549d !important;
+  --firstGradientColor: #153e9b;
+  --secondGradientColor: #0d3770;
+  --theme-one-main-color: #4675ef;
+  --white: #fff;
+  --black: #000;
+  --gray_text: var(--lightContentColor);
+  --gray_text2: var(--lightContentColor);
+  --red: #f34a3f;
+  --green: #55c574;
+  --blue: #4675ef;
+  --bg_color: var(--primaryColor);
+  --sign-in-desc: #606060;
+  --sign-in-desc2: #757575b2;
+  --input-border: #4675ef;
+  --input-placeholder: #868e96;
+  --input-background: #f8f8f8;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+}
+
+@font-face {
+  font-family: "Tajawal-Bold";
+  src: url(../../fonts/Tajawal/Helvetica-bold.ttf);
+}
+@font-face {
+  font-family: "Tajawal-Regular";
+  src: url(../../fonts/Tajawal/Helvetica-normal.ttf);
+}
+.section-title-header {
+  font-family: "Tajawal-Bold";
+  font-size: 32px;
+  color: var(--bg_color);
+}
+
+.section-title-desc {
+  font-family: "Tajawal-Regular";
+  font-size: 18px;
+  color: var(--lightContentColor);
+  opacity: 0.8;
+  width: 30%;
+  margin-top: 15px;
+}
+
+.theme-one .quick-links-wrapper {
+  padding: 0 0 50px 0;
+  margin-bottom: 55px;
+}
+.theme-one .quick-link-font-size-control {
+  font-size: 26px !important;
+}
+.theme-one .links-list {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.theme-one .links-list .link-item {
+  border: 1px solid #e7e7e7;
+  padding: 1.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.theme-one .links-list .link-item .link-item-content-box .link-item-svg-icon {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.theme-one .links-list .link-item .link-item-content-box .link-item-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 168.4%;
+  color: var(--gray_text) !important;
+  margin-bottom: 0;
+  margin-bottom: 5px;
+}
+.theme-one .links-list .link-item:hover {
+  background: var(--primaryColor);
+  color: var(--white) !important;
+}
+.theme-one .links-list .link-item:hover .svg-link {
+  fill: var(--white);
+}
+.theme-one .links-list .link-item:hover .svg-link path {
+  fill: var(--white);
+}
+.theme-one .links-list .link-item:hover .link-item-title {
+  color: var(--white) !important;
+}
+.theme-one .links-list .link-item:hover .link-item-svg-icon {
+  fill: var(--white);
+  -webkit-filter: brightness(100);
+          filter: brightness(100);
+}
+.theme-one .links-list .link-item:hover .link-item-svg-icon path {
+  fill: var(--white);
+}
+@media (max-width: 576px) {
+  .theme-one .quick-link-font-size-control {
+    font-size: 20px !important;
+  }
+  .theme-one .links-list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 17px;
+  }
+  .theme-one .link-item-svg-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-title-desc {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .section-title-desc {
+    width: 75%;
+  }
+}

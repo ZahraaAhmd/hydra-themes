@@ -1,0 +1,232 @@
+@import "variables";
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+.theme-four {
+  .section {
+    // margin: 4rem 0;
+    padding: 6rem 0;
+  }
+  .section-title {
+    width: fit-content;
+    padding: 1rem 2rem;
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    // font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+    // font-family: "Helvetica Neue LT Arabic", sans-serif;
+    // font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 168.4%;
+    letter-spacing: -0.04em;
+    color: var(--black);
+  }
+
+  .primary-section-title {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+    font-size: 3rem !important;
+    line-height: 168.4%;
+  }
+  .social-icon {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .social-link {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  }
+
+  .social-item {
+    color: var(--white);
+    font-size: 16px;
+    line-height: 30px;
+    text-decoration: none;
+  }
+
+  .link-item-1 {
+    color: var(--white);
+    font-size: 16px;
+    line-height: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: var(--primaryBgColor);
+    }
+  }
+
+  .ministery-services-page-container {
+    padding: 0 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+  .min-project-main-img-container {
+    width: 90%;
+    height: 35rem;
+    // background-color: aqua;
+    margin: 6rem auto;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s ease-in-out;
+      border-radius: 16px;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .page-service-header {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    // font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .page-service-content {
+    color: #0c2e4c;
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 4rem;
+  }
+
+  @media (max-width: 1024px) {
+    .page-service-header {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    .page-service-content {
+      color: #0c2e4c;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 4rem;
+    }
+    .ministery-services-page-container {
+      padding: 0 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 4rem;
+    }
+  }
+
+  // `lg` applies to medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) {
+    .ministey-service-container-width-reset {
+      width: 100%;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .page-service-header {
+      font-weight: 700;
+      font-size: 2.2rem;
+      margin-bottom: 3rem;
+    }
+    .page-service-content {
+      color: #0c2e4c;
+      font-weight: 400;
+      font-size: 1.6rem;
+    }
+    .ministery-breadcrumb {
+      font-size: 1.9rem;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      gap: 0.5rem;
+    }
+    .ministery-services-page-container {
+      padding: 0 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 4rem;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .section-title {
+      font-size: 2.5rem;
+      color: var(--black);
+      letter-spacing: -0.04em;
+    }
+    .section {
+      margin: 3rem 0;
+      padding: 3rem 0;
+    }
+  }
+  @media (max-width: 575.98px) {
+    .section {
+      margin: 2rem 0;
+      padding: 2rem 0;
+    }
+    .primary-section-title {
+      font-size: 2.4rem !important;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .social-link {
+      font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    }
+
+    .social-item {
+      font-size: 13px;
+      line-height: 22px;
+    }
+
+    .link-item-1 {
+      font-size: 13px;
+      line-height: 22px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .min-project-main-img-container {
+      width: 100%;
+      height: 30rem;
+      margin-bottom: 4rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .min-project-main-img-container {
+      height: 25rem;
+      margin-bottom: 4rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .min-project-main-img-container {
+      width: 95%;
+      margin: 3rem auto 4rem auto;
+      height: 20rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+:root {
+  --primaryColor: #0070c4;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #fff;
+  --headerBottomBgColor: #26262680;
+  --headerTopContentColor: #fff;
+  --headingsColor: #181818;
+  --paragraphColor: #181818;
+  --lightContentColor: #18181899;
+  --lightBgColor: #f8f8f8;
+  --linksColor: #0070c4;
+  --linksHoverColor: #1d73bf;
+  --menuLinksColor: #ffffffb3;
+  --menuLinksHoverColor: #fff !important;
+  --footerBackgroundColor: linear-gradient(
+    92.4deg,
+    var(--firstGradientColor) -38.21%,
+    var(--secondGradientColor) 145.4%
+  );
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #ffffffb3 !important;
+  --firstGradientColor: #0070c4;
+  --secondGradientColor: #00b8c4;
+  --theme-two-main-color: var(--primaryColor);
+  --white: #fff;
+  --black: #000;
+  --red: #f34a3f;
+  --bg_color: linear-gradient(
+    92.4deg,
+    var(--firstGradientColor) -38.21%,
+    var(--secondGradientColor) 145.4%
+  );
+  --gray_text: var(--paragraphColor);
+  --bg_light: var(--lightBgColor);
+  --main_color: var(--primaryColor);
+  --sign-in-desc: #606060;
+  --sign-in-desc2: #757575b2;
+  --input-border: #ffffff66;
+  --input-placeholder: #868e96;
+  --input-background: #f8f8f8;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+}
+
+.theme-two .services {
+  margin-bottom: 78px;
+}
+.theme-two .services h3 {
+  font-family: "Tajawal-Bold";
+  font-size: 28px;
+  color: var(--gray_text);
+}
+.theme-two .services p {
+  font-size: 18px;
+  color: var(--lightContentColor);
+  max-width: 426px;
+  margin-bottom: 40px;
+}
+.theme-two .services .single_service {
+  padding: 32px;
+  background: var(--white);
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+.theme-two .services .single_service .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 59px;
+  height: 59px;
+  background-color: rgba(24, 24, 24, 0.05);
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+.theme-two .services .single_service h5 {
+  font-family: "Tajawal-Bold";
+  font-size: 18px;
+  color: var(--gray_text);
+}
+.theme-two .services .single_service p {
+  font-size: 16px;
+  color: var(--lightContentColor);
+}
+.theme-two .services .single_service:hover {
+  cursor: pointer;
+  background: var(--bg_color);
+}
+.theme-two .services .single_service:hover h5,
+.theme-two .services .single_service:hover p {
+  color: var(--white) !important;
+}
+.theme-two .services .single_service:hover .icon {
+  background-color: rgba(24, 24, 24, 0.05);
+}
+.theme-two .services .single_service:hover .icon svg path {
+  fill: var(--white);
+}

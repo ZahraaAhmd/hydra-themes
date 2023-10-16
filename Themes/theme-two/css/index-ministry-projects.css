@@ -1,0 +1,1137 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+:root {
+  --primaryColor: #0070c4;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #fff;
+  --headerBottomBgColor: #26262680;
+  --headerTopContentColor: #fff;
+  --headingsColor: #181818;
+  --paragraphColor: #181818;
+  --lightContentColor: #18181899;
+  --lightBgColor: #f8f8f8;
+  --linksColor: #0070c4;
+  --linksHoverColor: #1d73bf;
+  --menuLinksColor: #ffffffb3;
+  --menuLinksHoverColor: #fff !important;
+  --footerBackgroundColor: linear-gradient(
+    92.4deg,
+    var(--firstGradientColor) -38.21%,
+    var(--secondGradientColor) 145.4%
+  );
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #ffffffb3 !important;
+  --firstGradientColor: #0070c4;
+  --secondGradientColor: #00b8c4;
+  --theme-two-main-color: var(--primaryColor);
+  --white: #fff;
+  --black: #000;
+  --red: #f34a3f;
+  --bg_color: linear-gradient(
+    92.4deg,
+    var(--firstGradientColor) -38.21%,
+    var(--secondGradientColor) 145.4%
+  );
+  --gray_text: var(--paragraphColor);
+  --bg_light: var(--lightBgColor);
+  --main_color: var(--primaryColor);
+  --sign-in-desc: #606060;
+  --sign-in-desc2: #757575b2;
+  --input-border: #ffffff66;
+  --input-placeholder: #868e96;
+  --input-background: #f8f8f8;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+}
+
+.theme-two .gov-projects-wrapper {
+  margin: 110px 0 110px 0;
+  height: 620px;
+  padding: 20px 0;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-right {
+  height: 600px;
+  background: var(--bg_color);
+  border-radius: 8px;
+  z-index: 999;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content {
+  padding: 35px 25px;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content h2 {
+  font-family: "Tajawal-Bold", sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 122.4%;
+  letter-spacing: 0.2px;
+  color: var(--white) !important;
+  margin-bottom: 15px;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content p {
+  width: 75%;
+  font-family: "Tajawal-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-feature-settings: "salt" on, "liga" off;
+          font-feature-settings: "salt" on, "liga" off;
+  color: var(--white);
+  opacity: 0.9;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container {
+  margin: 3rem 0;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container label {
+  font-family: "Tajawal-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white);
+  margin-bottom: 1.2rem;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container .form-select-lg {
+  padding: 13px 15px;
+  font-size: 16px;
+  border-radius: 12px;
+  border-color: var(--input-border);
+  color: var(--white) !important;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container .form-select {
+  -webkit-filter: brightness(100);
+          filter: brightness(100);
+  color: white;
+  background-size: 18px 15px;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 13px 15px;
+  background: rgba(24, 24, 24, 0.2);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-top: 3.5rem;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects:hover {
+  background: rgba(58, 58, 58, 0.2);
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects span {
+  font-family: "Tajawal-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--white) !important;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects svg {
+  margin-top: 5px;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-left {
+  height: 95%;
+  margin: auto 0;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .slick-track {
+  padding: 20px 0;
+  background-color: transparent;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .slick-slide.slick-current {
+  -webkit-box-shadow: 0 12px 12px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 12px 12px rgba(0, 0, 0, 0.05);
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card {
+  width: 550px;
+  height: 530px;
+  margin: 0 10px 0 10px;
+  border-radius: 8px;
+  border: none;
+  border: 1px solid var(--input-border);
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .img-card-container {
+  width: 100%;
+  height: 450px;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .img-card-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: none;
+     object-fit: none;
+  border-radius: 8px 8px 0 0;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body {
+  padding: 20px;
+  background-color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-title {
+  font-family: "Tajawal-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--lightContentColor);
+  margin-bottom: 0;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-location {
+  font-family: "Tajawal-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--lightContentColor);
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-location svg {
+  width: 25px;
+  height: 25px;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-button {
+  padding: 5px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  background: rgba(0, 112, 196, 0.1);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  color: var(--main_color);
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-button span {
+  font-size: 16px;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions {
+  position: absolute;
+  bottom: -5rem;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 1.5rem;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions .arrow-right,
+.theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions .arrow-left {
+  padding: 12px 15px;
+  border: none;
+  outline: none;
+  background: var(--main_color);
+  border-radius: 7px;
+}
+.theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions .arrow-right svg,
+.theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions .arrow-left svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 1199.98px) {
+  .theme-two .gov-projects-wrapper {
+    margin: 50px 0 70px 0;
+    height: 620px;
+    padding: 20px 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right {
+    height: 600px;
+    background: var(--bg_color);
+    border-radius: 8px;
+    z-index: 999;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content {
+    padding: 35px 25px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content h2 {
+    font-family: "Tajawal-Bold", sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 122.4%;
+    letter-spacing: 0.2px;
+    color: var(--white);
+    margin-bottom: 15px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content p {
+    width: 75%;
+    font-family: "Tajawal-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-font-feature-settings: "salt" on, "liga" off;
+            font-feature-settings: "salt" on, "liga" off;
+    color: var(--white);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container {
+    margin: 3rem 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container label {
+    font-family: "Tajawal-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white);
+    margin-bottom: 1.2rem;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container .form-select-lg {
+    padding: 13px 15px;
+    font-size: 16px;
+    border-radius: 12px;
+    border-color: var(--input-border);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container .form-select {
+    -webkit-filter: brightness(100);
+            filter: brightness(100);
+    color: white;
+    background-size: 18px 15px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 13px 15px;
+    background: rgba(24, 24, 24, 0.2);
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    margin-top: 3.5rem;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects:hover {
+    background: rgba(58, 58, 58, 0.2);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects span {
+    font-family: "Tajawal-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects svg {
+    margin-top: 5px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left {
+    height: 95%;
+    margin: auto 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .slick-track {
+    padding: 20px 0;
+    background-color: transparent;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .slick-slide.slick-current {
+    -webkit-box-shadow: 0 12px 12px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 12px 12px rgba(0, 0, 0, 0.05);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card {
+    width: 460px;
+    height: 530px;
+    margin: 0 10px 0 10px;
+    border-radius: 8px;
+    border: none;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .img-card-container {
+    width: 100%;
+    height: 450px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .img-card-container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: none;
+       object-fit: none;
+    border-radius: 8px 8px 0 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body {
+    padding: 20px;
+    background-color: var(--white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-title {
+    font-family: "Tajawal-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--lightContentColor);
+    margin-bottom: 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-location {
+    font-family: "Tajawal-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--lightContentColor);
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-location svg {
+    width: 25px;
+    height: 25px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-button {
+    padding: 5px 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    background: rgba(0, 112, 196, 0.1);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: var(--main_color);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-button span {
+    font-size: 16px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions {
+    position: absolute;
+    bottom: -5rem;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 1.5rem;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions .arrow-right,
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions .arrow-left {
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    background: var(--main_color);
+    border-radius: 7px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions .arrow-right svg,
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions .arrow-left svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 991.98px) {
+  .theme-two .gov-projects-wrapper {
+    margin: 50px 0 70px 0;
+    height: 620px;
+    padding: 20px 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right {
+    height: 600px;
+    background: var(--bg_color);
+    border-radius: 8px;
+    z-index: 999;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content {
+    padding: 35px 25px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content h2 {
+    font-family: "Tajawal-Bold", sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 122.4%;
+    letter-spacing: 0.2px;
+    color: var(--white);
+    margin-bottom: 15px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content p {
+    width: 75%;
+    font-family: "Tajawal-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-font-feature-settings: "salt" on, "liga" off;
+            font-feature-settings: "salt" on, "liga" off;
+    color: var(--white);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container {
+    margin: 3rem 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container label {
+    font-family: "Tajawal-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white);
+    margin-bottom: 1.2rem;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container .form-select-lg {
+    padding: 13px 15px;
+    font-size: 16px;
+    border-radius: 12px;
+    border-color: var(--input-border);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container .form-select {
+    -webkit-filter: brightness(100);
+            filter: brightness(100);
+    color: white;
+    background-size: 18px 15px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 13px 15px;
+    background: rgba(24, 24, 24, 0.2);
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    margin-top: 3.5rem;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects span {
+    font-family: "Tajawal-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects svg {
+    margin-top: 5px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left {
+    height: 95%;
+    margin: auto 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .slick-track {
+    padding: 20px 0;
+    background-color: transparent;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .slick-slide.slick-current {
+    -webkit-box-shadow: 0 12px 12px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 12px 12px rgba(0, 0, 0, 0.05);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card {
+    width: 400px;
+    height: 530px;
+    margin: 0 10px 0 10px;
+    border-radius: 8px;
+    border: none;
+    border: 1px solid var(--input-border);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .img-card-container {
+    width: 100%;
+    height: 450px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .img-card-container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: none;
+       object-fit: none;
+    border-radius: 8px 8px 0 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body {
+    padding: 20px;
+    background-color: var(--white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-title {
+    font-family: "Tajawal-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--lightContentColor);
+    margin-bottom: 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-location {
+    font-family: "Tajawal-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--lightContentColor);
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-location svg {
+    width: 25px;
+    height: 25px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-button {
+    padding: 5px 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: var(--main_color);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-button span {
+    font-size: 16px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions {
+    position: absolute;
+    bottom: -5rem;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 1.5rem;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions .arrow-right,
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions .arrow-left {
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    background: var(--main_color);
+    border-radius: 7px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions .arrow-right svg,
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions .arrow-left svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 767.98px) {
+  .theme-two .gov-projects-wrapper {
+    margin: 50px 0 70px 0;
+    height: 1220px;
+    padding: 20px 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right {
+    height: 600px;
+    background: var(--bg_color);
+    border-radius: 8px;
+    z-index: 999;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content {
+    padding: 35px 25px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content h2 {
+    font-family: "Tajawal-Bold", sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 122.4%;
+    letter-spacing: 0.2px;
+    color: var(--white);
+    margin-bottom: 15px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content p {
+    width: 75%;
+    font-family: "Tajawal-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-font-feature-settings: "salt" on, "liga" off;
+            font-feature-settings: "salt" on, "liga" off;
+    color: var(--white);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container {
+    margin: 3rem 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container label {
+    font-family: "Tajawal-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white);
+    margin-bottom: 1.2rem;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container .form-select-lg {
+    padding: 13px 15px;
+    font-size: 16px;
+    border-radius: 12px;
+    border-color: var(--input-border);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container .form-select {
+    -webkit-filter: brightness(100);
+            filter: brightness(100);
+    color: white;
+    background-size: 18px 15px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 13px 15px;
+    background: rgba(24, 24, 24, 0.2);
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    margin-top: 3.5rem;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects:hover {
+    background: rgba(58, 58, 58, 0.2);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects span {
+    font-family: "Tajawal-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects svg {
+    margin-top: 5px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left {
+    height: 95%;
+    margin: auto 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .slick-track {
+    padding: 0 0;
+    margin-top: -3rem;
+    background-color: transparent;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .slick-slide.slick-current {
+    -webkit-box-shadow: 0 12px 12px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 12px 12px rgba(0, 0, 0, 0.05);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card {
+    width: 400px;
+    height: 530px;
+    margin: 0 10px 0 10px;
+    border-radius: 8px;
+    border: none;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .img-card-container {
+    width: 100%;
+    height: 450px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .img-card-container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: none;
+       object-fit: none;
+    border-radius: 8px 8px 0 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body {
+    padding: 20px;
+    background-color: var(--white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-title {
+    font-family: "Tajawal-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--lightContentColor);
+    margin-bottom: 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-location {
+    font-family: "Tajawal-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--lightContentColor);
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-location svg {
+    width: 25px;
+    height: 25px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-button {
+    padding: 5px 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    background: rgba(0, 112, 196, 0.1);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: var(--main_color);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-button span {
+    font-size: 16px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions {
+    position: static;
+    margin-top: 2rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions .arrow-right,
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions .arrow-left {
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    background: var(--main_color);
+    border-radius: 7px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions .arrow-right svg,
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .projects-list-arrows-actions .arrow-left svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 575.98px) {
+  .theme-two .gov-projects-wrapper {
+    margin: 50px 0 70px 0;
+    height: 1220px;
+    padding: 20px 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right {
+    height: 600px;
+    background: var(--bg_color);
+    border-radius: 8px;
+    z-index: 999;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content {
+    padding: 35px 25px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content h2 {
+    font-family: "Tajawal-Bold", sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 122.4%;
+    letter-spacing: 0.2px;
+    color: var(--white);
+    margin-bottom: 15px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content p {
+    width: 75%;
+    font-family: "Tajawal-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-font-feature-settings: "salt" on, "liga" off;
+            font-feature-settings: "salt" on, "liga" off;
+    color: var(--white);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container {
+    margin: 3rem 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container label {
+    font-family: "Tajawal-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white);
+    margin-bottom: 1.2rem;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container .form-select-lg {
+    padding: 13px 15px;
+    font-size: 16px;
+    border-radius: 12px;
+    border-color: var(--input-border);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .form-container .form-select {
+    -webkit-filter: brightness(100);
+            filter: brightness(100);
+    color: white;
+    background-size: 18px 15px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 13px 15px;
+    background: rgba(24, 24, 24, 0.2);
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    margin-top: 3.5rem;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects:hover {
+    background: rgba(58, 58, 58, 0.2);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects span {
+    font-family: "Tajawal-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content .button-gov-search-projects svg {
+    margin-top: 5px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left {
+    height: 95%;
+    margin: auto 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .slick-track {
+    padding: 0 0;
+    margin-top: -3rem;
+    background-color: transparent;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .slick-slide.slick-current {
+    -webkit-box-shadow: 0 12px 12px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 12px 12px rgba(0, 0, 0, 0.05);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card {
+    width: 300px;
+    height: 530px;
+    margin: 0 10px 0 10px;
+    border-radius: 8px;
+    border: none;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .img-card-container {
+    width: 100%;
+    height: 450px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .img-card-container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: none;
+       object-fit: none;
+    border-radius: 8px 8px 0 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body {
+    padding: 20px;
+    background-color: var(--white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-title {
+    font-family: "Tajawal-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: var(--lightContentColor);
+    margin-bottom: 0;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-location {
+    font-family: "Tajawal-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: var(--lightContentColor);
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-location svg {
+    width: 20px;
+    height: 20px;
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-button {
+    padding: 5px 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    background: rgba(0, 112, 196, 0.1);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: var(--main_color);
+  }
+  .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .card-body .card-button span {
+    font-size: 16px;
+  }
+}
+.pt-13{
+  padding-top: 13rem!important;
+}

@@ -1,0 +1,239 @@
+:root {
+  --primaryColor: #0070c4;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #fff;
+  --headerBottomBgColor: #26262680;
+  --headerTopContentColor: #fff;
+  --headingsColor: #181818;
+  --paragraphColor: #181818;
+  --lightContentColor: #18181899;
+  --lightBgColor: #f8f8f8;
+  --linksColor: #0070c4;
+  --linksHoverColor: #1d73bf;
+  --menuLinksColor: #ffffffb3;
+  --menuLinksHoverColor: #fff !important;
+  --footerBackgroundColor: linear-gradient(
+    92.4deg,
+    var(--firstGradientColor) -38.21%,
+    var(--secondGradientColor) 145.4%
+  );
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #ffffffb3 !important;
+  --firstGradientColor: #0070c4;
+  --secondGradientColor: #00b8c4;
+  --theme-two-main-color: var(--primaryColor);
+  --white: #fff;
+  --black: #000;
+  --red: #f34a3f;
+  --bg_color: linear-gradient(
+    92.4deg,
+    var(--firstGradientColor) -38.21%,
+    var(--secondGradientColor) 145.4%
+  );
+  --gray_text: var(--paragraphColor);
+  --bg_light: var(--lightBgColor);
+  --main_color: var(--primaryColor);
+  --sign-in-desc: #606060;
+  --sign-in-desc2: #757575b2;
+  --input-border: #ffffff66;
+  --input-placeholder: #868e96;
+  --input-background: #f8f8f8;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+}
+
+.theme-two .download-app-wrapper {
+  margin: 4rem 0 0 0;
+  padding: 5rem 2.4rem 8rem 2.4rem;
+  background-color: var(--bg_light);
+}
+.theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .right-content h3 {
+  width: 75%;
+  font-family: "Tajawal-Bold";
+  font-size: 36px;
+  color: var(--gray_text);
+  line-height: 40px;
+  margin-bottom: 2rem;
+}
+.theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .right-content p {
+  color: var(--lightContentColor);
+  font-size: 18px;
+  max-width: 426px;
+  margin-bottom: 10px;
+}
+.theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .left-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+.theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .left-content img {
+  width: 200px;
+  height: 60px;
+}
+
+@media (max-width: 1199.98px) {
+  .theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .right-content h3 {
+    width: 95%;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 3rem;
+  }
+  .theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .right-content p {
+    color: var(--lightContentColor);
+    font-size: 18px;
+    max-width: 426px;
+    margin-bottom: 2px;
+  }
+  .theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .left-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 2rem;
+  }
+  .theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .left-content img {
+    width: 165px;
+    height: 55px;
+  }
+}
+@media (max-width: 991.98px) {
+  .theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .right-content h3 {
+    width: 100%;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 3rem;
+  }
+  .theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .right-content p {
+    color: var(--lightContentColor);
+    font-size: 18px;
+    max-width: 426px;
+    margin-bottom: 2px;
+  }
+  .theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .left-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 2rem;
+  }
+  .theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .left-content img {
+    width: 180px;
+    height: 60px;
+  }
+}
+@media (max-width: 767.98px) {
+  .theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .right-content {
+    text-align: center;
+    margin: 0 auto 3rem auto;
+  }
+  .theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .right-content h3 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .right-content p {
+    display: inline-block;
+    color: var(--lightContentColor);
+    font-size: 18px;
+    max-width: 626px;
+    margin-bottom: 2px;
+    text-align: center;
+  }
+  .theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .left-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+  }
+  .theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .left-content img {
+    width: 200px;
+    height: 60px;
+  }
+}
+@media (max-width: 575.98px) {
+  .theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .right-content {
+    text-align: center;
+    margin: 0 auto 3rem auto;
+  }
+  .theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .right-content h3 {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .right-content p {
+    display: inline-block;
+    color: var(--lightContentColor);
+    font-size: 17px;
+    max-width: 650px;
+    margin-bottom: 2px;
+    text-align: center;
+  }
+  .theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .left-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+  }
+  .theme-two .download-app-wrapper .download-app-container .download-app-content-wrapper .left-content img {
+    width: 220px;
+    height: 64px;
+  }
+}

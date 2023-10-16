@@ -1,0 +1,63 @@
+.page_desc {
+  h3 {
+    font-family: "Tajawal-Bold";
+    color: var(--headingsColor);
+    font-size: 32px;
+  }
+  p {
+    font-size: 18px;
+    color: var(var--gray_text);
+  }
+}
+.link_desc {
+  h3 {
+    font-family: "Tajawal-Bold";
+    color: var(--gray_text);
+    font-size: 24px;
+  }
+  p {
+    font-size: 18px;
+    color: var(--gray_text);
+  }
+}
+.pages_link {
+  background: rgba(70, 117, 239, 0.08);
+  border-radius: 16px;
+  height: 85px;
+  padding: 16px 0;
+  span {
+    color: var(--black);
+    font-size: 20px;
+    text-align: center;
+    height: 53px;
+    line-height: 53px;
+  }
+  .slick-current {
+    span {
+      background: var(--bg_color);
+      border-radius: 16px;
+      color: var(--white);
+    }
+  }
+}
+
+// mobile
+@media (max-width: 767px) {
+  .pages_link {
+    span {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .pages_link {
+    span {
+      font-size: 12px;
+      height: 45px;
+      line-height: 45px;
+    }
+  }
+}
+
+// NEWWWW _---------------------------

@@ -1,0 +1,201 @@
+@import "variables";
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+
+.section {
+  margin: 4rem 0;
+  padding: 4rem 0;
+}
+.section-title {
+  width: fit-content;
+  padding: 1rem 2rem;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  // font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  // font-family: "Helvetica Neue LT Arabic", sans-serif;
+  // font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 168.4%;
+  letter-spacing: -0.04em;
+  color: var(--black);
+}
+
+.primary-section-title {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  font-size: 3rem !important;
+  line-height: 168.4%;
+  color: var(--primaryBgColor) !important;
+}
+.social-icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.social-link {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+}
+
+.social-item {
+  color: var(--white);
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.link-item-1 {
+  color: var(--white);
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: var(--primaryBgColor);
+  }
+}
+
+
+.ministery-services-title {
+  margin: 4rem auto 4rem auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  font-size: 4rem;
+  color: var(--faqMainColor);
+}
+
+.ministery-breadcrumb {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 1rem;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .ministery-breadcrumb-item-active {
+    color: var(--faqMainColor);
+  }
+}
+
+.ministery-services-page-container {
+  padding: 0 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4rem;
+}
+.page-service-header {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  // font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+.page-service-content {
+  color: #0c2e4c;
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 4rem;
+}
+
+@media (max-width: 1024px) {
+  .page-service-header {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .page-service-content {
+    color: #0c2e4c;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 4rem;
+  }
+  .ministery-services-page-container {
+    padding: 0 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .ministey-service-container-width-reset {
+    width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .page-service-header {
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+  .page-service-content {
+    color: #0c2e4c;
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+  .ministery-breadcrumb {
+    font-size: 1.9rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 0.5rem;
+  }
+  .ministery-services-page-container {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-title {
+    font-size: 2.5rem;
+    color: var(--black);
+    letter-spacing: -0.04em;
+  }
+  .section {
+    margin: 3rem 0;
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .section {
+    margin: 2rem 0;
+    padding: 2rem 0;
+  }
+  .primary-section-title {
+    font-size: 2.4rem !important;
+  }
+}
+
+
+@media (max-width: 575.98px) {
+  .social-link {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  }
+
+  .social-item {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .link-item-1 {
+    font-size: 13px;
+    line-height: 22px;
+  }
+}

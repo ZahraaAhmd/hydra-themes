@@ -1,0 +1,196 @@
+:root {
+  --primaryColor: #4675ef;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #1e549d;
+  --headerBottomBgColor: #fff;
+  --headerTopContentColor: #18191f;
+  --headingsColor: #4675ef;
+  --paragraphColor: #181818;
+  --lightContentColor: #181818;
+  --lightBgColor: #f5f5f5;
+  --linksColor: #0d3770;
+  --linksHoverColor: #0d3770;
+  --menuLinksColor: #18191f !important;
+  --menuLinksHoverColor: #4675ef !important;
+  --footerBackgroundColor: #4675ef;
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #1e549d !important;
+  --firstGradientColor: #153e9b;
+  --secondGradientColor: #0d3770;
+  --theme-one-main-color: #4675ef;
+  --white: #fff;
+  --black: #000;
+  --gray_text: var(--lightContentColor);
+  --gray_text2: var(--lightContentColor);
+  --red: #f34a3f;
+  --green: #55c574;
+  --blue: #4675ef;
+  --bg_color: var(--primaryColor);
+  --sign-in-desc: #606060;
+  --sign-in-desc2: #757575b2;
+  --input-border: #4675ef;
+  --input-placeholder: #868e96;
+  --input-background: #f8f8f8;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+}
+@font-face {
+  font-family: "Tajawal-Bold";
+  src: url(../../fonts/Tajawal/Helvetica-bold.ttf);
+}
+@font-face {
+  font-family: "Tajawal-Regular";
+  src: url(../../fonts/Tajawal/Helvetica-normal.ttf);
+}
+.section-title-header {
+  font-family: "Tajawal-Bold";
+  font-size: 32px;
+  color: var(--primaryColor);
+}
+
+.section-title-desc {
+  font-family: "Tajawal-Regular";
+  font-size: 18px;
+  color: var(--lightContentColor);
+  opacity: 0.8;
+  width: 30%;
+  margin-top: 15px;
+}
+
+.theme-one .about-ministry-wrapper {
+  padding: 100px 0 120px 0;
+  margin-bottom: 55px;
+}
+.theme-one .tabs-list-wrapper {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  gap: 2rem !important;
+  margin-top: 1.2rem !important;
+  margin-bottom: 4rem !important;
+}
+.theme-one .tab-link-item-link {
+  font-size: 20px;
+  line-height: 168.4%;
+  color: var(--gray_text);
+}
+.theme-one .tab-link-item-link {
+  font-family: "Tajawal-Regular" !important;
+  font-size: 18px !important;
+  color: var(--menuLinksColor) !important;
+  padding: 0.5rem 0 !important;
+  border: none !important;
+}
+.theme-one .tab-link-item-link.active {
+  color: var(--menuLinksHoverColor) !important;
+  border: none !important;
+  padding-bottom: 5px !important;
+  border-bottom: 2px solid var(--menuLinksHoverColor) !important;
+}
+.theme-one .tab-link-item-link:hover {
+  color: var(--menuLinksHoverColor) !important;
+}
+.theme-one .tab-content-desc p {
+  width: 98%;
+  font-family: "Tajawal-Regular";
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  line-height: 30px;
+  color: var(--paragraphColor);
+}
+.theme-one .tab-content-desc p .desc-link {
+  font-family: "Tajawal-Regular";
+  color: var(--bg_color);
+  text-decoration: none;
+}
+.theme-one .img-tab-content-col .tab-content-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.theme-one .img-tab-content-col .tab-content-image img {
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  .theme-one .tabs-list-wrapper {
+    margin-bottom: 2rem !important;
+  }
+  .theme-one .img-tab-content-col {
+    margin-top: 1rem;
+  }
+  .theme-one .img-tab-content-col .tab-content-image {
+    padding: 3rem 0.5rem;
+  }
+  .theme-one .img-tab-content-col .tab-content-image img {
+    width: 80%;
+  }
+}
+@media (max-width: 992px) {
+  .theme-one .img-tab-content-col {
+    margin-top: 1rem;
+  }
+  .theme-one .img-tab-content-col .tab-content-image {
+    padding: 1rem 0.5rem;
+  }
+  .theme-one .img-tab-content-col .tab-content-image img {
+    width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .theme-one .tabs-list-wrapper {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    gap: 0.8rem !important;
+    margin-top: 1.2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .theme-one .tab-link-item-link {
+    font-size: 15.5px !important;
+  }
+  .theme-one .tab-content-desc p {
+    width: 97%;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    line-height: 30px;
+  }
+  .theme-one .img-tab-content-col {
+    margin-top: 0;
+  }
+  .theme-one .img-tab-content-col .tab-content-image {
+    padding: 1rem 0.5rem;
+  }
+  .theme-one .img-tab-content-col .tab-content-image img {
+    width: 100%;
+  }
+  .theme-one .about-ministry-wrapper {
+    padding: 60px 0 56px 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-title-desc {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .section-title-desc {
+    width: 75%;
+  }
+}

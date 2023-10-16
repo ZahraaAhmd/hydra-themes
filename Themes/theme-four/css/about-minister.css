@@ -1,0 +1,324 @@
+:root {
+  --primaryColor: #1d73bf;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #fff;
+  --headerBottomBgColor: #1d73bf;
+  --headerTopContentColor: #fff;
+  --headingsColor: #1d73bf;
+  --paragraphColor: #181818;
+  --lightContentColor: #181818b2;
+  --lightBgColor: #e8f1f9;
+  --linksColor: #1d73bf;
+  --linksHoverColor: #1d73bf;
+  --menuLinksColor: #fff !important;
+  --menuLinksHoverColor: #dcdcdc !important;
+  --footerBackgroundColor: #092239;
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #1e549d !important;
+  --firstGradientColor: #153e9b;
+  --secondGradientColor: #1d73bf;
+  --theme-four-main-color: var(--primaryColor);
+  --font-normal: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  --font-bold: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  --white: #fff;
+  --black: #000;
+  --gray-50: #f9f9f9;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --gray-1000: #000;
+  --primaryBgColor: var(--primaryColor);
+  --tertiaryBgColor: var(--lightBgColor);
+  --sub-header-color: var(--lightContentColor);
+  --bg-transparent: transparent;
+  --loginBtnBgColor: var(--primaryColor);
+  --loginBtnBgOnHover: var(--secondaryColor);
+  --languageBtnBgColor: var(--lightBgColor);
+  --HeroMainTextColor: var(--headingsColor);
+  --heroTextColor: var(--lightContentColor);
+  --test-sub-color: var(--secondaryColor);
+  --strategyDescColor: var(--lightContentColor);
+  --bg-color-mobile: var(--lightBgColor);
+  --bg-title-color: var(--primaryColor);
+  --related-website-item-bg-color: --white;
+  --related-website-item-title-color: var(--lightContentColor);
+  --related-website-item-visit-text-color: var(--secondaryColor);
+  --contactBgColor: var(--secondaryColor);
+  --inputFieldBgColor: transparent;
+  --contactUsDescText: var(--lightContentColor);
+  --footerBgColor: var(--footerBackgroundColor);
+  --servicesBgColor: var(--tertiaryBgColor);
+  --servicesMainTextColor: var(--primaryColor);
+  --servicessecondaryTextColor: var(--lightContentColor);
+  --ministerBgColor: var(--lightBgColor);
+  --ministerMainTextColor: var(--primaryColor);
+  --ministerDescTextColor: var(--paragraphColor);
+  --tapsWrapperBgColor: var(--primaryBgColor);
+  --sign-in-header: var(--primaryColor);
+  --sign-in-desc: #757575;
+  --sign-in-desc2: #757575b2;
+  --input-border: var(--primaryColor);
+  --input-placeholder: #afafaf;
+  --input-background: #f8f8f8;
+  --button-bg-primary: var(--primaryColor);
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+  --ministeryMainColor: var(--primaryColor);
+  --ministerySecondaryColor: var(--lightContentColor);
+  --gov-project-date-color: var(--primaryColor);
+  --searchMainColor: var(--primaryColor);
+  --searchResultColor: var(--primaryColor);
+  --searchResultHoverColor: var(--primaryColor);
+  --faqMainColor: var(--primaryColor);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+.section {
+  padding: 6rem 0;
+}
+
+.section-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 168.4%;
+  letter-spacing: -0.04em;
+  color: var(--black);
+}
+
+.primary-section-title {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  font-size: 3rem !important;
+  line-height: 168.4%;
+}
+
+.theme-four .minister-container-content {
+  background-color: var(--ministerBgColor);
+}
+.theme-four .minister-container {
+  background-color: var(--ministerBgColor);
+  margin-bottom: 15rem;
+}
+.theme-four .minister-options {
+  max-width: 80%;
+}
+.theme-four .minister-container-right {
+  max-width: 50%;
+}
+.theme-four .minister-container-right .minister-desc,
+.theme-four .minister-container-right .minister-desc2 {
+  font-family: "Helvetica Neue LT Arabic";
+  font-size: 1.8rem;
+  color: var(--ministerDescTextColor);
+  line-height: 3.5rem;
+}
+.theme-four .minister-container-right .minister-desc {
+  margin-bottom: 2rem;
+}
+.theme-four .minister-container-right .minister-desc2 {
+  margin-bottom: 5rem;
+}
+.theme-four .minister-container-right .minister-sub-title {
+  font-family: "Helvetica Neue LT Arabic";
+  font-size: 1.6rem;
+  color: var(--primaryBgColor);
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: bolder;
+}
+.theme-four .minister-container-left {
+  position: relative;
+  width: 100%;
+  height: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.theme-four .minister-circle {
+  position: absolute;
+  bottom: 10%;
+}
+.theme-four .minister-img {
+  position: absolute;
+  bottom: -6.1%;
+}
+.theme-four .minister-img-container-small {
+  width: 12rem;
+  height: 12rem;
+  background-color: #cbd7e2;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  position: relative;
+}
+.theme-four .minister-img-small {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10%;
+}
+@media screen and (max-width: 1220px) {
+  .theme-four .minister-container-content {
+    background-color: var(--ministerBgColor);
+    padding: 4rem 2rem;
+  }
+  .theme-four .minister-container {
+    background-color: var(--ministerBgColor);
+  }
+  .theme-four .minister-options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .theme-four .minister-options span {
+    font-size: 1.7rem;
+  }
+  .theme-four .minister-container-right {
+    max-width: 85%;
+  }
+  .theme-four .minister-container-right .minister-desc,
+  .theme-four .minister-container-right .minister-desc2 {
+    font-family: "Helvetica Neue LT Arabic";
+    font-size: 1.8rem;
+    color: var(--ministerDescTextColor);
+    line-height: 3.5rem;
+  }
+  .theme-four .minister-container-right .minister-desc {
+    margin-bottom: 2rem;
+  }
+  .theme-four .minister-container-right .minister-desc2 {
+    margin-bottom: 5rem;
+  }
+  .theme-four .minister-container-right .minister-sub-title {
+    font-family: "Helvetica Neue LT Arabic";
+    font-size: 2rem;
+    color: var(--primaryBgColor);
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  .theme-four .minister-container-left {
+    position: relative;
+    width: 100%;
+    height: 50rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .theme-four .minister-circle {
+    position: absolute;
+    bottom: 10%;
+  }
+  .theme-four .minister-img {
+    position: absolute;
+    bottom: -6.1%;
+  }
+}
+@media (max-width: 575.98px) {
+  .theme-four .minister-container {
+    margin-bottom: 8rem;
+  }
+  .theme-four .minister-container-right {
+    max-width: 90%;
+  }
+  .theme-four .minister-container-right .minister-desc,
+  .theme-four .minister-container-right .minister-desc2 {
+    font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+    font-size: 1.6rem;
+    color: var(--ministerDescTextColor);
+    line-height: 3.5rem;
+  }
+  .theme-four .minister-container-right .minister-desc {
+    margin-bottom: 1.8rem;
+  }
+  .theme-four .minister-container-right .minister-desc2 {
+    margin-bottom: 5rem;
+  }
+  .theme-four .minister-container-right .minister-sub-title {
+    font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+    font-size: 1.7rem;
+    color: var(--primaryBgColor);
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-title {
+    font-size: 2.5rem;
+    color: var(--black);
+    letter-spacing: -0.04em;
+  }
+  .section {
+    padding: 5rem 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .section {
+    padding: 4rem 0;
+  }
+  .primary-section-title {
+    font-size: 2.4rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .social-link {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  }
+  .social-item {
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .link-item-1 {
+    font-size: 13px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,34 @@
+// import base scss files
+@import "base/theme1/colors";
+@import "base/fonts";
+@import "base/colors";
+// import layout scss files
+@import "layout/theme1/footer";
+@import "layout/theme1/header";
+// import views
+@import "views/theme1/index";
+@import "views/theme1/dataShowing";
+@import "views/theme1/blog";
+@import "views/theme1/service";
+@import "views/theme1/contactus";
+@import "views/theme1/multi_page";
+@import "views/theme1/gallary";
+@import "views/theme1/gallary_details";
+@import "views/theme1/news";
+@import "views/theme1/search_results";
+@import "views/theme1/projects";
+body {
+    font-family: $normal_font;
+}
+
+// in popup case add this div to body and make it block when popup open
+.page-mask {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(24, 24, 24, 0.3);
+    z-index: 9;
+}

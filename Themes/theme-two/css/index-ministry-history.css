@@ -1,0 +1,289 @@
+.theme-two .ministry-history {
+  margin: 4rem 0;
+  padding: 0 0rem 0 0;
+}
+.theme-two .ministry-history h1 {
+  font-family: "Tajawal-Bold";
+  font-size: 28px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+@media (max-width: 1199.98px) {
+  .theme-two .ministry-history h1 {
+    width: 100%;
+    text-align: start !important;
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .theme-two .ministry-history h1 {
+    width: 100%;
+    margin-right: 0;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+.theme-two .ministry-history h3 {
+  font-size: 18px;
+  font-family: "Helvetica Neue LT Arabic", sans-serif;
+  color: var(--lightContentColor) !important;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  max-width: 426px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1199.98px) {
+  .theme-two .ministry-history h3 {
+    width: 100%;
+    text-align: start !important;
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .theme-two .ministry-history h3 {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+.theme-two .ministry-history-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+.theme-two .ministry-history-container .ministry-history-container-tabs {
+  width: 20%;
+  min-height: 100%;
+  background-color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.theme-two .ministry-history-container .ministry-history-container-tabs .ministry-history-tabs {
+  padding: 1rem 0;
+  position: absolute;
+  left: -30%;
+  background-color: var(--white);
+  border-radius: 10px;
+  width: 90%;
+  min-height: 85%;
+  border: 1px solid var(--input-border);
+  list-style: none;
+  padding: 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 2rem;
+}
+.theme-two .ministry-history-container .ministry-history-container-tabs .ministry-history-tabs .active {
+  color: var(--primaryColor);
+  font-weight: 600;
+  position: relative;
+}
+.theme-two .ministry-history-container .ministry-history-container-tabs .ministry-history-tabs .active::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: var(--primaryColor);
+  right: 0%;
+  bottom: 0;
+  border-radius: 14px;
+}
+.theme-two .ministry-history-container .ministry-history-container-tabs .ministry-history-tabs li {
+  width: 100%;
+}
+.theme-two .ministry-history-container .ministry-history-container-tabs .ministry-history-tabs li a {
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  font-family: "Helvetica Neue LT Arabic", sans-serif;
+  color: var(--paragraphColor);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+.theme-two .ministry-history-container .ministry-history-container-content {
+  width: 100%;
+  padding: 4rem 8rem 4rem 8rem;
+  background-color: var(--lightBgColor);
+  border-radius: 10px;
+  height: 100%;
+}
+.theme-two .ministry-history-container .ministry-history-container-content .tab-pane {
+  width: 100%;
+}
+.theme-two .ministry-history-container .ministry-history-container-content .tab-pane .ministry-history-container-content-text {
+  width: 60%;
+}
+.theme-two .ministry-history-container .ministry-history-container-content .tab-pane .ministry-history-container-content-text p {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  justify-self: flex-start;
+  padding: 0 4rem;
+  font-weight: 400;
+  font-family: "Helvetica Neue LT Arabic", sans-serif;
+  font-size: 18px;
+  line-height: 44px;
+  color: var(--paragraphColor);
+}
+.theme-two .ministry-history-container .ministry-history-container-content .tab-pane .ministry-history-container-content-text a {
+  padding: 0 4rem;
+  text-align: justify;
+  text-decoration: none;
+  font-family: "Helvetica Neue LT Arabic", sans-serif;
+  font-size: 18px;
+  color: var(--primaryColor);
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+.theme-two .ministry-history-container .ministry-history-container-content .tab-pane .ministry-history-container-content-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+}
+.theme-two .ministry-history-container .ministry-history-container-content .tab-pane .ministry-history-img-container {
+  width: 25rem;
+  height: 20rem;
+  position: relative;
+}
+.theme-two .ministry-history-container .ministry-history-container-content .tab-pane .ministry-history-img {
+  position: absolute;
+  z-index: 10;
+  width: 25rem;
+  height: 20rem;
+}
+.theme-two .ministry-history-container .ministry-history-container-content .tab-pane .ministry-history-img-bg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 25rem;
+  height: 20rem;
+  left: 0;
+  background: linear-gradient(92.4deg, var(--firstGradientColor) -38.21%, var(--secondGradientColor) 145.4%);
+}
+.theme-two .ministry-history-tabs-responsive {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  border-bottom: 1px solid var(--input-border);
+}
+@media (max-width: 1199.98px) {
+  .theme-two .ministry-history-tabs-responsive {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+.theme-two .ministry-history-tabs-responsive .active {
+  color: var(--primaryColor);
+  font-weight: 600;
+  border-bottom: 2px solid var(--primaryColor);
+}
+.theme-two .ministry-history-tabs-responsive li a {
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  font-family: "Helvetica Neue LT Arabic", sans-serif;
+  color: var(--lightContentColor);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+.theme-two .tab-pane-item {
+  padding: 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.theme-two .ministry-history-img-responsive {
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+}
+.theme-two .ministry-history-img-responsive img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.theme-two .ministry-history-img-responsive span {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(92.4deg, var(--firstGradientColor) -38.21%, var(--secondGradientColor) 145.4%);
+}
+.theme-two .ministry-history-content-reponsive p {
+  font-size: 15px;
+  line-height: 2.7rem;
+  font-weight: 500;
+  text-align: right;
+  color: var(--lightContentColor);
+  font-family: "Helvetica Neue LT Arabic", sans-serif;
+  list-style: 30px;
+}
+.theme-two .ministry-history-content-reponsive a {
+  text-decoration: none;
+  font-family: "Helvetica Neue LT Arabic", sans-serif;
+  font-size: 16px;
+  color: var(--primaryColor);
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}

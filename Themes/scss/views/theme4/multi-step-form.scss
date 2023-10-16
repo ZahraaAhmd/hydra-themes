@@ -1,0 +1,270 @@
+@import "variables";
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+// class to fade in the form elements
+.fade-in {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.multi-step-form-wrapper {
+  width: 55%;
+  height: auto;
+  margin: 8rem auto;
+  background-color: aqua;
+  border-radius: 16px;
+  background: var(--white);
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.02);
+  padding: 3.6rem 6.2rem;
+
+  .form-header {
+    h3 {
+      font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+      font-size: 32px;
+      line-height: 168.4%;
+      letter-spacing: -0.04em;
+      color: var(--paragraphColor) !important;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+      font-weight: bolder;
+      font-size: 18px;
+      line-height: 24px;
+      font-feature-settings: "salt" on, "liga" off;
+      color: var(--lightContentColor);
+      opacity: 0.7;
+    }
+  }
+  .progress {
+    margin-top: 5rem;
+    height: 12px;
+    border-radius: 8px;
+    .progress-bar {
+      background-color: var(--primaryColor);
+    }
+  }
+  .formWrapper {
+    margin-top: 5rem;
+    .sign-in-label {
+      font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: var(--paragraphColor);
+    }
+    .form-input,
+    .select-input {
+      width: 100%;
+      padding: 1.2rem 2.4rem;
+      font-size: 1.6rem;
+      outline: none;
+      border: 1px solid transparent;
+      background-color: var(--input-background);
+      border-radius: 10px;
+      text-align: right;
+    }
+    .text-area-input {
+      width: 100%;
+      padding: 1.2rem 2.4rem;
+      font-size: 1.6rem;
+      outline: none;
+      border: 1px solid transparent;
+      background-color: var(--input-background);
+      border-radius: 10px;
+      text-align: right;
+      height: 10rem;
+      resize: none;
+    }
+
+    .form-input::placeholder {
+      color: var(--input-placeholder);
+      font-size: 1.6rem;
+    }
+
+    .btn-first-submit-wrapper {
+      width: 85%;
+      margin: 3rem auto;
+      .btn-first-submit {
+        font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+        width: 100%;
+        font-size: 18px;
+        padding: 1.2rem 2.4rem;
+        background-color: var(--primaryColor);
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        color: var(--white);
+      }
+    }
+
+    .image-upload-wrapper {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5rem;
+      .image-upload {
+        width: 8rem;
+        height: 8rem;
+        padding: 1rem;
+        border-radius: 50%;
+        background-color: var(--lightBgColor);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        label {
+          cursor: pointer;
+        }
+      }
+      .image-upload > input {
+        display: none;
+      }
+      .upload-left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--white);
+
+        border: 1px dashed #e4e7ec;
+        border-radius: 12px;
+        .left-content {
+          padding: 1.2rem 2.4rem;
+          p {
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--lightContentColor);
+            strong {
+              cursor: pointer;
+              font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+              color: var(--primaryColor);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .multi-step-form-wrapper {
+    width: 75%;
+  }
+}
+@media (max-width: 767.98px) {
+  .page-title-with-breadcrumb-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .page-breadcrumb {
+      a {
+        font-size: 14px;
+      }
+      .ministery-breadcrumb-speprator {
+        font-size: 14px;
+      }
+    }
+  }
+  .multi-step-form-wrapper {
+    width: 100%;
+    padding: 3.6rem 4.2rem;
+    margin-top: 2rem;
+    .form-header {
+      h3 {
+        font-size: 28px;
+        line-height: 168.4%;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .formWrapper {
+      .image-upload-wrapper {
+        margin-top: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        .image-upload {
+          width: 10rem;
+          height: 10rem;
+          padding: 1rem;
+          border-radius: 50%;
+          background-color: var(--lightBgColor);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          label {
+            cursor: pointer;
+          }
+        }
+        .image-upload > input {
+          display: none;
+        }
+        .upload-left {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--white);
+
+          border: 1px dashed #e4e7ec;
+          border-radius: 12px;
+          .left-content {
+            padding: 1.2rem 2.4rem;
+            text-align: center;
+            p {
+              text-align: center;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 20px;
+              color: var(--lightContentColor);
+              strong {
+                cursor: pointer;
+                font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+                color: var(--primaryColor);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575.98px) {
+}

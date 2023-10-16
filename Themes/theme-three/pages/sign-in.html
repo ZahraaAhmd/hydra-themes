@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="../../images/theme3/HeaderLogoEagle.svg" type="image/x-icon">
+    <!-- fonts -->
+    <link rel="stylesheet" href="../../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf">
+    <link rel="stylesheet" href="../../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../../plugins/fontawesome/css/all.min.css">
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="../../plugins/bootstrap/css/bootstrap.min.css">
+    <!-- slick CSS -->
+    <link rel="stylesheet" href="../../plugins/slick/css/new-slick.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/theme-three.css">
+    <link rel="stylesheet" href="../css/firstHeader.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/sign-in.css">
+    <!-- Javascript -->
+    <script defer src="../js/index/index.js"></script>
+    <script defer src="../js/header.js"></script>
+    <script defer src="../js/auth/sign-in.js"></script>
+
+    <title>تسجيل الدخول</title>
+
+
+</head>
+
+<body dir="rtl" class="overflow-x-hidden">
+
+    <!-- header -->
+    <header>
+        <!-- first  header -->
+        <nav class="container-fluid  bg-first-header ">
+            <div
+                class="container container-sm container-md container-lg container-xl container-xxl   d-flex justify-content-between align-items-center py-4 py-xl-2 ">
+                <!-- Right -->
+                <div class="d-flex justify-content-between align-items-center gap-4">
+                    <a href="./index.html">
+                        <img class="eagle-head-title d-none d-lg-block" src="../../images/theme3/HeaderLogoEagle.svg"
+                            alt="">
+
+                    </a>
+                    <a href="./index.html">
+
+                        <img class="logoTitle" src="../../images/theme3/title.png" alt="">
+                    </a>
+                </div>
+                <!-- left -->
+                <div class="d-flex justify-content-between align-items-center  gap-4">
+
+                                        <ul class="main-nav-list" style="margin-bottom: 0px">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle link-item langBtn text-decoration-none d-none d-lg-flex"
+                               href="#" role="button" data-bs-toggle="dropdown" id="navbarDropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                <span class="d-none d-md-flex  fw-lighter langOption"> اللغه العربيه </span>
+                                <svg width="20" height="30" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1028_348)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M10.0025 0.5C12.7606 0.5 15.2612 1.61718 17.0735 3.42641C18.8809 5.2307 20 7.72704 20 10.4854C20 13.2388 18.8809 15.7351 17.0735 17.5443C15.2612 19.3486 12.7606 20.4658 10.0025 20.4658C7.23942 20.4658 4.7388 19.3486 2.93142 17.5443C1.11909 15.7351 0 13.2388 0 10.4854C0 7.72704 1.11909 5.2307 2.93142 3.42641C4.7388 1.61718 7.23942 0.5 10.0025 0.5ZM15.9693 4.52875C15.3751 3.93062 14.6918 3.42641 13.944 3.03095C14.0629 3.21385 14.1768 3.40169 14.2857 3.59942C15.1721 5.20104 15.7514 7.33652 15.8554 9.70434H18.4055C18.2223 7.68749 17.3261 5.87826 15.9693 4.52875ZM15.9693 16.442C17.3261 15.0875 18.2223 13.2783 18.4055 11.2615H15.8554C15.7514 13.6293 15.1721 15.7648 14.2857 17.3664C14.1768 17.5641 14.0629 17.7569 13.944 17.9349C14.6918 17.5394 15.3751 17.0352 15.9693 16.442ZM4.03565 16.442C4.62986 17.0352 5.30824 17.5394 6.06091 17.9349C5.94206 17.7569 5.82818 17.5641 5.71924 17.3664C4.83288 15.7648 4.25353 13.6293 4.14459 11.2615H1.59941C1.78262 13.2783 2.67888 15.0875 4.03565 16.442ZM4.03565 4.52875C2.67888 5.87826 1.78262 7.68749 1.59941 9.70434H4.14459C4.25353 7.33652 4.83288 5.20104 5.71924 3.59942C5.82818 3.40169 5.94206 3.21385 6.06091 3.03095C5.30824 3.42641 4.62986 3.93062 4.03565 4.52875ZM10.7799 2.20542V9.70434H14.2956C14.1916 7.6084 13.6866 5.73491 12.919 4.3508C12.3248 3.27317 11.587 2.51191 10.7799 2.20542ZM10.7799 11.2615V18.7604C11.587 18.4539 12.3248 17.6926 12.919 16.62C13.6866 15.2309 14.1916 13.3574 14.2956 11.2615H10.7799ZM9.2201 18.7604V11.2615H5.70933C5.80837 13.3574 6.3184 15.2309 7.08591 16.62C7.68012 17.6926 8.41792 18.4539 9.2201 18.7604ZM9.2201 9.70434V2.20542C8.41792 2.51191 7.68012 3.27317 7.08591 4.3508C6.3184 5.73491 5.80837 7.6084 5.70933 9.70434H9.2201Z"
+                                              fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1028_348">
+                                            <rect width="20" height="20" fill="white" transform="translate(0 0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu shadow" style="">
+                                <li><a href="#" class="dropdown-item ">اللغه العربيه</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <a class="loginBtn text-decoration-none  d-flex align-content-center justify-content-between d-none d-lg-flex"
+                        href="./sign-in.html">
+                        <span class="d-none d-md-flex  fw-lighter logingOption"> تسجيل الدخول </span>
+                        <svg width="20" height="30" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 21.5V19.5C20 18.4391 19.5786 17.4217 18.8284 16.6716C18.0783 15.9214 17.0609 15.5 16 15.5H8C6.93913 15.5 5.92172 15.9214 5.17157 16.6716C4.42143 17.4217 4 18.4391 4 19.5V21.5"
+                                stroke="#307189" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M12 11.5C14.2091 11.5 16 9.70914 16 7.5C16 5.29086 14.2091 3.5 12 3.5C9.79086 3.5 8 5.29086 8 7.5C8 9.70914 9.79086 11.5 12 11.5Z"
+                                stroke="#307189" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </a>
+                    <a href="./index.html" class="d-block d-lg-none">
+                        <img class="eagleLogo " src="../../images/theme3/HeaderLogoEagle.svg" alt="">
+                    </a>
+
+                </div>
+
+            </div>
+        </nav>
+        <!-- Second Header -->
+        <header class="header d-flex align-items-center">
+            <div
+                class="container container-sm container-md container-lg container-xl container-xxl  d-flex align-items-center justify-content-between">
+                <form
+                    class="d-xl-none d-flex position-relative searchWrapper  align-items-center justify-content-between "
+                    role="search">
+                    <input class="text-light  searchInput " type="search"
+                        placeholder="ابحث عن خدمه او وزاره او جهه حكوميه " aria-label="Search">
+
+                    <svg class="position-absolute searchIcon" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 19.6265C15.4183 19.6265 19 16.0447 19 11.6265C19 7.20819 15.4183 3.62646 11 3.62646C6.58172 3.62646 3 7.20819 3 11.6265C3 16.0447 6.58172 19.6265 11 19.6265Z"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M21.0004 21.6264L16.6504 17.2764" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </form>
+                <nav class="main-nav">
+                    <ul class="nav-mega main-nav-list  nav-link-item-list mb-0">
+                        <li class="nav-item dropdown dropdown-mega position-static">
+                            <a class="nav-link dropdown-toggle link-item active" href="#" role="button"
+                                data-bs-toggle="dropdown" id="navbarDropdown" aria-expanded="false"
+                                data-bs-auto-close="outside">
+                                الرئيسيه
+                            </a>
+                            <div class="dropdown-menu text-white shadow" aria-labelledby="navbarDropdown">
+                                <div class="mega-content px-md-4">
+                                    <div class="container-fluid row-mega">
+                                        <div class="row text-end">
+
+                                            <div class="mega-item col-lg-4 col-sm-12 py-4  px-3 ">
+                                                <h5 class="mega-header"> خدمات الترجمة</h5>
+                                                <div class="d-flex gap-2">
+                                                    <div class="list-group d-flex flex-column gap-4">
+                                                        <p class="list-group-item">
+                                                            <a href="#" class="list-group-link">
+                                                                ترجمة صورة من عقد الى اللغة العربية
+                                                            </a>
+                                                            <br>
+                                                            <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                                مكانك!</span>
+                                                        </p>
+                                                        <p class="list-group-item">
+                                                            <a href="#" class="list-group-link">
+                                                                ترجمة اشهاد طلاق للغة الفرنسية </a>
+                                                            <br>
+                                                            <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                                مكانك!</span>
+                                                        </p>
+                                                        <p class="list-group-item">
+                                                            <a href="#" class="list-group-link">
+                                                                ترجمة اشهاد طلاق للغة الانجليزية </a>
+                                                            <br>
+                                                            <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                                مكانك!</span>
+                                                        </p>
+
+
+
+                                                    </div>
+                                                    <div class="list-group d-flex flex-column gap-4">
+                                                        <p class="list-group-item">
+                                                            <a href="#" class="list-group-link">
+                                                                ترجمة صورة من عقد الى اللغة العربية
+                                                            </a>
+                                                            <br>
+                                                            <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                                مكانك!</span>
+                                                        </p>
+                                                        <p class="list-group-item">
+                                                            <a href="#" class="list-group-link">
+                                                                ترجمة اشهاد طلاق للغة الفرنسية </a>
+                                                            <br>
+                                                            <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                                مكانك!</span>
+                                                        </p>
+                                                        <p class="list-group-item">
+                                                            <a href="#" class="list-group-link">
+                                                                ترجمة اشهاد طلاق للغة الانجليزية </a>
+                                                            <br>
+                                                            <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                                مكانك!</span>
+                                                        </p>
+
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="mega-item col-lg col-sm-12 py-4  px-3 ">
+                                                <h5 class="mega-header"> خدمات الاستعلام والاطلاع</h5>
+                                                <div class="list-group d-flex flex-column gap-4">
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            استخراج صورة من مشهر </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            استخراج صورة من كتاب دوري </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            استخراج شهادة عقارية </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+
+
+
+                                                </div>
+                                            </div>
+                                            <div class="mega-item col-lg col-sm-12 py-4  px-3 ">
+                                                <h5 class="mega-header"> خدمات الاستعلام والاطلاع</h5>
+                                                <div class="list-group d-flex flex-column gap-4">
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            استخراج صورة من مشهر </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            استخراج صورة من كتاب دوري </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            استخراج شهادة عقارية </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+
+
+
+                                                </div>
+                                            </div>
+                                            <div class="mega-item col-lg col-sm-12 py-4  px-3 ">
+                                                <h5 class="mega-header"> خدمات الترجمة</h5>
+                                                <div class="list-group d-flex flex-column gap-4">
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            ترجمة صورة من عقد الى اللغة العربية
+                                                        </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            ترجمة اشهاد طلاق للغة الفرنسية </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            ترجمة اشهاد طلاق للغة الانجليزية </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+
+
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item list-item-color">
+                            <a class="nav-link link-item" href="about-minister.html">
+                                عن الوزير
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-mega position-static">
+                            <a class="nav-link dropdown-toggle link-item " href="#" role="button"
+                                data-bs-toggle="dropdown" id="navbarDropdown" aria-expanded="false"
+                                data-bs-auto-close="outside">
+                                مركز الاعلام الامني
+                            </a>
+                            <div class="dropdown-menu text-white shadow" aria-labelledby="navbarDropdown">
+                                <div class="mega-content px-md-4">
+                                    <div class="container-fluid row-mega">
+                                        <div class="row text-end">
+
+                                            <div class="mega-item col-lg-4 col-sm-12 py-4  px-3 ">
+                                                <h5 class="mega-header"> خدمات الترجمة</h5>
+                                                <div class="d-flex gap-2">
+                                                    <div class="list-group d-flex flex-column gap-4">
+                                                        <p class="list-group-item">
+                                                            <a href="#" class="list-group-link">
+                                                                ترجمة صورة من عقد الى اللغة العربية
+                                                            </a>
+                                                            <br>
+                                                            <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                                مكانك!</span>
+                                                        </p>
+                                                        <p class="list-group-item">
+                                                            <a href="#" class="list-group-link">
+                                                                ترجمة اشهاد طلاق للغة الفرنسية </a>
+                                                            <br>
+                                                            <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                                مكانك!</span>
+                                                        </p>
+                                                        <p class="list-group-item">
+                                                            <a href="#" class="list-group-link">
+                                                                ترجمة اشهاد طلاق للغة الانجليزية </a>
+                                                            <br>
+                                                            <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                                مكانك!</span>
+                                                        </p>
+
+
+
+                                                    </div>
+                                                    <div class="list-group d-flex flex-column gap-4">
+                                                        <p class="list-group-item">
+                                                            <a href="#" class="list-group-link">
+                                                                ترجمة صورة من عقد الى اللغة العربية
+                                                            </a>
+                                                            <br>
+                                                            <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                                مكانك!</span>
+                                                        </p>
+                                                        <p class="list-group-item">
+                                                            <a href="#" class="list-group-link">
+                                                                ترجمة اشهاد طلاق للغة الفرنسية </a>
+                                                            <br>
+                                                            <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                                مكانك!</span>
+                                                        </p>
+                                                        <p class="list-group-item">
+                                                            <a href="#" class="list-group-link">
+                                                                ترجمة اشهاد طلاق للغة الانجليزية </a>
+                                                            <br>
+                                                            <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                                مكانك!</span>
+                                                        </p>
+
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="mega-item col-lg col-sm-12 py-4  px-3 ">
+                                                <h5 class="mega-header"> خدمات الاستعلام والاطلاع</h5>
+                                                <div class="list-group d-flex flex-column gap-4">
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            استخراج صورة من مشهر </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            استخراج صورة من كتاب دوري </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            استخراج شهادة عقارية </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+
+
+
+                                                </div>
+                                            </div>
+                                            <div class="mega-item col-lg col-sm-12 py-4  px-3 ">
+                                                <h5 class="mega-header"> خدمات الاستعلام والاطلاع</h5>
+                                                <div class="list-group d-flex flex-column gap-4">
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            استخراج صورة من مشهر </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            استخراج صورة من كتاب دوري </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            استخراج شهادة عقارية </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+
+
+
+                                                </div>
+                                            </div>
+                                            <div class="mega-item col-lg col-sm-12 py-4  px-3 ">
+                                                <h5 class="mega-header"> خدمات الترجمة</h5>
+                                                <div class="list-group d-flex flex-column gap-4">
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            ترجمة صورة من عقد الى اللغة العربية
+                                                        </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            ترجمة اشهاد طلاق للغة الفرنسية </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            ترجمة اشهاد طلاق للغة الانجليزية </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+
+
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-mega position-static">
+                            <a class="nav-link dropdown-toggle link-item " href="#" role="button"
+                                data-bs-toggle="dropdown" id="navbarDropdown" aria-expanded="false"
+                                data-bs-auto-close="outside">
+                                دليل جهات الشرطيه
+                            </a>
+                            <div class="dropdown-menu text-white shadow" aria-labelledby="navbarDropdown">
+                                <div class="mega-content px-md-4">
+                                    <div class="container-fluid row-mega">
+                                        <div class="row text-end">
+
+                                            <div class="mega-item col-lg-4 col-sm-12 py-4  px-3 ">
+                                                <h5 class="mega-header"> خدمات الترجمة</h5>
+                                                <div class="d-flex gap-2">
+                                                    <div class="list-group d-flex flex-column gap-4">
+                                                        <p class="list-group-item">
+                                                            <a href="#" class="list-group-link">
+                                                                ترجمة صورة من عقد الى اللغة العربية
+                                                            </a>
+                                                            <br>
+                                                            <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                                مكانك!</span>
+                                                        </p>
+                                                        <p class="list-group-item">
+                                                            <a href="#" class="list-group-link">
+                                                                ترجمة اشهاد طلاق للغة الفرنسية </a>
+                                                            <br>
+                                                            <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                                مكانك!</span>
+                                                        </p>
+                                                        <p class="list-group-item">
+                                                            <a href="#" class="list-group-link">
+                                                                ترجمة اشهاد طلاق للغة الانجليزية </a>
+                                                            <br>
+                                                            <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                                مكانك!</span>
+                                                        </p>
+
+
+
+                                                    </div>
+                                                    <div class="list-group d-flex flex-column gap-4">
+                                                        <p class="list-group-item">
+                                                            <a href="#" class="list-group-link">
+                                                                ترجمة صورة من عقد الى اللغة العربية
+                                                            </a>
+                                                            <br>
+                                                            <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                                مكانك!</span>
+                                                        </p>
+                                                        <p class="list-group-item">
+                                                            <a href="#" class="list-group-link">
+                                                                ترجمة اشهاد طلاق للغة الفرنسية </a>
+                                                            <br>
+                                                            <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                                مكانك!</span>
+                                                        </p>
+                                                        <p class="list-group-item">
+                                                            <a href="#" class="list-group-link">
+                                                                ترجمة اشهاد طلاق للغة الانجليزية </a>
+                                                            <br>
+                                                            <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                                مكانك!</span>
+                                                        </p>
+
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="mega-item col-lg col-sm-12 py-4  px-3 ">
+                                                <h5 class="mega-header"> خدمات الاستعلام والاطلاع</h5>
+                                                <div class="list-group d-flex flex-column gap-4">
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            استخراج صورة من مشهر </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            استخراج صورة من كتاب دوري </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            استخراج شهادة عقارية </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+
+
+
+                                                </div>
+                                            </div>
+                                            <div class="mega-item col-lg col-sm-12 py-4  px-3 ">
+                                                <h5 class="mega-header"> خدمات الاستعلام والاطلاع</h5>
+                                                <div class="list-group d-flex flex-column gap-4">
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            استخراج صورة من مشهر </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            استخراج صورة من كتاب دوري </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            استخراج شهادة عقارية </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+
+
+
+                                                </div>
+                                            </div>
+                                            <div class="mega-item col-lg col-sm-12 py-4  px-3 ">
+                                                <h5 class="mega-header"> خدمات الترجمة</h5>
+                                                <div class="list-group d-flex flex-column gap-4">
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            ترجمة صورة من عقد الى اللغة العربية
+                                                        </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            ترجمة اشهاد طلاق للغة الفرنسية </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+                                                    <p class="list-group-item">
+                                                        <a href="#" class="list-group-link">
+                                                            ترجمة اشهاد طلاق للغة الانجليزية </a>
+                                                        <br>
+                                                        <span class="item-desc">تستطيع استخراج عقد مترجم من
+                                                            مكانك!</span>
+                                                    </p>
+
+
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown " dir="rtl">
+                            <a class="nav-link dropdown-toggle link-item " href="#" role="button"
+                                data-bs-toggle="dropdown" id="navbarDropdown" aria-expanded="false"
+                                data-bs-auto-close="outside">
+                                مواقع الجهات الشرطيه
+                            </a>
+                            <ul class="dropdown-menu shadow">
+                                <li><a href="#" class="dropdown-item ">موقع ١</a></li>
+                                <li><a href="#" class="dropdown-item ">موقع ٢</a></li>
+
+                                <!-- dropdown left -->
+                                <li class="dropend">
+                                    <a href="" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">
+                                        الغربيه</a>
+                                    <ul class="dropdown-menu shadow">
+                                        <li><a href="#" class="dropdown-item"> موقع ١</a></li>
+                                        <li><a href="#" class="dropdown-item"> موقع ٢</a></li>
+                                        <li><a href="#" class="dropdown-item"> موقع ٣</a></li>
+                                        <li><a href="#" class="dropdown-item"> موقع ٤</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropend">
+                                    <a href="" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">
+                                        القاهره</a>
+                                    <ul class="dropdown-menu shadow">
+                                        <li><a href="#" class="dropdown-item"> موقع ١</a></li>
+                                        <li><a href="#" class="dropdown-item"> موقع ٢</a></li>
+                                        <li><a href="#" class="dropdown-item"> موقع ٣</a></li>
+                                        <li><a href="#" class="dropdown-item"> موقع ٤</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropend">
+                                    <a href="" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">
+                                        الاسكندريه</a>
+                                    <ul class="dropdown-menu shadow">
+                                        <li><a href="#" class="dropdown-item"> موقع ١</a></li>
+                                        <li><a href="#" class="dropdown-item"> موقع ٢</a></li>
+                                        <li><a href="#" class="dropdown-item"> موقع ٣</a></li>
+                                        <li><a href="#" class="dropdown-item"> موقع ٤</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropend">
+                                    <a href="" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">
+                                        كفر الشيخ
+                                    </a>
+                                    <ul class="dropdown-menu shadow">
+                                        <li><a href="#" class="dropdown-item"> موقع ١</a></li>
+                                        <li><a href="#" class="dropdown-item"> موقع ٢</a></li>
+                                        <li><a href="#" class="dropdown-item"> موقع ٣</a></li>
+                                        <li><a href="#" class="dropdown-item"> موقع ٤</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropend">
+                                    <a href="" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">
+                                        المنصوره</a>
+                                    <ul class="dropdown-menu shadow">
+                                        <li><a href="#" class="dropdown-item"> موقع ١</a></li>
+                                        <li><a href="#" class="dropdown-item"> موقع ٢</a></li>
+                                        <li><a href="#" class="dropdown-item"> موقع ٣</a></li>
+                                        <li><a href="#" class="dropdown-item"> موقع ٤</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropend">
+                                    <a href="" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">
+                                        الاسماعيليه
+                                    </a>
+                                    <ul class="dropdown-menu shadow">
+                                        <li><a href="#" class="dropdown-item"> موقع ١</a></li>
+                                        <li><a href="#" class="dropdown-item"> موقع ٢</a></li>
+                                        <li><a href="#" class="dropdown-item"> موقع ٣</a></li>
+                                        <li><a href="#" class="dropdown-item"> موقع ٤</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropend">
+                                    <a href="" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                        data-bs-auto-close="outside">
+                                        باقي المحافظات
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-submenu shadow">
+                                        <li class="dropend">
+                                            <a href="" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">
+                                                الاسماعيليه
+                                            </a>
+                                            <ul class="dropdown-menu shadow">
+                                                <li><a href="#" class="dropdown-item"> موقع ١</a></li>
+                                                <li><a href="#" class="dropdown-item"> موقع ٢</a></li>
+                                                <li><a href="#" class="dropdown-item"> موقع ٣</a></li>
+                                                <li><a href="#" class="dropdown-item"> موقع ٤</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropend">
+                                            <a href="" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">
+                                                الاقصر
+                                            </a>
+                                            <ul class="dropdown-menu shadow">
+                                                <li><a href="#" class="dropdown-item"> موقع ١</a></li>
+                                                <li><a href="#" class="dropdown-item"> موقع ٢</a></li>
+                                                <li><a href="#" class="dropdown-item"> موقع ٣</a></li>
+                                                <li><a href="#" class="dropdown-item"> موقع ٤</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropend">
+                                            <a href="" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">
+                                                اسوان
+                                            </a>
+                                            <ul class="dropdown-menu shadow">
+                                                <li><a href="#" class="dropdown-item"> موقع ١</a></li>
+                                                <li><a href="#" class="dropdown-item"> موقع ٢</a></li>
+                                                <li><a href="#" class="dropdown-item"> موقع ٣</a></li>
+                                                <li><a href="#" class="dropdown-item"> موقع ٤</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropend">
+                                            <a href="" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">
+                                                بورسعيد
+                                            </a>
+                                            <ul class="dropdown-menu shadow">
+                                                <li><a href="#" class="dropdown-item"> موقع ١</a></li>
+                                                <li><a href="#" class="dropdown-item"> موقع ٢</a></li>
+                                                <li><a href="#" class="dropdown-item"> موقع ٣</a></li>
+                                                <li><a href="#" class="dropdown-item"> موقع ٤</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                            </ul>
+
+                        </li>
+                        <li class="nav-item list-item-color">
+                            <a class="nav-link link-item " href="#">
+                                ركن الاطفال
+                            </a>
+                        </li>
+                        <li class="nav-item list-item-color">
+                            <a class="nav-link link-item " href="contact-us.html">
+                                اتصل بنا
+                            </a>
+                        </li>
+                        <li class="nav-item list-item-color d-block d-xl-none w-100   mx-auto  ">
+                            <a class="loginBtn text-decoration-none  d-flex align-content-center justify-content-center py-3"
+                                href="./sign-in.html">
+                                <span class="fs-4 fw-lighter"> تسجيل الدخول </span>
+                                <svg class="loginSvgIcon" width="20" height="19" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 21.5V19.5C20 18.4391 19.5786 17.4217 18.8284 16.6716C18.0783 15.9214 17.0609 15.5 16 15.5H8C6.93913 15.5 5.92172 15.9214 5.17157 16.6716C4.42143 17.4217 4 18.4391 4 19.5V21.5"
+                                        stroke="#307189" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12 11.5C14.2091 11.5 16 9.70914 16 7.5C16 5.29086 14.2091 3.5 12 3.5C9.79086 3.5 8 5.29086 8 7.5C8 9.70914 9.79086 11.5 12 11.5Z"
+                                        stroke="#307189" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li class="nav-item list-item-color d-block d-xl-none w-100  mt-3 mt-sm-0   mx-auto ">
+                            <a class="langBtn text-decoration-none  py-3" href="#">
+                                <span class=" fs-4 fw-lighter"> اللغه العربيه </span>
+                                <svg class="langSvgIcon" width="20" height="19" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1028_348)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.0025 0.5C12.7606 0.5 15.2612 1.61718 17.0735 3.42641C18.8809 5.2307 20 7.72704 20 10.4854C20 13.2388 18.8809 15.7351 17.0735 17.5443C15.2612 19.3486 12.7606 20.4658 10.0025 20.4658C7.23942 20.4658 4.7388 19.3486 2.93142 17.5443C1.11909 15.7351 0 13.2388 0 10.4854C0 7.72704 1.11909 5.2307 2.93142 3.42641C4.7388 1.61718 7.23942 0.5 10.0025 0.5ZM15.9693 4.52875C15.3751 3.93062 14.6918 3.42641 13.944 3.03095C14.0629 3.21385 14.1768 3.40169 14.2857 3.59942C15.1721 5.20104 15.7514 7.33652 15.8554 9.70434H18.4055C18.2223 7.68749 17.3261 5.87826 15.9693 4.52875ZM15.9693 16.442C17.3261 15.0875 18.2223 13.2783 18.4055 11.2615H15.8554C15.7514 13.6293 15.1721 15.7648 14.2857 17.3664C14.1768 17.5641 14.0629 17.7569 13.944 17.9349C14.6918 17.5394 15.3751 17.0352 15.9693 16.442ZM4.03565 16.442C4.62986 17.0352 5.30824 17.5394 6.06091 17.9349C5.94206 17.7569 5.82818 17.5641 5.71924 17.3664C4.83288 15.7648 4.25353 13.6293 4.14459 11.2615H1.59941C1.78262 13.2783 2.67888 15.0875 4.03565 16.442ZM4.03565 4.52875C2.67888 5.87826 1.78262 7.68749 1.59941 9.70434H4.14459C4.25353 7.33652 4.83288 5.20104 5.71924 3.59942C5.82818 3.40169 5.94206 3.21385 6.06091 3.03095C5.30824 3.42641 4.62986 3.93062 4.03565 4.52875ZM10.7799 2.20542V9.70434H14.2956C14.1916 7.6084 13.6866 5.73491 12.919 4.3508C12.3248 3.27317 11.587 2.51191 10.7799 2.20542ZM10.7799 11.2615V18.7604C11.587 18.4539 12.3248 17.6926 12.919 16.62C13.6866 15.2309 14.1916 13.3574 14.2956 11.2615H10.7799ZM9.2201 18.7604V11.2615H5.70933C5.80837 13.3574 6.3184 15.2309 7.08591 16.62C7.68012 17.6926 8.41792 18.4539 9.2201 18.7604ZM9.2201 9.70434V2.20542C8.41792 2.51191 7.68012 3.27317 7.08591 4.3508C6.3184 5.73491 5.80837 7.6084 5.70933 9.70434H9.2201Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1028_348">
+                                            <rect width="20" height="20" fill="white" transform="translate(0 0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="btn-mobile-nav mx-0 ">
+                    <ion-icon class="icon-mobile-nav mx-0" name="menu-outline"></ion-icon>
+                    <ion-icon class="icon-mobile-nav mx-0" name="close-outline"></ion-icon>
+                </button>
+                <form
+                    class="d-xl-flex d-none position-relative searchWrapper  align-items-center justify-content-between "
+                    role="search">
+                    <input class="text-light  searchInput " type="search"
+                        placeholder="ابحث عن خدمه او وزاره او جهه حكوميه " aria-label="Search">
+
+                    <svg class="position-absolute searchIcon" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 19.6265C15.4183 19.6265 19 16.0447 19 11.6265C19 7.20819 15.4183 3.62646 11 3.62646C6.58172 3.62646 3 7.20819 3 11.6265C3 16.0447 6.58172 19.6265 11 19.6265Z"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M21.0004 21.6264L16.6504 17.2764" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </form>
+
+            </div>
+        </header>
+
+    </header>
+    <!-- page content -->
+    <div class="page_content">
+        <div class="container-lg">
+            <main class="sign-in-wrapper">
+
+                <div class="sign-in-container w-100 h-100 d-flex flex-column">
+                    <!-- text-center text-md-end -->
+                    <div class=" mt-2 mb-5">
+                        <h2 class="sign-in-header">
+                            تسجيل الدخول
+                        </h2>
+                        <p class="sign-in-desc mb-3 mb-md-0">
+                            يمكنك التقدم لهذه الخدمه الكترونيا
+                            الآن
+                        </p>
+                    </div>
+                    <!-- form -->
+                    <form>
+                        <div class="mb-5">
+                            <label for="exampleInputEmail1" class="sign-in-label">البريد الإلكتروني</label>
+                            <input type="email" class="form-input" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="example@example.com">
+                        </div>
+                        <div class="password-input mb-5">
+                            <label for="user-password-input" class="sign-in-label">كلمة السر</label>
+                            <input type="password" class="form-input" id="user-password-input" placeholder="XXXXXXXXX">
+                            <svg class="showPassIcon" width="16" height="12" viewBox="0 0 16 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.98636 6.13478L10.8951 5.22603C10.9612 5.47341 11 5.73203 11 6.00003C11 7.65428 9.65424 9.00003 7.99999 9.00003C7.73199 9.00003 7.47336 8.96128 7.22599 8.89516L8.13474 7.98641C8.61507 7.95378 9.06732 7.74823 9.40775 7.4078C9.74818 7.06736 9.95374 6.61512 9.98636 6.13478ZM15.937 5.75716C15.8755 5.64653 15.0032 4.11816 13.2982 2.82291L12.5706 3.55053C13.8139 4.46466 14.6016 5.53078 14.9117 6.00078C14.3191 6.90316 11.9944 10 7.99999 10C7.40099 10 6.84399 9.92341 6.31986 9.80116L5.49824 10.6228C6.25361 10.8544 7.08386 11 7.99999 11C13.2341 11 15.8291 6.43703 15.937 6.24291C15.9783 6.16863 16 6.08503 16 6.00003C16 5.91503 15.9783 5.83144 15.937 5.75716ZM13.8535 0.853531L2.85349 11.8535C2.75586 11.9512 2.62786 12 2.49999 12C2.37211 12 2.24411 11.9512 2.14649 11.8535C2.10003 11.8071 2.06317 11.752 2.03803 11.6914C2.01288 11.6307 1.99994 11.5657 1.99994 11.5C1.99994 11.4344 2.01288 11.3694 2.03803 11.3087C2.06317 11.248 2.10003 11.1929 2.14649 11.1465L3.54599 9.74703C1.28349 8.38116 0.133861 6.37053 0.0629858 6.24291C0.0216782 6.1686 0 6.08499 0 5.99997C0 5.91495 0.0216782 5.83134 0.0629858 5.75703C0.170861 5.56303 2.76586 1.00003 7.99999 1.00003C9.35336 1.00003 10.5256 1.30878 11.5277 1.76528L13.1465 0.146531C13.3419 -0.0488437 13.6582 -0.0488437 13.8535 0.146531C14.0487 0.341906 14.0489 0.658281 13.8535 0.853531ZM4.29161 9.00141L5.55749 7.73553C5.20786 7.24503 4.99999 6.64691 4.99999 6.00003C4.99999 4.34578 6.34574 3.00003 7.99999 3.00003C8.64686 3.00003 9.24499 3.20791 9.73549 3.55741L10.7591 2.53378C9.95036 2.20991 9.03136 2.00003 7.99999 2.00003C4.00561 2.00003 1.68086 5.09691 1.08836 5.99928C1.46461 6.56953 2.54611 8.01303 4.29161 9.00141ZM6.28336 7.00953L9.00949 4.28341C8.71211 4.10778 8.36974 4.00003 7.99999 4.00003C6.89724 4.00003 5.99999 4.89728 5.99999 6.00003C5.99999 6.36978 6.10774 6.71216 6.28336 7.00953Z"
+                                    fill="#AFAFAF" />
+                            </svg>
+                            <svg class="hidePass" width="15" height="11" viewBox="0 0 15 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.35089 5.33333C1.73598 5.86443 2.52524 6.86517 3.56452 7.73647C4.64213 8.6399 5.90395 9.33333 7.20673 9.33333C8.50952 9.33333 9.77134 8.6399 10.8489 7.73647C11.8882 6.86517 12.6775 5.86443 13.0626 5.33333C12.6775 4.80223 11.8882 3.80149 10.8489 2.93019C9.77134 2.02677 8.50952 1.33333 7.20673 1.33333C5.90395 1.33333 4.64213 2.02677 3.56452 2.93019C2.52524 3.80149 1.73598 4.80223 1.35089 5.33333ZM2.70791 1.90843C3.8824 0.923786 5.44426 0 7.20673 0C8.96921 0 10.5311 0.923786 11.7056 1.90843C12.8914 2.90262 13.7689 4.03143 14.1743 4.59533C14.4932 5.03891 14.4932 5.62775 14.1743 6.07133C13.7689 6.63524 12.8914 7.76404 11.7056 8.75824C10.5311 9.74288 8.96921 10.6667 7.20673 10.6667C5.44426 10.6667 3.8824 9.74288 2.70791 8.75824C1.52204 7.76404 0.644607 6.63524 0.239184 6.07133C-0.0797277 5.62775 -0.0797283 5.03891 0.239184 4.59533C0.644606 4.03143 1.52204 2.90262 2.70791 1.90843Z"
+                                    fill="#AFAFAF" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.20673 6.66667C7.94311 6.66667 8.54007 6.06971 8.54007 5.33333C8.54007 4.59695 7.94311 4 7.20673 4C6.47035 4 5.8734 4.59695 5.8734 5.33333C5.8734 6.06971 6.47035 6.66667 7.20673 6.66667ZM7.20673 8C8.67949 8 9.8734 6.80609 9.8734 5.33333C9.8734 3.86057 8.67949 2.66667 7.20673 2.66667C5.73397 2.66667 4.54007 3.86057 4.54007 5.33333C4.54007 6.80609 5.73397 8 7.20673 8Z"
+                                    fill="#AFAFAF" />
+                            </svg>
+                        </div>
+                        <div class="user-feedback-container">
+                            <span class="user-feedback "></span>
+                        </div>
+
+                        <a href="forget-password.html" class="sign-up-cta">
+                            نسيت كلمة السر؟ <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.9399 18L10.1641 12L16.9399 6" stroke="#1C304C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                        </a>
+
+                        <button type="submit" class="login-btn">تسجيل الدخول</button>
+                    </form>
+                    <p class="sign-up-cta">
+                        ليس لديك حساب؟ <a href="./sign-up.html" class="animated sign-up-link">انشاء حساب جديد</a>
+                    </p>
+                    <br>
+                </div>
+
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer footer-album  footer-pad-reset">
+
+        <div
+                class="container-lg d-flex align-items-start align-items-sm-center align-items-md-center justify-content-start justify-content-md-center justify-content-sm-center text-md-end  mx-md-auto ">
+            <div class="row links gx-5 w-75  my-auto me-4 me-sm-0 text-sm-center text-md-center text-lg-center">
+                <div class="col-md-3 col-12 col-sm-6 offset-md-0 mt-5 mt-md-0">
+                    <h3>الخدمات</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">مسابقة الإبتكار</a></li>
+                        <li><a href="#">الذكاء الإصطناعى</a></li>
+                        <li><a href="#">الخدمات الرقميه</a></li>
+                        <li><a href="#">تطوير الأعمال</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-12 col-sm-6 mt-5 mt-md-0">
+                    <h3>الوزاره</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">عن الوزاره</a></li>
+                        <li><a href="#">الوظائف الشاغره</a></li>
+                        <li><a href="#">الأسئله الشائعه</a></li>
+                        <li><a href="#">سياسة الإستخدام</a></li>
+                        <li><a href="#">الوزاره على الخريطه</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3  col-12 col-sm-6 offset-md-0 mt-5 mt-md-0">
+                    <h3>الروابط</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">عن الوزاره</a></li>
+                        <li><a href="#">الوظائف الشاغره</a></li>
+                        <li><a href="#">الأسئله الشائعه</a></li>
+                        <li><a href="#">سياسة الإستخدام</a></li>
+                        <li><a href="#">الوزاره على الخريطه</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-12 col-sm-6 mt-5 mt-md-0">
+                    <h3>تابعنا</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">فيسبوك</a></li>
+                        <li><a href="#">تويتر</a></li>
+                        <li><a href="#">إنستجرام</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="row copyright text-center mt-5 container-xxl mx-auto">
+            <div class="col-10 offset-2 mx-auto">
+                <div class="logo">
+                    <a href="./index.html"><img src="../../images/theme3/footerLogo.svg" class="imageFooter"></a>
+                </div>
+            </div>
+            <h5>جميع الحقوق محفوظه للحكومه المصريه <span class="copyright-year"></span></h5>
+        </div>
+    </footer>
+
+    <script src="../../plugins/popper/popper.min.js"></script>
+    <script src="../../plugins/jquery/jquery-3.6.4.min.js"></script>
+    <script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../plugins/slick/js/new-slick.min.js"></script>
+    <!-- ion icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+
+</html>

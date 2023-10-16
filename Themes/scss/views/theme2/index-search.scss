@@ -1,0 +1,113 @@
+@import "variables";
+
+// search
+.theme-two {
+  .search {
+    margin-top: -155px;
+    position: relative;
+    margin-bottom: 160px;
+    .search_form {
+      background: #f9f9f9;
+      min-height: 155px;
+      max-width: 1090px;
+      padding: 0 40px;
+      .border-left {
+        border-left: 1px solid #dcdcdc;
+        padding-left: 30px;
+      }
+      label {
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--gray_text);
+        display: block;
+        margin-bottom: 10px;
+      }
+      input,
+      select {
+        font-family: "Tajawal-Bold";
+        font-size: 18px;
+        color: var(--main_color);
+        background: #f9f9f9;
+        border: none;
+        padding: 0;
+        &:focus {
+          box-shadow: none;
+          border: none;
+          color: var(--main_color);
+          outline: none;
+        }
+      }
+
+      ::placeholder {
+        color: #bcbcbc;
+        font-size: 18px;
+        font-family: "Tajawal-Regular";
+      }
+
+      :-ms-input-placeholder {
+        color: #bcbcbc;
+        font-size: 18px;
+        font-family: "Tajawal-Regular";
+      }
+
+      ::-ms-input-placeholder {
+        color: #bcbcbc;
+        font-size: 18px;
+        font-family: "Tajawal-Regular";
+      }
+
+      select {
+        background: transparent;
+        background-image: url("../../src/images/theme1/selectArrow.png");
+        background-repeat: no-repeat;
+        background-position-y: 50%;
+      }
+      button {
+        width: 222px;
+        height: 56px;
+        background: var(--main_color);
+        font-weight: 500;
+        font-size: 20px;
+        color: var(--white);
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 30px;
+        img {
+          margin-top: 5px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  // tablet
+  @media (max-width: 992px) {
+    .search {
+      margin-top: -30px;
+      margin-bottom: 65px;
+      .search_form {
+        margin: 0 10px;
+      }
+    }
+  }
+  // mobile
+  @media (max-width: 767px) {
+    .search {
+      .search_form {
+        padding: 20px 10px;
+        .border-left {
+          border-left: initial;
+          padding-left: initial;
+          border-bottom: 1px solid #dcdcdc;
+          padding-bottom: 30px;
+          margin-bottom: 20px;
+        }
+        button {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+@import "variables";
+@import "fonts";
+
+body {
+  font-family: "Tajawal-Regular";
+}
+.theme-one {
+  .cards-with-links {
+    .gallary_desc {
+      h3 {
+        font-family: "Tajawal-Bold";
+        font-size: 32px;
+        color: var(--headingsColor);
+      }
+      p {
+        font-size: 18px;
+        color: var(--gray_text);
+      }
+    }
+    .single_gallary {
+      border-radius: 6px;
+      border-top-right-radius: 6px;
+      border-top-left-radius: 6px;
+      // background-color: red;
+      .img_container {
+        position: relative;
+        margin-bottom: 0;
+        height: 208px;
+        border-radius: 16px;
+        overflow: hidden;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        span {
+          display: none;
+          position: absolute;
+          top: calc(162px / 2);
+          left: 50%;
+          transform: translatex(-50%);
+          width: 54px;
+          height: 54px;
+          border-radius: 100%;
+          background-color: var(--bg_color);
+          align-items: center;
+          justify-content: center;
+          color: var(--white);
+        }
+        &:hover {
+          span {
+            display: flex;
+            z-index: 9;
+          }
+          &:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)
+            );
+            left: 0;
+            top: 0;
+            position: absolute;
+            z-index: 1;
+          }
+        }
+      }
+
+      .card-body {
+        border: 1px solid rgba(128, 128, 128, 0.237);
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        padding: 25px 15px;
+        h5 {
+          font-family: "Tajawal-Bold";
+          font-size: 18px;
+          color: var(--gray_text);
+          margin-bottom: 0;
+        }
+
+        .location-img {
+          width: 30px;
+          height: 30px;
+          align-items: center;
+          align-self: center;
+        }
+        p {
+          font-size: 18px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

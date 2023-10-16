@@ -1,0 +1,141 @@
+:root {
+  --primaryColor: #1d73bf;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #fff;
+  // --headerTopBgColor: #050404;
+  --headerBottomBgColor: #1d73bf;
+  --headerTopContentColor: #050404;
+
+  --headingsColor: #1d73bf;
+  --paragraphColor: #181818;
+  --lightContentColor: #181818b2;
+  --lightBgColor: #e8f1f9;
+
+  --linksColor: #1d73bf;
+  --linksHoverColor: #1d73bf;
+
+  --menuLinksColor: #fff !important;
+  --menuLinksHoverColor: #dcdcdc !important;
+
+  --footerBackgroundColor: #092239;
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #1e549d !important;
+
+  --firstGradientColor: #153e9b;
+  --secondGradientColor: #1d73bf;
+
+  --theme-four-main-color: var(--primaryColor);
+
+  --font-normal: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  --font-bold: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  // BLACK & WHITE & SHADES Colors ------------------------------
+  --white: #fff;
+  --black: #000;
+  --gray-50: #f9f9f9;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  // General Colors ------------------------------
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --gray-1000: #000;
+
+  --primaryBgColor: var(--primaryColor);
+  // --secondaryBgColor: #d2e3f2;
+  --tertiaryBgColor: var(--lightBgColor);
+  --sub-header-color: var(--lightContentColor);
+  --bg-transparent: transparent;
+  // Header Colors ------------------------------
+  // --headerBtnColor: #307189;
+  //--borderColor: #1d73bf;
+  --loginBtnBgColor: var(--primaryColor);
+  --loginBtnBgOnHover: var(--secondaryColor);
+  --languageBtnBgColor: var(--lightBgColor);
+  // Hero section ------------------------------
+  --HeroMainTextColor: var(--headingsColor);
+  // المحتوي المرئي ------------------------------
+  // --galleryBgColor: #f8f8f8;
+
+  // Hero  Colors ------------------------------
+  --heroTextColor: var(--lightContentColor);
+  // اقتباسات ------------------------------
+  --test-sub-color: var(--secondaryColor);
+  // الاستراتيجيه ------------------------------
+  --strategyDescColor: var(--lightContentColor);
+  // اخر الاخبار ------------------------------
+  // --menuItemColor: #114573;
+  // مواضيع هامه ------------------------------
+  // --dateColor: #4c7eab;
+  // --itemColor: #15558c;
+  // --itemBgColor: #f8f8f8;
+  // تواصل مع نائبك ------------------------------
+  --bg-color-mobile: var(--lightBgColor);
+  --bg-title-color: var(--primaryColor);
+  // المواقع التابع لها الوزارة ------------------
+  --related-website-item-bg-color: --white;
+  --related-website-item-title-color: var(--lightContentColor);
+  --related-website-item-visit-text-color: var(--secondaryColor);
+
+  // contact us ------------------------------
+  --contactBgColor: var(--secondaryColor);
+  --inputFieldBgColor: transparent;
+  --contactUsDescText: var(--lightContentColor);
+  // footer ------------------------------
+  --footerBgColor: var(--footerBackgroundColor);
+
+  // services ------------------------------
+  --servicesBgColor: var(--tertiaryBgColor);
+  --servicesMainTextColor: var(--primaryColor);
+  --servicessecondaryTextColor: var(--lightContentColor);
+
+  // Minister ------------------------------
+  --ministerBgColor: var(--lightBgColor);
+  --ministerMainTextColor: var(--primaryColor);
+  --ministerDescTextColor: var(--paragraphColor);
+
+  // Topics ------------------------------
+  --tapsWrapperBgColor: var(--primaryBgColor);
+
+  // sign-in ------------------------------
+
+  --sign-in-header: var(--primaryColor);
+  --sign-in-desc: #757575;
+  --sign-in-desc2: #757575b2;
+  --input-border: var(--primaryColor);
+  --input-placeholder: #afafaf;
+  --input-background: #f8f8f8;
+  --button-bg-primary: var(--primaryColor);
+
+  // leave it as it to be
+
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+
+  // Ministery page ------------------------------
+  --ministeryMainColor: var(--primaryColor);
+  --ministerySecondaryColor: var(--lightContentColor);
+  // Gov Project page --------------------
+  --gov-project-date-color: var(--primaryColor);
+  // search results ------------------------------
+  --searchMainColor: var(--primaryColor);
+  --searchResultColor: var(--primaryColor);
+  --searchResultHoverColor: var(--primaryColor);
+
+  // faq ------------------------------
+  --faqMainColor: var(--primaryColor);
+}

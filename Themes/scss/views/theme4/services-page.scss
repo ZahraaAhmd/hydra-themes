@@ -1,0 +1,490 @@
+@import "variables";
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+
+.section {
+  // margin: 4rem 0;
+  padding: 6rem 0;
+}
+.section-title {
+  width: fit-content;
+  padding: 1rem 2rem;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  // font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  // font-family: "Helvetica Neue LT Arabic", sans-serif;
+  // font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 168.4%;
+  letter-spacing: -0.04em;
+  color: var(--black);
+}
+
+.primary-section-title {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  font-size: 3rem !important;
+  line-height: 168.4%;
+}
+.social-icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.social-link {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+}
+
+.social-item {
+  color: var(--white);
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.link-item-1 {
+  color: var(--white);
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: var(--primaryBgColor);
+  }
+}
+
+.services-page-container {
+  margin: 6rem 0;
+  height: auto;
+  // background-color: aqua;
+  .services-header-container {
+    .services-header {
+      h2 {
+        font-family: var(--font-bold);
+        font-size: 3rem;
+        line-height: 168.4%;
+        color: var(--primaryBgColor);
+      }
+    }
+  }
+}
+
+.services-wrapper {
+  margin-top: 3rem;
+
+  .services-list-container {
+    .services-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background-color: #f3f8fc;
+      border-radius: 7px;
+      padding: 3rem 1.2rem;
+      .services-item {
+        // padding: 1.5rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        // background-color: var(--primaryBgColor;
+
+        a {
+          padding: 1.5rem 2rem;
+          border-radius: 12px;
+          font-size: 1.8rem;
+          color: #4a8fcc;
+          text-decoration: none;
+          width: 100%;
+          &.active {
+            color: var(--white) !important;
+            //   padding: 1.5rem 2rem;
+            background-color: var(--primaryBgColor);
+          }
+        }
+      }
+    }
+  }
+}
+
+.citizens-services-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  .citizens-services-item {
+    width: 20rem;
+    height: 15rem;
+    border-radius: 2.4rem;
+    background-color: #f3f8fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      background-color: #e4f3ff;
+    }
+    .citizen-services-item-svgIcon {
+    }
+    .citizen-services-item-title {
+      font-family: var(--font-bold);
+      font-size: 1.6rem;
+      line-height: 168.4%;
+      text-align: center;
+      letter-spacing: -0.04em;
+      color: var(--primaryBgColor);
+      text-decoration: none;
+    }
+  }
+}
+
+.tourist-activities-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  color: var(--gray-900) !important;
+  .tourist-activities-item {
+    border-radius: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 0;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding-top: 0;
+    .img-wrapper {
+      width: 40rem;
+      height: 20rem;
+      overflow: hidden;
+      border-radius: 1.6rem;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 1.6rem;
+        object-fit: cover;
+        cursor: pointer;
+
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    a {
+      font-family: var(--font-normal);
+      font-size: 1.8rem;
+      line-height: 168.4%;
+      text-align: center;
+      letter-spacing: -0.04em;
+      color: var(--gray-900);
+      text-decoration: none;
+      padding-right: 1rem;
+    }
+  }
+}
+
+.general-adm-wrapper {
+  p {
+    font-family: var(--font-normal);
+    font-size: 1.8rem;
+    line-height: 42px;
+    color: var(--gray-900) !important;
+
+    strong {
+      font-family: var(--font-bold);
+    }
+  }
+  .general-adm-activities-wrapper {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-family: var(--font-bold);
+      font-size: 1.8rem;
+      line-height: 42px;
+      color: rgba(0, 0, 0, 0.76);
+    }
+    .general-adm-ordered-list {
+      // margin-top: 2rem;
+      padding-right: 2rem;
+      .general-adm-list-item {
+        font-family: var(--font-normal);
+        font-size: 1.8rem;
+        line-height: 42px;
+        color: rgba(0, 0, 0, 0.76);
+      }
+    }
+  }
+}
+
+.text-ordered-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  li {
+    font-family: var(--font-normal);
+    font-size: 1.8rem;
+    line-height: 42px;
+    color: var(--gray-900) !important;
+  }
+}
+.investment-question-title {
+  font-family: var(--font-bold);
+  font-size: 2rem;
+  line-height: 4rem;
+  color: var(--gray-900) !important;
+}
+.investment-question-answer {
+  color: var(--gray-900) !important;
+  font-size: 1.8rem;
+  line-height: 4.2rem;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+  .tourist-activities-wrapper {
+    .tourist-activities-item {
+      .img-wrapper {
+        width: 35rem;
+        height: 15rem;
+
+        img {
+        }
+      }
+    }
+  }
+}
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .tourist-activities-wrapper {
+    .tourist-activities-item {
+      .img-wrapper {
+        width: 30rem;
+        height: 15rem;
+
+        img {
+        }
+      }
+      a {
+      }
+    }
+  }
+}
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .citizens-services-wrapper {
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .services-list-container {
+    .services-list {
+      display: flex;
+      flex-direction: row !important;
+      gap: 1rem;
+      background-color: #f3f8fc;
+      border-radius: 7px;
+      padding: 3rem 1.2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .tourist-activities-wrapper {
+    justify-content: space-between;
+    .tourist-activities-item {
+      .img-wrapper {
+        width: 33rem;
+        height: 20rem;
+      }
+    }
+  }
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .services-wrapper {
+    margin-top: 3rem;
+
+    .services-list-container {
+      .services-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: #f3f8fc;
+        border-radius: 7px;
+        padding: 3rem 1.2rem;
+        .services-item {
+          // padding: 1.5rem 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          // background-color: var(--primaryBgColor;
+
+          a {
+            padding: 1.5rem 1.3rem;
+            border-radius: 12px;
+            font-size: 1.6rem;
+            color: #4a8fcc;
+            text-decoration: none;
+            width: 100%;
+            &.active {
+              color: var(--white) !important;
+              //   padding: 1.5rem 2rem;
+              background-color: var(--primaryBgColor);
+            }
+          }
+        }
+      }
+    }
+  }
+  .citizens-services-wrapper {
+    .citizens-services-item {
+      width: 25rem;
+      height: 15rem;
+
+      .citizen-services-item-svgIcon {
+        height: 4.7rem;
+        width: 4.7rem;
+      }
+    }
+  }
+  .tourist-activities-wrapper {
+    justify-content: space-between;
+    .tourist-activities-item {
+      .img-wrapper {
+        width: 25rem;
+        height: 15rem;
+      }
+    }
+  }
+}
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .services-list-container {
+    .services-list {
+      display: flex;
+      flex-direction: column !important;
+      gap: 1rem;
+    }
+  }
+  .citizens-services-wrapper {
+    .citizens-services-item {
+      width: 95%;
+      height: 15rem;
+      margin: 0 auto;
+
+      .citizen-services-item-svgIcon {
+        height: 4.7rem;
+        width: 4.7rem;
+      }
+    }
+  }
+
+  .tourist-activities-wrapper {
+    justify-content: space-between;
+    gap: 1rem;
+    .tourist-activities-item {
+      width: 100%;
+      .img-wrapper {
+        width: 95%;
+        height: 15rem;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .text-ordered-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    padding-right: 2.3rem;
+
+    li {
+      font-family: var(--font-normal);
+      font-size: 1.5rem;
+      line-height: 32px;
+      color: rgba(0, 0, 0, 0.76);
+    }
+  }
+  .investment-question-title {
+    font-family: var(--font-bold);
+    font-size: 1.6rem;
+    line-height: 4rem;
+    color: rgba(0, 0, 0, 0.76);
+  }
+  .investment-question-answer {
+    font-family: var(--font-normal);
+    font-size: 1.4rem;
+    line-height: 4.2rem;
+    color: rgba(0, 0, 0, 0.76);
+  }
+
+  .general-adm-wrapper {
+    p {
+      font-family: var(--font-normal);
+      font-size: 1.8rem;
+      line-height: 42px;
+      color: rgba(0, 0, 0, 0.76);
+
+      strong {
+        font-family: var(--font-bold);
+      }
+    }
+    .general-adm-activities-wrapper {
+      .general-adm-ordered-list {
+        .general-adm-list-item {
+          font-family: var(--font-normal);
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-title {
+    font-size: 2.5rem;
+    color: var(--black);
+    letter-spacing: -0.04em;
+  }
+  .section {
+    // margin: 3rem 0;
+    padding: 5rem 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .section {
+    // margin: 2rem 0;
+    padding: 4rem 0;
+  }
+  .primary-section-title {
+    font-size: 2.4rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .social-link {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  }
+
+  .social-item {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .link-item-1 {
+    font-size: 13px;
+    line-height: 22px;
+  }
+}

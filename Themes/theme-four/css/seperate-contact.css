@@ -1,0 +1,517 @@
+:root {
+  --primaryColor: #1d73bf;
+  --secondaryColor: #1e549d;
+  --headerTopBgColor: #fff;
+  --headerBottomBgColor: #1d73bf;
+  --headerTopContentColor: #fff;
+  --headingsColor: #1d73bf;
+  --paragraphColor: #181818;
+  --lightContentColor: #181818b2;
+  --lightBgColor: #e8f1f9;
+  --linksColor: #1d73bf;
+  --linksHoverColor: #1d73bf;
+  --menuLinksColor: #fff !important;
+  --menuLinksHoverColor: #dcdcdc !important;
+  --footerBackgroundColor: #092239;
+  --footerContentColor: #fff !important;
+  --footerContentHoverColor: #1e549d !important;
+  --firstGradientColor: #153e9b;
+  --secondGradientColor: #1d73bf;
+  --theme-four-main-color: var(--primaryColor);
+  --font-normal: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  --font-bold: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  --white: #fff;
+  --black: #000;
+  --gray-50: #f9f9f9;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --gray-1000: #000;
+  --primaryBgColor: var(--primaryColor);
+  --tertiaryBgColor: var(--lightBgColor);
+  --sub-header-color: var(--lightContentColor);
+  --bg-transparent: transparent;
+  --loginBtnBgColor: var(--primaryColor);
+  --loginBtnBgOnHover: var(--secondaryColor);
+  --languageBtnBgColor: var(--lightBgColor);
+  --HeroMainTextColor: var(--headingsColor);
+  --heroTextColor: var(--lightContentColor);
+  --test-sub-color: var(--secondaryColor);
+  --strategyDescColor: var(--lightContentColor);
+  --bg-color-mobile: var(--lightBgColor);
+  --bg-title-color: var(--primaryColor);
+  --related-website-item-bg-color: --white;
+  --related-website-item-title-color: var(--lightContentColor);
+  --related-website-item-visit-text-color: var(--secondaryColor);
+  --contactBgColor: var(--secondaryColor);
+  --inputFieldBgColor: transparent;
+  --contactUsDescText: var(--lightContentColor);
+  --footerBgColor: var(--footerBackgroundColor);
+  --servicesBgColor: var(--tertiaryBgColor);
+  --servicesMainTextColor: var(--primaryColor);
+  --servicessecondaryTextColor: var(--lightContentColor);
+  --ministerBgColor: var(--lightBgColor);
+  --ministerMainTextColor: var(--primaryColor);
+  --ministerDescTextColor: var(--paragraphColor);
+  --tapsWrapperBgColor: var(--primaryBgColor);
+  --sign-in-header: var(--primaryColor);
+  --sign-in-desc: #757575;
+  --sign-in-desc2: #757575b2;
+  --input-border: var(--primaryColor);
+  --input-placeholder: #afafaf;
+  --input-background: #f8f8f8;
+  --button-bg-primary: var(--primaryColor);
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #2196f3;
+  --border-error-color: #f44336;
+  --border-success-color: #4caf50;
+  --border-warning-color: #ff9800;
+  --border-info-color: #2196f3;
+  --background-success: #f3faf3;
+  --background-warning: #fff8f0;
+  --background-error: #fff0f0;
+  --ministeryMainColor: var(--primaryColor);
+  --ministerySecondaryColor: var(--lightContentColor);
+  --gov-project-date-color: var(--primaryColor);
+  --searchMainColor: var(--primaryColor);
+  --searchResultColor: var(--primaryColor);
+  --searchResultHoverColor: var(--primaryColor);
+  --faqMainColor: var(--primaryColor);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 55 Roman";
+  src: url(../../fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf);
+}
+@font-face {
+  font-family: "HelveticaNeueLT Arabic 75 Bold";
+  src: url(../../fonts/HelveticaNeueLT-Arabic-75-Bold.ttf);
+}
+.page_content {
+  padding: 2rem 0 55rem 0 !important;
+}
+
+.theme-four .section {
+  padding: 6rem 0;
+}
+.theme-four .section-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 168.4%;
+  letter-spacing: -0.04em;
+  color: var(--black);
+}
+.theme-four .primary-section-title {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif !important;
+  font-size: 3rem !important;
+  line-height: 168.4%;
+}
+.theme-four .social-icon {
+  width: 5rem;
+  height: 5rem;
+}
+.theme-four .social-link {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+}
+.theme-four .social-item {
+  color: var(--white);
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+}
+.theme-four .link-item-1 {
+  color: var(--white);
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.theme-four .link-item-1:hover {
+  color: var(--primaryBgColor);
+}
+.theme-four .reset {
+  margin: 0 !important;
+  padding: 1rem !important;
+}
+.theme-four .contact-us-wrapper {
+  width: 120rem;
+  top: 60%;
+}
+.theme-four .contact-parent {
+  margin: 10rem 0;
+}
+.theme-four .contact-parent .contact-container {
+  height: 50rem;
+}
+.theme-four .contact-parent .contact-container .contact-us-content {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+  height: 45rem;
+  background-color: var(--tertiaryBgColor);
+}
+.theme-four .contact-parent .contact-container .contact-us-icon-wrap {
+  position: relative;
+  width: 100%;
+}
+.theme-four .contact-parent .contact-container .contact-us-icon-wrap .contact-us-icon-container {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  padding: 2rem;
+  background-color: var(--tertiaryBgColor);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.theme-four .contact-parent .contact-container .contact-us-info {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 7rem !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
+}
+.theme-four .contact-parent .contact-container .contact-us-info .contact-us-header-title {
+  font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  color: var(--contactBgColor);
+  font-size: 3.2rem;
+}
+.theme-four .contact-parent .contact-container .contact-us-info .contact-us-header-desc {
+  width: 85%;
+  font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+  color: var(--contactUsDescText);
+  font-size: 2rem;
+  text-align: center;
+  line-height: 2.5rem;
+}
+.theme-four .formInput {
+  margin-bottom: 4rem !important;
+}
+@media (max-width: 1199.98px) {
+  .theme-four .contact-us-wrapper {
+    width: 90rem;
+  }
+  .theme-four .contact-parent {
+    margin: 10rem 0;
+  }
+  .theme-four .contact-parent .contact-container {
+    height: 50rem;
+  }
+  .theme-four .contact-parent .contact-container .contact-us-content {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    height: 45rem;
+    background-color: var(--tertiaryBgColor);
+  }
+  .theme-four .contact-parent .contact-container .contact-us-icon-wrap {
+    position: relative;
+    width: 100%;
+  }
+  .theme-four .contact-parent .contact-container .contact-us-icon-wrap .contact-us-icon-container {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    padding: 2rem;
+    background-color: var(--tertiaryBgColor);
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .theme-four .contact-parent .contact-container .contact-us-info {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 7rem !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3rem;
+  }
+  .theme-four .contact-parent .contact-container .contact-us-info .contact-us-header-title {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    color: var(--contactBgColor);
+    font-size: 3.2rem;
+  }
+  .theme-four .contact-parent .contact-container .contact-us-info .contact-us-header-desc {
+    width: 85%;
+    font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+    color: var(--contactUsDescText);
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.5rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .theme-four .contact-us-wrapper {
+    width: 75rem;
+  }
+  .theme-four .submit-btn {
+    width: 100%;
+    text-align: center !important;
+  }
+  .theme-four .contact-parent {
+    margin: 10rem 0;
+  }
+  .theme-four .contact-parent .contact-container {
+    height: 50rem;
+  }
+  .theme-four .contact-parent .contact-container .contact-us-content {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    height: 45rem;
+    background-color: var(--tertiaryBgColor);
+  }
+  .theme-four .contact-parent .contact-container .contact-us-icon-wrap {
+    position: relative;
+    width: 100%;
+  }
+  .theme-four .contact-parent .contact-container .contact-us-icon-wrap .contact-us-icon-container {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    padding: 2rem;
+    background-color: var(--tertiaryBgColor);
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .theme-four .contact-parent .contact-container .contact-us-info {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 7rem !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3rem;
+  }
+  .theme-four .contact-parent .contact-container .contact-us-info .contact-us-header-title {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    color: var(--contactBgColor);
+    font-size: 3.2rem;
+  }
+  .theme-four .contact-parent .contact-container .contact-us-info .contact-us-header-desc {
+    width: 85%;
+    font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+    color: var(--contactUsDescText);
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .theme-four .page_content {
+    padding: 2rem 0 105rem 0 !important;
+  }
+  .theme-four .submit-btn {
+    margin-top: 3rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .theme-four .contact-parent {
+    margin: 10rem 0;
+  }
+  .theme-four .contact-parent .contact-container {
+    height: 50rem;
+  }
+  .theme-four .contact-parent .contact-container .contact-us-content {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    height: 45rem;
+    background-color: var(--tertiaryBgColor);
+  }
+  .theme-four .contact-parent .contact-container .contact-us-icon-wrap {
+    position: relative;
+    width: 100%;
+  }
+  .theme-four .contact-parent .contact-container .contact-us-icon-wrap .contact-us-icon-container {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    padding: 2rem;
+    background-color: var(--tertiaryBgColor);
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .theme-four .contact-parent .contact-container .contact-us-info {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 8rem !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3rem;
+  }
+  .theme-four .contact-parent .contact-container .contact-us-info .contact-us-header-title {
+    -ms-flex-item-align: center;
+        align-self: center;
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+    color: var(--contactBgColor);
+    font-size: 3.2rem;
+  }
+  .theme-four .contact-parent .contact-container .contact-us-info .contact-us-header-desc {
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 85%;
+    font-family: "HelveticaNeueLT Arabic 55 Roman", sans-serif;
+    color: var(--contactUsDescText);
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.5rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .theme-four .page_content {
+    padding: 2rem 0 100rem 0 !important;
+  }
+  .theme-four .contact-us-wrapper {
+    width: 38rem;
+    top: 60% !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .theme-four .section-title {
+    font-size: 2.5rem;
+    color: var(--black);
+    letter-spacing: -0.04em;
+  }
+  .theme-four .section {
+    padding: 5rem 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .theme-four .section {
+    padding: 4rem 0;
+  }
+  .theme-four .primary-section-title {
+    font-size: 2.4rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .theme-four .social-link {
+    font-family: "HelveticaNeueLT Arabic 75 Bold", sans-serif;
+  }
+  .theme-four .social-item {
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .theme-four .link-item-1 {
+    font-size: 13px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .page_content {
+    padding: 2rem 0 105rem 0 !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .page_content {
+    padding: 2rem 0 100rem 0 !important;
+  }
+}
