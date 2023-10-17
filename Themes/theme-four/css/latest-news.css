@@ -1457,7 +1457,18 @@
 }
 @media (max-width: 900px){
   .related-website-item{
-    width: 20em !important;
-    margin-right: 100px !important;
+ /*   width: 20em !important;
+    margin-right: 100px !important;*/
   }
+  .theme-four .related-websites .related-websites-container .related-website-item{
+    margin:3rem 2rem
+  }
+}
+@media(max-width:575.98px){
+  .theme-four .related-websites .related-websites-container .related-website-item{
+    margin:3rem 1rem
+  }
+  .theme-four .related-websites .related-websites-container .related-website-item .related-website-logo {
+    width: 6rem;
+}
 }

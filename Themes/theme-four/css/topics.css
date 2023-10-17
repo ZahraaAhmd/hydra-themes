@@ -438,4 +438,21 @@
     font-size: 13px;
     line-height: 22px;
   }
+  .theme-four .tabs-list{
+    flex-wrap: nowrap;
+    overflow: auto;
+    justify-content: flex-start;
+    padding-bottom: 6px;
+    padding-top: 0;
+    overflow-y: hidden;
+    gap: 1rem;
+  }
+  .theme-four .tabs-list li {
+    min-width: fit-content;
+}
+}
+@media(max-width:400px){
+  .theme-four .tabs-list li a{
+    font-size: 13px;
+  }
 }

@@ -387,18 +387,24 @@
     height: 4rem;
   }
   .last-item {
-    padding-bottom: 15rem !important;
+    padding-bottom: 0 !important;
   }
   .address-desc {
     font-size: 2rem;
   }
+  .page_content{
+    margin-bottom: 0;
+  }
+  footer.footer-album{
+    padding-top:5rem !important ;
+    margin-top: 0 !important;
+  }
 }
 @media (max-width: 760px) {
   .contact-us-main-details {
-    padding: 7rem 0;
+    padding: 7rem 0 4rem 0;
     color: var(--primaryColor);
     width: 95%;
-    padding-bottom: 15rem;
   }
 }
 @media (max-width: 35em) {
@@ -406,7 +412,7 @@
     padding: 4rem 1rem;
     color: var(--primaryColor);
     width: 100%;
-    padding-bottom: 22rem;
+    padding-bottom: 5rem;
   }
   .contact-us-header-title {
     font-size: 4.5rem;
@@ -423,7 +429,6 @@
   }
   .last-item {
     padding-right: 3rem !important;
-    padding-bottom: 13rem !important;
     padding-left: 0.5rem !important;
   }
   .address-desc {

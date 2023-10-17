@@ -183,7 +183,7 @@
   .theme-four .gallery-wrapper .gallery-list .gallery-item {
     width: 350px;
     height: 300px;
-    margin: 0 1rem;
+    margin: 0;
   }
   .theme-four .gallery-wrapper .gallery-list .gallery-item img {
     width: 95%;

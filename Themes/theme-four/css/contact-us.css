@@ -257,7 +257,7 @@ input:-moz-placeholder { text-align:right; }
     padding: 0 20px;
     margin-top: 8rem;
 }
-.theme-four .contact-us-wrapper{
+.theme-four .contact-us-wrapper:not(.contact-page-box){
   position: relative;
   top: 0;
   margin-bottom: -5em;

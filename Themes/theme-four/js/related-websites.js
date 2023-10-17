@@ -26,9 +26,11 @@ $(".related-websites-list").slick({
     {
       breakpoint: 992,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         centerMode: true,
+        variableWidth: false,
+        centerPadding: "15%",
       },
     },
 
@@ -37,9 +39,8 @@ $(".related-websites-list").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: true,
-        variableWidth: true,
-        centerPadding: "30px",
+        centerMode: false,
+        variableWidth: false,
 
 
       },

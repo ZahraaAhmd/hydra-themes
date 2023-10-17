@@ -472,6 +472,13 @@
     width: 38rem;
     top: 60% !important;
   }
+  .theme-four .contact-parent .contact-container .contact-us-content{
+    width:100%
+  }
+  .theme-four .contact-us-wrapper.contact-page-box{
+    max-width: 100%;
+    width: 100%;
+  }
 }
 @media (max-width: 767.98px) {
   .theme-four .section-title {

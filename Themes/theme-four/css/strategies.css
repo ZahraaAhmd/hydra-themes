@@ -255,6 +255,10 @@
     border-right: 1px solid #cbcbcb;
     margin-bottom: 6rem;
   }
+  .theme-four .strategies-list .strategy-item .strategy-title{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
   .theme-four .strategies-list .strategy-item .strategy-number {
     font-size: 2rem;
     line-height: 120%;
