@@ -138,7 +138,42 @@
   height: 60rem;
   padding: 5rem 2.4rem;
 }
-.theme-four .gallery-wrapper .gallery-list {
+
+.theme-four .gallery-wrapper .inner-container{
+  padding: 0;
+  position: absolute;
+  top: 36%;
+  width: calc(100% + 3rem);
+  left: -1.5rem;
+}
+.theme-four .gallery-wrapper .gallery-list2 .slick-slide{
+  padding: 0 1.5rem;
+  height: 300px;
+}
+.theme-four .gallery-wrapper  .gallery-item{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  
+}
+.theme-four .gallery-wrapper  .gallery-item img{
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+.theme-four .gallery-wrapper  .gallery-item p {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+.theme-four .gallery-wrapper  .gallery-item iframe {
+  width: 100%;
+  height: 100%;
+}
+/*.theme-four .gallery-wrapper .gallery-list {
   position: absolute;
   margin-top: 5rem;
   display: -webkit-box;
@@ -152,6 +187,7 @@
           justify-content: center;
   gap: 3rem;
   top: 27%;
+  display: none;
 }
 .theme-four .gallery-wrapper .gallery-list .gallery-item {
   position: relative;
@@ -160,6 +196,7 @@
   overflow: hidden;
   margin: 0 1.5rem;
 }
+
 .theme-four .gallery-wrapper .gallery-list .gallery-item p {
   position: absolute;
   bottom: 2rem;
@@ -167,16 +204,13 @@
   font-size: 1.5rem;
   color: var(--white);
 }
-.theme-four .gallery-wrapper .gallery-list .gallery-item iframe {
-  width: 100%;
-  height: 100%;
-}
+*/
 @media (max-width: 575.98px) {
   .theme-four .gallery-wrapper .gallery-container {
     height: 50rem;
     padding: 5rem 2.4rem;
   }
-  .theme-four .gallery-wrapper .gallery-list {
+  /*.theme-four .gallery-wrapper .gallery-list {
     gap: 3rem;
     top: 20%;
   }
@@ -198,6 +232,14 @@
     width: 100%;
     height: 100%;
   }
+  */
+}
+@media(max-width:991.98px){
+  
+  .theme-four .gallery-wrapper .gallery-list2 .slick-slide {
+    padding: 0 1rem;
+    height: 300px;
+}
 }
 
 @media (max-width: 767.98px) {
@@ -219,6 +261,12 @@
   .primary-section-title {
     font-size: 2.4rem !important;
   }
+  .theme-four .gallery-wrapper .inner-container {
+    padding: 0 20px;
+    top: 30%;
+    width: 100%;
+    left: 0;
+}
 }
 @media (max-width: 575.98px) {
   .arrow-left,
