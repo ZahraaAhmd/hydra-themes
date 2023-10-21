@@ -108,7 +108,16 @@
   -webkit-box-shadow: initial;
           box-shadow: initial;
 }
-
+/*@media(max-width:1200px){
+  .header .container-lg{
+   
+    max-width: 100%;
+    padding-left: var(--bs-gutter-x,.75rem);
+    padding-right: var(--bs-gutter-x,.75rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  }*/
 @media (max-width: 992px) {
   .header nav.navbar {
     padding: 1.2rem 1.6rem;
@@ -139,8 +148,9 @@
     background: rgba(255, 255, 255, 0.9);
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
-    -webkit-box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.09);
+   /* -webkit-box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.09);
             box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.09);
+            */
   }
   .header .navbar-collapse .nav-link {
     padding: 10px 15px;

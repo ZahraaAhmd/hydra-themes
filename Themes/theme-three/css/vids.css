@@ -363,6 +363,9 @@
   .theme-three .slick-dots li.slick-active button {
     background-color: var(--primaryColor);
   }
+  .theme-three .videosActions{
+    top:-25px
+  }
 }
 
 @media (max-width: 950px) {
