@@ -269,8 +269,8 @@
 }
 @media (max-width: 87.5em) {
   .theme-three .map-image-container {
-    left: 0;
-    bottom: -5rem;
+    /*left: 0;
+    bottom: -5rem;*/
   }
   .theme-three .map-image-container .map-image {
     width: 100%;
@@ -409,4 +409,14 @@
 
 .margin-top-5 {
   margin-top: 5rem;
+}
+
+@media(min-width:992px){
+  .theme-three .map-left{
+    margin-right: -10px !important;
+    z-index: 1;
+  }
+  .gmap_canvas{
+    border-radius: 0 12px 12px 0 !important
+  }
 }
