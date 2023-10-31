@@ -52,6 +52,7 @@ navBtnEl.addEventListener("click", function () {
 // Sticky Navigation
 
 const sectionHeroEL = document.querySelector(".hero-container");
+const notification = document.querySelector(".notification_nav");
 const searchFormEl = document.querySelector(".searchAtNav");
 console.log("search results wrapper", searchFormEl);
 const obs = new IntersectionObserver(
@@ -79,7 +80,7 @@ const obs = new IntersectionObserver(
   }
 );
 
-obs.observe(sectionHeroEL);
+//obs.observe(sectionHeroEL);
 
 var btn = $(".button");
 
@@ -95,3 +96,19 @@ btn.on("click", function (e) {
   e.preventDefault();
   $("html, body").animate({ scrollTop: 0 }, "300");
 });
+
+
+$(document).ready(function() {
+  $(window).bind('scroll', function() {
+   
+    if ($(window).scrollTop() > 250) {
+      
+      $("body").addClass("sticky");
+     $(".searchAtNav").addClass("stickySearch");
+    }
+     else  {
+      $("body").removeClass("sticky");
+     $(".searchAtNav").removeClass("stickySearch");
+    }
+  });
+  })
