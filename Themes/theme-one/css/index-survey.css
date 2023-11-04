@@ -443,9 +443,9 @@
     font-size: 16px;
   }
   .theme-one .survey_form .ratings-wrapper {
-    gap: 0.5rem;
-    margin-top: 5px;
-    margin-bottom: 6rem;
+    gap: 0rem;
+    margin-top: 16px;
+    margin-bottom: 0rem;
   }
   .theme-one .survey_form .ratings-wrapper .rating-item {
     padding: 0.5rem;
@@ -551,6 +551,11 @@
   .theme-one .survey_form_wrapper .btn-action-wrapper .btn-submit {
     padding: 0.6rem 1.7rem;
     font-size: 14px;
+  }
+  .theme-one .survey_form .ratings-wrapper .rating-item{
+    height: auto;
+    width: auto;
+    margin-left: 0;
   }
 }
 

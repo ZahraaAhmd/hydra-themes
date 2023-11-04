@@ -96,7 +96,14 @@ html {
 .tab-content {
   margin-top: 5rem;
 }
-
+.tabs-btns .services-list{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.tabs-btns .services-list li{
+  min-width: fit-content;
+}
 @media (max-width: 550px) {
   .services-list {
     display: -webkit-box;

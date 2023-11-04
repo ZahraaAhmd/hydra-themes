@@ -603,3 +603,9 @@
     height: 43px;
   }
 }
+
+@media(max-width:575.98px){
+  .center .slick-center img{
+    object-fit: initial;
+  }
+}

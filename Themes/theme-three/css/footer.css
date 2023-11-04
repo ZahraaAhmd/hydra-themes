@@ -215,6 +215,14 @@
     font-size: 13px;
   }
 }
+@media(max-width:575.98px){
+  footer .links{
+    width: 100% !important;
+  }
+  footer .links .col-12{
+    width: 50%;
+  }
+}
 @media (max-width: 570px) {
   .links {
     margin-bottom: 50px;

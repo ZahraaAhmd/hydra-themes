@@ -162,7 +162,11 @@
   line-height: 24px;
   color: var(--gray_text);
 }
-
+@media(max-width:991.98px){
+  .video_cover .video-container-control img{
+    object-fit: contain;
+  }
+}
 @media (max-width: 767px) {
   .video_cover .play {
     font-size: 50px;
