@@ -371,6 +371,10 @@
 .gallery-slider-block .slider{
   margin-top: -90px;
 }
+.gallery-wrapper{
+    padding-bottom:30rem;
+  
+}
 @media (max-width: 1000px) {
   .gallery_page-title-container {
     padding: 0 2rem;
@@ -607,5 +611,11 @@
 @media(max-width:575.98px){
   .center .slick-center img{
     object-fit: initial;
+  }
+  .page_content{
+    padding-bottom: 0;
+  }
+  .gallery-wrapper {
+   padding-bottom:40rem ;
   }
 }

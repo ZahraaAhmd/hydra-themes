@@ -25,9 +25,11 @@
     <link rel="stylesheet" href="../css/notification-bar.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/internal-pages-title.css">
+    <link rel="stylesheet" href="../css/survey.css">
     <!-- Link JS  -->
     <script defer src="../js/gallery.js"></script>
     <script defer src="../js/index/index.js"></script>
+    <script defer src="../js/survey.js"></script>
     <title>الوسائط المتعدة</title>
 </head>
 
@@ -798,325 +800,447 @@
     </header>
     <!-- Main Content -->
     <div class="page_content">
-        <!-- Notification nav -->
-        <!-- d-none d-md-block -->
-        <div class="container-fluid notification_nav  py-3 mb-0 mt-0 ">
-            <div class="container container-sm container-md container-lg container-xl ">
+        <div class="body-bg gallery-wrapper">
+            <!-- Notification nav -->
+            <!-- d-none d-md-block -->
+            <div class="container-fluid notification_nav  py-3 mb-0 mt-0 ">
+                <div class="container container-sm container-md container-lg container-xl ">
 
-                <div class="d-flex justify-content-between align-items-center">
-                    <!-- Right: Notification -->
-                    <div class="d-flex align-items-center justify-content-start  gap-3">
-                        <svg class="noti-svg" width="19" height="19" viewBox="0 0 19 19" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M14.2748 6.29997C14.2748 5.04683 13.777 3.84501 12.8909 2.95891C12.0048 2.07281 10.803 1.575 9.54987 1.575C8.29672 1.575 7.09491 2.07281 6.2088 2.95891C5.3227 3.84501 4.82489 5.04683 4.82489 6.29997C4.82489 11.8124 2.4624 13.3874 2.4624 13.3874H16.6373C16.6373 13.3874 14.2748 11.8124 14.2748 6.29997Z"
-                                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                                d="M10.9122 16.5374C10.7738 16.7761 10.5751 16.9742 10.336 17.1119C10.0969 17.2496 9.82579 17.3221 9.54987 17.3221C9.27395 17.3221 9.00287 17.2496 8.76377 17.1119C8.52467 16.9742 8.32595 16.7761 8.1875 16.5374"
-                                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        <p class="not-alert-title mb-0">وزير المالية بعد موافقة إدارة صندوق النقد على صرف الشريحة
-                            الأخيرة من
-                            برنامج الاستعداد الائتماني </p>
-                    </div>
-
-                    <!-- Left: Read more -->
-                    <a class="read-more d-flex justify-content-center flex-row align-items-center text-decoration-none text-white "
-                        href="#">
-                        <p class="more-not px-4 mb-0 d-none d-md-block">اقرء المزيد</p>
-
-                        <span class="me-3 me-md-0">
-                            <svg width="16" height="10" viewBox="0 0 16 10" fill="none"
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- Right: Notification -->
+                        <div class="d-flex align-items-center justify-content-start  gap-3">
+                            <svg class="noti-svg" width="19" height="19" viewBox="0 0 19 19" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M14.4633 3.83596L2.04845 3.94089L5.24845 0.957048C5.36117 0.852193 5.42459 0.70988 5.42478 0.561417C5.42497 0.412954 5.3619 0.270502 5.24945 0.165399C5.137 0.0602962 4.98437 0.00115182 4.82516 0.000976951C4.66594 0.000802083 4.51317 0.0596111 4.40045 0.164467L0.176449 4.10313C0.0640882 4.20803 0.000976563 4.35023 0.000976562 4.49849C0.000976563 4.64675 0.0640882 4.78895 0.176449 4.89385L4.40045 8.83624C4.45538 8.89121 4.52162 8.9353 4.59522 8.96588C4.66882 8.99646 4.74827 9.0129 4.82883 9.01422C4.90939 9.01555 4.98942 9.00173 5.06413 8.97359C5.13884 8.94545 5.2067 8.90357 5.26368 8.85045C5.32065 8.79732 5.36557 8.73404 5.39575 8.66437C5.42592 8.59471 5.44074 8.52009 5.43932 8.44497C5.4379 8.36985 5.42027 8.29577 5.38747 8.22714C5.35468 8.15851 5.3074 8.09675 5.24845 8.04553L2.04845 5.06169L14.4633 4.95677C14.6224 4.95677 14.775 4.89782 14.8875 4.7929C15.0001 4.68798 15.0633 4.54568 15.0633 4.3973C15.0633 4.24892 15.0001 4.10662 14.8875 4.00169C14.775 3.89677 14.6224 3.83783 14.4633 3.83783V3.83596Z"
-                                    fill="white" />
+                                    d="M14.2748 6.29997C14.2748 5.04683 13.777 3.84501 12.8909 2.95891C12.0048 2.07281 10.803 1.575 9.54987 1.575C8.29672 1.575 7.09491 2.07281 6.2088 2.95891C5.3227 3.84501 4.82489 5.04683 4.82489 6.29997C4.82489 11.8124 2.4624 13.3874 2.4624 13.3874H16.6373C16.6373 13.3874 14.2748 11.8124 14.2748 6.29997Z"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M10.9122 16.5374C10.7738 16.7761 10.5751 16.9742 10.336 17.1119C10.0969 17.2496 9.82579 17.3221 9.54987 17.3221C9.27395 17.3221 9.00287 17.2496 8.76377 17.1119C8.52467 16.9742 8.32595 16.7761 8.1875 16.5374"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                        </span>
+                            <p class="not-alert-title mb-0">وزير المالية بعد موافقة إدارة صندوق النقد على صرف الشريحة
+                                الأخيرة من
+                                برنامج الاستعداد الائتماني </p>
+                        </div>
 
-                    </a>
+                        <!-- Left: Read more -->
+                        <a class="read-more d-flex justify-content-center flex-row align-items-center text-decoration-none text-white "
+                            href="#">
+                            <p class="more-not px-4 mb-0 d-none d-md-block">اقرء المزيد</p>
+
+                            <span class="me-3 me-md-0">
+                                <svg width="16" height="10" viewBox="0 0 16 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.4633 3.83596L2.04845 3.94089L5.24845 0.957048C5.36117 0.852193 5.42459 0.70988 5.42478 0.561417C5.42497 0.412954 5.3619 0.270502 5.24945 0.165399C5.137 0.0602962 4.98437 0.00115182 4.82516 0.000976951C4.66594 0.000802083 4.51317 0.0596111 4.40045 0.164467L0.176449 4.10313C0.0640882 4.20803 0.000976563 4.35023 0.000976562 4.49849C0.000976563 4.64675 0.0640882 4.78895 0.176449 4.89385L4.40045 8.83624C4.45538 8.89121 4.52162 8.9353 4.59522 8.96588C4.66882 8.99646 4.74827 9.0129 4.82883 9.01422C4.90939 9.01555 4.98942 9.00173 5.06413 8.97359C5.13884 8.94545 5.2067 8.90357 5.26368 8.85045C5.32065 8.79732 5.36557 8.73404 5.39575 8.66437C5.42592 8.59471 5.44074 8.52009 5.43932 8.44497C5.4379 8.36985 5.42027 8.29577 5.38747 8.22714C5.35468 8.15851 5.3074 8.09675 5.24845 8.04553L2.04845 5.06169L14.4633 4.95677C14.6224 4.95677 14.775 4.89782 14.8875 4.7929C15.0001 4.68798 15.0633 4.54568 15.0633 4.3973C15.0633 4.24892 15.0001 4.10662 14.8875 4.00169C14.775 3.89677 14.6224 3.83783 14.4633 3.83783V3.83596Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="bg-gray">
-            <div class="container container-sm container-md container-lg container-xl container-xxl px-0">
-                <!-- Title -->
-                <div class="theme-three">
-                    <div class="section-title--container container container-md container-lg d-flex justify-content-start items-center section-title-pad  mb-0">
-    
-                        <div class="align-self-center">
-                            <svg class="section-title--svgicon" width="56" height="57" viewBox="0 0 56 57" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M27.9998 54.3333C42.2672 54.3333 53.8332 42.7673 53.8332 28.5C53.8332 14.2326 42.2672 2.66666 27.9998 2.66666C13.7325 2.66666 2.1665 14.2326 2.1665 28.5C2.1665 42.7673 13.7325 54.3333 27.9998 54.3333Z"
-                                    stroke="#0D3770" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M2.1665 28.5H53.8332" stroke="#0D3770" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M27.9998 2.66666C34.4615 9.74073 38.1336 18.9211 38.3332 28.5C38.1336 38.0789 34.4615 47.2592 27.9998 54.3333C21.5382 47.2592 17.8661 38.0789 17.6665 28.5C17.8661 18.9211 21.5382 9.74073 27.9998 2.66666V2.66666Z"
-                                    stroke="#0D3770" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </div>
+            <div class="bg-gray">
+                <div class="container container-sm container-md container-lg container-xl container-xxl px-0">
+                    <!-- Title -->
+                    <div class="theme-three">
                         <div
-                            class="d-flex flex-column justify-content-center items-center gallery_page-title--wrapper px-4 section-title-content-title">
-                            <h3 class="section-title--sub fw-medium">حكومة جمهورية مصر العربية</h3>
-                            <h1 class="section-title--main">الوسائط التعدده</h1>
+                            class="section-title--container container container-md container-lg d-flex justify-content-start items-center section-title-pad  mb-0">
+
+                            <div class="align-self-center">
+                                <svg class="section-title--svgicon" width="56" height="57" viewBox="0 0 56 57"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M27.9998 54.3333C42.2672 54.3333 53.8332 42.7673 53.8332 28.5C53.8332 14.2326 42.2672 2.66666 27.9998 2.66666C13.7325 2.66666 2.1665 14.2326 2.1665 28.5C2.1665 42.7673 13.7325 54.3333 27.9998 54.3333Z"
+                                        stroke="#0D3770" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M2.1665 28.5H53.8332" stroke="#0D3770" stroke-width="4"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M27.9998 2.66666C34.4615 9.74073 38.1336 18.9211 38.3332 28.5C38.1336 38.0789 34.4615 47.2592 27.9998 54.3333C21.5382 47.2592 17.8661 38.0789 17.6665 28.5C17.8661 18.9211 21.5382 9.74073 27.9998 2.66666V2.66666Z"
+                                        stroke="#0D3770" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div
+                                class="d-flex flex-column justify-content-center items-center gallery_page-title--wrapper px-4 section-title-content-title">
+                                <h3 class="section-title--sub fw-medium">حكومة جمهورية مصر العربية</h3>
+                                <h1 class="section-title--main">الوسائط التعدده</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid px-md-0 gallery-slider-block">
-            <!-- Carousel -->
-            <div class="wrapper  pb-4 pt-0 mt-0 mb-5">
+            <div class="container-fluid px-md-0 gallery-slider-block">
+                <!-- Carousel -->
+                <div class="wrapper  pb-4 pt-0 mt-0 mb-5">
 
-                <div class="slider center">
-                    <div class="clip">
-                        <img src="../../images/theme3/gallery2.jpeg" />
+                    <div class="slider center">
+                        <div class="clip">
+                            <img src="../../images/theme3/gallery2.jpeg" />
 
-                    </div>
-                    <div class="clip">
-                        <img src="../../images/theme3/gallery4.jpeg" />
+                        </div>
+                        <div class="clip">
+                            <img src="../../images/theme3/gallery4.jpeg" />
 
-                    </div>
-                    <div class="clip">
-                        <img src="../../images/theme3/gallery5.jpeg" />
+                        </div>
+                        <div class="clip">
+                            <img src="../../images/theme3/gallery5.jpeg" />
 
-                    </div>
-                    <div class="clip">
-                        <img src="../../images/theme3/gallery4.jpeg" />
-                    </div>
-                    <div class="clip">
-                        <img src="../../images/theme3/gallery1.png" />
+                        </div>
+                        <div class="clip">
+                            <img src="../../images/theme3/gallery4.jpeg" />
+                        </div>
+                        <div class="clip">
+                            <img src="../../images/theme3/gallery1.png" />
 
+                        </div>
                     </div>
-                </div>
-                <div class="slideActions">
-                    <button type='button' class='gallery-next slick-next pull-right'>
-                        <i class='nextIcon fa fa-angle-right' aria-hidden='true'>
-                        </i>
-                    </button>
-                    <button type='button' class='gallery-prev slick-prev pull-left'>
-                        <i class='prevIcon fa fa-angle-left' aria-hidden='true'>
-                        </i>
-                    </button>
+                    <div class="slideActions">
+                        <button type='button' class='gallery-next slick-next pull-right'>
+                            <i class='nextIcon fa fa-angle-right' aria-hidden='true'>
+                            </i>
+                        </button>
+                        <button type='button' class='gallery-prev slick-prev pull-left'>
+                            <i class='prevIcon fa fa-angle-left' aria-hidden='true'>
+                            </i>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container ">
-            <!-- اكثر الاخبار و الحملات-->
-            <div class="theme-three">
-                <section
-                    class=" section container-fluid  d-flex align-items-center justify-content-center newWrapper media-wrapper">
-                    <div class="container container-sm container-md container-lg container-xl  ">
-                        <div class="row gx-5 ">
-                            <div class="col-12 col-xl-6  text-md-end mt-5 mt-md-0">
-                                <div class=" borderTop-internal-page">
-                                    <div class="news-items-list d-flex flex-column gap-md-4 gap-lg-5 ">
-                                        <h3
-                                            class="section-sub-header-bold margin-bottom-4 margin-top-1 text-end gallery-title-color ">
-                                            اكثر
-                                            الاخبار
-                                            مشاهده </h3>
-                                        <div
-                                            class="news showLess  datesWithTitles   d-flex flex-column gap-1 position-relative pb-5">
-                                            <div class=" d-flex justify-content-start align-items-center gap-5 mt-0">
-                                                <div class="dateWrapper">
-                                                    <div
-                                                        class="d-flex flex-column align-items-center justify-content-center green-color">
-                                                        <h3 class="dateNum mb-0 green-color">٢٤</h3>
-                                                        <h3 class="dateName mb-0 green-color">نوفيمبر</h3>
-
-                                                    </div>
-                                                </div>
-
+            <div class="container ">
+                <!-- اكثر الاخبار و الحملات-->
+                <div class="theme-three">
+                    <section
+                        class=" section container-fluid  d-flex align-items-center justify-content-center newWrapper media-wrapper">
+                        <div class="container container-sm container-md container-lg container-xl  ">
+                            <div class="row gx-5 ">
+                                <div class="col-12 col-xl-6  text-md-end mt-5 mt-md-0">
+                                    <div class=" borderTop-internal-page">
+                                        <div class="news-items-list d-flex flex-column gap-md-4 gap-lg-5 ">
+                                            <h3
+                                                class="section-sub-header-bold margin-bottom-4 margin-top-1 text-end gallery-title-color ">
+                                                اكثر
+                                                الاخبار
+                                                مشاهده </h3>
+                                            <div
+                                                class="news showLess  datesWithTitles   d-flex flex-column gap-1 position-relative pb-5">
                                                 <div
-                                                    class="d-flex flex-column align-items-start justify-content-between gap-2 py-0 ">
-                                                    <h3 class="news-date  main-color lh-1 ">
-                                                        ٢٤ نوفمبر ٢٠٢١
-                                                    </h3>
+                                                    class=" d-flex justify-content-start align-items-center gap-5 mt-0">
+                                                    <div class="dateWrapper">
+                                                        <div
+                                                            class="d-flex flex-column align-items-center justify-content-center green-color">
+                                                            <h3 class="dateNum mb-0 green-color">٢٤</h3>
+                                                            <h3 class="dateName mb-0 green-color">نوفيمبر</h3>
 
-                                                    <p class="newsDesc  my-2 my-md-3">
-                                                        مصر: رؤيتنا مشتركه مع الاردن حول تحقيق السلام الشامل
-
-                                                    </p>
-
-                                                    <a class=" d-flex align-items-center justify-content-between main-color text-decoration-none "
-                                                        href="#">
-                                                        <p class="new-details-cta fw-lighter">
-                                                            عرض التفاصيل
-                                                        </p>
-                                                        <svg class="svgArrow" width="25" height="42" viewBox="0 0 25 42"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M23.4633 20.836L11.0484 20.9409L14.2484 17.957C14.3612 17.8522 14.4246 17.7099 14.4248 17.5614C14.425 17.413 14.3619 17.2705 14.2494 17.1654C14.137 17.0603 13.9844 17.0012 13.8252 17.001C13.6659 17.0008 13.5132 17.0596 13.4004 17.1645L9.17645 21.1031C9.06409 21.208 9.00098 21.3502 9.00098 21.4985C9.00098 21.6468 9.06409 21.7889 9.17645 21.8938L13.4004 25.8362C13.4554 25.8912 13.5216 25.9353 13.5952 25.9659C13.6688 25.9965 13.7483 26.0129 13.8288 26.0142C13.9094 26.0155 13.9894 26.0017 14.0641 25.9736C14.1388 25.9455 14.2067 25.9036 14.2637 25.8504C14.3207 25.7973 14.3656 25.734 14.3957 25.6644C14.4259 25.5947 14.4407 25.5201 14.4393 25.445C14.4379 25.3699 14.4203 25.2958 14.3875 25.2271C14.3547 25.1585 14.3074 25.0967 14.2484 25.0455L11.0484 22.0617L23.4633 21.9568C23.6224 21.9568 23.775 21.8978 23.8875 21.7929C24.0001 21.688 24.0633 21.5457 24.0633 21.3973C24.0633 21.2489 24.0001 21.1066 23.8875 21.0017C23.775 20.8968 23.6224 20.8378 23.4633 20.8378V20.836Z"
-                                                                fill="#0D3770" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-
-                                            </div>
-                                            <div class=" d-flex justify-content-start align-items-center gap-5 mt-5">
-                                                <div class="dateWrapper">
+                                                        </div>
+                                                    </div>
 
                                                     <div
-                                                        class="d-flex flex-column align-items-center justify-content-center green-color ">
-                                                        <h3 class="dateNum green-color">٢٤</h3>
-                                                        <h3 class="dateName green-color">نوفيمبر</h3>
+                                                        class="d-flex flex-column align-items-start justify-content-between gap-2 py-0 ">
+                                                        <h3 class="news-date  main-color lh-1 ">
+                                                            ٢٤ نوفمبر ٢٠٢١
+                                                        </h3>
 
+                                                        <p class="newsDesc  my-2 my-md-3">
+                                                            مصر: رؤيتنا مشتركه مع الاردن حول تحقيق السلام الشامل
+
+                                                        </p>
+
+                                                        <a class=" d-flex align-items-center justify-content-between main-color text-decoration-none "
+                                                            href="#">
+                                                            <p class="new-details-cta fw-lighter">
+                                                                عرض التفاصيل
+                                                            </p>
+                                                            <svg class="svgArrow" width="25" height="42"
+                                                                viewBox="0 0 25 42" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M23.4633 20.836L11.0484 20.9409L14.2484 17.957C14.3612 17.8522 14.4246 17.7099 14.4248 17.5614C14.425 17.413 14.3619 17.2705 14.2494 17.1654C14.137 17.0603 13.9844 17.0012 13.8252 17.001C13.6659 17.0008 13.5132 17.0596 13.4004 17.1645L9.17645 21.1031C9.06409 21.208 9.00098 21.3502 9.00098 21.4985C9.00098 21.6468 9.06409 21.7889 9.17645 21.8938L13.4004 25.8362C13.4554 25.8912 13.5216 25.9353 13.5952 25.9659C13.6688 25.9965 13.7483 26.0129 13.8288 26.0142C13.9094 26.0155 13.9894 26.0017 14.0641 25.9736C14.1388 25.9455 14.2067 25.9036 14.2637 25.8504C14.3207 25.7973 14.3656 25.734 14.3957 25.6644C14.4259 25.5947 14.4407 25.5201 14.4393 25.445C14.4379 25.3699 14.4203 25.2958 14.3875 25.2271C14.3547 25.1585 14.3074 25.0967 14.2484 25.0455L11.0484 22.0617L23.4633 21.9568C23.6224 21.9568 23.775 21.8978 23.8875 21.7929C24.0001 21.688 24.0633 21.5457 24.0633 21.3973C24.0633 21.2489 24.0001 21.1066 23.8875 21.0017C23.775 20.8968 23.6224 20.8378 23.4633 20.8378V20.836Z"
+                                                                    fill="#0D3770" />
+                                                            </svg>
+                                                        </a>
                                                     </div>
 
                                                 </div>
-
                                                 <div
-                                                    class="d-flex flex-column align-items-start justify-content-between gap-2 py-0 ">
-                                                    <h3 class="news-date main-color lh-1 fw-bolder">
-                                                        ٢٤ نوفمبر ٢٠٢١
-                                                    </h3>
+                                                    class=" d-flex justify-content-start align-items-center gap-5 mt-5">
+                                                    <div class="dateWrapper">
 
-                                                    <p class="newsDesc my-2 my-md-3">
-                                                        مصر: رؤيتنا مشتركه مع الاردن حول تحقيق السلام الشامل
+                                                        <div
+                                                            class="d-flex flex-column align-items-center justify-content-center green-color ">
+                                                            <h3 class="dateNum green-color">٢٤</h3>
+                                                            <h3 class="dateName green-color">نوفيمبر</h3>
 
-                                                    </p>
+                                                        </div>
 
-                                                    <a class=" d-flex align-items-center justify-content-between main-color text-decoration-none "
-                                                        href="#">
-                                                        <p class="new-details-cta fw-lighter">
-                                                            عرض التفاصيل
-                                                        </p>
-                                                        <svg class="svgArrow" width="25" height="42" viewBox="0 0 25 42"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M23.4633 20.836L11.0484 20.9409L14.2484 17.957C14.3612 17.8522 14.4246 17.7099 14.4248 17.5614C14.425 17.413 14.3619 17.2705 14.2494 17.1654C14.137 17.0603 13.9844 17.0012 13.8252 17.001C13.6659 17.0008 13.5132 17.0596 13.4004 17.1645L9.17645 21.1031C9.06409 21.208 9.00098 21.3502 9.00098 21.4985C9.00098 21.6468 9.06409 21.7889 9.17645 21.8938L13.4004 25.8362C13.4554 25.8912 13.5216 25.9353 13.5952 25.9659C13.6688 25.9965 13.7483 26.0129 13.8288 26.0142C13.9094 26.0155 13.9894 26.0017 14.0641 25.9736C14.1388 25.9455 14.2067 25.9036 14.2637 25.8504C14.3207 25.7973 14.3656 25.734 14.3957 25.6644C14.4259 25.5947 14.4407 25.5201 14.4393 25.445C14.4379 25.3699 14.4203 25.2958 14.3875 25.2271C14.3547 25.1585 14.3074 25.0967 14.2484 25.0455L11.0484 22.0617L23.4633 21.9568C23.6224 21.9568 23.775 21.8978 23.8875 21.7929C24.0001 21.688 24.0633 21.5457 24.0633 21.3973C24.0633 21.2489 24.0001 21.1066 23.8875 21.0017C23.775 20.8968 23.6224 20.8378 23.4633 20.8378V20.836Z"
-                                                                fill="#0D3770" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-
-                                            </div>
-                                            <div class=" d-flex justify-content-start align-items-center gap-5 mt-5">
-                                                <div class="dateWrapper">
+                                                    </div>
 
                                                     <div
-                                                        class="d-flex flex-column align-items-center justify-content-center green-color">
-                                                        <h3 class="dateNum green-color">٢٤</h3>
-                                                        <h3 class="dateName green-color">نوفيمبر</h3>
+                                                        class="d-flex flex-column align-items-start justify-content-between gap-2 py-0 ">
+                                                        <h3 class="news-date main-color lh-1 fw-bolder">
+                                                            ٢٤ نوفمبر ٢٠٢١
+                                                        </h3>
 
+                                                        <p class="newsDesc my-2 my-md-3">
+                                                            مصر: رؤيتنا مشتركه مع الاردن حول تحقيق السلام الشامل
+
+                                                        </p>
+
+                                                        <a class=" d-flex align-items-center justify-content-between main-color text-decoration-none "
+                                                            href="#">
+                                                            <p class="new-details-cta fw-lighter">
+                                                                عرض التفاصيل
+                                                            </p>
+                                                            <svg class="svgArrow" width="25" height="42"
+                                                                viewBox="0 0 25 42" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M23.4633 20.836L11.0484 20.9409L14.2484 17.957C14.3612 17.8522 14.4246 17.7099 14.4248 17.5614C14.425 17.413 14.3619 17.2705 14.2494 17.1654C14.137 17.0603 13.9844 17.0012 13.8252 17.001C13.6659 17.0008 13.5132 17.0596 13.4004 17.1645L9.17645 21.1031C9.06409 21.208 9.00098 21.3502 9.00098 21.4985C9.00098 21.6468 9.06409 21.7889 9.17645 21.8938L13.4004 25.8362C13.4554 25.8912 13.5216 25.9353 13.5952 25.9659C13.6688 25.9965 13.7483 26.0129 13.8288 26.0142C13.9094 26.0155 13.9894 26.0017 14.0641 25.9736C14.1388 25.9455 14.2067 25.9036 14.2637 25.8504C14.3207 25.7973 14.3656 25.734 14.3957 25.6644C14.4259 25.5947 14.4407 25.5201 14.4393 25.445C14.4379 25.3699 14.4203 25.2958 14.3875 25.2271C14.3547 25.1585 14.3074 25.0967 14.2484 25.0455L11.0484 22.0617L23.4633 21.9568C23.6224 21.9568 23.775 21.8978 23.8875 21.7929C24.0001 21.688 24.0633 21.5457 24.0633 21.3973C24.0633 21.2489 24.0001 21.1066 23.8875 21.0017C23.775 20.8968 23.6224 20.8378 23.4633 20.8378V20.836Z"
+                                                                    fill="#0D3770" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                                <div
+                                                    class=" d-flex justify-content-start align-items-center gap-5 mt-5">
+                                                    <div class="dateWrapper">
+
+                                                        <div
+                                                            class="d-flex flex-column align-items-center justify-content-center green-color">
+                                                            <h3 class="dateNum green-color">٢٤</h3>
+                                                            <h3 class="dateName green-color">نوفيمبر</h3>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div
+                                                        class="d-flex flex-column align-items-start justify-content-between gap-2 py-0 ">
+                                                        <h3 class="news-date main-color lh-1 fw-bolder">
+                                                            ٢٤ نوفمبر ٢٠٢١
+                                                        </h3>
+
+                                                        <p class="newsDesc  my-2 my-md-3">
+                                                            مصر: رؤيتنا مشتركه مع الاردن حول تحقيق السلام الشامل
+
+                                                        </p>
+
+                                                        <a class=" d-flex align-items-center justify-content-between main-color text-decoration-none "
+                                                            href="#">
+                                                            <p class="new-details-cta fw-lighter">
+                                                                عرض التفاصيل
+                                                            </p>
+                                                            <svg class="svgArrow" width="25" height="42"
+                                                                viewBox="0 0 25 42" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M23.4633 20.836L11.0484 20.9409L14.2484 17.957C14.3612 17.8522 14.4246 17.7099 14.4248 17.5614C14.425 17.413 14.3619 17.2705 14.2494 17.1654C14.137 17.0603 13.9844 17.0012 13.8252 17.001C13.6659 17.0008 13.5132 17.0596 13.4004 17.1645L9.17645 21.1031C9.06409 21.208 9.00098 21.3502 9.00098 21.4985C9.00098 21.6468 9.06409 21.7889 9.17645 21.8938L13.4004 25.8362C13.4554 25.8912 13.5216 25.9353 13.5952 25.9659C13.6688 25.9965 13.7483 26.0129 13.8288 26.0142C13.9094 26.0155 13.9894 26.0017 14.0641 25.9736C14.1388 25.9455 14.2067 25.9036 14.2637 25.8504C14.3207 25.7973 14.3656 25.734 14.3957 25.6644C14.4259 25.5947 14.4407 25.5201 14.4393 25.445C14.4379 25.3699 14.4203 25.2958 14.3875 25.2271C14.3547 25.1585 14.3074 25.0967 14.2484 25.0455L11.0484 22.0617L23.4633 21.9568C23.6224 21.9568 23.775 21.8978 23.8875 21.7929C24.0001 21.688 24.0633 21.5457 24.0633 21.3973C24.0633 21.2489 24.0001 21.1066 23.8875 21.0017C23.775 20.8968 23.6224 20.8378 23.4633 20.8378V20.836Z"
+                                                                    fill="#0D3770" />
+                                                            </svg>
+                                                        </a>
                                                     </div>
 
                                                 </div>
 
-                                                <div
-                                                    class="d-flex flex-column align-items-start justify-content-between gap-2 py-0 ">
-                                                    <h3 class="news-date main-color lh-1 fw-bolder">
-                                                        ٢٤ نوفمبر ٢٠٢١
-                                                    </h3>
-
-                                                    <p class="newsDesc  my-2 my-md-3">
-                                                        مصر: رؤيتنا مشتركه مع الاردن حول تحقيق السلام الشامل
-
-                                                    </p>
-
-                                                    <a class=" d-flex align-items-center justify-content-between main-color text-decoration-none "
-                                                        href="#">
-                                                        <p class="new-details-cta fw-lighter">
-                                                            عرض التفاصيل
-                                                        </p>
-                                                        <svg class="svgArrow" width="25" height="42" viewBox="0 0 25 42"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M23.4633 20.836L11.0484 20.9409L14.2484 17.957C14.3612 17.8522 14.4246 17.7099 14.4248 17.5614C14.425 17.413 14.3619 17.2705 14.2494 17.1654C14.137 17.0603 13.9844 17.0012 13.8252 17.001C13.6659 17.0008 13.5132 17.0596 13.4004 17.1645L9.17645 21.1031C9.06409 21.208 9.00098 21.3502 9.00098 21.4985C9.00098 21.6468 9.06409 21.7889 9.17645 21.8938L13.4004 25.8362C13.4554 25.8912 13.5216 25.9353 13.5952 25.9659C13.6688 25.9965 13.7483 26.0129 13.8288 26.0142C13.9094 26.0155 13.9894 26.0017 14.0641 25.9736C14.1388 25.9455 14.2067 25.9036 14.2637 25.8504C14.3207 25.7973 14.3656 25.734 14.3957 25.6644C14.4259 25.5947 14.4407 25.5201 14.4393 25.445C14.4379 25.3699 14.4203 25.2958 14.3875 25.2271C14.3547 25.1585 14.3074 25.0967 14.2484 25.0455L11.0484 22.0617L23.4633 21.9568C23.6224 21.9568 23.775 21.8978 23.8875 21.7929C24.0001 21.688 24.0633 21.5457 24.0633 21.3973C24.0633 21.2489 24.0001 21.1066 23.8875 21.0017C23.775 20.8968 23.6224 20.8378 23.4633 20.8378V20.836Z"
-                                                                fill="#0D3770" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-
                                             </div>
-
                                         </div>
                                     </div>
+
                                 </div>
-
-                            </div>
-                            <div class="col-12 col-xl-6  mt-5 mt-md-0 mb-5 mb-lg-0">
-                                <div class="d-flex flex-column gap-2 borderTop-internal-page video-wrapper-contain ">
-                                    <h3
-                                        class="section-sub-header-bold margin-bottom-4 margin-top-1 text-end gallery-title-color">
-                                        احدث
-                                        الفيديوهات
-                                    </h3>
-                                    <div class="videos-gallery">
-
-                                        <div class="video-item">
-                                            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1">
-                                            </iframe>
-
-                                            <div
-                                                class="d-flex flex-column align-items-start justify-content-start mt-3 gap-2 w-100 mt-4 mt-lg-5  ">
-                                                <h3 class="fw-normal videoHeader">
-                                                    .مشتركه مع الاردن حول تحقيق السلام الشامل
-                                                </h3>
-                                                <h3 class="fw-normal videoHeader">مصر:رؤيتنا</h3>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="video-item">
-
-                                            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1">
-                                            </iframe>
-
-                                            <div
-                                                class="d-flex flex-column align-items-start justify-content-start mt-3 gap-2 w-100 mt-4 mt-lg-5  ">
-                                                <h3 class="fw-normal videoHeader">
-                                                    .مشتركه مع المغرب حول تحقيق السلام الشامل
-                                                </h3>
-                                                <h3 class="fw-normal videoHeader">مصر:رؤيتنا</h3>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="video-item">
-                                            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1">
-                                            </iframe>
-
-                                            <div
-                                                class="d-flex flex-column align-items-start justify-content-start mt-3 gap-2 w-100 mt-4 mt-lg-5 ">
-                                                <h3 class="fw-normal videoHeader">
-                                                    .مشتركه مع السودان حول تحقيق السلام الشامل
-                                                </h3>
-                                                <h3 class="fw-normal videoHeader">مصر:رؤيتنا</h3>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-
+                                <div class="col-12 col-xl-6  mt-5 mt-md-0 mb-5 mb-lg-0">
                                     <div
-                                        class="d-flex  align-items-center justify-content-between gap-4 d-none d-md-flex ">
+                                        class="d-flex flex-column gap-2 borderTop-internal-page video-wrapper-contain ">
+                                        <h3
+                                            class="section-sub-header-bold margin-bottom-4 margin-top-1 text-end gallery-title-color">
+                                            احدث
+                                            الفيديوهات
+                                        </h3>
+                                        <div class="videos-gallery">
 
-                                        <div class="videosActions ">
+                                            <div class="video-item">
+                                                <iframe
+                                                    src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1">
+                                                </iframe>
 
-                                            </button>
-                                            <button type='button' class='vid-gallery-next pull-right'>
-                                                <i class='nextIcon fa fa-angle-right' aria-hidden='true'>
-                                                </i>
-                                            </button>
-                                            <button type='button' class='vid-gallery-prev pull-left'>
-                                                <i class='prevIcon fa fa-angle-left' aria-hidden='true'>
-                                                </i>
+                                                <div
+                                                    class="d-flex flex-column align-items-start justify-content-start mt-3 gap-2 w-100 mt-4 mt-lg-5  ">
+                                                    <h3 class="fw-normal videoHeader">
+                                                        .مشتركه مع الاردن حول تحقيق السلام الشامل
+                                                    </h3>
+                                                    <h3 class="fw-normal videoHeader">مصر:رؤيتنا</h3>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="video-item">
+
+                                                <iframe
+                                                    src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1">
+                                                </iframe>
+
+                                                <div
+                                                    class="d-flex flex-column align-items-start justify-content-start mt-3 gap-2 w-100 mt-4 mt-lg-5  ">
+                                                    <h3 class="fw-normal videoHeader">
+                                                        .مشتركه مع المغرب حول تحقيق السلام الشامل
+                                                    </h3>
+                                                    <h3 class="fw-normal videoHeader">مصر:رؤيتنا</h3>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="video-item">
+                                                <iframe
+                                                    src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1">
+                                                </iframe>
+
+                                                <div
+                                                    class="d-flex flex-column align-items-start justify-content-start mt-3 gap-2 w-100 mt-4 mt-lg-5 ">
+                                                    <h3 class="fw-normal videoHeader">
+                                                        .مشتركه مع السودان حول تحقيق السلام الشامل
+                                                    </h3>
+                                                    <h3 class="fw-normal videoHeader">مصر:رؤيتنا</h3>
+
+                                                </div>
+                                            </div>
+
                                         </div>
 
+                                        <div
+                                            class="d-flex  align-items-center justify-content-between gap-4 d-none d-md-flex ">
+
+                                            <div class="videosActions ">
+
+                                                </button>
+                                                <button type='button' class='vid-gallery-next pull-right'>
+                                                    <i class='nextIcon fa fa-angle-right' aria-hidden='true'>
+                                                    </i>
+                                                </button>
+                                                <button type='button' class='vid-gallery-prev pull-left'>
+                                                    <i class='prevIcon fa fa-angle-left' aria-hidden='true'>
+                                                    </i>
+                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-            </div>
+                    </section>
+                </div>
 
+            </div>
         </div>
-        
+        <div class="theme-three">
+            <!-- survey -->
+            <div class="survery-parent">
+                <div class="survey-wrapper d-flex align-items-center justify-content-center">
+                    <div class="bg-main-nav survey-container">
+
+                        <div class="survey-content">
+                            <h2 class="survey-title">استطلاع رأي</h2>
+                            <form id="regForm">
+                                <div class="tab fadeInAnimation">
+                                    <h4 class="survey-sub-title"> اذا كنت احد المتعاملين مع مصلحه الجمارك...</h4>
+                                    <p class="survey-desc">هل قمت بالتسجيل علي منصه نافذه استعدادا لتطبيق المرحله
+                                        الالزاميه
+                                        لنظام
+                                        ACI
+                                        قبل اول يوليو المقبل؟</p>
+                                    <div
+                                        class="survey-actions flex-column flex-md-row d-flex align-items-start justify-content-start gap-4 mt-5">
+                                        <button onclick="nextPrev(event,1)"
+                                            class="survey-btn-yes mt-3 mt-md-0">نعم</button>
+                                        <button onclick="nextPrev(event,1)"
+                                            class="survey-btn-no mt-3 mt-md-0">لا</button>
+                                    </div>
+                                </div>
+                                <div class="tab fadeInAnimation">
+                                    <h4 class="survey-sub-title"> اذا كنت احد المتعاملين مع مصلحه الجمارك...</h4>
+                                    <p class="survey-desc">
+
+                                        السؤال الثاني يا عم مرعي
+                                    </p>
+                                    <!-- <div
+                                        class="survey-actions flex-column flex-md-row d-flex align-items-start justify-content-start gap-4 mt-5">
+                                        <button onclick="nextPrev(event,1)" class="survey-btn-yes mt-3 mt-md-0">نعم</button>
+                                        <button onclick="nextPrev(event,1)" class="survey-btn-no mt-3 mt-md-0">لا</button>
+                                    </div> -->
+                                    <!-- 1 to 5 scale rating -->
+                                    <div class="d-flex align-items-center gap-3 my-5">
+                                        <div class="rating-item">
+                                            <input onclick="nextPrev(event,1)" type="radio" class="btn-check "
+                                                name="options" id="option1" autocomplete="off">
+                                            <label
+                                                class="btn btn-secondary survey-btn-no rounded-circle radioBtnsPadding  fs-3 "
+                                                for="option1">1</label>
+                                        </div>
+                                        <div class="rating-item">
+                                            <input onclick="nextPrev(event,1)" type="radio" class="btn-check "
+                                                name="options" id="option2" autocomplete="off">
+                                            <label
+                                                class="btn btn-secondary survey-btn-no rounded-circle radioBtnsPadding  fs-3 "
+                                                for="option2">2</label>
+                                        </div>
+                                        <div class="rating-item">
+                                            <input onclick="nextPrev(event,1)" type="radio" class="btn-check "
+                                                name="options" id="option3" autocomplete="off">
+                                            <label
+                                                class="btn btn-secondary survey-btn-no rounded-circle radioBtnsPadding  fs-3 "
+                                                for="option3">3</label>
+                                        </div>
+                                        <div class="rating-item">
+                                            <input onclick="nextPrev(event,1)" type="radio" class="btn-check "
+                                                name="options" id="option4" autocomplete="off">
+                                            <label
+                                                class="btn btn-secondary survey-btn-no rounded-circle radioBtnsPadding  fs-3 "
+                                                for="option4">4</label>
+                                        </div>
+                                        <div class="rating-item">
+                                            <input onclick="nextPrev(event,1)" type="radio" class="btn-check "
+                                                name="options" id="option5" autocomplete="off">
+                                            <label
+                                                class="btn btn-secondary survey-btn-no rounded-circle radioBtnsPadding  fs-3 "
+                                                for="option5">5</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="tab fadeInAnimation">
+                                    <h4 class="survey-sub-title"> اذا كنت احد المتعاملين مع مصلحه الجمارك...</h4>
+                                    <p class="survey-desc">
+                                        السؤال الثالث يعم محفوظ
+
+                                    </p>
+                                    <div
+                                        class="survey-actions flex-column flex-md-row d-flex align-items-start justify-content-start gap-4 mt-5">
+                                        <button onclick="nextPrev(event,1)"
+                                            class="survey-btn-yes mt-3 mt-md-0">نعم</button>
+                                        <button onclick="nextPrev(event,1)"
+                                            class="survey-btn-no mt-3 mt-md-0">لا</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                        <form class="survey-form">
+
+                            <div class="input-control position-relative">
+                                <textarea name="survey" class="survey-text-area" id="survey"
+                                    placeholder="اترك تعليقا"></textarea>
+                            </div>
+                            <div class="btn-submit-container pull-left">
+                                <button type="submit" class="survey-submit">ارسال</button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->

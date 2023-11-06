@@ -1,5 +1,5 @@
 // service page
-$(".services-form .next_btn").on("click", function (e) {
+$(".services-form .next_btn:not(.finish)").on("click", function (e) {
   e.preventDefault();
   $(this).closest(".services-form").addClass("visited d-none");
   $(this)

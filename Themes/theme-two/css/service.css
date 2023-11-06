@@ -112,7 +112,7 @@
 }
 .service .form-steps ul li.active a span:before {
   content: "";
-  background: url(../../src/images/theme2/check.png);
+  background: url(../../images/theme2/check.png);
   position: absolute;
   top: 0;
   right: 0;
