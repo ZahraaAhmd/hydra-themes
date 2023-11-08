@@ -119,8 +119,8 @@
 .new-details-wrapper .new-details-img-container img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+ /* -o-object-fit: cover;
+     object-fit: cover;*/
   border-radius: 16px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -139,8 +139,8 @@
 .new-details-wrapper .new-details-content-container img {
   width: 100%;
   height: 30rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  /*-o-object-fit: cover;
+     object-fit: cover;*/
   border-radius: 16px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -225,8 +225,8 @@
 .suggested-news-item .suggested-new-img-container img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  /*-o-object-fit: cover;
+     object-fit: cover;*/
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
@@ -345,8 +345,8 @@
   .new-details-wrapper .new-details-content-container img {
     width: 100%;
     height: 25rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+    /*-o-object-fit: cover;
+       object-fit: cover;*/
     border-radius: 16px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;

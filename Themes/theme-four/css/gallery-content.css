@@ -252,6 +252,10 @@
     margin: 3rem 0;
     padding: 3rem 0;
   }
+  iframe{
+   /* height: 400px !important;
+    max-height: 400px;*/
+  }
 }
 @media (max-width: 575.98px) {
   .section {
