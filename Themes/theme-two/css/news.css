@@ -150,8 +150,8 @@
 .news-sec .news_details .news_gallary .img_container img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  /*-o-object-fit: cover;
+  object-fit: cover;*/
   border-radius: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -190,8 +190,8 @@
 .news-sec .related_news .single_news .img-news-container-control img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  /*-o-object-fit: cover;
+  object-fit: cover;*/
   border-radius: 4px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
