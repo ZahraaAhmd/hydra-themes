@@ -546,7 +546,7 @@ html {
 }
 @media (max-width: 420px) {
   .sign-in-wrapper {
-    width: 85%;
+    width: 100%;
     margin: 3rem auto;
   }
 }

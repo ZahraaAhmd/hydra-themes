@@ -164,6 +164,10 @@
   .theme-two .related_sites .sites{
     padding:0 10px
   }
+  .theme-two .related_sites .sites .single_site h6{
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 @media (max-width: 768px) {
   .theme-two .related_sites .sites {

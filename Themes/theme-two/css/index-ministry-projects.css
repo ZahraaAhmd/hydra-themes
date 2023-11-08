@@ -727,10 +727,11 @@
     position: relative;
   }
   .theme-two .gov-projects-wrapper .gov-projects-container .box-right {
-    height: 600px;
+    height: auto;
     background: var(--bg_color);
     border-radius: 8px;
     z-index: 999;
+    margin-bottom: 30px;
   }
   .theme-two .gov-projects-wrapper .gov-projects-container .box-right .box-right-content {
     padding: 35px 25px;

@@ -241,6 +241,11 @@
     border-bottom: 1px solid var(--input-border);
   }
 }
+@media(max-width:767.98px){
+  .header {
+     top: 10px;
+}
+}
 @media (max-width: 550px) {
   .header img {
     max-width: 200px;

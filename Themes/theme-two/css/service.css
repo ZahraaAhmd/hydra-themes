@@ -228,4 +228,12 @@
   .service .services-form {
     margin-bottom: 30px;
   }
+  .service .form-steps ul{
+    display: flex;
+    justify-content: space-between;margin-bottom: 0;
+  }
+  
+  .service .form-steps ul li a,.service .form-steps ul li.current a span{
+    margin-bottom: 0;
+  }
 }

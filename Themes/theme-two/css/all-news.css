@@ -191,12 +191,17 @@
     padding: 1rem 0;
     margin: 2rem 0 7rem 0;
   }
+  .new-item .new-img-contaienr img{
+    object-fit: contain;
+    background: #f9f9f9;
+  }
+ 
 }
 @media (max-width: 767px) {
   .main-new-img-wrapper {
-    height: 350px;
-    margin-bottom: 3rem;
-  }
+    height: auto;
+    margin-bottom: 2rem;
+}
   .new-item img {
     height: 75%;
   }
@@ -269,4 +274,15 @@
   line-height: 50px;
   color: var(--gray_text);
   margin-bottom: 20px;
+}
+@media(max-width:991.98px){
+  .main-new-content .blog-archive-text{
+    line-height: 35px;
+  }
+}
+@media(max-width:575.98px){
+  .main-new-content .blog-archive-text{
+    font-size: 16px;
+    line-height: 26px;
+  }
 }

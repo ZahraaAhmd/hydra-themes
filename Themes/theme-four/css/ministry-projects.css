@@ -248,8 +248,10 @@
   }
   .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-photo-container img {
     width: 100%;
-    -o-object-fit: cover;
+   /*
+ -o-object-fit: cover;
        object-fit: cover;
+*/
   }
   .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container {
     width: 90%;
@@ -353,8 +355,10 @@
   }
   .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-photo-container img {
     width: 100%;
-    -o-object-fit: cover;
+   /*
+ -o-object-fit: cover;
        object-fit: cover;
+*/
   }
   .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container {
     width: 90%;
@@ -459,8 +463,10 @@
   }
   .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-photo-container img {
     width: 100%;
-    -o-object-fit: cover;
+   /*
+ -o-object-fit: cover;
        object-fit: cover;
+*/
     height: 85%;
   }
   .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container {
@@ -563,8 +569,10 @@
   .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-photo-container img {
     width: 100%;
     height: 35%;
-    -o-object-fit: cover;
+   /*
+ -o-object-fit: cover;
        object-fit: cover;
+*/
   }
   .theme-four .gov-projects-wrapper .projects-list .project-item .project-item-content-container {
     width: 90%;

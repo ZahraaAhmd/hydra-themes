@@ -600,8 +600,10 @@
   .gallery-activities-wrapper .gallery-activities-item .single_gallary .img_container img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
+   /*
+ -o-object-fit: cover;
        object-fit: cover;
+*/
   }
   .gallery-activities-wrapper .gallery-activities-item .single_gallary .img_container .gallery_content h5 {
     font-family: var(--font-bold);

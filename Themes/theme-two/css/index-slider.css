@@ -164,11 +164,11 @@
 }
 @media (max-width: 992px) {
   .theme-two .main_slider {
-    height: 349px;
+    height:430px;
     margin-bottom: 0;
   }
   .theme-two .main_slider .item .img-container {
-    height: 349px;
+    height: 430px;
   }
   .theme-two .main_slider .item .desc {
     bottom: 70px;
@@ -230,5 +230,11 @@
   }
   .theme-two .main_slider .slick-arrow.next-arrow {
     left: 16px;
+  }
+  .theme-two .main_slider {
+    height:350px;
+  }
+  .theme-two .main_slider .item .img-container {
+    height: 350px;
   }
 }

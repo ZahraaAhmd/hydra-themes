@@ -125,7 +125,12 @@
   opacity: 0.8;
   margin-bottom: 25px;
 }
-
+@media(max-width:991.98px){
+  .blog-post-wrapper .blog-post-content-wrapper .blog-post-content-header h3{
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
 @media (max-width: 770px) {
   .blog-post-wrapper .blog-post-image-container {
     width: 97%;
