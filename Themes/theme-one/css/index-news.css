@@ -84,7 +84,8 @@
   overflow: hidden;
 }
 .theme-one .news .img-container img {
-  min-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 .theme-one .news .img-container .desc {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
@@ -169,7 +170,7 @@
   }
   .theme-one .news .right-side .img-container,
   .theme-one .news .left-side .img-container {
-    height: 217px;
+    height: 250px;
   }
 }
 

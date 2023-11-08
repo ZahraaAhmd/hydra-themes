@@ -51,6 +51,7 @@
   font-family: "Tajawal-Regular";
   src: url(../../fonts/Tajawal/Helvetica-normal.ttf);
 }
+
 .page-mask {
   display: none;
   position: fixed;
@@ -72,7 +73,8 @@
   font-size: 18px;
   color: var(--lightContentColor);
   opacity: 0.8;
-  width: 30%;
+  width: 100%;
+  max-width: 400px;
   margin-top: 15px;
 }
 
