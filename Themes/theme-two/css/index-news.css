@@ -163,4 +163,10 @@
     top: 18px;
     right: 28px;
   }
+ 
+}
+@media(max-width:767.98px){
+  .theme-two .news .left_side img{
+    object-fit: contain;
+  }
 }

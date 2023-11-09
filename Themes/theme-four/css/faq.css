@@ -289,6 +289,10 @@
   .theme-four .section {
     padding: 5rem 0;
   }
+  .theme-four .faq-main-img-container,.theme-four .faq-main-img-container img{
+    height: auto;
+  }
+  
 }
 @media (max-width: 575.98px) {
   .theme-four .section {

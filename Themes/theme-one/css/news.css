@@ -175,4 +175,12 @@
     top: 20px;
     right: 20px;
   }
+  .video_cover .video-container-control{
+    height: 400px;
+  }
+}
+@media(max-width:575.98px){
+  .video_cover .video-container-control img {
+    object-fit: contain;
+}
 }

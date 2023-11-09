@@ -259,4 +259,18 @@
   .news-sec .news_details h3 {
     max-width: initial;
   }
+  .news-sec .news_details .img-news-container-cont{
+    height: auto;
+  }
+  .news-sec .related_news .single_news .img-news-container-control img{
+    object-fit: contain;
+  }
+  .news-sec .video_container:after{
+    height: calc(100% - 30px);
+  }
+}
+@media(max-width:575.98px){
+  .news-sec .news_details .news_gallary .img_container{
+    height: 150px;
+  }
 }

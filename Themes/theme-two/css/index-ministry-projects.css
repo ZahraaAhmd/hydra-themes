@@ -833,14 +833,15 @@
   }
   .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card {
     width: 400px;
-    height: 530px;
+    height: auto;
     margin: 0 10px 0 10px;
     border-radius: 8px;
     border: none;
+    margin-bottom: 20px;
   }
   .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .img-card-container {
     width: 100%;
-    height: 450px;
+    height: 350px;
   }
   .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .img-card-container img {
     width: 100%;
@@ -1063,7 +1064,7 @@
   }
   .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .img-card-container {
     width: 100%;
-    height: 450px;
+    height: 300px;
   }
   .theme-two .gov-projects-wrapper .gov-projects-container .box-left .cards-list .card .img-card-container img {
     width: 100%;

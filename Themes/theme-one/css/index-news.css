@@ -184,3 +184,10 @@
     width: 75%;
   }
 }
+
+@media(max-width:575.98px){
+  .theme-one .news .img-container img{
+    object-fit: contain;
+    background: #000;
+  }
+}

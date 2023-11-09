@@ -204,4 +204,7 @@
     height: 25px;
     font-size: 10px;
   }
+  .dataShowing_desc .img-container-control{
+    height: auto;
+  }
 }

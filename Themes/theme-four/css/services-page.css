@@ -513,7 +513,7 @@
   }
   .tourist-activities-wrapper .tourist-activities-item .img-wrapper {
     width: 95%;
-    height: 15rem;
+    height: auto;
     margin: 0 auto;
   }
   .text-ordered-list {

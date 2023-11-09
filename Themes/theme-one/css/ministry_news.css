@@ -207,4 +207,8 @@
   .theme-one .ministry_news .news-grid .news-item .news-content {
     font-size: 16px;
   }
+  .theme-one .ministry_news .news-grid .news-item .news-image-container{
+    height: auto;
+    max-width:100%
+  }
 }
