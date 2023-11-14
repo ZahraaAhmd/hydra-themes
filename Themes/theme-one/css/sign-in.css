@@ -307,7 +307,64 @@ html {
 .forget-container .forget-pass-text .forget-svg {
   margin-bottom: 5px;
 }
+.service-form-wrapper{
+  width:100%;
+  max-width: 518px;
+  margin:0 auto 100px auto;
+  padding:50px 48px 75px 48px
+}
+.service-form-wrapper .sign-in-container{
+  padding:0 !important;
+  margin:0
+}
+.step {
+  display: none;
+}
 
+.step.active {
+  display: block;
+}
+.service-form-wrapper .login-btn{
+  width: 149px;
+height: 56px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding:16px 20px;
+margin:0 !important
+}
+.service-form-wrapper .step-back{
+  width: 50px;
+height: 50px;
+border-radius: 50%;
+background: #F2F2F2;
+  display: flex;
+align-items: center;
+justify-content:center;
+}
+.service-form-wrapper form a{
+  color: #181818;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height:  120% ;
+}
+.service-form-wrapper .form-select{
+  border-radius: 16px;
+  background-color: #F8F8F8;
+  height: 56px;
+  color: #181818;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  padding-right: 16px;
+  background-position: left 1rem center;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.service-form-wrapper .form-select:focus{
+  border-color: #4675EF;
+}
 /* Below 1344px (smaller desktops) */
 /* Below 1200px (Landscape tablets) */
 @media (max-width: 75em) {
