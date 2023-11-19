@@ -187,6 +187,7 @@
 .image-new-sub-pic {
   width: 40rem;
   height: 25rem;
+  max-width: 100%;
 }
 
 .new-date {

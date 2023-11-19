@@ -6,9 +6,11 @@
 }
 
 .table > thead {
-  background-color: #0081c41a ;
-  color: #0d3770 ;
+  background-color: #4e7fff ;
+  color: #fff ;
   padding: 1.5rem 4rem !important;
+  position: sticky;
+  top:80px;
 }
 
 .table > :not(caption) > * > * {
@@ -21,7 +23,7 @@
   padding: 1.5rem 4rem !important;
 }
 .data-table-header-row th {
-  color: #4675EF ;
+  color: #fff ;
 }
 
 .table-body tr:nth-child(even) {

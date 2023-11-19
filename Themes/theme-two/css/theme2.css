@@ -57,3 +57,6 @@ body {
 body.bg_gray {
   background: #f5f6f9;
 }
+.fancybox__container{
+  z-index: 99999;
+}

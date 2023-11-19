@@ -150,6 +150,8 @@
 .theme-one .history .history_links span.slick-current::before {
   background: var(--primaryColor) !important;
 }
+
+
 @media (max-width: 992px) {
   .theme-one .history .history_links {
     display: -webkit-box;
@@ -177,6 +179,23 @@
   .theme-one .history-list {
     position: relative;
   }
+  .theme-one .history .history_content  p{
+    height: auto !important;
+    padding-top: 0;
+  }
+  .theme-one .history .history_content  .ministry-name p{
+color: var(--headingsColor) !important;
+margin-bottom: 0 !important;
+  }
+  .theme-one .history .history_content  .ministry-name h4{
+    color: var(--paragraphColor) !important;
+    padding-right: 29px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .theme-one .history .slick-dots li button:before{
+    font-size: 11px;
+  }
 }
 @media (max-width: 767px) {
   .theme-one .history .history_content p {
@@ -187,6 +206,13 @@
     height: 379px;
     width: 402px;
     margin: 0 auto;
+  }
+  .theme-one .history .history_content  .ministry-name,.theme-one .history .history_content  .ministry-name p{
+    text-align: center !important;
+  }
+  .theme-one .history .history_content  .ministry-name p,.theme-one .history .history_content  .ministry-name h4{
+    padding-right: 0 !important;
+    width: 100% !important;
   }
   .theme-one .history .history_links {
     display: -webkit-box;
@@ -202,7 +228,7 @@
   }
 }
 @media (max-width: 450px) {
-  .theme-one .history .history_links {
+  /*.theme-one .history .history_links {
     top: 39%;
   }
   .theme-one .history .history_content p{
@@ -210,6 +236,11 @@
   }
   .theme-one .history .history_content p{
     padding-top: 31%;
+  }*/
+  .theme-one .history .history_content p{
+    padding:0 20px;
+    text-align: justify;
+    width: 100%;
   }
 }
 

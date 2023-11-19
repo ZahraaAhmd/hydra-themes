@@ -52,6 +52,9 @@
   font-family: "Tajawal-Regular";
   src: url(../../fonts/Tajawal/Helvetica-normal.ttf);
 }
+.page_content {
+  padding-top: 110px;
+}
 @media (max-width: 992px) {
   .page_content {
     padding-top: 90px;

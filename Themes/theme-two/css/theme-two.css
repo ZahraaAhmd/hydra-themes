@@ -101,3 +101,20 @@ a:hover {
   background-color: var(--primaryColor);
   color: var(--white);
 }
+.fancybox__container{
+  z-index: 99999 !important;
+}
+@media(max-width:767.98px){
+  .fancybox__thumbs.is-horizontal{
+    display: none !important;
+  }
+  .fancybox__nav{
+    opacity: 1 !important;
+  }
+  .f-button{
+    background: #000 !important;
+  }
+  .f-button.is-next svg,.f-button.is-prev svg{
+width: 20px;
+  }
+}
