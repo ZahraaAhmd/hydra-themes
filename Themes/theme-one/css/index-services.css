@@ -183,7 +183,7 @@
   }
   .theme-one .service .services_list .single_service {
     margin-bottom: 16px;
-    height: 207px;
+    height: auto;
     padding: 24px;
   }
 }

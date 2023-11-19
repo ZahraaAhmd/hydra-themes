@@ -203,9 +203,11 @@ margin-bottom: 0 !important;
     width: 90%;
   }
   .theme-one .history .history_content > div img {
-    height: 379px;
+ 
+    height: auto;
     width: 402px;
     margin: 0 auto;
+    max-width: 100%;
   }
   .theme-one .history .history_content  .ministry-name,.theme-one .history .history_content  .ministry-name p{
     text-align: center !important;
