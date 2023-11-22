@@ -109,6 +109,29 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-size: 17px;
+ 
+}
+.gallary_list .img_details .gallary-btn{
+   border:0;
+  outline: none;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg_color);
+  border-radius: 4px;
+  width:100%;
+  max-width: 290px;
+  height: 48px;
+  color: var(--white);
+  font-size: 17px;
+}
+.gallary_list .img_details .gallary-btn div{
+  margin-top: -5px;
+}
+.gallary_list .img_details .gallary-btn  img{
+  margin-right: 10px;
+  margin-top:2px;
 }
 .gallary_list .img_details a img {
   margin-top: 5px;
